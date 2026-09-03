@@ -1,0 +1,77 @@
+export default function PendingApprovalPage() {
+  return (
+    <main className="min-h-screen bg-gray-50" dir="rtl">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Content */}
+      <section className="flex min-h-[calc(100vh-80px)] items-center justify-center px-5 py-12">
+
+        <div className="w-full max-w-lg">
+
+          <div className="rounded-3xl bg-white p-8 text-center shadow-lg sm:p-10">
+
+            {/* Icon */}
+            <div className="mb-6 text-6xl">
+              ⏳
+            </div>
+
+            {/* Title */}
+            <h2 className="mb-4 text-3xl font-bold text-gray-900">
+              حسابك قيد المراجعة
+            </h2>
+
+            {/* Message */}
+            <p className="mb-6 text-lg leading-8 text-gray-600">
+              تم استلام طلب التسجيل بنجاح.
+              <br />
+              سيتم مراجعة بياناتك من الإدارة وتفعيل
+              الحساب بعد الموافقة.
+            </p>
+
+            {/* Important Notice */}
+            <div className="mb-6 rounded-2xl bg-blue-50 p-5">
+
+              <p className="leading-8 text-blue-900">
+                بعد تفعيل حسابك، يمكنك تسجيل الدخول
+                والوصول إلى صفحة العملاء التي تحتوي على
+                الشروحات والفيديوهات والأسئلة الشائعة
+                الخاصة بجهازك.
+              </p>
+
+            </div>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/201006687163"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mb-4 block rounded-xl bg-green-600 px-6 py-4 text-lg font-bold text-white transition hover:bg-green-700"
+            >
+              تواصل مع الدعم عبر واتساب
+            </a>
+
+            {/* Login */}
+            <a
+              href="/login"
+              className="block rounded-xl bg-blue-900 px-6 py-4 text-lg font-bold text-white transition hover:bg-blue-800"
+            >
+              العودة إلى تسجيل الدخول
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}

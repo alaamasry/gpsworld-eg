@@ -1,0 +1,226 @@
+import Image from "next/image";
+
+export default function QBITPage() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Back to Products */}
+      <div
+        className="mx-auto max-w-7xl px-6 pt-6"
+        dir="rtl"
+      >
+        <a
+          href="/#products"
+          className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white transition hover:bg-blue-700"
+        >
+          ← العودة إلى الأجهزة
+        </a>
+      </div>
+
+      {/* Product */}
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <div className="grid gap-10 md:grid-cols-2">
+
+          {/* Image */}
+          <div className="flex items-center justify-center rounded-2xl bg-white p-8 shadow-lg">
+            <Image
+              src="/images/obd4g.jpeg"
+              alt="QBIT GPS"
+              width={600}
+              height={450}
+              className="max-h-[450px] w-full object-contain"
+            />
+          </div>
+
+          {/* Details */}
+          <div
+            className="flex flex-col justify-center"
+            dir="rtl"
+          >
+
+            {/* Status */}
+            <span className="mb-4 w-fit rounded-full bg-green-100 px-4 py-2 text-sm font-bold text-green-700">
+              متوفر
+            </span>
+
+            {/* Name */}
+            <h2 className="mb-3 text-4xl font-bold text-gray-900">
+              QBIT
+            </h2>
+
+            <span className="mb-6 w-fit rounded-full bg-purple-100 px-4 py-2 text-sm font-bold text-purple-800">
+              📍 تتبع شخصي وحماية ذكية
+            </span>
+
+            {/* Description */}
+            <p className="mb-8 text-lg leading-8 text-gray-600">
+              ميدالية GPS صغيرة الحجم مصممة للتتبع الشخصي
+              والتواصل، ويمكن حملها بسهولة داخل الحقيبة أو
+              تعليقها مع المفاتيح، لتوفير وسيلة عملية لمعرفة
+              الموقع والتواصل عند الحاجة.
+            </p>
+
+            {/* Features */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                أهم مميزات QBIT
+              </h3>
+
+              <ul className="space-y-4 leading-7 text-gray-700">
+
+                <li>
+                  📍 تتبع الموقع عبر GPS لمعرفة موقع الجهاز.
+                </li>
+
+                <li>
+                  🆘 زر SOS لإرسال تنبيه سريع عند الحاجة
+                  إلى المساعدة.
+                </li>
+
+                <li>
+                  📞 إمكانية إجراء واستقبال المكالمات الصوتية
+                  حسب إعدادات الجهاز.
+                </li>
+
+                <li>
+                  🎒 حجم صغير وتصميم عملي يسهل حمله
+                  وتعليقه في أماكن مختلفة.
+                </li>
+
+                <li>
+                  🔋 بطارية داخلية للاستخدام أثناء التنقل.
+                </li>
+
+                <li>
+                  📡 تصميم مدمج بدون هوائيات خارجية ظاهرة.
+                </li>
+
+                <li>
+                  🌐 إمكانية متابعة الموقع من خلال نظام
+                  التتبع المتوافق.
+                </li>
+
+                <li>
+                  🔊 إمكانية التواصل الصوتي حسب إعدادات
+                  الجهاز والنظام.
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* Specifications */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                المواصفات الفنية
+              </h3>
+
+              <div className="overflow-hidden rounded-xl border border-gray-200">
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    النوع
+                  </span>
+
+                  <span className="text-gray-600">
+                    GPS Personal Tracker
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    تحديد الموقع
+                  </span>
+
+                  <span className="text-gray-600">
+                    GPS
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاتصال
+                  </span>
+
+                  <span className="text-gray-600">
+                    اتصال صوتي حسب إعدادات الجهاز
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    البطارية
+                  </span>
+
+                  <span className="text-gray-600">
+                    بطارية داخلية
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاستخدام
+                  </span>
+
+                  <span className="text-gray-600">
+                    التتبع الشخصي والتواصل
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Main Advantage */}
+            <div className="mb-8 rounded-2xl border border-purple-100 bg-purple-50 p-6">
+
+              <h3 className="mb-3 text-xl font-bold text-purple-900">
+                ⭐ لماذا QBIT؟
+              </h3>
+
+              <p className="leading-8 text-gray-700">
+                يجمع QBIT بين الحجم الصغير وإمكانيات التتبع
+                والتواصل في جهاز واحد سهل الحمل. وجود زر SOS
+                مع إمكانية تحديد الموقع والتواصل الصوتي يجعله
+                حلًا عمليًا للتتبع الشخصي أثناء التنقل.
+              </p>
+
+            </div>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/201006687163"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-600 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-green-700"
+            >
+              تواصل معنا على واتساب
+            </a>
+            <a
+  href="https://wa.me/201006687163?text=مرحبًا، أريد طلب جهاز QBIT"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-3 rounded-xl bg-blue-900 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-blue-800"
+>
+  اطلب الجهاز الآن
+</a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  );
+}

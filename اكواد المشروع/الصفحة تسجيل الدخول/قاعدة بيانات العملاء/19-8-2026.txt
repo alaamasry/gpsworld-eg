@@ -1,0 +1,16 @@
+create table public.customer_accounts (
+  id uuid primary key default gen_random_uuid(),
+
+  name text not null,
+
+  phone text not null unique,
+
+  email text,
+
+  status text not null default 'pending'
+    check (status in ('pending', 'approved', 'rejected')),
+
+  created_at timestamptz not null default now()
+);
+
+alter table public.customer_accounts enable row level security;

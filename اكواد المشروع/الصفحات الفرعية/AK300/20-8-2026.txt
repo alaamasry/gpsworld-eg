@@ -1,0 +1,246 @@
+import Image from "next/image";
+
+export default function AK300Page() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Back Button */}
+      <div
+        className="mx-auto max-w-7xl px-6 pt-6"
+        dir="rtl"
+      >
+        <a
+          href="/#products"
+          className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white transition hover:bg-blue-700"
+        >
+          ← العودة إلى الأجهزة
+        </a>
+      </div>
+
+      {/* Product */}
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <div className="grid gap-10 md:grid-cols-2">
+
+          {/* Image */}
+          <div className="flex items-center justify-center rounded-2xl bg-white p-8 shadow-lg">
+            <Image
+              src="/images/obd4g.jpeg"
+              alt="AK300"
+              width={600}
+              height={450}
+              className="max-h-[450px] w-full object-contain"
+            />
+          </div>
+
+          {/* Details */}
+          <div
+            className="flex flex-col justify-center"
+            dir="rtl"
+          >
+
+            {/* Status */}
+            <span className="mb-4 w-fit rounded-full bg-green-100 px-4 py-2 text-sm font-bold text-green-700">
+              متوفر
+            </span>
+
+            {/* Name */}
+            <h2 className="mb-4 text-4xl font-bold text-gray-900">
+              AK300
+            </h2>
+
+            {/* Description */}
+            <p className="mb-8 text-lg leading-8 text-gray-600">
+              جهاز تتبع GPS متطور لمتابعة المركبات بشكل لحظي،
+              مع دعم شبكات 4G LTE والرجوع إلى 2G، وإمكانية
+              متابعة موقع المركبة وسرعتها وحالتها من خلال
+              نظام التتبع والسيرفر.
+            </p>
+
+            {/* Features */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                أهم مميزات الجهاز
+              </h3>
+
+              <ul className="space-y-4 leading-7 text-gray-700">
+
+                <li>
+                  📍 تحديد ومتابعة موقع المركبة لحظيًا.
+                </li>
+
+                <li>
+                  🚀 يدعم شبكة 4G LTE مع الرجوع إلى 2G.
+                </li>
+
+                <li>
+                  🛰️ يدعم تحديد الموقع عبر GPS وGLONASS.
+                </li>
+
+                <li>
+                  📊 متابعة سرعة المركبة والمسافة وحالتها.
+                </li>
+
+                <li>
+                  ⚡ إمكانية متابعة حالة المحرك والبيانات
+                  المرتبطة بالمركبة حسب إعدادات النظام.
+                </li>
+
+                <li>
+                  🔋 بطارية احتياطية داخلية تساعد على استمرار
+                  عمل الجهاز عند انقطاع مصدر الكهرباء.
+                </li>
+
+                <li>
+                  🚨 يدعم التنبيهات والأحداث الخاصة بالمركبة
+                  حسب إعدادات نظام التتبع.
+                </li>
+
+                <li>
+                  📡 مزود بإمكانيات اتصال مناسبة للمتابعة
+                  المستمرة عبر شبكة الهاتف.
+                </li>
+
+                <li>
+                  🌐 يعمل مع أنظمة التتبع والسيرفر المتوافقة.
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* Specifications */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                المواصفات الفنية
+              </h3>
+
+              <div className="overflow-hidden rounded-xl border border-gray-200">
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الشبكة
+                  </span>
+
+                  <span className="text-gray-600">
+                    4G LTE + 2G
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    تحديد الموقع
+                  </span>
+
+                  <span className="text-gray-600">
+                    GPS + GLONASS
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    جهد التشغيل
+                  </span>
+
+                  <span className="font-bold text-blue-700">
+                    حتى 90V
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    البطارية
+                  </span>
+
+                  <span className="text-gray-600">
+                    بطارية احتياطية داخلية
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الأبعاد
+                  </span>
+
+                  <span className="text-gray-600">
+                    70 × 75 × 21.5 مم
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    الوزن
+                  </span>
+
+                  <span className="text-gray-600">
+                    90 جرام
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاستخدام
+                  </span>
+
+                  <span className="text-gray-600">
+                    تتبع ومراقبة المركبات
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Main Advantage */}
+            <div className="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-6">
+
+              <h3 className="mb-3 text-xl font-bold text-blue-900">
+                ⭐ أهم ما يميز الجهاز
+              </h3>
+
+              <p className="leading-8 text-gray-700">
+                يجمع AK300 بين الاتصال بشبكات 4G LTE مع
+                الرجوع إلى 2G، وتحديد الموقع عبر GPS وGLONASS،
+                مع إمكانية متابعة بيانات المركبة بشكل مستمر
+                والعمل بجهد يصل إلى 90V حسب النسخة المستخدمة،
+                مما يجعله جهازًا عمليًا للمتابعة الاحترافية.
+              </p>
+
+            </div>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/201006687163"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-600 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-green-700"
+            >
+              تواصل معنا على واتساب
+            </a>
+            <a
+  href="https://wa.me/201006687163?text=مرحبًا، أريد طلب جهاز AK300"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-3 rounded-xl bg-blue-900 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-blue-800"
+>
+  اطلب الجهاز الآن
+</a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  );
+}

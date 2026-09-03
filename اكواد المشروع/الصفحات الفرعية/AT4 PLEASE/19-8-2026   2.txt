@@ -1,0 +1,249 @@
+import Image from "next/image";
+
+export default function AT4PlusPage() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Back to Products */}
+      <div
+        className="mx-auto max-w-7xl px-6 pt-6"
+        dir="rtl"
+      >
+        <a
+          href="/#products"
+          className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white transition hover:bg-blue-700"
+        >
+          ← العودة إلى الأجهزة
+        </a>
+      </div>
+
+      {/* Product */}
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <div className="grid gap-10 md:grid-cols-2">
+
+          {/* Image */}
+          <div className="flex items-center justify-center rounded-2xl bg-white p-8 shadow-lg">
+            <Image
+              src="/images/obd4g.jpeg"
+              alt="AT4 PLUS"
+              width={600}
+              height={450}
+              className="max-h-[450px] w-full object-contain"
+            />
+          </div>
+
+          {/* Details */}
+          <div
+            className="flex flex-col justify-center"
+            dir="rtl"
+          >
+
+            <span className="mb-4 w-fit rounded-full bg-green-100 px-4 py-2 text-sm font-bold text-green-700">
+              متوفر
+            </span>
+
+            <h2 className="mb-3 text-4xl font-bold text-gray-900">
+              AT4 PLUS
+            </h2>
+
+            <span className="mb-6 w-fit rounded-full bg-blue-100 px-4 py-2 text-sm font-bold text-blue-800">
+              ⭐ PLUS — فئة متقدمة للتتبع اللاسلكي
+            </span>
+
+            <p className="mb-8 text-lg leading-8 text-gray-600">
+              جهاز تتبع GPS متطور بتقنية GNSS و4G،
+              مزود ببطارية ضخمة بسعة 10000mAh،
+              ومصمم لتوفير دقة عالية في تحديد الموقع
+              ومتابعة المركبات والأصول في الوقت الفعلي،
+              مع تصميم قوي مناسب للاستخدام في مختلف الظروف.
+            </p>
+
+            {/* Features */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                أهم مميزات الجهاز
+              </h3>
+
+              <ul className="space-y-4 leading-7 text-gray-700">
+
+                <li>
+                  🎯 يعمل بتقنية GNSS-4G لتوفير دقة عالية
+                  في تحديد الموقع ومتابعة الأصل.
+                </li>
+
+                <li>
+                  📍 إمكانية معرفة الموقع الحالي للمركبة
+                  أو الأصل ومتابعته في الوقت الفعلي.
+                </li>
+
+                <li>
+                  🚀 اتصال 4G يساعد على توفير متابعة سريعة
+                  واستجابة أفضل مع نظام التتبع.
+                </li>
+
+                <li>
+                  🔋 بطارية ضخمة بسعة 10000mAh توفر
+                  فترة تشغيل طويلة، وقد تصل إلى 30 يومًا
+                  حسب إعدادات الاستخدام ومعدل التتبع.
+                </li>
+
+                <li>
+                  🛡️ مقاوم للماء والغبار بمعيار IP67،
+                  مما يجعله مناسبًا للاستخدام في الظروف
+                  البيئية المختلفة.
+                </li>
+
+                <li>
+                  🏜️ مناسب للاستخدام في البيئات الخارجية
+                  والظروف الصعبة حسب طبيعة الاستخدام.
+                </li>
+
+                <li>
+                  📱 إمكانية متابعة المركبات والأصول من
+                  خلال تطبيق الهاتف الذكي والمنصة المتوافقة.
+                </li>
+
+                <li>
+                  🗺️ متابعة تحركات الأصل ومعرفة موقعه
+                  بشكل مستمر حسب إعدادات التتبع.
+                </li>
+
+                <li>
+                  ⚡ مصمم لتقليل الحاجة إلى الشحن المتكرر
+                  عند استخدام أوضاع توفير الطاقة المناسبة.
+                </li>
+
+                <li>
+                  🌐 يعمل مع أنظمة التتبع والسيرفر المتوافقة.
+                </li>
+                <li>
+<li>
+  🧲 مزود بمغناطيس قوي مدمج لسهولة تثبيت الجهاز على الأجزاء المعدنية.
+</li>
+
+<li>
+  🎙️ مزود بمايك مدمج للمراقبة الصوتية عن بُعد حسب إعدادات الجهاز والخدمة.
+</li></li>
+
+              </ul>
+
+            </div>
+
+            {/* Specifications */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                المواصفات الفنية
+              </h3>
+
+              <div className="overflow-hidden rounded-xl border border-gray-200">
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاتصال
+                  </span>
+
+                  <span className="text-gray-600">
+                    4G LTE
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    تحديد الموقع
+                  </span>
+
+                  <span className="text-gray-600">
+                    GNSS / GPS
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    البطارية
+                  </span>
+
+                  <span className="font-bold text-blue-700">
+                    10000mAh
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    مدة التشغيل
+                  </span>
+
+                  <span className="text-gray-600">
+                    حتى 30 يومًا حسب الاستخدام
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الحماية
+                  </span>
+
+                  <span className="text-gray-600">
+                    IP67
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاستخدام
+                  </span>
+
+                  <span className="text-gray-600">
+                    تتبع المركبات والأصول
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Main Advantage */}
+            <div className="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-6">
+
+              <h3 className="mb-3 text-xl font-bold text-blue-900">
+                ⭐ لماذا AT4 PLUS؟
+              </h3>
+
+              <p className="leading-8 text-gray-700">
+                AT4 PLUS يجمع بين تقنية GNSS المتقدمة
+                واتصال 4G والبطارية الضخمة بسعة 10000mAh
+                والحماية بمعيار IP67، ليقدم حلًا متطورًا
+                لمتابعة المركبات والأصول التي تحتاج إلى
+                تتبع مستمر مع تقليل الحاجة إلى الشحن المتكرر.
+              </p>
+
+            </div>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/201006687163"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-600 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-green-700"
+            >
+              تواصل معنا على واتساب
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  );
+}

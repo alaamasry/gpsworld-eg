@@ -1,0 +1,131 @@
+import Image from "next/image";
+
+export default function CustomerRegisterPage() {
+  return (
+    <main className="min-h-screen bg-gray-50" dir="rtl">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Register Section */}
+      <section className="flex min-h-[calc(100vh-80px)] items-center justify-center px-5 py-12">
+
+        <div className="w-full max-w-lg">
+
+          {/* Title */}
+          <div className="mb-8 text-center">
+            <div className="mb-4 text-5xl">
+              👤
+            </div>
+
+            <h2 className="mb-3 text-3xl font-bold text-gray-900">
+              تسجيل حساب العميل
+            </h2>
+
+            <p className="text-gray-600">
+              سجل بياناتك للدخول إلى صفحة العملاء
+              والاستفادة من الشروحات والدعم بعد تركيب الجهاز.
+            </p>
+          </div>
+
+          {/* Form Card */}
+          <div className="rounded-3xl bg-white p-6 shadow-lg sm:p-8">
+
+            <form className="space-y-5">
+
+              {/* Name */}
+              <div>
+                <label className="mb-2 block text-lg font-bold text-gray-800">
+                  الاسم
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="اكتب اسمك"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-4 text-lg outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+              </div>
+
+              {/* Phone */}
+              <div>
+                <label className="mb-2 block text-lg font-bold text-gray-800">
+                  رقم الهاتف
+                  <span className="mr-1 text-red-600">*</span>
+                </label>
+
+                <input
+                  type="tel"
+                  placeholder="01XXXXXXXXX"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-4 text-lg outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  required
+                />
+
+                <p className="mt-2 text-sm text-gray-500">
+                  رقم الهاتف مطلوب لتفعيل ومتابعة حسابك.
+                </p>
+              </div>
+
+              {/* Email */}
+              <div>
+                <label className="mb-2 block text-lg font-bold text-gray-800">
+                  البريد الإلكتروني
+                  <span className="mr-2 text-sm font-normal text-gray-400">
+                    (اختياري)
+                  </span>
+                </label>
+
+                <input
+                  type="email"
+                  placeholder="example@email.com"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-4 text-lg outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                />
+              </div>
+
+              {/* Info */}
+              <div className="rounded-2xl bg-blue-50 p-4 text-center">
+                <p className="leading-7 text-blue-900">
+                  بعد التسجيل سيتم مراجعة بياناتك من الإدارة.
+                  عند الموافقة على الحساب ستتمكن من الدخول
+                  إلى صفحة العملاء.
+                </p>
+              </div>
+
+              {/* Submit */}
+              <button
+                type="submit"
+                className="w-full rounded-xl bg-blue-900 px-6 py-4 text-lg font-bold text-white transition hover:bg-blue-800"
+              >
+                إنشاء حساب
+              </button>
+
+            </form>
+
+          </div>
+
+          {/* Existing Account */}
+          <div className="mt-6 text-center">
+            <p className="text-gray-600">
+              لديك حساب بالفعل؟
+            </p>
+
+            <a
+              href="/login"
+              className="mt-2 inline-block font-bold text-blue-700 hover:text-blue-900"
+            >
+              تسجيل الدخول
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}

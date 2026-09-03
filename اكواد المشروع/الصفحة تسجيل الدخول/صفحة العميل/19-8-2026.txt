@@ -1,0 +1,235 @@
+export default function CustomerPage() {
+  return (
+    <main className="min-h-screen bg-gray-50" dir="rtl">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Welcome */}
+      <section className="mx-auto max-w-7xl px-6 py-10">
+
+        <div className="mb-8 rounded-3xl bg-blue-900 p-7 text-white shadow-lg sm:p-10">
+
+          <p className="mb-2 text-lg opacity-90">
+            أهلاً وسهلاً بك 👋
+          </p>
+
+          <h2 className="mb-3 text-3xl font-bold">
+            صفحة العملاء
+          </h2>
+
+          <p className="leading-8 text-blue-100">
+            من هنا يمكنك الوصول إلى جميع الشروحات
+            والخدمات والمعلومات الخاصة بجهازك.
+          </p>
+
+        </div>
+
+        {/* Important Button */}
+        <div className="mb-10">
+
+          <button
+            type="button"
+            className="w-full rounded-3xl bg-red-600 px-6 py-6 text-xl font-bold text-white shadow-lg transition hover:bg-red-700"
+          >
+            🆘 ماذا أفعل؟
+          </button>
+
+          <p className="mt-3 text-center text-gray-500">
+            اضغط هنا إذا واجهتك مشكلة أو لا تعرف ماذا تفعل.
+          </p>
+
+        </div>
+
+        {/* Sections */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          {/* Installation */}
+          <a
+            href="#installation"
+            className="rounded-3xl bg-white p-7 shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+          >
+            <div className="mb-4 text-5xl">
+              🔧
+            </div>
+
+            <h3 className="mb-3 text-2xl font-bold text-gray-900">
+              شرح بعد تركيب الجهاز
+            </h3>
+
+            <p className="leading-7 text-gray-600">
+              أهم التعليمات التي يحتاجها العميل
+              بعد تركيب جهاز GPS في السيارة.
+            </p>
+          </a>
+
+          {/* Videos */}
+          <a
+            href="#videos"
+            className="rounded-3xl bg-white p-7 shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+          >
+            <div className="mb-4 text-5xl">
+              🎥
+            </div>
+
+            <h3 className="mb-3 text-2xl font-bold text-gray-900">
+              فيديوهات الشرح
+            </h3>
+
+            <p className="leading-7 text-gray-600">
+              فيديوهات توضح طريقة التشغيل
+              واستخدام الجهاز والتطبيق.
+            </p>
+          </a>
+
+          {/* FAQ */}
+          <a
+            href="#faq"
+            className="rounded-3xl bg-white p-7 shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+          >
+            <div className="mb-4 text-5xl">
+              ❓
+            </div>
+
+            <h3 className="mb-3 text-2xl font-bold text-gray-900">
+              الأسئلة الشائعة
+            </h3>
+
+            <p className="leading-7 text-gray-600">
+              إجابات على أكثر المشاكل والأسئلة
+              التي قد تواجه العميل.
+            </p>
+          </a>
+
+        </div>
+
+        {/* Installation Section */}
+        <section
+          id="installation"
+          className="mt-10 rounded-3xl bg-white p-7 shadow-md sm:p-10"
+        >
+
+          <h3 className="mb-5 text-2xl font-bold text-gray-900">
+            🔧 شرح بعد تركيب الجهاز
+          </h3>
+
+          <div className="space-y-4 leading-8 text-gray-700">
+
+            <p>
+              بعد تركيب الجهاز، تأكد من أن الجهاز يعمل
+              بشكل طبيعي وأنه متصل بنظام التتبع.
+            </p>
+
+            <p>
+              يتم متابعة المركبة من خلال التطبيق أو
+              منصة التتبع الخاصة بالجهاز.
+            </p>
+
+            <p>
+              احرص على استمرار شحن خط الجهاز حسب
+              نظام التشغيل المستخدم.
+            </p>
+
+          </div>
+
+        </section>
+
+        {/* Videos Section */}
+        <section
+          id="videos"
+          className="mt-8 rounded-3xl bg-white p-7 shadow-md sm:p-10"
+        >
+
+          <h3 className="mb-5 text-2xl font-bold text-gray-900">
+            🎥 فيديوهات الشرح
+          </h3>
+
+          <div className="rounded-2xl bg-gray-50 p-6 text-center">
+
+            <p className="mb-4 text-gray-600">
+              سيتم إضافة فيديوهات الشرح هنا.
+            </p>
+
+            <div className="text-5xl">
+              ▶️
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* FAQ Section */}
+        <section
+          id="faq"
+          className="mt-8 rounded-3xl bg-white p-7 shadow-md sm:p-10"
+        >
+
+          <h3 className="mb-5 text-2xl font-bold text-gray-900">
+            ❓ الأسئلة الشائعة
+          </h3>
+
+          <div className="space-y-5">
+
+            <div className="rounded-2xl bg-gray-50 p-5">
+              <h4 className="mb-2 font-bold text-gray-900">
+                الجهاز لا يظهر على الخريطة، ماذا أفعل؟
+              </h4>
+
+              <p className="leading-7 text-gray-600">
+                تأكد من تشغيل الجهاز واتصال الشريحة
+                بالشبكة، ثم انتظر قليلًا حتى تصل البيانات
+                إلى نظام التتبع.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-gray-50 p-5">
+              <h4 className="mb-2 font-bold text-gray-900">
+                هل يحتاج خط الجهاز إلى شحن؟
+              </h4>
+
+              <p className="leading-7 text-gray-600">
+                نعم، يجب الحفاظ على وجود رصيد كافٍ في
+                الخط حتى يستمر الجهاز في إرسال البيانات.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-gray-50 p-5">
+              <h4 className="mb-2 font-bold text-gray-900">
+                أحتاج إلى مساعدة إضافية.
+              </h4>
+
+              <p className="leading-7 text-gray-600">
+                يمكنك التواصل مع الدعم الفني مباشرة
+                للحصول على المساعدة.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+        {/* Support */}
+        <div className="mt-10">
+
+          <a
+            href="https://wa.me/201006687163"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block rounded-3xl bg-green-600 px-6 py-5 text-center text-xl font-bold text-white shadow-lg transition hover:bg-green-700"
+          >
+            📞 التواصل مع الدعم الفني
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}

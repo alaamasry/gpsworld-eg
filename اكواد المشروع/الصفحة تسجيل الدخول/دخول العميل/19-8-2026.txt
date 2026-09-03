@@ -1,0 +1,134 @@
+export default function CustomerLoginPage() {
+  return (
+    <main className="min-h-screen bg-gray-50" dir="rtl">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Login Section */}
+      <section className="flex min-h-[calc(100vh-80px)] items-center justify-center px-5 py-12">
+
+        <div className="w-full max-w-lg">
+
+          {/* Title */}
+          <div className="mb-8 text-center">
+
+            <div className="mb-4 text-5xl">
+              🔐
+            </div>
+
+            <h2 className="mb-3 text-3xl font-bold text-gray-900">
+              دخول العميل
+            </h2>
+
+            <p className="leading-7 text-gray-600">
+              ادخل بيانات حسابك للوصول إلى الشروحات
+              والخدمات الخاصة بالعملاء.
+            </p>
+
+          </div>
+
+          {/* Login Card */}
+          <div className="rounded-3xl bg-white p-6 shadow-lg sm:p-8">
+
+            <form className="space-y-5">
+
+              {/* Phone */}
+              <div>
+
+                <label className="mb-2 block text-lg font-bold text-gray-800">
+                  رقم الهاتف
+                </label>
+
+                <input
+                  type="tel"
+                  placeholder="01XXXXXXXXX"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-4 text-lg outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  required
+                />
+
+              </div>
+
+              {/* Name */}
+              <div>
+
+                <label className="mb-2 block text-lg font-bold text-gray-800">
+                  الاسم
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="اكتب اسمك"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-4 text-lg outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  required
+                />
+
+              </div>
+
+              {/* Password */}
+              <div>
+
+                <label className="mb-2 block text-lg font-bold text-gray-800">
+                  كلمة المرور
+                </label>
+
+                <input
+                  type="password"
+                  placeholder="اكتب كلمة المرور"
+                  className="w-full rounded-xl border border-gray-300 px-4 py-4 text-lg outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                  required
+                />
+
+              </div>
+
+              {/* Notice */}
+              <div className="rounded-2xl bg-yellow-50 p-4 text-center">
+
+                <p className="leading-7 text-yellow-800">
+                  إذا كان حسابك لم تتم الموافقة عليه بعد،
+                  يرجى الانتظار حتى يتم تفعيله من الإدارة.
+                </p>
+
+              </div>
+
+              {/* Login Button */}
+              <button
+                type="submit"
+                className="w-full rounded-xl bg-blue-900 px-6 py-4 text-lg font-bold text-white transition hover:bg-blue-800"
+              >
+                تسجيل الدخول
+              </button>
+
+            </form>
+
+          </div>
+
+          {/* Register */}
+          <div className="mt-6 text-center">
+
+            <p className="text-gray-600">
+              ليس لديك حساب؟
+            </p>
+
+            <a
+              href="/register"
+              className="mt-2 inline-block font-bold text-blue-700 hover:text-blue-900"
+            >
+              إنشاء حساب جديد
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}

@@ -1,0 +1,56 @@
+import Image from "next/image";
+
+export default function GT06N2G() {
+  return (
+    <main className="min-h-screen bg-white">
+
+      <header className="bg-blue-900 text-white p-5">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      <section className="max-w-6xl mx-auto px-5 py-16">
+
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+
+          <div className="border rounded-2xl p-6 shadow-lg">
+            <Image
+              src="/images/gt06n 2g.jpeg"
+              alt="GT06N 2G"
+              width={600}
+              height={500}
+              className="w-full h-auto object-contain"
+            />
+          </div>
+
+          <div>
+
+            <span className="bg-blue-600 text-white px-4 py-2 rounded-full">
+              متوفر
+            </span>
+
+            <h2 className="text-4xl font-bold text-blue-900 mt-6">
+              GT06N 2G
+            </h2>
+
+            <p className="text-gray-600 text-lg mt-5 leading-8">
+              جهاز GPS احترافي للتتبع والمراقبة،
+              مناسب للسيارات والاستخدامات المختلفة.
+            </p>
+
+            <button className="mt-8 bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700">
+              تواصل معنا
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+}

@@ -1,0 +1,76 @@
+export default function SoftwarePage() {
+  return (
+    <main className="min-h-screen bg-white">
+
+      {/* Header */}
+      <header className="bg-blue-900 text-white shadow-lg">
+        <div className="max-w-7xl mx-auto px-5 py-5">
+          <div className="flex justify-between items-center">
+
+            <a
+              href="/"
+              className="text-2xl font-bold hover:text-yellow-300 transition"
+            >
+              GPS World Egypt
+            </a>
+
+            <a
+              href="/"
+              className="bg-white text-blue-900 px-4 py-2 rounded-lg font-bold hover:bg-gray-100 transition"
+            >
+              الرئيسية
+            </a>
+
+          </div>
+        </div>
+      </header>
+
+      {/* Software Page */}
+      <section
+        className="min-h-[70vh] flex items-center justify-center px-5 py-20"
+        dir="rtl"
+      >
+        <div className="max-w-2xl w-full text-center">
+
+          <div className="border rounded-2xl shadow-xl p-8 md:p-12">
+
+            <div className="text-6xl mb-6">
+              🔐
+            </div>
+
+            <h1 className="text-4xl font-bold text-blue-900 mb-6">
+              منطقة العملاء
+            </h1>
+
+            <p className="text-xl text-gray-600 leading-9 mb-4">
+              هذه الصفحة مخصصة لعملاء GPS World Egypt
+              الذين تم تركيب أجهزة GPS لهم.
+            </p>
+
+            <p className="text-gray-500 leading-8 mb-8">
+              يرجى تسجيل الدخول للوصول إلى برامج المتابعة
+              والخدمات الخاصة بك.
+            </p>
+
+            <button
+              type="button"
+              className="w-full bg-blue-700 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-800 transition"
+            >
+              تسجيل الدخول
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white text-center py-5">
+        <p className="text-gray-300">
+          © 2026 GPS World Egypt - جميع الحقوق محفوظة
+        </p>
+      </footer>
+
+    </main>
+  );
+}

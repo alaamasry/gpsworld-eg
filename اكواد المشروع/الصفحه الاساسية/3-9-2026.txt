@@ -1,0 +1,617 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+
+const devices = [
+  {
+    id: "gt06n-2g",
+    name: "GT06N 2G",
+    image: "/images/gt06n2g.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+  {
+    id: "gt06n-4g",
+    name: "GT06N 4G",
+    image: "/images/GT06N 4G.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS للتتبع.",
+  },
+  {
+    id: "ev402-2g",
+    name: "EV402 2G",
+    image: "/images/ev402.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS للتتبع.",
+  },
+  {
+    id: "ev404-4g",
+    name: "EV404 4G",
+    image: "/images/ev404.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS للتتبع.",
+  },
+  {
+    id: "j16pro-max",
+    name: "J16PRO Max",
+    image: "/images/J16PRO max.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+  {
+    id: "AK300",
+    name: "AK300",
+    image: "/images/AK300.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+  {
+    id: "B100",
+    name: "B100",
+    image: "/images/B100.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+  {
+    id: "EV505",
+    name: "EV505",
+    image: "/images/EV505.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+  {
+    id: "tk303",
+    name: "TK303",
+    image: "/images/tk303.jpeg",
+    badge: "الأكثر مبيعًا",
+    badgeColor: "bg-yellow-500",
+    description: "مناسب للسيارات والدراجات النارية.",
+  },
+  {
+    id: "obd22",
+    name: "OBD22",
+    image: "/images/OBD22.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز تتبع GPS يعمل من خلال منفذ OBD.",
+  },
+  {
+    id: "obdvl505",
+    name: "OBD VL505",
+    image: "/images/OBDVL505.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز تتبع GPS عملي وسهل التركيب.",
+  },
+  {
+    id: "qbit",
+    name: "QBIT",
+    image: "/images/QBIT.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS صغير الحجم للتتبع والمراقبة.",
+  },
+  {
+    id: "w15l",
+    name: "W15L",
+    image: "/images/W15L.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS للتتبع والمراقبة.",
+  },
+  {
+    id: "at4",
+    name: "AT4",
+    image: "/images/AT4.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+  {
+    id: "at4-plus",
+    name: "AT4 PLUS",
+    image: "/images/AT4 PLUS.jpeg",
+    badge: "متوفر",
+    badgeColor: "bg-blue-600",
+    description: "جهاز GPS احترافي للتتبع والمراقبة.",
+  },
+];
+
+export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <main className="min-h-screen bg-white" dir="rtl">
+
+      {/* ================= HEADER ================= */}
+
+      <header className="bg-blue-950 text-white shadow-lg sticky top-0 z-50">
+
+        <div className="max-w-7xl mx-auto px-5 py-4">
+
+          <div className="flex justify-between items-center">
+
+            {/* Logo */}
+
+            <a
+              href="#"
+              onClick={() => setMenuOpen(false)}
+              className="flex flex-col leading-tight hover:text-yellow-300 transition"
+            >
+              <span className="text-2xl md:text-3xl font-extrabold tracking-wide">
+                GPS World Egypt
+              </span>
+
+              <span className="text-xs md:text-sm text-blue-200 mt-1">
+                حلول التتبع والمراقبة GPS
+              </span>
+            </a>
+
+            {/* Menu Button */}
+
+            <button
+              type="button"
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="w-12 h-12 rounded-xl bg-blue-900 hover:bg-blue-800 flex items-center justify-center text-3xl transition"
+              aria-label="فتح القائمة"
+              aria-expanded={menuOpen}
+            >
+              {menuOpen ? "✕" : "☰"}
+            </button>
+
+          </div>
+
+          {/* Mobile Menu */}
+
+          {menuOpen && (
+
+            <nav className="mt-5 border-t border-blue-800 pt-4">
+
+              <div className="flex flex-col gap-2 text-right">
+
+                <a
+                  href="#"
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-xl px-4 py-3 font-bold hover:bg-blue-900 transition"
+                >
+                  🏠 الرئيسية
+                </a>
+
+                <a
+                  href="#products"
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-xl px-4 py-3 font-bold hover:bg-blue-900 transition"
+                >
+                  📡 أجهزة GPS
+                </a>
+
+                <a
+                  href="#recharge"
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-xl px-4 py-3 font-bold hover:bg-blue-900 transition"
+                >
+                  💳 شحن النقاط
+                </a>
+
+                <a
+                  href="#software"
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-xl px-4 py-3 font-bold hover:bg-blue-900 transition"
+                >
+                  💻 السوفت وير
+                </a>
+
+                <a
+                  href="#contact"
+                  onClick={() => setMenuOpen(false)}
+                  className="rounded-xl px-4 py-3 font-bold hover:bg-blue-900 transition"
+                >
+                  📞 تواصل معنا
+                </a>
+
+              </div>
+
+            </nav>
+
+          )}
+
+        </div>
+
+      </header>
+
+
+      {/* ================= HERO ================= */}
+
+      <section className="relative overflow-hidden bg-gradient-to-b from-blue-50 via-white to-white">
+
+        <div className="max-w-7xl mx-auto px-5 py-20 md:py-28">
+
+          <div className="max-w-4xl mx-auto text-center">
+
+            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-5 py-2 rounded-full font-bold text-sm mb-7">
+              📡 حلول GPS للتتبع والمراقبة
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-extrabold text-blue-950 leading-tight mb-7">
+
+              أجهزة GPS
+              <br />
+
+              <span className="text-blue-700">
+                للتتبع والمراقبة باحترافية
+              </span>
+
+            </h1>
+
+            <p className="text-lg md:text-xl text-gray-600 leading-8 max-w-3xl mx-auto mb-10">
+
+              أجهزة تتبع GPS، شحن نقاط السيرفرات، السوفت وير
+              والدعم الفني، مع مجموعة متنوعة من حلول التتبع
+              المناسبة لمختلف الاستخدامات.
+
+            </p>
+
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+              <a
+                href="#products"
+                className="bg-blue-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-800 transition shadow-lg"
+              >
+                📡 تصفح الأجهزة
+              </a>
+
+              <a
+                href="https://wa.me/201006687163"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition shadow-lg"
+              >
+                💬 تواصل عبر واتساب
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= PRODUCTS ================= */}
+
+      <section
+        id="products"
+        className="max-w-7xl mx-auto py-16 px-5"
+      >
+
+        <div className="text-center mb-12">
+
+          <span className="text-blue-700 font-bold">
+            منتجاتنا
+          </span>
+
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-2">
+            أجهزة GPS للتتبع
+          </h2>
+
+          <p className="text-gray-600 mt-4">
+            اختر الجهاز المناسب لاحتياجاتك
+          </p>
+
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+          {devices.map((device) => (
+
+            <div
+              key={device.id}
+              className="border border-gray-200 rounded-2xl p-5 shadow-md hover:shadow-2xl hover:-translate-y-1 transition duration-300 bg-white"
+            >
+
+              <div className="h-52 flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden">
+
+                <Image
+                  src={device.image}
+                  alt={device.name}
+                  width={300}
+                  height={220}
+                  className="w-full h-full object-contain"
+                />
+
+              </div>
+
+              <span
+                className={`${device.badgeColor} text-white text-sm px-3 py-1 rounded-full mt-4 inline-block`}
+              >
+                {device.badge}
+              </span>
+
+              <h3 className="text-2xl font-bold mt-4 text-blue-950">
+                {device.name}
+              </h3>
+
+              <p className="text-gray-600 mt-3 min-h-12">
+                {device.description}
+              </p>
+
+              <a
+                href={`/devices/${device.id}`}
+                className="mt-5 w-full bg-blue-700 text-white py-3 rounded-xl hover:bg-blue-800 block text-center font-bold transition"
+              >
+                عرض التفاصيل
+              </a>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
+
+
+      {/* ================= RECHARGE ================= */}
+
+      <section
+        id="recharge"
+        className="bg-blue-50 py-16 px-5"
+      >
+
+        <div className="max-w-5xl mx-auto text-center">
+
+          <span className="text-blue-700 font-bold">
+            خدماتنا
+          </span>
+
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-2">
+            شحن نقاط السيرفرات
+          </h2>
+
+          <p className="text-gray-600 text-lg leading-8 mt-5 max-w-3xl mx-auto">
+            نوفر خدمات شحن نقاط السيرفرات ومساعدة العملاء
+            في تشغيل ومتابعة أجهزة GPS الخاصة بهم.
+          </p>
+
+          <a
+            href="https://wa.me/201006687163"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-8 bg-blue-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-blue-800 transition"
+          >
+            💳 استفسر عن شحن النقاط
+          </a>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= SOFTWARE ================= */}
+
+      <section
+        id="software"
+        className="max-w-7xl mx-auto py-16 px-5"
+      >
+
+        <div className="text-center mb-12">
+
+          <span className="text-blue-700 font-bold">
+            خدمات GPS
+          </span>
+
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mt-2">
+            السوفت وير والخدمات
+          </h2>
+
+          <p className="text-gray-600 text-lg mt-4">
+            برامج وحلول GPS المتاحة لعملائنا
+          </p>
+
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          {/* برامج GPS */}
+
+          <div className="border rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+
+            <div className="h-48 flex items-center justify-center bg-gray-50 rounded-xl">
+
+              <span className="text-6xl">
+                💻
+              </span>
+
+            </div>
+
+            <h3 className="text-2xl font-bold mt-5 text-center text-blue-950">
+              برامج GPS
+            </h3>
+
+            <p className="text-gray-600 mt-3 text-center leading-7">
+              برامج متابعة وإدارة أجهزة GPS بسهولة واحترافية.
+            </p>
+
+            <a
+              href="#"
+              className="mt-5 w-full bg-blue-700 text-white py-3 rounded-xl hover:bg-blue-800 block text-center font-bold"
+            >
+              دخول
+            </a>
+
+          </div>
+
+
+          {/* سيرفرات GPS */}
+
+          <div className="border rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+
+            <div className="h-48 flex items-center justify-center bg-gray-50 rounded-xl">
+
+              <span className="text-6xl">
+                🛰️
+              </span>
+
+            </div>
+
+            <h3 className="text-2xl font-bold mt-5 text-center text-blue-950">
+              سيرفرات GPS
+            </h3>
+
+            <p className="text-gray-600 mt-3 text-center leading-7">
+              خدمات تشغيل وربط أجهزة التتبع على سيرفرات GPS.
+            </p>
+
+            <a
+              href="#"
+              className="mt-5 w-full bg-blue-700 text-white py-3 rounded-xl hover:bg-blue-800 block text-center font-bold"
+            >
+              دخول
+            </a>
+
+          </div>
+
+
+          {/* الدعم الفني */}
+
+          <div className="border rounded-2xl p-6 shadow-md hover:shadow-xl transition">
+
+            <div className="h-48 flex items-center justify-center bg-gray-50 rounded-xl">
+
+              <span className="text-6xl">
+                🛠️
+              </span>
+
+            </div>
+
+            <h3 className="text-2xl font-bold mt-5 text-center text-blue-950">
+              الدعم الفني
+            </h3>
+
+            <p className="text-gray-600 mt-3 text-center leading-7">
+              دعم فني ومساعدة في تشغيل وإعداد أجهزة GPS.
+            </p>
+
+            <a
+              href="https://wa.me/201006687163"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 w-full bg-blue-700 text-white py-3 rounded-xl hover:bg-blue-800 block text-center font-bold"
+            >
+              تواصل مع الدعم
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* ================= FOOTER ================= */}
+
+      <footer
+        id="contact"
+        className="bg-blue-950 text-white mt-10"
+      >
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6 py-14">
+
+          <div>
+
+            <h3 className="text-2xl font-extrabold mb-5">
+              GPS World Egypt
+            </h3>
+
+            <p className="text-blue-200 leading-8">
+              أجهزة GPS للتتبع والمراقبة
+              <br />
+              شحن نقاط السيرفرات
+              <br />
+              السوفت وير والدعم الفني
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <h3 className="text-xl font-bold mb-5">
+              خدماتنا
+            </h3>
+
+            <ul className="space-y-3 text-blue-200">
+
+              <li>📡 أجهزة GPS</li>
+              <li>💳 شحن نقاط السيرفرات</li>
+              <li>💻 السوفت وير</li>
+              <li>🛠️ الدعم الفني</li>
+
+            </ul>
+
+          </div>
+
+
+          <div>
+
+            <h3 className="text-xl font-bold mb-5">
+              تواصل معنا
+            </h3>
+
+            <ul className="space-y-3 text-blue-200">
+
+              <li>📞 01006687163</li>
+              <li>📍 القاهرة - مصر</li>
+
+              <li>
+                <a
+                  href="https://wa.me/201006687163"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                >
+                  💬 تواصل عبر WhatsApp
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <div className="border-t border-blue-800 text-center py-5 text-blue-200">
+          © 2026 GPS World Egypt - جميع الحقوق محفوظة
+        </div>
+
+      </footer>
+
+
+      {/* ================= FLOATING WHATSAPP ================= */}
+
+      <a
+        href="https://wa.me/201006687163"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="التواصل عبر واتساب"
+        className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white text-3xl flex items-center justify-center shadow-2xl transition z-50"
+      >
+        💬
+      </a>
+
+    </main>
+  );
+}

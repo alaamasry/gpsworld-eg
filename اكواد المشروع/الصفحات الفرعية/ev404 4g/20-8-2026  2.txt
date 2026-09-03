@@ -1,0 +1,247 @@
+import Image from "next/image";
+
+export default function EV404Page() {
+  return (
+    <main className="min-h-screen bg-gray-50">
+
+      {/* Header */}
+      <header className="bg-black py-5 text-white">
+        <div className="mx-auto max-w-7xl px-6">
+          <h1 className="text-2xl font-bold">
+            GPS World Egypt
+          </h1>
+        </div>
+      </header>
+
+      {/* Back Button */}
+      <div
+        className="mx-auto max-w-7xl px-6 pt-6"
+        dir="rtl"
+      >
+        <a
+          href="/#products"
+          className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white transition hover:bg-blue-700"
+        >
+          ← العودة إلى الأجهزة
+        </a>
+      </div>
+
+      {/* Product */}
+      <section className="mx-auto max-w-7xl px-6 py-12">
+        <div className="grid gap-10 md:grid-cols-2">
+
+          {/* Image */}
+          <div className="flex items-center justify-center overflow-hidden">
+  <Image
+    src="/images/EV404.jpeg"
+    alt="EV404"
+    width={600}
+    height={450}
+    className="h-auto w-full object-contain"
+            />
+          </div>
+
+          {/* Details */}
+          <div
+            className="flex flex-col justify-center"
+            dir="rtl"
+          >
+
+            {/* Status */}
+            <span className="mb-4 w-fit rounded-full bg-green-100 px-4 py-2 text-sm font-bold text-green-700">
+              متوفر
+            </span>
+
+            {/* Name */}
+            <h2 className="mb-4 text-4xl font-bold text-gray-900">
+              EV404
+            </h2>
+
+            {/* Description */}
+            <p className="mb-8 text-lg leading-8 text-gray-600">
+              جهاز تتبع GPS صغير الحجم وخفيف الوزن، يعمل
+              بتقنية 4G LTE مع دعم 2G، ويوفر متابعة لحظية
+              للمركبة مع مجموعة من إمكانيات الحماية والتنبيهات
+              من خلال نظام التتبع والسيرفر.
+            </p>
+
+            {/* Features */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                أهم مميزات الجهاز
+              </h3>
+
+              <ul className="space-y-4 leading-7 text-gray-700">
+
+                <li>
+                  📦 تصميم صغير جدًا وسهل التركيب.
+                </li>
+
+                <li>
+                  ⚖️ وزن خفيف حوالي 40 جرام.
+                </li>
+
+                <li>
+                  🚀 يعمل على شبكات 4G LTE مع دعم 2G.
+                </li>
+
+                <li>
+                  📍 تتبع لحظي لموقع المركبة.
+                </li>
+
+                <li>
+                  🎙️ يدعم المراقبة الصوتية.
+                </li>
+
+                <li>
+                  ⚡ إمكانية فصل الوقود أو الكهرباء عن بُعد
+                  عند تجهيز النظام لذلك.
+                </li>
+
+                <li>
+                  🚨 تنبيه عند فصل مصدر الكهرباء عن الجهاز.
+                </li>
+
+                <li>
+                  📍 دعم السياج الجغرافي.
+                </li>
+
+                <li>
+                  🔋 تنبيه انخفاض البطارية ومحاولة إزالة الجهاز.
+                </li>
+
+                <li>
+                  🌐 يعمل مع أنظمة التتبع والسيرفر المتوافقة.
+                </li>
+
+              </ul>
+
+            </div>
+
+            {/* Specifications */}
+            <div className="mb-6 rounded-2xl bg-white p-6 shadow-sm">
+
+              <h3 className="mb-5 text-2xl font-bold text-gray-900">
+                المواصفات الفنية
+              </h3>
+
+              <div className="overflow-hidden rounded-xl border border-gray-200">
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الشبكة
+                  </span>
+
+                  <span className="text-gray-600">
+                    4G LTE + 2G
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    تحديد الموقع
+                  </span>
+
+                  <span className="text-gray-600">
+                    GPS
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    جهد التشغيل
+                  </span>
+
+                  <span className="font-bold text-blue-700">
+                    9 - 36V
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    الأبعاد
+                  </span>
+
+                  <span className="text-gray-600">
+                    79 × 33 × 16 مم
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الوزن
+                  </span>
+
+                  <span className="text-gray-600">
+                    40 جرام
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاتصال
+                  </span>
+
+                  <span className="text-gray-600">
+                    GPRS / TCP-IP
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-2 bg-gray-50 p-4">
+                  <span className="font-bold text-gray-800">
+                    الاستخدام
+                  </span>
+
+                  <span className="text-gray-600">
+                    تتبع ومراقبة المركبات
+                  </span>
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Main Advantage */}
+            <div className="mb-8 rounded-2xl border border-blue-100 bg-blue-50 p-6">
+
+              <h3 className="mb-3 text-xl font-bold text-blue-900">
+                ⭐ أهم ما يميز الجهاز
+              </h3>
+
+              <p className="leading-8 text-gray-700">
+                حجم صغير جدًا ووزن خفيف مع دعم شبكات 4G
+                و2G، بالإضافة إلى إمكانية التشغيل بجهد يصل
+                إلى 36V ومجموعة من إمكانيات التتبع والتنبيهات
+                والحماية، مما يجعله خيارًا عمليًا لمختلف
+                المركبات.
+              </p>
+
+            </div>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/201006687163"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-green-600 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-green-700"
+            >
+              تواصل معنا على واتساب
+            </a>
+            <a
+  href="https://wa.me/201006687163?text=مرحبًا، أريد طلب جهاز EV404"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-3 rounded-xl bg-blue-900 px-6 py-4 text-center text-lg font-bold text-white transition hover:bg-blue-800"
+>
+  اطلب الجهاز الآن
+</a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+  );
+}
