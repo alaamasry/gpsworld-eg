@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const product = {
   name: "EV404 4G",
-  price: "سعر",
   image: "/images/ev404.jpeg",
 };
 
@@ -104,21 +103,6 @@ export default function EV404Page() {
               من إمكانيات الحماية والتنبيهات من خلال نظام التتبع
               والسيرفر المتوافق.
             </p>
-
-
-            {/* ================= PRICE ================= */}
-
-            <div className="mt-7 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-
-              <span className="text-sm font-bold text-gray-500">
-                السعر
-              </span>
-
-              <div className="mt-1 text-3xl font-extrabold text-blue-900">
-                {product.price}
-              </div>
-
-            </div>
 
 
             {/* ================= BUTTONS ================= */}
