@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const product = {
   name: "B100",
-  price: "سعر",
   image: "/images/B100.jpeg",
 };
 
@@ -90,20 +89,6 @@ export default function B100Page() {
               والحركة، ويمكن استخدامه ضمن أنظمة وسيرفرات GPS
               المتوافقة لتوفير متابعة عملية للمركبات.
             </p>
-
-            {/* ================= PRICE ================= */}
-
-            <div className="mt-7 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-
-              <span className="text-sm font-bold text-gray-500">
-                السعر
-              </span>
-
-              <div className="mt-1 text-3xl font-extrabold text-blue-900">
-                {product.price}
-              </div>
-
-            </div>
 
             {/* ================= BUTTONS ================= */}
 
