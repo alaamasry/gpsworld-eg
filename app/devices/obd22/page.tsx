@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const product = {
   name: "OBD22",
-  price: "سعر",
   image: "/images/OBD22.jpeg",
 };
 
@@ -87,18 +86,6 @@ export default function OBD22Page() {
               وإمكانية متابعة الموقع والحركة من خلال نظام GPS
               المتوافق.
             </p>
-
-            <div className="mt-7 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-
-              <span className="text-sm font-bold text-gray-500">
-                السعر
-              </span>
-
-              <div className="mt-1 text-3xl font-extrabold text-blue-900">
-                {product.price}
-              </div>
-
-            </div>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
 
