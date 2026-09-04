@@ -113,6 +113,7 @@ export default function Home() {
             <span className="text-xl font-extrabold tracking-wide">
               GPS World Egypt
             </span>
+
             <span className="text-xs text-blue-200">
               حلول التتبع والمراقبة GPS
             </span>
@@ -233,9 +234,11 @@ export default function Home() {
           <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="rounded-2xl bg-white p-6 shadow-md">
               <div className="text-3xl">📡</div>
+
               <h3 className="mt-3 font-extrabold text-[#071a35]">
                 أجهزة GPS
               </h3>
+
               <p className="mt-2 text-sm leading-6 text-gray-600">
                 مجموعة متنوعة من أجهزة التتبع والمراقبة.
               </p>
@@ -243,9 +246,11 @@ export default function Home() {
 
             <div className="rounded-2xl bg-white p-6 shadow-md">
               <div className="text-3xl">🖥️</div>
+
               <h3 className="mt-3 font-extrabold text-[#071a35]">
                 سيرفرات وبرامج
               </h3>
+
               <p className="mt-2 text-sm leading-6 text-gray-600">
                 حلول تشغيل ومتابعة لأجهزة GPS.
               </p>
@@ -253,9 +258,11 @@ export default function Home() {
 
             <div className="rounded-2xl bg-white p-6 shadow-md">
               <div className="text-3xl">🛠️</div>
+
               <h3 className="mt-3 font-extrabold text-[#071a35]">
                 دعم فني
               </h3>
+
               <p className="mt-2 text-sm leading-6 text-gray-600">
                 مساعدة فنية ومتابعة مستمرة للعملاء.
               </p>
@@ -294,6 +301,7 @@ export default function Home() {
                     src={device.image}
                     alt={device.name}
                     fill
+                    unoptimized={device.id === "EV505"}
                     className="object-contain p-5 transition duration-300 group-hover:scale-105"
                   />
 

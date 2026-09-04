@@ -3,7 +3,7 @@ import Image from "next/image";
 const product = {
   name: "EV505",
   price: "سعر",
-  image: "/images/EV505.jpeg",
+  image: "/images/ev505.jpeg",
 };
 
 export default function EV505Page() {
