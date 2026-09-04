@@ -55,7 +55,7 @@ const devices = [
   {
     id: "tk303",
     name: "TK303",
-    image: "/images/tk303.jpeg",
+    image: "/images/TK303.jpeg",
     description: "جهاز تتبع GPS من الأجهزة الأكثر طلبًا.",
     bestSeller: true,
   },
