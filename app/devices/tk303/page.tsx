@@ -3,7 +3,7 @@ import Image from "next/image";
 const product = {
   name: "TK303",
   price: "سعر",
-  image: "/images/tk303.jpeg",
+  image: "/images/TK303.jpeg",
 };
 
 export default function TK303Page() {
