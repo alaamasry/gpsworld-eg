@@ -196,21 +196,21 @@ export default function Home() {
       <section className="bg-gradient-to-b from-blue-50 to-white">
         <div className="mx-auto max-w-7xl px-5 py-20 text-center md:py-28">
           <div className="mb-5 inline-flex rounded-full bg-blue-100 px-5 py-2 text-sm font-bold text-blue-800">
-            📡 حلول GPS للتتبع والمراقبة
+            📡 أجهزة GPS وحلول التتبع في مصر
           </div>
 
           <h1 className="mx-auto max-w-4xl text-4xl font-black leading-tight text-[#071a35] md:text-6xl">
-            أجهزة GPS وحلول التتبع
+            أجهزة GPS للتتبع والمراقبة
             <br />
             <span className="text-blue-700">
-              باحترافية وأمان وثقة
+              حلول متكاملة للمركبات
             </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
-            نوفر أجهزة GPS للتتبع والمراقبة، حلول السيرفرات والبرامج،
-            وشحن نقاط السيرفرات، مع دعم فني ومتابعة لمساعدتك في اختيار
-            الحل المناسب لاحتياجاتك.
+            نوفر مجموعة متنوعة من أجهزة تتبع GPS للسيارات والمركبات،
+            بالإضافة إلى البرامج والسيرفرات وشحن نقاط السيرفرات،
+            مع دعم فني لمساعدتك في تشغيل ومتابعة جهازك.
           </p>
 
           <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
@@ -218,7 +218,7 @@ export default function Home() {
               href="#products"
               className="rounded-xl bg-blue-700 px-8 py-4 font-bold text-white shadow-lg transition hover:bg-blue-800"
             >
-              📡 تصفح أجهزة GPS
+              📡 شاهد أجهزة GPS
             </a>
 
             <a
@@ -227,7 +227,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="rounded-xl bg-green-600 px-8 py-4 font-bold text-white shadow-lg transition hover:bg-green-700"
             >
-              💬 تواصل عبر واتساب
+              💬 اطلب عبر واتساب
             </a>
           </div>
 
@@ -240,7 +240,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-gray-600">
-                مجموعة متنوعة من أجهزة التتبع والمراقبة.
+                أجهزة متنوعة لتتبع ومراقبة السيارات والمركبات.
               </p>
             </div>
 
@@ -248,11 +248,11 @@ export default function Home() {
               <div className="text-3xl">🖥️</div>
 
               <h3 className="mt-3 font-extrabold text-[#071a35]">
-                سيرفرات وبرامج
+                برامج وسيرفرات
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-gray-600">
-                حلول تشغيل ومتابعة لأجهزة GPS.
+                حلول تشغيل ومتابعة وإدارة أجهزة GPS.
               </p>
             </div>
 
@@ -264,7 +264,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-2 text-sm leading-6 text-gray-600">
-                مساعدة فنية ومتابعة مستمرة للعملاء.
+                مساعدة في إعداد وتشغيل الأجهزة والسيرفرات.
               </p>
             </div>
           </div>
