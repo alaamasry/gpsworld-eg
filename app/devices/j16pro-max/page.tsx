@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const product = {
   name: "J16PRO Max",
-  price: "سعر",
   image: "/images/J16PRO max.jpeg",
 };
 
@@ -103,21 +102,6 @@ export default function J16ProMaxPage() {
               الموقع والحركة، مع مجموعة من وظائف التتبع والتنبيهات
               والحماية، ومناسب للاستخدامات المختلفة في أنظمة GPS.
             </p>
-
-
-            {/* ================= PRICE ================= */}
-
-            <div className="mt-7 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-
-              <span className="text-sm font-bold text-gray-500">
-                السعر
-              </span>
-
-              <div className="mt-1 text-3xl font-extrabold text-blue-900">
-                {product.price}
-              </div>
-
-            </div>
 
 
             {/* ================= BUTTONS ================= */}
