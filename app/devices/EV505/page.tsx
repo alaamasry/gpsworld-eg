@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const product = {
   name: "EV505",
-  price: "سعر",
   image: "/images/EV505.jpeg"
 };
 
@@ -87,18 +86,6 @@ export default function EV505Page() {
               وسيرفرات GPS المتوافقة.
             </p>
 
-            <div className="mt-7 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-
-              <span className="text-sm font-bold text-gray-500">
-                السعر
-              </span>
-
-              <div className="mt-1 text-3xl font-extrabold text-blue-900">
-                {product.price}
-              </div>
-
-            </div>
-
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
 
               <a
@@ -136,41 +123,23 @@ export default function EV505Page() {
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
 
-              <li>
-                📍 متابعة موقع المركبة بشكل لحظي.
-              </li>
+              <li>📍 متابعة موقع المركبة بشكل لحظي.</li>
 
-              <li>
-                🚗 مناسب لمتابعة السيارات والمركبات المختلفة.
-              </li>
+              <li>🚗 مناسب لمتابعة السيارات والمركبات المختلفة.</li>
 
-              <li>
-                📡 يعمل مع أنظمة وسيرفرات GPS المتوافقة.
-              </li>
+              <li>📡 يعمل مع أنظمة وسيرفرات GPS المتوافقة.</li>
 
-              <li>
-                🚨 دعم وظائف التنبيهات والمتابعة.
-              </li>
+              <li>🚨 دعم وظائف التنبيهات والمتابعة.</li>
 
-              <li>
-                🛣️ متابعة حركة المركبة أثناء التشغيل.
-              </li>
+              <li>🛣️ متابعة حركة المركبة أثناء التشغيل.</li>
 
-              <li>
-                🗺️ عرض موقع المركبة على الخريطة من خلال السيرفر.
-              </li>
+              <li>🗺️ عرض موقع المركبة على الخريطة من خلال السيرفر.</li>
 
-              <li>
-                📊 متابعة بيانات المركبة وسجل الحركة.
-              </li>
+              <li>📊 متابعة بيانات المركبة وسجل الحركة.</li>
 
-              <li>
-                🛠️ مناسب للاستخدام الشخصي والتجاري.
-              </li>
+              <li>🛠️ مناسب للاستخدام الشخصي والتجاري.</li>
 
-              <li>
-                🤝 دعم فني ومتابعة من GPS World Egypt.
-              </li>
+              <li>🤝 دعم فني ومتابعة من GPS World Egypt.</li>
 
             </ul>
 
