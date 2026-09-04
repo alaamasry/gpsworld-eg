@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const product = {
   name: "TK303",
-  price: "سعر",
   image: "/images/TK303.jpeg",
 };
 
@@ -86,18 +85,6 @@ export default function TK303Page() {
               ويقدم حلًا عمليًا للتتبع والمراقبة من خلال أنظمة
               وسيرفرات GPS المتوافقة.
             </p>
-
-            <div className="mt-7 rounded-2xl border border-blue-100 bg-blue-50 p-5">
-
-              <span className="text-sm font-bold text-gray-500">
-                السعر
-              </span>
-
-              <div className="mt-1 text-3xl font-extrabold text-blue-900">
-                {product.price}
-              </div>
-
-            </div>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
 
