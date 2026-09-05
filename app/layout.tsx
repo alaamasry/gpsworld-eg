@@ -2,18 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GPS World Egypt | أجهزة GPS وأنظمة التتبع",
+  metadataBase: new URL("https://gpsworld-eg.com"),
+
+  title: "GPS World Egypt | أجهزة GPS وحلول التتبع في مصر",
+
   description:
-    "GPS World Egypt - أجهزة GPS وأنظمة التتبع والسيرفرات والدعم الفني في مصر",
+    "GPS World Egypt - أجهزة تتبع GPS للسيارات والمركبات، برامج وسيرفرات GPS، شحن نقاط السيرفرات والدعم الفني في مصر.",
 
   openGraph: {
-    title: "GPS World Egypt | أجهزة GPS وأنظمة التتبع",
+    title: "GPS World Egypt | أجهزة GPS وحلول التتبع في مصر",
+
     description:
-      "أجهزة GPS وأنظمة التتبع والسيرفرات والدعم الفني في مصر",
+      "أجهزة GPS للسيارات والمركبات وحلول التتبع والمراقبة والبرامج والسيرفرات والدعم الفني.",
+
     url: "https://gpsworld-eg.com",
+
     siteName: "GPS World Egypt",
+
     locale: "ar_EG",
+
     type: "website",
+
     images: [
       {
         url: "/images/logo-gps-world-egypt.png",
@@ -26,9 +35,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "GPS World Egypt | أجهزة GPS وأنظمة التتبع",
+
+    title: "GPS World Egypt | أجهزة GPS وحلول التتبع في مصر",
+
     description:
-      "أجهزة GPS وأنظمة التتبع والسيرفرات والدعم الفني في مصر",
+      "أجهزة GPS للسيارات والمركبات وحلول التتبع والمراقبة والبرامج والسيرفرات.",
+
     images: ["/images/logo-gps-world-egypt.png"],
   },
 
