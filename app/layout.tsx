@@ -61,18 +61,12 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "GPS World Egypt | أجهزة GPS وتتبع السيارات في مصر",
-
     description:
       "أجهزة GPS للسيارات والمركبات والموتوسيكلات والتروسيكلات، مع حلول التتبع والمراقبة وأجهزة 2G و4G وبرامج وسيرفرات GPS والدعم الفني.",
-
     url: "https://gpsworld-eg.com",
-
     siteName: "GPS World Egypt",
-
     locale: "ar_EG",
-
     type: "website",
-
     images: [
       {
         url: "/images/logo-gps-world-egypt.png",
@@ -85,12 +79,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-
     title: "GPS World Egypt | أجهزة GPS وتتبع السيارات في مصر",
-
     description:
       "أجهزة GPS للسيارات والمركبات وحلول التتبع والمراقبة والبرامج والسيرفرات في مصر.",
-
     images: ["/images/logo-gps-world-egypt.png"],
   },
 
