@@ -1,4 +1,61 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "J16PRO Max | جهاز تتبع سيارات GPS في مصر",
+
+  description:
+    "جهاز J16PRO Max لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة والتنبيهات ووظائف الحماية، ودعم أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "J16PRO Max",
+    "جهاز J16PRO Max",
+    "J16PRO Max GPS",
+    "جهاز تتبع J16PRO Max",
+    "جهاز GPS J16PRO Max",
+    "جهاز GPS",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز تتبع سيارات مصر",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/j16pro-max",
+  },
+
+  openGraph: {
+    title: "J16PRO Max | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز J16PRO Max لتتبع السيارات والمركبات ومتابعة الموقع والحركة والتنبيهات من خلال أنظمة GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/j16pro-max",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/J16PRO max.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "J16PRO Max جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "J16PRO Max | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز J16PRO Max لتتبع السيارات والمركبات ومتابعة الموقع والحركة والتنبيهات.",
+    images: ["/images/J16PRO max.jpeg"],
+  },
+};
 
 const product = {
   name: "J16PRO Max",
@@ -12,9 +69,7 @@ export default function J16ProMaxPage() {
       {/* ================= HEADER ================= */}
 
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
-
         <div className="mx-auto max-w-7xl px-5 py-4">
-
           <div className="flex items-center justify-between">
 
             <a
@@ -38,11 +93,8 @@ export default function J16ProMaxPage() {
             </a>
 
           </div>
-
         </div>
-
       </header>
-
 
       {/* ================= BACK ================= */}
 
@@ -57,13 +109,11 @@ export default function J16ProMaxPage() {
 
       </div>
 
-
       {/* ================= PRODUCT ================= */}
 
       <section className="mx-auto max-w-7xl px-5 py-10">
 
         <div className="grid gap-10 lg:grid-cols-2">
-
 
           {/* ================= IMAGE ================= */}
 
@@ -71,7 +121,7 @@ export default function J16ProMaxPage() {
 
             <Image
               src={product.image}
-              alt={product.name}
+              alt="J16PRO Max جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
@@ -79,7 +129,6 @@ export default function J16ProMaxPage() {
             />
 
           </div>
-
 
           {/* ================= DETAILS ================= */}
 
@@ -90,7 +139,7 @@ export default function J16ProMaxPage() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز J16PRO Max لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -98,11 +147,10 @@ export default function J16ProMaxPage() {
             </p>
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
-              جهاز GPS احترافي مصمم لمتابعة المركبات ومراقبة
+              جهاز J16PRO Max لتتبع السيارات والمركبات ومراقبة
               الموقع والحركة، مع مجموعة من وظائف التتبع والتنبيهات
               والحماية، ومناسب للاستخدامات المختلفة في أنظمة GPS.
             </p>
-
 
             {/* ================= BUTTONS ================= */}
 
@@ -127,11 +175,8 @@ export default function J16ProMaxPage() {
             </div>
 
           </div>
-
         </div>
-
       </section>
-
 
       {/* ================= FEATURES ================= */}
 
@@ -139,13 +184,12 @@ export default function J16ProMaxPage() {
 
         <div className="grid gap-8 lg:grid-cols-2">
 
-
           {/* ================= FEATURES ================= */}
 
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز J16PRO Max
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -186,13 +230,12 @@ export default function J16ProMaxPage() {
 
           </div>
 
-
           {/* ================= SPECIFICATIONS ================= */}
 
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز J16PRO Max
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -207,7 +250,6 @@ export default function J16ProMaxPage() {
                 </span>
               </div>
 
-
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">
                   تحديد الموقع
@@ -217,7 +259,6 @@ export default function J16ProMaxPage() {
                   GPS
                 </span>
               </div>
-
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">
@@ -229,7 +270,6 @@ export default function J16ProMaxPage() {
                 </span>
               </div>
 
-
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">
                   الاتصال
@@ -240,7 +280,6 @@ export default function J16ProMaxPage() {
                 </span>
               </div>
 
-
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">
                   التنبيهات
@@ -250,7 +289,6 @@ export default function J16ProMaxPage() {
                   حركة وحماية
                 </span>
               </div>
-
 
               <div className="grid grid-cols-2 p-4">
                 <span className="font-bold text-gray-800">
@@ -267,9 +305,7 @@ export default function J16ProMaxPage() {
           </div>
 
         </div>
-
       </section>
-
 
       {/* ================= WHY ================= */}
 
@@ -282,11 +318,11 @@ export default function J16ProMaxPage() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا J16PRO Max؟
+            لماذا تختار جهاز J16PRO Max؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-            جهاز GPS احترافي يوفر مجموعة من وظائف التتبع
+            جهاز J16PRO Max يوفر مجموعة من وظائف التتبع
             والمراقبة والتنبيهات، ويعد خيارًا مناسبًا لمتابعة
             المركبات وإدارتها من خلال أنظمة GPS المتوافقة.
           </p>
@@ -295,7 +331,6 @@ export default function J16ProMaxPage() {
 
       </section>
 
-
       {/* ================= CONTACT ================= */}
 
       <section className="mx-auto max-w-5xl px-5 py-16">
@@ -303,7 +338,7 @@ export default function J16ProMaxPage() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز J16PRO Max؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">
@@ -333,7 +368,6 @@ export default function J16ProMaxPage() {
         </div>
 
       </section>
-
 
       {/* ================= FOOTER ================= */}
 
@@ -369,7 +403,6 @@ export default function J16ProMaxPage() {
         </div>
 
       </footer>
-
 
       {/* ================= FLOATING WHATSAPP ================= */}
 

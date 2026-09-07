@@ -1,8 +1,65 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "EV505 | جهاز تتبع سيارات GPS في مصر",
+
+  description:
+    "جهاز EV505 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة بشكل لحظي، ودعم أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "EV505",
+    "جهاز EV505",
+    "EV505 GPS",
+    "جهاز تتبع EV505",
+    "جهاز GPS EV505",
+    "جهاز GPS",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز تتبع سيارات مصر",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/ev505",
+  },
+
+  openGraph: {
+    title: "EV505 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز EV505 لتتبع السيارات والمركبات ومتابعة الموقع والحركة من خلال أنظمة وسيرفرات GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/ev505",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/EV505.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "EV505 جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EV505 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز EV505 لتتبع السيارات والمركبات ومتابعة الموقع والحركة عبر أنظمة GPS.",
+    images: ["/images/EV505.jpeg"],
+  },
+};
 
 const product = {
   name: "EV505",
-  image: "/images/EV505.jpeg"
+  image: "/images/EV505.jpeg",
 };
 
 export default function EV505Page() {
@@ -58,7 +115,7 @@ export default function EV505Page() {
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
             <Image
               src={product.image}
-              alt={product.name}
+              alt="EV505 جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
@@ -73,7 +130,7 @@ export default function EV505Page() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز EV505 لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -118,7 +175,7 @@ export default function EV505Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز EV505
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -148,7 +205,7 @@ export default function EV505Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز EV505
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -231,7 +288,7 @@ export default function EV505Page() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا EV505؟
+            لماذا تختار جهاز EV505؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -251,7 +308,7 @@ export default function EV505Page() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز EV505؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">

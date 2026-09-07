@@ -1,4 +1,64 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "TK303 | جهاز تتبع سيارات GPS في مصر",
+
+  description:
+    "جهاز TK303 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة بشكل لحظي ودعم أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "TK303",
+    "جهاز TK303",
+    "TK303 GPS",
+    "TK303 GPS Tracker",
+    "جهاز تتبع TK303",
+    "جهاز GPS TK303",
+    "جهاز GPS",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "أجهزة تتبع السيارات",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز تتبع سيارات مصر",
+    "أفضل جهاز تتبع سيارات",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/tk303",
+  },
+
+  openGraph: {
+    title: "TK303 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز TK303 لتتبع السيارات والمركبات ومتابعة الموقع والحركة من خلال أنظمة وسيرفرات GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/tk303",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/TK303.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "TK303 جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "TK303 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز TK303 لتتبع السيارات والمركبات ومتابعة الموقع والحركة عبر أنظمة GPS المتوافقة.",
+    images: ["/images/TK303.jpeg"],
+  },
+};
 
 const product = {
   name: "TK303",
@@ -58,7 +118,7 @@ export default function TK303Page() {
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
             <Image
               src={product.image}
-              alt={product.name}
+              alt="TK303 جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
@@ -73,7 +133,7 @@ export default function TK303Page() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز TK303 لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -118,7 +178,7 @@ export default function TK303Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز TK303
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -166,7 +226,7 @@ export default function TK303Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز TK303
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -249,7 +309,7 @@ export default function TK303Page() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا TK303؟
+            لماذا تختار جهاز TK303؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -269,7 +329,7 @@ export default function TK303Page() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز TK303؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">

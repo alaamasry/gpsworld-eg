@@ -1,4 +1,57 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AK300 | جهاز تتبع سيارات GPS في مصر",
+  description:
+    "جهاز AK300 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة والتنبيهات والحماية ودعم أنظمة وسيرفرات GPS المتوافقة.",
+  keywords: [
+    "AK300",
+    "جهاز AK300",
+    "جهاز تتبع AK300",
+    "جهاز GPS AK300",
+    "جهاز تتبع سيارات",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "جهاز تتبع GPS",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "أجهزة تتبع السيارات",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "تتبع السيارة من الموبايل",
+    "جهاز GPS للمركبات",
+    "سيرفرات GPS",
+  ],
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/AK300",
+  },
+  openGraph: {
+    title: "AK300 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز AK300 لتتبع السيارات والمركبات ومتابعة الموقع والحركة مع دعم أنظمة وسيرفرات GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/AK300",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/AK300.jpeg",
+        width: 650,
+        height: 500,
+        alt: "AK300 جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AK300 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز AK300 لتتبع السيارات والمركبات ومراقبة الموقع والحركة والتنبيهات.",
+    images: ["/images/AK300.jpeg"],
+  },
+};
 
 const product = {
   name: "AK300",
@@ -12,9 +65,7 @@ export default function AK300Page() {
       {/* ================= HEADER ================= */}
 
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
-
         <div className="mx-auto max-w-7xl px-5 py-4">
-
           <div className="flex items-center justify-between">
 
             <a
@@ -38,45 +89,38 @@ export default function AK300Page() {
             </a>
 
           </div>
-
         </div>
-
       </header>
 
 
       {/* ================= BACK ================= */}
 
       <div className="mx-auto max-w-7xl px-5 pt-6">
-
         <a
           href="/#products"
           className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white shadow-md transition hover:bg-blue-800"
         >
           ← العودة إلى الأجهزة
         </a>
-
       </div>
 
 
       {/* ================= PRODUCT ================= */}
 
       <section className="mx-auto max-w-7xl px-5 py-10">
-
         <div className="grid gap-10 lg:grid-cols-2">
 
           {/* ================= IMAGE ================= */}
 
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-
             <Image
               src={product.image}
-              alt={product.name}
+              alt="AK300 جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
               className="max-h-[500px] w-full object-contain"
             />
-
           </div>
 
 
@@ -89,7 +133,7 @@ export default function AK300Page() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز AK300 لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -97,10 +141,10 @@ export default function AK300Page() {
             </p>
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
-              جهاز تتبع GPS مناسب لمتابعة المركبات ومراقبة
-              الموقع والحركة، مع مجموعة من وظائف التتبع
-              والتنبيهات والحماية، ويمكن استخدامه مع أنظمة
-              وسيرفرات GPS المتوافقة.
+              جهاز AK300 هو جهاز تتبع GPS مناسب لمتابعة السيارات
+              والمركبات ومراقبة الموقع والحركة. يوفر الجهاز مجموعة
+              من وظائف التتبع والتنبيهات والحماية، ويمكن استخدامه
+              مع أنظمة وسيرفرات GPS المتوافقة.
             </p>
 
 
@@ -129,7 +173,6 @@ export default function AK300Page() {
           </div>
 
         </div>
-
       </section>
 
 
@@ -144,7 +187,7 @@ export default function AK300Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز AK300
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -196,7 +239,7 @@ export default function AK300Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز AK300
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -266,7 +309,6 @@ export default function AK300Page() {
           </div>
 
         </div>
-
       </section>
 
 
@@ -281,12 +323,12 @@ export default function AK300Page() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا AK300؟
+            لماذا تختار جهاز AK300؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-            جهاز GPS عملي لمتابعة المركبات، يوفر وظائف
-            التتبع والمراقبة والتنبيهات، ويمكن تشغيله ضمن
+            جهاز GPS عملي لمتابعة السيارات والمركبات، يوفر وظائف
+            التتبع والمراقبة والتنبيهات والحماية، ويمكن تشغيله ضمن
             أنظمة وسيرفرات GPS المتوافقة.
           </p>
 
@@ -302,11 +344,11 @@ export default function AK300Page() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز AK300؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">
-            تواصل معنا لمعرفة التفاصيل والتوفر وطلب الجهاز.
+            تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز التتبع.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -345,7 +387,7 @@ export default function AK300Page() {
           </h3>
 
           <p className="mt-3 text-blue-200">
-            أجهزة GPS للتتبع والمراقبة
+            أجهزة GPS للتتبع والمراقبة في مصر
           </p>
 
           <p className="mt-5 text-blue-300">

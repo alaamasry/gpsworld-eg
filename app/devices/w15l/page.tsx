@@ -1,4 +1,64 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "W15L | جهاز تتبع سيارات GPS في مصر",
+
+  description:
+    "جهاز W15L لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة بشكل لحظي ودعم أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "W15L",
+    "جهاز W15L",
+    "W15L GPS",
+    "W15L GPS Tracker",
+    "جهاز تتبع W15L",
+    "جهاز GPS W15L",
+    "جهاز GPS",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "أجهزة تتبع السيارات",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز تتبع سيارات مصر",
+    "أفضل جهاز تتبع سيارات",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/w15l",
+  },
+
+  openGraph: {
+    title: "W15L | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز W15L لمتابعة السيارات والمركبات ومراقبة الموقع والحركة من خلال أنظمة وسيرفرات GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/w15l",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/W15L.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "W15L جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "W15L | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز W15L لتتبع السيارات والمركبات ومراقبة الموقع والحركة في مصر.",
+    images: ["/images/W15L.jpeg"],
+  },
+};
 
 const product = {
   name: "W15L",
@@ -58,7 +118,7 @@ export default function W15LPage() {
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
             <Image
               src={product.image}
-              alt={product.name}
+              alt="W15L جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
@@ -73,11 +133,11 @@ export default function W15LPage() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز W15L لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
-              جهاز تتبع GPS عملي
+              جهاز W15L لتتبع GPS
             </p>
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
@@ -118,7 +178,7 @@ export default function W15LPage() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز W15L
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -166,7 +226,7 @@ export default function W15LPage() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز W15L
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -249,7 +309,7 @@ export default function W15LPage() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا W15L؟
+            لماذا تختار جهاز W15L؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -269,11 +329,11 @@ export default function W15LPage() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز W15L؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">
-            تواصل معنا لمعرفة التفاصيل والتوفر وطلب الجهاز.
+            تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز W15L.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">

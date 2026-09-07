@@ -1,4 +1,67 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "EV404 4G | جهاز تتبع سيارات GPS 4G في مصر",
+
+  description:
+    "جهاز EV404 4G لتتبع السيارات والمركبات في مصر، يدعم شبكات 4G LTE و2G مع متابعة الموقع والتنبيهات ووظائف الحماية عبر أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "EV404 4G",
+    "EV404",
+    "جهاز EV404 4G",
+    "جهاز تتبع EV404",
+    "جهاز GPS EV404",
+    "EV404 GPS Tracker",
+    "EV404 4G مصر",
+    "جهاز تتبع سيارات 4G",
+    "جهاز GPS 4G",
+    "GPS Tracker 4G",
+    "جهاز تتبع 4G و2G",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "أجهزة تتبع السيارات",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز تتبع للمركبات",
+    "GPS World Egypt",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/ev404-4g",
+  },
+
+  openGraph: {
+    title: "EV404 4G | جهاز تتبع سيارات GPS 4G في مصر",
+    description:
+      "جهاز EV404 4G لتتبع السيارات والمركبات، يدعم 4G LTE و2G مع وظائف التتبع والتنبيهات والحماية.",
+    url: "https://gpsworld-eg.com/devices/ev404-4g",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/ev404.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "EV404 4G جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "EV404 4G | جهاز تتبع سيارات GPS 4G في مصر",
+    description:
+      "جهاز EV404 4G لتتبع السيارات والمركبات ومتابعة الموقع والتنبيهات عبر أنظمة GPS.",
+    images: ["/images/ev404.jpeg"],
+  },
+};
 
 const product = {
   name: "EV404 4G",
@@ -12,16 +75,14 @@ export default function EV404Page() {
       {/* ================= HEADER ================= */}
 
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
-
         <div className="mx-auto max-w-7xl px-5 py-4">
-
           <div className="flex items-center justify-between">
 
             <a
               href="/"
-              className="flex flex-col leading-tight hover:text-yellow-300 transition"
+              className="flex flex-col leading-tight transition hover:text-yellow-300"
             >
-              <span className="text-2xl md:text-3xl font-extrabold">
+              <span className="text-2xl font-extrabold md:text-3xl">
                 GPS World Egypt
               </span>
 
@@ -38,48 +99,37 @@ export default function EV404Page() {
             </a>
 
           </div>
-
         </div>
-
       </header>
-
 
       {/* ================= BACK ================= */}
 
       <div className="mx-auto max-w-7xl px-5 pt-6">
-
         <a
           href="/#products"
           className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white shadow-md transition hover:bg-blue-800"
         >
           ← العودة إلى الأجهزة
         </a>
-
       </div>
-
 
       {/* ================= PRODUCT ================= */}
 
       <section className="mx-auto max-w-7xl px-5 py-10">
-
         <div className="grid gap-10 lg:grid-cols-2">
-
 
           {/* ================= IMAGE ================= */}
 
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-
             <Image
               src={product.image}
-              alt={product.name}
+              alt="EV404 4G جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
               className="max-h-[500px] w-full object-contain"
             />
-
           </div>
-
 
           {/* ================= DETAILS ================= */}
 
@@ -90,7 +140,7 @@ export default function EV404Page() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز EV404 4G لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -103,7 +153,6 @@ export default function EV404Page() {
               من إمكانيات الحماية والتنبيهات من خلال نظام التتبع
               والسيرفر المتوافق.
             </p>
-
 
             {/* ================= BUTTONS ================= */}
 
@@ -128,25 +177,20 @@ export default function EV404Page() {
             </div>
 
           </div>
-
         </div>
-
       </section>
-
 
       {/* ================= FEATURES ================= */}
 
       <section className="mx-auto max-w-7xl px-5 pb-16">
-
         <div className="grid gap-8 lg:grid-cols-2">
-
 
           {/* ================= FEATURES ================= */}
 
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز EV404 4G
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -191,13 +235,12 @@ export default function EV404Page() {
 
           </div>
 
-
           {/* ================= SPECIFICATIONS ================= */}
 
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز EV404 4G
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -212,7 +255,6 @@ export default function EV404Page() {
                 </span>
               </div>
 
-
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">
                   تحديد الموقع
@@ -222,7 +264,6 @@ export default function EV404Page() {
                   GPS
                 </span>
               </div>
-
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">
@@ -234,7 +275,6 @@ export default function EV404Page() {
                 </span>
               </div>
 
-
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">
                   الأبعاد
@@ -244,7 +284,6 @@ export default function EV404Page() {
                   79 × 33 × 16 مم
                 </span>
               </div>
-
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">
@@ -256,7 +295,6 @@ export default function EV404Page() {
                 </span>
               </div>
 
-
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">
                   الاتصال
@@ -266,7 +304,6 @@ export default function EV404Page() {
                   GPRS / TCP-IP
                 </span>
               </div>
-
 
               <div className="grid grid-cols-2 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">
@@ -283,9 +320,7 @@ export default function EV404Page() {
           </div>
 
         </div>
-
       </section>
-
 
       {/* ================= WHY ================= */}
 
@@ -298,7 +333,7 @@ export default function EV404Page() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا EV404 4G؟
+            لماذا تختار جهاز EV404 4G؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -311,7 +346,6 @@ export default function EV404Page() {
 
       </section>
 
-
       {/* ================= CONTACT ================= */}
 
       <section className="mx-auto max-w-5xl px-5 py-16">
@@ -319,7 +353,7 @@ export default function EV404Page() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز EV404 4G؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">
@@ -349,7 +383,6 @@ export default function EV404Page() {
         </div>
 
       </section>
-
 
       {/* ================= FOOTER ================= */}
 
@@ -385,7 +418,6 @@ export default function EV404Page() {
         </div>
 
       </footer>
-
 
       {/* ================= FLOATING WHATSAPP ================= */}
 

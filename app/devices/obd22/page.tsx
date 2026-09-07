@@ -1,4 +1,63 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "OBD22 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+
+  description:
+    "جهاز OBD22 لتتبع السيارات والمركبات في مصر، بتصميم عملي للتركيب من خلال منفذ OBD، مع متابعة الموقع والحركة ودعم أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "OBD22",
+    "جهاز OBD22",
+    "OBD22 GPS",
+    "جهاز تتبع OBD22",
+    "جهاز GPS OBD22",
+    "جهاز GPS",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "OBD GPS Tracker",
+    "جهاز تتبع OBD",
+    "جهاز GPS OBD",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز تتبع سيارات مصر",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/obd22",
+  },
+
+  openGraph: {
+    title: "OBD22 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+    description:
+      "جهاز OBD22 لتتبع السيارات والمركبات باستخدام منفذ OBD، مع متابعة الموقع والحركة من خلال أنظمة GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/obd22",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/OBD22.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "OBD22 جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "OBD22 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+    description:
+      "جهاز OBD22 لتتبع السيارات والمركبات ومتابعة الموقع والحركة من خلال منفذ OBD.",
+    images: ["/images/OBD22.jpeg"],
+  },
+};
 
 const product = {
   name: "OBD22",
@@ -58,7 +117,7 @@ export default function OBD22Page() {
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
             <Image
               src={product.image}
-              alt={product.name}
+              alt="OBD22 جهاز تتبع سيارات GPS بمنفذ OBD في مصر"
               width={650}
               height={500}
               priority
@@ -73,7 +132,7 @@ export default function OBD22Page() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز OBD22 لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -119,7 +178,7 @@ export default function OBD22Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز OBD22
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -167,7 +226,7 @@ export default function OBD22Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز OBD22
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -250,7 +309,7 @@ export default function OBD22Page() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا OBD22؟
+            لماذا تختار جهاز OBD22؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -270,7 +329,7 @@ export default function OBD22Page() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز OBD22؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">

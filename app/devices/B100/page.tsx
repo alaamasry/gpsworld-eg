@@ -1,4 +1,64 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "B100 | جهاز تتبع سيارات GPS في مصر",
+
+  description:
+    "جهاز B100 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة واستخدامه ضمن أنظمة وسيرفرات GPS المتوافقة.",
+
+  keywords: [
+    "B100",
+    "جهاز B100",
+    "B100 GPS",
+    "B100 GPS Tracker",
+    "جهاز تتبع B100",
+    "جهاز GPS B100",
+    "جهاز تتبع سيارات B100",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع سيارات",
+    "أجهزة تتبع GPS",
+    "أجهزة تتبع السيارات",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "جهاز GPS للسيارة",
+    "جهاز تتبع للمركبات",
+    "GPS World Egypt",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/b100",
+  },
+
+  openGraph: {
+    title: "B100 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز B100 لتتبع السيارات والمركبات ومتابعة الموقع والحركة من خلال أنظمة وسيرفرات GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/b100",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/B100.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "B100 جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "B100 | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز B100 لتتبع السيارات والمركبات ومتابعة الموقع والحركة باستخدام أنظمة GPS.",
+    images: ["/images/B100.jpeg"],
+  },
+};
 
 const product = {
   name: "B100",
@@ -60,7 +120,7 @@ export default function B100Page() {
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
             <Image
               src={product.image}
-              alt={product.name}
+              alt="B100 جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
@@ -77,7 +137,7 @@ export default function B100Page() {
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز B100 لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -85,9 +145,9 @@ export default function B100Page() {
             </p>
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
-              جهاز B100 مناسب لمتابعة المركبات ومراقبة الموقع
-              والحركة، ويمكن استخدامه ضمن أنظمة وسيرفرات GPS
-              المتوافقة لتوفير متابعة عملية للمركبات.
+              جهاز B100 مناسب لمتابعة المركبات ومراقبة الموقع والحركة،
+              ويمكن استخدامه ضمن أنظمة وسيرفرات GPS المتوافقة لتوفير
+              متابعة عملية للمركبات.
             </p>
 
             {/* ================= BUTTONS ================= */}
@@ -126,7 +186,7 @@ export default function B100Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز B100
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -176,7 +236,7 @@ export default function B100Page() {
           <div className="rounded-3xl bg-white p-7 shadow-md">
 
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز B100
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -259,7 +319,7 @@ export default function B100Page() {
           </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا B100؟
+            لماذا تختار جهاز B100؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -279,7 +339,7 @@ export default function B100Page() {
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
 
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز B100؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">

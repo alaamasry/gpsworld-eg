@@ -1,4 +1,57 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "AT4 PLUS | جهاز تتبع سيارات GPS في مصر",
+  description:
+    "جهاز AT4 PLUS لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة وإدارة المركبات من خلال أنظمة ومنصات GPS المتوافقة.",
+  keywords: [
+    "AT4 PLUS",
+    "جهاز AT4 PLUS",
+    "جهاز تتبع AT4 PLUS",
+    "جهاز GPS AT4 PLUS",
+    "جهاز تتبع سيارات",
+    "جهاز GPS للسيارات",
+    "جهاز تتبع للسيارة",
+    "جهاز تتبع GPS",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "أجهزة GPS مصر",
+    "أجهزة تتبع السيارات",
+    "تتبع السيارات",
+    "تتبع المركبات",
+    "تتبع السيارة من الموبايل",
+    "جهاز GPS للمركبات",
+    "سيرفرات GPS",
+  ],
+  alternates: {
+    canonical: "https://gpsworld-eg.com/devices/at4-plus",
+  },
+  openGraph: {
+    title: "AT4 PLUS | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز AT4 PLUS لتتبع السيارات والمركبات ومتابعة الموقع والحركة من خلال أنظمة ومنصات GPS المتوافقة.",
+    url: "https://gpsworld-eg.com/devices/at4-plus",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+    images: [
+      {
+        url: "/images/AT4 PLUS.jpeg",
+        width: 650,
+        height: 500,
+        alt: "AT4 PLUS جهاز تتبع سيارات GPS في مصر",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AT4 PLUS | جهاز تتبع سيارات GPS في مصر",
+    description:
+      "جهاز AT4 PLUS لتتبع السيارات والمركبات ومتابعة الموقع والحركة.",
+    images: ["/images/AT4 PLUS.jpeg"],
+  },
+};
 
 const product = {
   name: "AT4 PLUS",
@@ -8,9 +61,11 @@ const product = {
 export default function AT4PlusPage() {
   return (
     <main className="min-h-screen bg-gray-50" dir="rtl">
+
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
         <div className="mx-auto max-w-7xl px-5 py-4">
           <div className="flex items-center justify-between">
+
             <a
               href="/"
               className="flex flex-col leading-tight transition hover:text-yellow-300"
@@ -18,6 +73,7 @@ export default function AT4PlusPage() {
               <span className="text-2xl font-extrabold md:text-3xl">
                 GPS World Egypt
               </span>
+
               <span className="mt-1 text-xs text-blue-200 md:text-sm">
                 حلول التتبع والمراقبة GPS
               </span>
@@ -29,9 +85,11 @@ export default function AT4PlusPage() {
             >
               📡 الأجهزة
             </a>
+
           </div>
         </div>
       </header>
+
 
       <div className="mx-auto max-w-7xl px-5 pt-6">
         <a
@@ -42,12 +100,14 @@ export default function AT4PlusPage() {
         </a>
       </div>
 
+
       <section className="mx-auto max-w-7xl px-5 py-10">
         <div className="grid gap-10 lg:grid-cols-2">
+
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
             <Image
               src={product.image}
-              alt={product.name}
+              alt="AT4 PLUS جهاز تتبع سيارات GPS في مصر"
               width={650}
               height={500}
               priority
@@ -55,13 +115,15 @@ export default function AT4PlusPage() {
             />
           </div>
 
+
           <div className="flex flex-col justify-center">
+
             <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
               ✓ متوفر
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              {product.name}
+              جهاز AT4 PLUS لتتبع السيارات والمركبات في مصر
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
@@ -69,12 +131,15 @@ export default function AT4PlusPage() {
             </p>
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
-              جهاز AT4 PLUS مصمم لتوفير حل عملي لمتابعة المركبات وإدارتها
-              من خلال أنظمة التتبع GPS، مع تصميم مناسب للاستخدام في العديد
-              من تطبيقات المراقبة وتتبع السيارات.
+              جهاز AT4 PLUS مصمم لتوفير حل عملي لمتابعة السيارات
+              والمركبات وإدارتها من خلال أنظمة التتبع GPS، مع تصميم
+              مناسب للاستخدام في تطبيقات المراقبة وتتبع السيارات
+              وإدارة المركبات.
             </p>
 
+
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
+
               <a
                 href="https://wa.me/201006687163?text=مرحباً، أريد الاستفسار عن جهاز AT4 PLUS"
                 target="_blank"
@@ -90,19 +155,27 @@ export default function AT4PlusPage() {
               >
                 📞 اتصل بنا
               </a>
+
             </div>
+
           </div>
+
         </div>
       </section>
 
+
       <section className="mx-auto max-w-7xl px-5 pb-16">
+
         <div className="grid gap-8 lg:grid-cols-2">
+
           <div className="rounded-3xl bg-white p-7 shadow-md">
+
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات الجهاز
+              ⭐ أهم مميزات جهاز AT4 PLUS
             </h2>
 
             <ul className="space-y-4 text-lg leading-8 text-gray-700">
+
               <li>✓ تتبع موقع المركبة ومتابعة حركتها.</li>
               <li>✓ مناسب لمراقبة السيارات والمركبات.</li>
               <li>✓ تصميم عملي وسهل الاستخدام.</li>
@@ -111,88 +184,120 @@ export default function AT4PlusPage() {
               <li>✓ يساعد على تنظيم ومتابعة المركبات.</li>
               <li>✓ قابل للاستخدام في تطبيقات التتبع المختلفة.</li>
               <li>✓ حل عملي لمتابعة المركبات وإدارتها.</li>
+
             </ul>
+
           </div>
 
+
           <div className="rounded-3xl bg-white p-7 shadow-md">
+
             <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية
+              ⚙️ المواصفات الفنية لجهاز AT4 PLUS
             </h2>
 
             <div className="overflow-hidden rounded-2xl border border-gray-200">
+
               <div className="grid grid-cols-2 border-b border-gray-200">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الموديل
                 </div>
-                <div className="p-4 text-gray-600">AT4 PLUS</div>
+                <div className="p-4 text-gray-600">
+                  AT4 PLUS
+                </div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   النوع
                 </div>
-                <div className="p-4 text-gray-600">جهاز تتبع GPS</div>
+                <div className="p-4 text-gray-600">
+                  جهاز تتبع GPS
+                </div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الاستخدام
                 </div>
-                <div className="p-4 text-gray-600">تتبع المركبات</div>
+                <div className="p-4 text-gray-600">
+                  تتبع المركبات
+                </div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   المتابعة
                 </div>
-                <div className="p-4 text-gray-600">منصة GPS</div>
+                <div className="p-4 text-gray-600">
+                  منصة GPS
+                </div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   التركيب
                 </div>
-                <div className="p-4 text-gray-600">داخل المركبة</div>
+                <div className="p-4 text-gray-600">
+                  داخل المركبة
+                </div>
               </div>
 
               <div className="grid grid-cols-2">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الحالة
                 </div>
-                <div className="p-4 text-green-600">متوفر</div>
+                <div className="p-4 text-green-600">
+                  متوفر
+                </div>
               </div>
+
             </div>
+
           </div>
+
         </div>
       </section>
 
+
       <section className="bg-blue-50 px-5 py-16">
+
         <div className="mx-auto max-w-5xl text-center">
-          <span className="font-bold text-blue-700">GPS World Egypt</span>
+
+          <span className="font-bold text-blue-700">
+            GPS World Egypt
+          </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا AT4 PLUS؟
+            لماذا تختار جهاز AT4 PLUS؟
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-            AT4 PLUS يوفر حلاً عمليًا لمتابعة المركبات وإدارتها من خلال
-            نظام التتبع GPS، وهو مناسب للأفراد والشركات وأصحاب الأساطيل
-            الذين يحتاجون إلى متابعة مركباتهم بصورة أفضل وأكثر تنظيمًا.
+            جهاز AT4 PLUS يوفر حلاً عمليًا لمتابعة السيارات والمركبات
+            وإدارتها من خلال نظام التتبع GPS، وهو مناسب للأفراد
+            والشركات وأصحاب الأساطيل الذين يحتاجون إلى متابعة
+            مركباتهم بصورة أفضل وأكثر تنظيمًا.
           </p>
+
         </div>
+
       </section>
 
+
       <section className="mx-auto max-w-5xl px-5 py-16">
+
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
+
           <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن الجهاز؟
+            هل تريد معرفة المزيد عن جهاز AT4 PLUS؟
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">
-            تواصل معنا لمعرفة التفاصيل والتوفر وطلب الجهاز.
+            تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز التتبع.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+
             <a
               href="https://wa.me/201006687163?text=مرحباً، أريد طلب جهاز AT4 PLUS"
               target="_blank"
@@ -208,19 +313,29 @@ export default function AT4PlusPage() {
             >
               📡 مشاهدة باقي الأجهزة
             </a>
+
           </div>
+
         </div>
+
       </section>
 
+
       <footer className="bg-blue-950 text-white">
+
         <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-          <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
+
+          <h3 className="text-2xl font-extrabold">
+            GPS World Egypt
+          </h3>
 
           <p className="mt-3 text-blue-200">
-            أجهزة GPS للتتبع والمراقبة
+            أجهزة GPS للتتبع والمراقبة في مصر
           </p>
 
-          <p className="mt-5 text-blue-300">📞 01006687163</p>
+          <p className="mt-5 text-blue-300">
+            📞 01006687163
+          </p>
 
           <a
             href="https://wa.me/201006687163"
@@ -234,8 +349,11 @@ export default function AT4PlusPage() {
           <div className="mt-8 border-t border-blue-800 pt-5 text-sm text-blue-300">
             © 2026 GPS World Egypt - جميع الحقوق محفوظة
           </div>
+
         </div>
+
       </footer>
+
 
       <a
         href="https://wa.me/201006687163"
@@ -246,6 +364,7 @@ export default function AT4PlusPage() {
       >
         💬
       </a>
+
     </main>
   );
 }

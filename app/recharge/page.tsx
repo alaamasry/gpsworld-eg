@@ -1,4 +1,57 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "شحن نقاط سيرفرات GPS وتجديد الخدمة في مصر",
+
+  description:
+    "خدمة شحن وتجديد نقاط سيرفرات GPS لأجهزة التتبع في مصر، مع المساعدة الفنية وربط أجهزة GPS بالسيرفر ومتابعة استمرار خدمة التتبع.",
+
+  keywords: [
+    "شحن نقاط GPS",
+    "شحن نقاط السيرفر",
+    "شحن نقاط سيرفرات GPS",
+    "شحن سيرفر GPS",
+    "تجديد نقاط GPS",
+    "تجديد سيرفر GPS",
+    "شحن كروت السيرفر",
+    "كروت سيرفرات GPS",
+    "شحن نقاط أجهزة GPS",
+    "شحن سيرفرات التتبع",
+    "تجديد خدمة GPS",
+    "تجديد خدمة أجهزة GPS",
+    "سيرفرات GPS",
+    "برامج GPS",
+    "أجهزة GPS",
+    "أجهزة تتبع GPS",
+    "جهاز تتبع سيارات",
+    "GPS Tracker مصر",
+    "شحن GPS مصر",
+    "شحن نقاط GPS مصر",
+    "GPS World Egypt",
+  ],
+
+  alternates: {
+    canonical: "https://gpsworld-eg.com/recharge",
+  },
+
+  openGraph: {
+    title: "شحن نقاط سيرفرات GPS وتجديد الخدمة في مصر",
+    description:
+      "شحن وتجديد نقاط سيرفرات GPS لأجهزة التتبع مع المساعدة الفنية ومتابعة استمرار الخدمة.",
+    url: "https://gpsworld-eg.com/recharge",
+    siteName: "GPS World Egypt",
+    locale: "ar_EG",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "شحن نقاط سيرفرات GPS وتجديد الخدمة في مصر",
+    description:
+      "شحن وتجديد نقاط سيرفرات GPS لأجهزة التتبع في مصر مع الدعم الفني.",
+  },
+};
 
 const plans = [
   {
@@ -24,9 +77,12 @@ const plans = [
 export default function RechargePage() {
   return (
     <main className="min-h-screen bg-white text-gray-900" dir="rtl">
+
       {/* Header */}
+
       <header className="sticky top-0 z-50 bg-[#071a35] text-white shadow-lg">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
+
           <Link href="/" className="flex flex-col">
             <span className="text-xl font-extrabold tracking-wide">
               GPS World Egypt
@@ -38,6 +94,7 @@ export default function RechargePage() {
           </Link>
 
           <nav className="flex items-center gap-4 text-sm font-semibold sm:gap-7">
+
             <Link
               href="/"
               className="transition hover:text-blue-300"
@@ -58,13 +115,17 @@ export default function RechargePage() {
             >
               البرامج والسيرفرات
             </Link>
+
           </nav>
         </div>
       </header>
 
       {/* Hero */}
+
       <section className="bg-gradient-to-b from-blue-50 to-white">
+
         <div className="mx-auto max-w-7xl px-5 py-20 text-center md:py-28">
+
           <div className="mb-5 inline-flex rounded-full bg-blue-100 px-5 py-2 text-sm font-bold text-blue-800">
             💳 شحن نقاط السيرفرات
           </div>
@@ -73,13 +134,13 @@ export default function RechargePage() {
             شحن وتجديد
             <br />
             <span className="text-blue-700">
-              نقاط سيرفرات GPS
+              نقاط سيرفرات GPS في مصر
             </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-gray-600 md:text-lg">
             نوفر خدمة شحن وتجديد نقاط السيرفرات الخاصة بأجهزة GPS،
-            مع متابعة ومساعدة فنية لضمان استمرار الخدمة.
+            مع متابعة ومساعدة فنية لضمان استمرار خدمة التتبع.
           </p>
 
           <a
@@ -90,33 +151,42 @@ export default function RechargePage() {
           >
             💬 اطلب الشحن عبر واتساب
           </a>
+
         </div>
+
       </section>
 
       {/* Services */}
+
       <section className="bg-white py-20">
+
         <div className="mx-auto max-w-7xl px-5">
+
           <div className="mb-12 text-center">
+
             <span className="text-sm font-bold text-blue-700">
               خدمات الشحن
             </span>
 
             <h2 className="mt-2 text-3xl font-black text-[#071a35] md:text-4xl">
-              خدماتنا الخاصة بالسيرفر
+              خدمات شحن وتجديد نقاط سيرفرات GPS
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
               نوفر لك خدمات شحن وتجديد ومتابعة نقاط السيرفرات
               الخاصة بأجهزة GPS.
             </p>
+
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+
             {plans.map((plan) => (
               <div
                 key={plan.title}
                 className="rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
+
                 <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl bg-blue-50 text-4xl">
                   {plan.icon}
                 </div>
@@ -137,27 +207,36 @@ export default function RechargePage() {
                 >
                   استفسر الآن
                 </a>
+
               </div>
             ))}
+
           </div>
         </div>
       </section>
 
       {/* How it works */}
+
       <section className="bg-gray-50 py-20">
+
         <div className="mx-auto max-w-6xl px-5">
+
           <div className="mb-12 text-center">
+
             <span className="text-sm font-bold text-blue-700">
               طريقة الخدمة
             </span>
 
             <h2 className="mt-2 text-3xl font-black text-[#071a35] md:text-4xl">
-              الشحن بكل سهولة
+              طريقة شحن نقاط السيرفر بسهولة
             </h2>
+
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+
             <div className="rounded-3xl bg-white p-7 text-center shadow-sm">
+
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blue-700 text-xl font-black text-white">
                 1
               </div>
@@ -169,9 +248,11 @@ export default function RechargePage() {
               <p className="mt-3 leading-7 text-gray-600">
                 أرسل لنا بيانات الخدمة أو الحساب المطلوب شحنه.
               </p>
+
             </div>
 
             <div className="rounded-3xl bg-white p-7 text-center shadow-sm">
+
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blue-700 text-xl font-black text-white">
                 2
               </div>
@@ -183,9 +264,11 @@ export default function RechargePage() {
               <p className="mt-3 leading-7 text-gray-600">
                 نحدد لك الخدمة المناسبة وعدد النقاط المطلوبة.
               </p>
+
             </div>
 
             <div className="rounded-3xl bg-white p-7 text-center shadow-sm">
+
               <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-blue-700 text-xl font-black text-white">
                 3
               </div>
@@ -197,33 +280,44 @@ export default function RechargePage() {
               <p className="mt-3 leading-7 text-gray-600">
                 يتم تنفيذ الشحن ومتابعة الخدمة معك.
               </p>
+
             </div>
+
           </div>
         </div>
       </section>
 
       {/* Important Notice */}
+
       <section className="bg-white py-20">
+
         <div className="mx-auto max-w-5xl px-5">
+
           <div className="rounded-3xl border border-blue-100 bg-blue-50 p-7 md:p-10">
+
             <div className="flex flex-col items-center gap-5 text-center md:flex-row md:text-right">
+
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-blue-700 text-3xl text-white">
                 ℹ️
               </div>
 
               <div>
+
                 <h2 className="text-2xl font-black text-[#071a35]">
-                  محتاج تعرف عدد النقاط أو السعر؟
+                  محتاج تعرف عدد نقاط السيرفر أو السعر؟
                 </h2>
 
                 <p className="mt-3 leading-7 text-gray-600">
                   تواصل معنا وأرسل بيانات السيرفر أو الخدمة المطلوبة،
                   وسنوضح لك التفاصيل والسعر المناسب.
                 </p>
+
               </div>
+
             </div>
 
             <div className="mt-7 text-center">
+
               <a
                 href="https://wa.me/201006687163"
                 target="_blank"
@@ -232,15 +326,22 @@ export default function RechargePage() {
               >
                 💬 تواصل معنا عبر واتساب
               </a>
+
             </div>
+
           </div>
         </div>
       </section>
 
       {/* CTA */}
+
       <section className="bg-[#071a35] py-20 text-white">
+
         <div className="mx-auto max-w-5xl px-5 text-center">
-          <div className="text-4xl">📡</div>
+
+          <div className="text-4xl">
+            📡
+          </div>
 
           <h2 className="mt-4 text-3xl font-black md:text-4xl">
             حافظ على استمرار خدمة التتبع
@@ -259,12 +360,17 @@ export default function RechargePage() {
           >
             💬 تواصل عبر واتساب
           </a>
+
         </div>
+
       </section>
 
       {/* Footer */}
+
       <footer className="bg-[#041225] py-10 text-white">
+
         <div className="mx-auto max-w-7xl px-5 text-center">
+
           <h3 className="text-xl font-extrabold">
             GPS World Egypt
           </h3>
@@ -274,6 +380,7 @@ export default function RechargePage() {
           </p>
 
           <div className="mt-5 flex flex-wrap justify-center gap-6 text-sm">
+
             <Link
               href="/"
               className="text-gray-400 transition hover:text-white"
@@ -303,15 +410,19 @@ export default function RechargePage() {
             >
               واتساب
             </a>
+
           </div>
 
           <div className="mt-8 border-t border-gray-800 pt-6 text-sm text-gray-500">
             © 2026 GPS World Egypt - جميع الحقوق محفوظة
           </div>
+
         </div>
+
       </footer>
 
       {/* Floating WhatsApp */}
+
       <a
         href="https://wa.me/201006687163"
         target="_blank"
@@ -321,6 +432,7 @@ export default function RechargePage() {
       >
         💬
       </a>
+
     </main>
   );
 }
