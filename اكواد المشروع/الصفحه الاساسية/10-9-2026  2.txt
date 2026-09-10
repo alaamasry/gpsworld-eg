@@ -12,6 +12,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS احترافي للتتبع والمراقبة.",
   },
+
   {
     id: "gt06n-4g",
     name: "GT06N 4G",
@@ -20,6 +21,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS للتتبع.",
   },
+
   {
     id: "ev402-2g",
     name: "ev402 2G",
@@ -28,6 +30,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS للتتبع.",
   },
+
   {
     id: "ev404-4g",
     name: "ev404 4G",
@@ -36,6 +39,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS للتتبع.",
   },
+
   {
     id: "j16pro-max",
     name: "J16PRO Max",
@@ -44,6 +48,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS احترافي للتتبع والمراقبة.",
   },
+
   {
     id: "AK300",
     name: "AK300",
@@ -52,6 +57,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS احترافي للتتبع والمراقبة.",
   },
+
   {
     id: "B100",
     name: "B100",
@@ -60,6 +66,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS احترافي للتتبع والمراقبة.",
   },
+
   {
     id: "EV505",
     name: "EV505",
@@ -68,6 +75,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS احترافي للتتبع والمراقبة.",
   },
+
   {
     id: "tk303",
     name: "TK303",
@@ -76,6 +84,7 @@ const devices = [
     badgeColor: "bg-yellow-500",
     description: "مناسب للسيارات والدراجات النارية.",
   },
+
   {
     id: "obd22",
     name: "OBD22",
@@ -84,6 +93,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز تتبع GPS يعمل من خلال منفذ OBD.",
   },
+
   {
     id: "obdvl505",
     name: "OBD VL505",
@@ -92,6 +102,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز تتبع GPS عملي وسهل التركيب.",
   },
+
   {
     id: "qbit",
     name: "QBIT",
@@ -100,6 +111,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS صغير الحجم للتتبع والمراقبة.",
   },
+
   {
     id: "w15l",
     name: "W15L",
@@ -108,6 +120,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS للتتبع والمراقبة.",
   },
+
   {
     id: "at4",
     name: "AT4",
@@ -116,6 +129,7 @@ const devices = [
     badgeColor: "bg-blue-600",
     description: "جهاز GPS احترافي للتتبع والمراقبة.",
   },
+
   {
     id: "at4-plus",
     name: "AT4 PLUS",
@@ -164,10 +178,7 @@ export default function Home() {
           {/* Menu */}
           {menuOpen && (
             <nav className="mt-5 border-t border-blue-700 pt-4">
-              <div
-                className="flex flex-col gap-3 text-right"
-                dir="rtl"
-              >
+              <div className="flex flex-col gap-3 text-right" dir="rtl">
 
                 <a
                   href="#"
@@ -223,7 +234,7 @@ export default function Home() {
           أجهزة GPS الأصلية
         </h2>
 
-        <p className="text-xl text-gray-800 font-semibold mb-10">
+        <p className="text-xl text-gray-600 mb-10">
           بيع أجهزة التتبع - شحن نقاط السيرفرات - السوفت وير - الدعم الفني
         </p>
 
@@ -233,14 +244,14 @@ export default function Home() {
             href="https://wa.me/201006687163"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition font-bold"
+            className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition"
           >
             تواصل واتساب
           </a>
 
           <a
             href="#products"
-            className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-bold"
+            className="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
           >
             عرض الأجهزة
           </a>
@@ -255,7 +266,7 @@ export default function Home() {
         className="max-w-7xl mx-auto py-16 px-5"
       >
 
-        <h2 className="text-3xl font-bold text-center mb-10 text-blue-900">
+        <h2 className="text-3xl font-bold text-center mb-10">
           أجهزة GPS للتتبع
         </h2>
 
@@ -265,7 +276,7 @@ export default function Home() {
 
             <div
               key={index}
-              className="border rounded-xl p-5 shadow-lg hover:shadow-2xl transition bg-white"
+              className="border rounded-xl p-5 shadow-lg hover:shadow-2xl transition"
             >
 
               <Image
@@ -277,38 +288,35 @@ export default function Home() {
               />
 
               <span
-                className={`${device.badgeColor} text-white text-sm px-3 py-1 rounded-full mt-4 inline-block font-bold`}
+                className={`${device.badgeColor} text-white text-sm px-3 py-1 rounded-full mt-4 inline-block`}
               >
                 {device.badge}
               </span>
 
-              <h3 className="text-2xl font-bold mt-4 text-gray-900">
+              <h3 className="text-2xl font-bold mt-4">
                 {device.name}
               </h3>
 
-              <p className="text-gray-900 font-semibold mt-3">
+              <p className="text-gray-600 mt-3">
                 {device.description}
               </p>
 
               {/* عرض التفاصيل */}
               <a
                 href={device.id ? `/devices/${device.id}` : "#"}
-                className="mt-5 w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 block text-center font-bold"
+                className="mt-5 w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 block text-center"
               >
                 عرض التفاصيل
               </a>
 
               {/* استفسار واتساب عن الموديل */}
               <a
-                href={
-                  "https://wa.me/201006687163?text=" +
-                  encodeURIComponent(
-                    `مرحبًا، أريد الاستفسار عن جهاز GPS موديل ${device.name}`
-                  )
-                }
+                href={`https://wa.me/201006687163?text=${encodeURIComponent(
+                  `مرحبًا، أريد الاستفسار عن جهاز GPS موديل ${device.name}`
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 block text-center font-bold"
+                className="mt-3 w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 block text-center"
               >
                 💬 استفسار عن {device.name}
               </a>
@@ -327,33 +335,33 @@ export default function Home() {
         className="max-w-7xl mx-auto py-16 px-5"
       >
 
-        <h2 className="text-3xl font-bold text-center mb-4 text-blue-900">
+        <h2 className="text-3xl font-bold text-center mb-4">
           السوفت وير
         </h2>
 
-        <p className="text-center text-gray-900 font-semibold text-lg mb-10">
+        <p className="text-center text-gray-600 text-lg mb-10">
           برامج وحلول GPS المتاحة لعملائنا
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
 
-          <div className="border rounded-xl p-5 shadow-lg hover:shadow-2xl transition bg-white">
+          <div className="border rounded-xl p-5 shadow-lg hover:shadow-2xl transition">
 
             <div className="h-52 flex items-center justify-center bg-gray-50 rounded-lg">
               <span className="text-5xl">💻</span>
             </div>
 
-            <h3 className="text-2xl font-bold mt-4 text-center text-gray-900">
+            <h3 className="text-2xl font-bold mt-4 text-center">
               السوفت وير
             </h3>
 
-            <p className="text-gray-900 font-semibold mt-3 text-center">
+            <p className="text-gray-600 mt-3 text-center">
               برامج GPS وحلول متابعة وإدارة أجهزة التتبع.
             </p>
 
             <a
               href="#"
-              className="mt-5 w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 block text-center font-bold"
+              className="mt-5 w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800 block text-center"
             >
               دخول
             </a>
@@ -370,53 +378,47 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 py-12">
 
           <div>
-
             <h3 className="text-2xl font-bold mb-4">
               GPS World Egypt
             </h3>
 
-            <p className="text-gray-100 font-semibold leading-8">
+            <p className="text-gray-300 leading-8">
               بيع أجهزة GPS الأصلية
               <br />
               شحن نقاط السيرفرات
               <br />
               السوفت وير والدعم الفني
             </p>
-
           </div>
 
           <div>
-
             <h3 className="text-2xl font-bold mb-4">
               خدماتنا
             </h3>
 
-            <ul className="space-y-2 text-gray-100 font-semibold">
+            <ul className="space-y-2 text-gray-300">
               <li>🛰️ أجهزة GPS</li>
               <li>💳 شحن نقاط السيرفرات</li>
               <li>💻 السوفت وير</li>
               <li>🛠️ الدعم الفني</li>
             </ul>
-
           </div>
 
           <div>
-
             <h3 className="text-2xl font-bold mb-4">
               تواصل معنا
             </h3>
 
-            <ul className="space-y-2 text-gray-100 font-semibold">
+            <ul className="space-y-2 text-gray-300">
               <li>📞 01006687163</li>
               <li>📍 القاهرة - مصر</li>
               <li>📱 WhatsApp</li>
             </ul>
-
           </div>
 
         </div>
 
-        <div className="border-t border-blue-700 text-center py-4 text-gray-100 font-semibold">
+        <div className="border-t border-blue-700 text-center py-4 text-gray-300">
           © 2026 GPS World Egypt - جميع الحقوق محفوظة
         </div>
 
