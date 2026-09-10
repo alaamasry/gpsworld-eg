@@ -53,6 +53,7 @@ export const metadata: Metadata = {
 const product = {
   name: "GT06N 4G",
   image: "/images/GT06N 4G.jpeg",
+  url: "https://gpsworld-eg.com/devices/gt06n-4g",
 };
 
 const whatsappNumber = "201006687163";
@@ -73,9 +74,95 @@ const whatsappOrderUrl =
 
 const whatsappBaseUrl = "https://wa.me/201006687163";
 
+const faqItems = [
+  {
+    question: "هل جهاز GT06N 4G مناسب للسيارات؟",
+    answer:
+      "نعم، الجهاز مناسب لتطبيقات تتبع ومراقبة السيارات والمركبات.",
+  },
+  {
+    question: "ما جهد تشغيل جهاز GT06N 4G؟",
+    answer: "جهد التشغيل هو 9V – 90V DC.",
+  },
+  {
+    question: "هل الجهاز يدعم التتبع اللحظي؟",
+    answer:
+      "نعم، يدعم التتبع اللحظي من خلال نظام أو سيرفر GPS متوافق.",
+  },
+  {
+    question: "هل يدعم الجهاز السياج الجغرافي؟",
+    answer:
+      "نعم، يدعم وظائف السياج الجغرافي حسب نظام التتبع المستخدم.",
+  },
+  {
+    question: "هل يمكن التحكم في فصل الكهرباء أو الوقود؟",
+    answer:
+      "يمكن ذلك عند تجهيز السيارة بالتوصيل المناسب ودعم السيرفر أو النظام المستخدم لهذه الوظيفة.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      name: product.name,
+      image: ["https://gpsworld-eg.com/images/GT06N%204G.jpeg"],
+      url: product.url,
+      description:
+        "جهاز GT06N 4G لتتبع السيارات والمركبات في مصر باستخدام تقنية 4G ونظام GPS.",
+      brand: {
+        "@type": "Brand",
+        name: "GPS World Egypt",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "الرئيسية",
+          item: "https://gpsworld-eg.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "أجهزة GPS",
+          item: "https://gpsworld-eg.com/#products",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "GT06N 4G",
+          item: product.url,
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer,
+        },
+      })),
+    },
+  ],
+};
+
 export default function GT06N4GPage() {
   return (
     <main className="min-h-screen bg-gray-50" dir="rtl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+
       {/* HEADER */}
 
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
@@ -177,6 +264,36 @@ export default function GT06N4GPage() {
         </div>
       </section>
 
+      {/* SEO INTRO */}
+
+      <section className="mx-auto max-w-5xl px-5 pb-16">
+        <div className="rounded-3xl bg-white p-8 shadow-md md:p-10">
+          <h2 className="text-center text-3xl font-extrabold text-blue-950">
+            GT06N 4G جهاز تتبع سيارات GPS
+          </h2>
+
+          <div className="mt-6 text-lg font-semibold leading-9 text-gray-700">
+            <p className="mb-5">
+              جهاز GT06N 4G هو جهاز GPS لتتبع السيارات والمركبات باستخدام شبكة
+              4G، ويتيح متابعة موقع المركبة وحركتها من خلال نظام أو سيرفر GPS
+              متوافق.
+            </p>
+
+            <p className="mb-5">
+              يناسب الجهاز العديد من تطبيقات تتبع السيارات والمركبات، ويمكن
+              استخدامه في السيارات الخاصة والمركبات التجارية وسيارات الأجرة
+              وأساطيل الشركات حسب نظام التتبع وطريقة التركيب.
+            </p>
+
+            <p>
+              إذا كنت تبحث عن جهاز تتبع سيارة 4G أو جهاز GPS للسيارات في مصر،
+              يمكنك التواصل معنا لمعرفة التفاصيل والتوفر وطريقة التركيب
+              والنظام المناسب للجهاز.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURES */}
 
       <section className="mx-auto max-w-7xl px-5 pb-16">
@@ -209,7 +326,9 @@ export default function GT06N4GPage() {
 
               <li>🛠️ مناسب للعمل مع أنظمة وسيرفرات GPS المتوافقة.</li>
 
-              <li>📲 إمكانية متابعة بيانات الجهاز من خلال أنظمة التتبع المناسبة.</li>
+              <li>
+                📲 إمكانية متابعة بيانات الجهاز من خلال أنظمة التتبع المناسبة.
+              </li>
 
               <li>🛡️ مناسب لحماية السيارة ومراقبة الحركة والمسار.</li>
             </ul>
@@ -225,13 +344,11 @@ export default function GT06N4GPage() {
             <div className="overflow-hidden rounded-2xl border border-gray-200">
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">الموديل</span>
-
                 <span className="text-gray-600">GT06N 4G</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">الشبكة</span>
-
                 <span className="text-gray-600">4G LTE</span>
               </div>
 
@@ -239,7 +356,6 @@ export default function GT06N4GPage() {
                 <span className="font-bold text-gray-800">
                   تحديد الموقع
                 </span>
-
                 <span className="text-gray-600">GPS</span>
               </div>
 
@@ -255,13 +371,11 @@ export default function GT06N4GPage() {
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">الاتصال</span>
-
                 <span className="text-gray-600">GPRS / TCP-IP</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">التتبع</span>
-
                 <span className="text-gray-600">تتبع لحظي</span>
               </div>
 
@@ -470,56 +584,20 @@ export default function GT06N4GPage() {
         </h2>
 
         <div className="mt-10 space-y-5">
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل جهاز GT06N 4G مناسب للسيارات؟
-            </summary>
+          {faqItems.map((item) => (
+            <details
+              key={item.question}
+              className="rounded-2xl bg-white p-6 shadow-md"
+            >
+              <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
+                {item.question}
+              </summary>
 
-            <p className="mt-4 leading-8 text-gray-600">
-              نعم، الجهاز مناسب لتطبيقات تتبع ومراقبة السيارات والمركبات.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              ما جهد تشغيل جهاز GT06N 4G؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              جهد التشغيل هو 9V – 90V DC.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل الجهاز يدعم التتبع اللحظي؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              نعم، يدعم التتبع اللحظي من خلال نظام أو سيرفر GPS متوافق.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل يدعم الجهاز السياج الجغرافي؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              نعم، يدعم وظائف السياج الجغرافي حسب نظام التتبع المستخدم.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل يمكن التحكم في فصل الكهرباء أو الوقود؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              يمكن ذلك عند تجهيز السيارة بالتوصيل المناسب ودعم السيرفر أو
-              النظام المستخدم لهذه الوظيفة.
-            </p>
-          </details>
+              <p className="mt-4 leading-8 text-gray-600">
+                {item.answer}
+              </p>
+            </details>
+          ))}
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gpsworld-eg.com"),
+  metadataBase: new URL("https://www.gpsworld-eg.com"),
 
   verification: {
     google: "AWOgcowOWabzJUJ9Q7VQHNdyVEa2M0IjGlFhMtZFKqU",
@@ -14,21 +14,27 @@ export const metadata: Metadata = {
   },
 
   description:
-    "GPS World Egypt يوفر أجهزة GPS وتتبع السيارات والمركبات والموتوسيكلات والتروسيكلات في مصر، مع أجهزة 2G و4G وبرامج وسيرفرات GPS وشحن نقاط السيرفرات والدعم الفني.",
+    "GPS World Egypt يوفر أجهزة GPS وأجهزة تتبع السيارات والمركبات والموتوسيكلات والتروسيكلات في مصر، مع أجهزة GPS 2G و4G وحلول GPS Tracking وبرامج وسيرفرات GPS والدعم الفني.",
 
   keywords: [
     "أجهزة GPS",
+    "اجهزة GPS",
+    "أجهزة جي بي اس",
+    "اجهزة جي بي اس",
+    "أجهزة جى بى اس",
+    "اجهزة جى بى اس",
     "جهاز GPS",
-    "جهاز تتبع سيارات",
     "أجهزة تتبع GPS",
+    "جهاز تتبع سيارات",
+    "جهاز تتبع سيارة",
+    "أجهزة تتبع السيارات",
+    "أجهزة تتبع المركبات",
+    "تتبع السيارات",
+    "GPS للسيارات",
+    "GPS مصر",
+    "أجهزة GPS مصر",
     "جهاز GPS للسيارات",
     "جهاز تتبع للسيارة",
-    "GPS للسيارات",
-    "GPS Tracker",
-    "GPS Tracker مصر",
-    "أجهزة GPS مصر",
-    "أجهزة تتبع السيارات",
-    "تتبع السيارات",
     "جهاز تتبع موتوسيكلات",
     "جهاز GPS للموتوسيكل",
     "جهاز تتبع للتروسيكل",
@@ -37,6 +43,16 @@ export const metadata: Metadata = {
     "جهاز GPS 4G",
     "جهاز تتبع 2G",
     "جهاز GPS 2G",
+    "GPS Tracker",
+    "GPS Tracking",
+    "GPS Tracker Egypt",
+    "GPS Tracking Egypt",
+    "GPS Devices",
+    "GPS Devices Egypt",
+    "Car GPS",
+    "Car GPS Tracker",
+    "Vehicle GPS Tracker",
+    "GPS Tracking Device",
     "برامج GPS",
     "سيرفرات GPS",
     "شحن نقاط السيرفرات",
@@ -44,7 +60,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://gpsworld-eg.com",
+    canonical: "https://www.gpsworld-eg.com",
   },
 
   robots: {
@@ -62,8 +78,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GPS World Egypt | أجهزة GPS وتتبع السيارات في مصر",
     description:
-      "أجهزة GPS للسيارات والمركبات والموتوسيكلات والتروسيكلات، مع حلول التتبع والمراقبة وأجهزة 2G و4G وبرامج وسيرفرات GPS والدعم الفني.",
-    url: "https://gpsworld-eg.com",
+      "أجهزة GPS وأجهزة تتبع السيارات والمركبات والموتوسيكلات والتروسيكلات في مصر، مع حلول GPS Tracking وأجهزة 2G و4G وبرامج وسيرفرات GPS والدعم الفني.",
+    url: "https://www.gpsworld-eg.com",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
     type: "website",
@@ -81,7 +97,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "GPS World Egypt | أجهزة GPS وتتبع السيارات في مصر",
     description:
-      "أجهزة GPS للسيارات والمركبات وحلول التتبع والمراقبة والبرامج والسيرفرات في مصر.",
+      "أجهزة GPS وأجهزة تتبع السيارات والمركبات وحلول GPS Tracking والبرامج والسيرفرات في مصر.",
     images: ["/images/logo-gps-world-egypt.png"],
   },
 

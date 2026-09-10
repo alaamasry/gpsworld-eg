@@ -59,6 +59,7 @@ export const metadata: Metadata = {
 const product = {
   name: "AT4",
   image: "/images/AT4.jpeg",
+  url: "https://gpsworld-eg.com/devices/at4",
 };
 
 const whatsappNumber = "201006687163";
@@ -79,11 +80,107 @@ const whatsappOrderUrl =
 
 const whatsappBaseUrl = "https://wa.me/201006687163";
 
+const faqs = [
+  {
+    question: "ما هو جهاز AT4؟",
+    answer:
+      "AT4 هو جهاز تتبع GPS مغناطيسي للسيارات والمركبات، مصمم للعمل بدون توصيل أسلاك داخل المركبة، ويحتوي على بطارية 10000mAh ومغناطيس قوي للتثبيت.",
+  },
+  {
+    question: "هل جهاز AT4 يحتاج إلى تركيب أسلاك؟",
+    answer:
+      "لا، جهاز AT4 مصمم للعمل بدون أسلاك داخل السيارة، ويتم تثبيته باستخدام المغناطيس القوي، مع شحن البطارية عند الحاجة.",
+  },
+  {
+    question: "كم سعة بطارية جهاز AT4؟",
+    answer:
+      "بطارية جهاز AT4 بسعة 10000mAh، وتساعد على تشغيل الجهاز لفترة طويلة حسب الاستخدام وإعدادات التتبع.",
+  },
+  {
+    question: "هل يمكن متابعة AT4 من الموبايل؟",
+    answer:
+      "نعم، يمكن متابعة الجهاز من خلال منصة وتطبيق Tracksolid Pro على الهواتف التي تعمل بنظام Android وiOS حسب إعداد النظام والحساب.",
+  },
+  {
+    question: "هل جهاز AT4 مناسب لتتبع السيارات ضد السرقة؟",
+    answer:
+      "يمكن استخدام AT4 لمتابعة موقع السيارة وحركتها وإرسال التنبيهات المتعلقة بالحركة والسرعة والسياج الجغرافي، مما يساعد في متابعة المركبة والحماية من الاستخدام غير المصرح به.",
+  },
+  {
+    question: "هل جهاز AT4 مقاوم للماء والغبار؟",
+    answer:
+      "الجهاز مصمم ليكون مناسبًا للاستخدام في ظروف الطقس المختلفة، مع مقاومة للماء والغبار حسب مواصفات الجهاز.",
+  },
+  {
+    question: "هل يوجد ضمان على جهاز AT4؟",
+    answer:
+      "يوجد ضمان لمدة سنة ضد عيوب التصنيع، ولا يشمل الحرق أو الكسر أو التلف الناتج عن سوء الاستخدام.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      name: product.name,
+      image: ["https://gpsworld-eg.com/images/AT4.jpeg"],
+      url: product.url,
+      description:
+        "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، ببطارية 10000mAh ومتابعة مباشرة عبر Tracksolid Pro.",
+      brand: {
+        "@type": "Brand",
+        name: "GPS World Egypt",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "الرئيسية",
+          item: "https://gpsworld-eg.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "أجهزة GPS",
+          item: "https://gpsworld-eg.com/#products",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "AT4",
+          item: "https://gpsworld-eg.com/devices/at4",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+  ],
+};
+
 export default function AT4Page() {
   return (
     <main className="min-h-screen bg-gray-50" dir="rtl">
-      {/* Header */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
 
+      {/* Header */}
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
         <div className="mx-auto max-w-7xl px-5 py-4">
           <div className="flex items-center justify-between">
@@ -111,7 +208,6 @@ export default function AT4Page() {
       </header>
 
       {/* Back */}
-
       <div className="mx-auto max-w-7xl px-5 pt-6">
         <a
           href="/#products"
@@ -122,7 +218,6 @@ export default function AT4Page() {
       </div>
 
       {/* Product */}
-
       <section className="mx-auto max-w-7xl px-5 py-10">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
@@ -178,7 +273,6 @@ export default function AT4Page() {
       </section>
 
       {/* Features & Specs */}
-
       <section className="mx-auto max-w-7xl px-5 pb-16">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-7 shadow-md">
@@ -193,7 +287,9 @@ export default function AT4Page() {
                 ✓ بطارية ليثيوم بسعة 10000mAh لتشغيل الجهاز لفترات طويلة.
               </li>
 
-              <li>✓ يمكن أن يصل التشغيل المستمر إلى حوالي 30 يومًا حسب الاستخدام.</li>
+              <li>
+                ✓ يمكن أن يصل التشغيل المستمر إلى حوالي 30 يومًا حسب الاستخدام.
+              </li>
 
               <li>✓ مغناطيس قوي للتثبيت السريع على الأسطح المعدنية.</li>
 
@@ -201,7 +297,7 @@ export default function AT4Page() {
 
               <li>✓ متابعة مباشرة لموقع المركبة من خلال Tracksolid Pro.</li>
 
-              <li>✓ يعمل مع تطبيق Tracksolid Pro على Android و iOS.</li>
+              <li>✓ يعمل مع تطبيق Tracksolid Pro على Android وiOS.</li>
 
               <li>✓ ميكروفون داخلي للاستماع إلى ما يحدث داخل المركبة.</li>
 
@@ -215,7 +311,9 @@ export default function AT4Page() {
 
               <li>✓ متابعة حالة بطارية الجهاز.</li>
 
-              <li>✓ مقاوم للماء والغبار ومناسب للاستخدام في ظروف الطقس المختلفة.</li>
+              <li>
+                ✓ مقاوم للماء والغبار ومناسب للاستخدام في ظروف الطقس المختلفة.
+              </li>
 
               <li>✓ شحن الجهاز بسهولة عن طريق USB.</li>
 
@@ -234,9 +332,7 @@ export default function AT4Page() {
                   الموديل
                 </div>
 
-                <div className="p-4 text-gray-600">
-                  AT4
-                </div>
+                <div className="p-4 text-gray-600">AT4</div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
@@ -314,9 +410,7 @@ export default function AT4Page() {
                   مقاومة الماء والغبار
                 </div>
 
-                <div className="p-4 text-gray-600">
-                  نعم
-                </div>
+                <div className="p-4 text-gray-600">نعم</div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
@@ -324,9 +418,7 @@ export default function AT4Page() {
                   الشحن
                 </div>
 
-                <div className="p-4 text-gray-600">
-                  USB
-                </div>
+                <div className="p-4 text-gray-600">USB</div>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200">
@@ -334,9 +426,7 @@ export default function AT4Page() {
                   سجل الحركة
                 </div>
 
-                <div className="p-4 text-gray-600">
-                  حتى 6 أشهر
-                </div>
+                <div className="p-4 text-gray-600">حتى 6 أشهر</div>
               </div>
 
               <div className="grid grid-cols-2">
@@ -344,9 +434,7 @@ export default function AT4Page() {
                   الحالة
                 </div>
 
-                <div className="p-4 text-green-600">
-                  متوفر
-                </div>
+                <div className="p-4 text-green-600">متوفر</div>
               </div>
             </div>
           </div>
@@ -354,7 +442,6 @@ export default function AT4Page() {
       </section>
 
       {/* How It Works */}
-
       <section className="bg-white px-5 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="text-center">
@@ -375,9 +462,7 @@ export default function AT4Page() {
 
           <div className="mt-10 grid gap-5 md:grid-cols-5">
             <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-3xl font-extrabold text-blue-900">
-                1
-              </div>
+              <div className="text-3xl font-extrabold text-blue-900">1</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
                 تركيب الشريحة
@@ -389,9 +474,7 @@ export default function AT4Page() {
             </div>
 
             <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-3xl font-extrabold text-blue-900">
-                2
-              </div>
+              <div className="text-3xl font-extrabold text-blue-900">2</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
                 تشغيل الجهاز
@@ -403,9 +486,7 @@ export default function AT4Page() {
             </div>
 
             <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-3xl font-extrabold text-blue-900">
-                3
-              </div>
+              <div className="text-3xl font-extrabold text-blue-900">3</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
                 تحميل التطبيق
@@ -417,9 +498,7 @@ export default function AT4Page() {
             </div>
 
             <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-3xl font-extrabold text-blue-900">
-                4
-              </div>
+              <div className="text-3xl font-extrabold text-blue-900">4</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
                 تسجيل الدخول
@@ -431,9 +510,7 @@ export default function AT4Page() {
             </div>
 
             <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-3xl font-extrabold text-blue-900">
-                5
-              </div>
+              <div className="text-3xl font-extrabold text-blue-900">5</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
                 بدء التتبع
@@ -448,7 +525,6 @@ export default function AT4Page() {
       </section>
 
       {/* Uses */}
-
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
           <div className="text-center">
@@ -514,7 +590,6 @@ export default function AT4Page() {
       </section>
 
       {/* Why */}
-
       <section className="bg-blue-50 px-5 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <span className="font-bold text-blue-700">
@@ -535,8 +610,35 @@ export default function AT4Page() {
         </div>
       </section>
 
-      {/* Contact */}
+      {/* FAQ */}
+      <section className="mx-auto max-w-5xl px-5 py-16">
+        <div className="text-center">
+          <span className="font-bold text-blue-700">الأسئلة الشائعة</span>
 
+          <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+            أسئلة شائعة عن جهاز AT4
+          </h2>
+        </div>
+
+        <div className="mt-10 space-y-4">
+          {faqs.map((faq) => (
+            <details
+              key={faq.question}
+              className="rounded-2xl bg-white p-6 shadow-sm"
+            >
+              <summary className="cursor-pointer text-lg font-bold text-blue-950">
+                {faq.question}
+              </summary>
+
+              <p className="mt-4 leading-8 text-gray-600">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
       <section className="mx-auto max-w-5xl px-5 py-16">
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
           <h2 className="text-3xl font-extrabold md:text-4xl">
@@ -568,20 +670,15 @@ export default function AT4Page() {
       </section>
 
       {/* Footer */}
-
       <footer className="bg-blue-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-          <h3 className="text-2xl font-extrabold">
-            GPS World Egypt
-          </h3>
+          <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
 
           <p className="mt-3 text-blue-200">
             أجهزة GPS للتتبع والمراقبة في مصر
           </p>
 
-          <p className="mt-5 text-blue-300">
-            📞 01006687163
-          </p>
+          <p className="mt-5 text-blue-300">📞 01006687163</p>
 
           <a
             href={whatsappBaseUrl}
@@ -599,7 +696,6 @@ export default function AT4Page() {
       </footer>
 
       {/* Floating WhatsApp */}
-
       <a
         href={whatsappBaseUrl}
         target="_blank"

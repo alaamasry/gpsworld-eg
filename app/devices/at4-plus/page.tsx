@@ -60,6 +60,7 @@ export const metadata: Metadata = {
 const product = {
   name: "AT4 PLUS",
   image: "/images/AT4 PLUS.jpeg",
+  url: "https://gpsworld-eg.com/devices/at4-plus",
 };
 
 const whatsappNumber = "201006687163";
@@ -80,9 +81,102 @@ const whatsappOrderUrl =
 
 const whatsappBaseUrl = "https://wa.me/201006687163";
 
+const faqs = [
+  {
+    question: "هل جهاز AT4 PLUS يحتاج إلى تركيب وتوصيلات؟",
+    answer:
+      "الجهاز مصمم ليكون لاسلكيًا وسهل التثبيت، ويحتوي على مغناطيس قوي يساعد على تركيبه دون الحاجة إلى توصيلات كهربائية معقدة.",
+  },
+  {
+    question: "ما سعة بطارية جهاز AT4 PLUS؟",
+    answer:
+      "يأتي الجهاز ببطارية بسعة 10000mAh، وتختلف مدة التشغيل الفعلية حسب وضع التتبع وطريقة الاستخدام وإعدادات الجهاز.",
+  },
+  {
+    question: "هل جهاز AT4 PLUS مقاوم للماء؟",
+    answer:
+      "نعم، الجهاز حاصل على تصنيف IP65 للحماية من الأتربة ورذاذ الماء، مما يجعله مناسبًا للاستخدام في ظروف مختلفة.",
+  },
+  {
+    question: "هل يدعم الجهاز تتبع الموقع بشكل لحظي؟",
+    answer:
+      "نعم، يدعم AT4 PLUS التتبع اللحظي ومتابعة موقع وحركة الأصل من خلال النظام أو السيرفر المتوافق مع الجهاز.",
+  },
+  {
+    question: "هل يمكن استخدام AT4 PLUS لمتابعة الأصول؟",
+    answer:
+      "نعم، الجهاز مناسب لمتابعة المركبات والأصول، وخاصة الحالات التي تحتاج إلى جهاز لاسلكي سهل التثبيت وبطارية كبيرة.",
+  },
+  {
+    question: "هل يدعم جهاز AT4 PLUS المراقبة الصوتية؟",
+    answer:
+      "يدعم الجهاز خاصية المراقبة الصوتية وفقًا لتجهيز الجهاز والنظام المستخدم.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      name: product.name,
+      image: ["https://gpsworld-eg.com/images/AT4%20PLUS.jpeg"],
+      url: product.url,
+      description:
+        "جهاز AT4 PLUS لتتبع السيارات والمركبات والأصول، بتصميم لاسلكي وبطارية 10000mAh ومغناطيس قوي، مع تتبع لحظي وتنبيهات.",
+      brand: {
+        "@type": "Brand",
+        name: "GPS World Egypt",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "الرئيسية",
+          item: "https://gpsworld-eg.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "أجهزة GPS",
+          item: "https://gpsworld-eg.com/#products",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "AT4 PLUS",
+          item: "https://gpsworld-eg.com/devices/at4-plus",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
+  ],
+};
+
 export default function AT4PlusPage() {
   return (
     <main className="min-h-screen bg-gray-50" dir="rtl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
+
+      {/* Header */}
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
         <div className="mx-auto max-w-7xl px-5 py-4">
           <div className="flex items-center justify-between">
@@ -109,6 +203,7 @@ export default function AT4PlusPage() {
         </div>
       </header>
 
+      {/* Back */}
       <div className="mx-auto max-w-7xl px-5 pt-6">
         <a
           href="/#products"
@@ -118,6 +213,7 @@ export default function AT4PlusPage() {
         </a>
       </div>
 
+      {/* Product */}
       <section className="mx-auto max-w-7xl px-5 py-10">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
@@ -172,42 +268,60 @@ export default function AT4PlusPage() {
         </div>
       </section>
 
+      {/* Quick Features */}
       <section className="mx-auto max-w-7xl px-5 pb-16">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
             <div className="text-3xl">🔋</div>
+
             <h3 className="mt-3 font-extrabold text-blue-950">
               بطارية 10000mAh
             </h3>
-            <p className="mt-2 text-gray-600">تشغيل لفترات طويلة</p>
+
+            <p className="mt-2 text-gray-600">
+              تشغيل لفترات طويلة
+            </p>
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
             <div className="text-3xl">📍</div>
+
             <h3 className="mt-3 font-extrabold text-blue-950">
               تتبع لحظي
             </h3>
-            <p className="mt-2 text-gray-600">متابعة الموقع والحركة</p>
+
+            <p className="mt-2 text-gray-600">
+              متابعة الموقع والحركة
+            </p>
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
             <div className="text-3xl">🧲</div>
+
             <h3 className="mt-3 font-extrabold text-blue-950">
               تثبيت مغناطيسي
             </h3>
-            <p className="mt-2 text-gray-600">تركيب سريع وسهل</p>
+
+            <p className="mt-2 text-gray-600">
+              تركيب سريع وسهل
+            </p>
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
             <div className="text-3xl">💧</div>
+
             <h3 className="mt-3 font-extrabold text-blue-950">
               مقاوم للماء والأتربة
             </h3>
-            <p className="mt-2 text-gray-600">حماية بمعيار IP65</p>
+
+            <p className="mt-2 text-gray-600">
+              حماية بمعيار IP65
+            </p>
           </div>
         </div>
       </section>
 
+      {/* Features & Specifications */}
       <section className="mx-auto max-w-7xl px-5 pb-16">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-3xl bg-white p-7 shadow-md">
@@ -230,7 +344,9 @@ export default function AT4PlusPage() {
                 💧 مقاومة للماء والأتربة بمعيار IP65.
               </li>
 
-              <li>🚨 تنبيه عند انخفاض مستوى البطارية.</li>
+              <li>
+                🚨 تنبيه عند انخفاض مستوى البطارية.
+              </li>
 
               <li>
                 💡 تنبيه حساس الضوء عند حدوث تغير مفاجئ في الإضاءة،
@@ -273,7 +389,10 @@ export default function AT4PlusPage() {
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">نوع الجهاز</span>
+                <span className="font-bold text-gray-800">
+                  نوع الجهاز
+                </span>
+
                 <span className="text-gray-600">
                   GPS Tracker لاسلكي
                 </span>
@@ -283,6 +402,7 @@ export default function AT4PlusPage() {
                 <span className="font-bold text-gray-800">
                   أنظمة تحديد الموقع
                 </span>
+
                 <span className="text-gray-600">
                   GPS / BDS / GNSS / LBS
                 </span>
@@ -292,6 +412,7 @@ export default function AT4PlusPage() {
                 <span className="font-bold text-gray-800">
                   شبكة الاتصال
                 </span>
+
                 <span className="text-gray-600">4G</span>
               </div>
 
@@ -299,11 +420,13 @@ export default function AT4PlusPage() {
                 <span className="font-bold text-gray-800">
                   سعة البطارية
                 </span>
+
                 <span className="text-gray-600">10000mAh</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">الأبعاد</span>
+
                 <span className="text-gray-600">
                   86 × 63 × 34 مم
                 </span>
@@ -311,16 +434,19 @@ export default function AT4PlusPage() {
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">الوزن</span>
+
                 <span className="text-gray-600">245 جرام</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">الحماية</span>
+
                 <span className="text-gray-600">IP65</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                 <span className="font-bold text-gray-800">التتبع</span>
+
                 <span className="text-gray-600">
                   تتبع لحظي وتتبع ذكي
                 </span>
@@ -330,6 +456,7 @@ export default function AT4PlusPage() {
                 <span className="font-bold text-gray-800">
                   أوضاع التشغيل
                 </span>
+
                 <span className="text-gray-600">
                   تتبع لحظي / ذكي / توفير الطاقة / تنبيهات
                 </span>
@@ -339,6 +466,7 @@ export default function AT4PlusPage() {
                 <span className="font-bold text-gray-800">
                   مؤشرات LED
                 </span>
+
                 <span className="text-gray-600">
                   GSM / GPS / الطاقة
                 </span>
@@ -348,13 +476,17 @@ export default function AT4PlusPage() {
                 <span className="font-bold text-gray-800">
                   التحديث
                 </span>
-                <span className="text-gray-600">OTA عن بُعد</span>
+
+                <span className="text-gray-600">
+                  OTA عن بُعد
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Uses */}
       <section className="bg-white px-5 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
@@ -376,9 +508,11 @@ export default function AT4PlusPage() {
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
               <div className="text-3xl">🚗</div>
+
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                 شركات تأجير السيارات
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 متابعة السيارات وإدارة الأصول بشكل أسهل.
               </p>
@@ -386,9 +520,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
               <div className="text-3xl">📦</div>
+
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                 نقل ومتابعة البضائع
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 مراقبة حركة الأصول والبضائع أثناء النقل.
               </p>
@@ -396,9 +532,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
               <div className="text-3xl">🏦</div>
+
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                 التمويل والقروض
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 مناسب لمتابعة المركبات والأصول محل التمويل.
               </p>
@@ -406,9 +544,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
               <div className="text-3xl">🛡️</div>
+
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                 الحماية من السرقة
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 تنبيهات ومتابعة تساعد على مراقبة الأصل.
               </p>
@@ -416,9 +556,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
               <div className="text-3xl">🚚</div>
+
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                 إدارة الأساطيل
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 متابعة المركبات والأصول ضمن أنظمة الإدارة.
               </p>
@@ -426,9 +568,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
               <div className="text-3xl">🏢</div>
+
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                 إدارة الأصول
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 حل عملي لمتابعة الأصول في المواقع والقطاعات المختلفة.
               </p>
@@ -437,6 +581,7 @@ export default function AT4PlusPage() {
         </div>
       </section>
 
+      {/* Operating Modes */}
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
           <div className="text-center">
@@ -452,9 +597,11 @@ export default function AT4PlusPage() {
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="text-3xl">📍</div>
+
               <h3 className="mt-4 font-extrabold text-blue-950">
                 التتبع اللحظي
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 متابعة الموقع والحركة بشكل مستمر.
               </p>
@@ -462,9 +609,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="text-3xl">🧠</div>
+
               <h3 className="mt-4 font-extrabold text-blue-950">
                 التتبع الذكي
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 تشغيل الجهاز بطريقة تساعد على إدارة استهلاك الطاقة.
               </p>
@@ -472,9 +621,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="text-3xl">🔋</div>
+
               <h3 className="mt-4 font-extrabold text-blue-950">
                 توفير الطاقة
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 وضع مناسب عند الحاجة إلى إطالة فترة تشغيل البطارية.
               </p>
@@ -482,9 +633,11 @@ export default function AT4PlusPage() {
 
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="text-3xl">🚨</div>
+
               <h3 className="mt-4 font-extrabold text-blue-950">
                 التتبع مع التنبيهات
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 متابعة الجهاز مع الاستفادة من التنبيهات المختلفة.
               </p>
@@ -493,6 +646,7 @@ export default function AT4PlusPage() {
         </div>
       </section>
 
+      {/* Why */}
       <section className="bg-blue-50 px-5 py-16">
         <div className="mx-auto max-w-5xl text-center">
           <span className="font-bold text-blue-700">
@@ -514,6 +668,7 @@ export default function AT4PlusPage() {
               <h3 className="font-extrabold text-blue-950">
                 🔋 بطارية كبيرة
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 بطارية بسعة 10000mAh لتوفير فترة تشغيل طويلة.
               </p>
@@ -523,6 +678,7 @@ export default function AT4PlusPage() {
               <h3 className="font-extrabold text-blue-950">
                 🧲 تركيب سهل
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 مغناطيس قوي يسمح بتثبيت الجهاز بسرعة وفي أماكن مختلفة.
               </p>
@@ -532,6 +688,7 @@ export default function AT4PlusPage() {
               <h3 className="font-extrabold text-blue-950">
                 💧 حماية IP65
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 مقاومة للماء والأتربة للاستخدام في ظروف متنوعة.
               </p>
@@ -541,6 +698,7 @@ export default function AT4PlusPage() {
               <h3 className="font-extrabold text-blue-950">
                 🔄 تحديث OTA
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 إمكانية التحديث عن بُعد دون الحاجة إلى فك الجهاز.
               </p>
@@ -549,6 +707,7 @@ export default function AT4PlusPage() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section className="mx-auto max-w-5xl px-5 py-16">
         <div className="text-center">
           <span className="font-bold text-blue-700">
@@ -561,76 +720,24 @@ export default function AT4PlusPage() {
         </div>
 
         <div className="mt-10 space-y-5">
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل جهاز AT4 PLUS يحتاج إلى تركيب وتوصيلات؟
-            </summary>
+          {faqs.map((faq) => (
+            <details
+              key={faq.question}
+              className="rounded-2xl bg-white p-6 shadow-md"
+            >
+              <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
+                {faq.question}
+              </summary>
 
-            <p className="mt-4 leading-8 text-gray-600">
-              الجهاز مصمم ليكون لاسلكيًا وسهل التثبيت، ويحتوي على
-              مغناطيس قوي يساعد على تركيبه دون الحاجة إلى توصيلات
-              كهربائية معقدة.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              ما سعة بطارية جهاز AT4 PLUS؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              يأتي الجهاز ببطارية بسعة 10000mAh، وتختلف مدة التشغيل
-              الفعلية حسب وضع التتبع وطريقة الاستخدام وإعدادات الجهاز.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل جهاز AT4 PLUS مقاوم للماء؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              نعم، الجهاز حاصل على تصنيف IP65 للحماية من الأتربة
-              ورذاذ الماء، مما يجعله مناسبًا للاستخدام في ظروف مختلفة.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل يدعم الجهاز تتبع الموقع بشكل لحظي؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              نعم، يدعم AT4 PLUS التتبع اللحظي ومتابعة موقع وحركة
-              الأصل من خلال النظام أو السيرفر المتوافق مع الجهاز.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل يمكن استخدام AT4 PLUS لمتابعة الأصول؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              نعم، الجهاز مناسب لمتابعة المركبات والأصول، وخاصة
-              الحالات التي تحتاج إلى جهاز لاسلكي سهل التثبيت وبطارية
-              كبيرة.
-            </p>
-          </details>
-
-          <details className="rounded-2xl bg-white p-6 shadow-md">
-            <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-              هل يدعم جهاز AT4 PLUS المراقبة الصوتية؟
-            </summary>
-
-            <p className="mt-4 leading-8 text-gray-600">
-              يدعم الجهاز خاصية المراقبة الصوتية وفقًا لتجهيز الجهاز
-              والنظام المستخدم.
-            </p>
-          </details>
+              <p className="mt-4 leading-8 text-gray-600">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
         </div>
       </section>
 
+      {/* Contact */}
       <section className="mx-auto max-w-5xl px-5 py-16">
         <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
           <h2 className="text-3xl font-extrabold md:text-4xl">
@@ -661,6 +768,7 @@ export default function AT4PlusPage() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-blue-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-10 text-center">
           <h3 className="text-2xl font-extrabold">
@@ -690,6 +798,7 @@ export default function AT4PlusPage() {
         </div>
       </footer>
 
+      {/* Floating WhatsApp */}
       <a
         href={whatsappBaseUrl}
         target="_blank"
