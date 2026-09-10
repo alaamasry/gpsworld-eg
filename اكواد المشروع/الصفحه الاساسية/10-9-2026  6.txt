@@ -119,7 +119,7 @@ const devices = [
     badge: "متوفر",
     badgeColor: "bg-blue-600",
     description:
-      "جهاز GPS لاسلكي للتتبع والمراقبة، مناسب لمتابعة السيارات والمركبات والأصول مع تصميم عملي وبطارية كبيرة.",
+      "جهاز GPS للتتبع والمراقبة، مناسب لمتابعة السيارات والمركبات ومعرفة الموقع والحركة عبر نظام GPS Tracking.",
   },
   {
     id: "at4",
@@ -137,7 +137,7 @@ const devices = [
     badge: "متوفر",
     badgeColor: "bg-blue-600",
     description:
-      "جهاز GPS لاسلكي لتتبع السيارات والمركبات والأصول، مع بطارية كبيرة وتثبيت مغناطيسي ومتابعة عبر GPS Tracking.",
+      "جهاز GPS احترافي لتتبع السيارات والمركبات، مناسب للمراقبة ومتابعة الموقع والحركة ضمن حلول GPS Tracking.",
   },
 ];
 
@@ -172,22 +172,13 @@ const faqs = [
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const whatsappNumber = "201006687163";
-
-  const whatsappBaseUrl = "https://wa.me/" + whatsappNumber;
-
-  const whatsappInquiryUrl =
-    whatsappBaseUrl +
-    "?text=" +
-    encodeURIComponent("مرحبًا، أريد الاستفسار عن أجهزة GPS");
-
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Organization",
         name: "GPS World Egypt",
-        url: "https://gpsworld-eg.com",
+        url: "https://www.gpsworld-eg.com",
         telephone: "+201006687163",
         address: {
           "@type": "PostalAddress",
@@ -198,20 +189,9 @@ export default function Home() {
       {
         "@type": "WebSite",
         name: "GPS World Egypt",
-        url: "https://gpsworld-eg.com",
+        url: "https://www.gpsworld-eg.com",
         description:
           "أجهزة GPS وأجهزة تتبع السيارات والمركبات والموتوسيكلات والتروسيكلات في مصر وحلول GPS Tracking.",
-        inLanguage: "ar-EG",
-      },
-      {
-        "@type": "ItemList",
-        name: "أجهزة GPS وأجهزة تتبع السيارات",
-        itemListElement: devices.map((device, index) => ({
-          "@type": "ListItem",
-          position: index + 1,
-          name: device.name,
-          url: "https://gpsworld-eg.com/devices/" + device.id,
-        })),
       },
       {
         "@type": "FAQPage",
@@ -229,36 +209,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-white">
-      <style>{`
-        @keyframes priceMove {
-          0%, 100% {
-            transform: translateX(0) scale(1);
-          }
-
-          20% {
-            transform: translateX(12px) scale(1.08);
-          }
-
-          40% {
-            transform: translateX(-12px) scale(1);
-          }
-
-          60% {
-            transform: translateX(8px) scale(1.06);
-          }
-
-          80% {
-            transform: translateX(-6px) scale(1);
-          }
-        }
-
-        .animate-price-move {
-          display: inline-block;
-          animation: priceMove 1.1s ease-in-out infinite;
-          will-change: transform;
-        }
-      `}</style>
-
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -266,6 +217,7 @@ export default function Home() {
         }}
       />
 
+      {/* Header */}
       <header className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-5 py-4">
           <div className="flex justify-between items-center">
@@ -344,7 +296,8 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="text-center py-24 px-5" dir="rtl">
+      {/* Hero */}
+      <section className="text-center py-24 px-5">
         <h1 className="text-5xl font-bold text-blue-900 mb-6">
           أجهزة GPS وأجهزة تتبع السيارات في مصر
         </h1>
@@ -352,12 +305,12 @@ export default function Home() {
         <p className="max-w-4xl mx-auto text-xl text-gray-800 font-semibold mb-10 leading-9">
           نوفر أجهزة GPS Tracker وحلول GPS Tracking لتتبع السيارات والمركبات
           والموتوسيكلات والتروسيكلات، مع أجهزة 2G و4G والدعم الفني لمساعدتك في
-          اختيار جهاز التتبع المناسب لاحتياجاتك.
+          اختيار الحل المناسب لاحتياجاتك.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href={whatsappInquiryUrl}
+            href="https://wa.me/201006687163"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition font-bold"
@@ -374,13 +327,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Products */}
       <section
         id="products"
         className="max-w-7xl mx-auto py-16 px-5"
-        dir="rtl"
       >
         <h2 className="text-3xl font-bold text-center mb-4 text-blue-900">
-          أجهزة GPS وأجهزة تتبع السيارات والمركبات
+          أجهزة GPS وأجهزة تتبع السيارات
         </h2>
 
         <p className="max-w-4xl mx-auto text-center text-gray-800 font-semibold text-lg mb-10 leading-8">
@@ -397,10 +350,7 @@ export default function Home() {
             >
               <Image
                 src={device.image}
-                alt={
-                  device.name +
-                  " - جهاز GPS لتتبع السيارات والمركبات"
-                }
+                alt={device.name + " - جهاز GPS لتتبع السيارات"}
                 width={300}
                 height={220}
                 className="rounded-lg w-full h-52 object-contain"
@@ -432,71 +382,60 @@ export default function Home() {
 
               <a
                 href={
-                  whatsappBaseUrl +
-                  "?text=" +
+                  "https://wa.me/201006687163?text=" +
                   encodeURIComponent(
-                    "مرحبًا، أريد معرفة سعر جهاز GPS موديل " +
+                    "مرحبًا، أريد الاستفسار عن جهاز GPS موديل " +
                       device.name
                   )
                 }
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 block text-center font-bold text-lg overflow-hidden"
+                className="mt-3 w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 block text-center font-bold"
               >
-                <span className="animate-price-move">
-                  💰 لمعرفة السعر
-                </span>
+                💬 استفسار عن {device.name}
               </a>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="max-w-5xl mx-auto py-16 px-5" dir="rtl">
+      {/* SEO Content */}
+      <section className="max-w-5xl mx-auto py-16 px-5">
         <div className="bg-gray-50 border rounded-2xl p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-center mb-6 text-blue-900">
-            أجهزة GPS في مصر لتتبع السيارات والمركبات
+            أجهزة GPS في مصر وتتبع السيارات والمركبات
           </h2>
 
           <div className="text-gray-900 font-semibold text-lg leading-9 text-right">
             <p className="mb-5">
-              إذا كنت تبحث عن أجهزة GPS في مصر أو جهاز تتبع سيارات لمتابعة
-              موقع السيارة وحركتها، نوفر مجموعة متنوعة من أجهزة GPS Tracker
-              المناسبة للسيارات والمركبات والاستخدامات المختلفة.
+              نوفر مجموعة من أجهزة GPS وأجهزة تتبع السيارات والمركبات في مصر،
+              لتساعدك على متابعة موقع السيارة ومعرفة الحركة والمراقبة من خلال
+              حلول GPS Tracking المناسبة لاحتياجاتك.
             </p>
 
             <p className="mb-5">
-              تتوفر لدينا أجهزة تتبع السيارات بتقنيات اتصال مختلفة مثل 2G
-              و4G، بالإضافة إلى أجهزة مناسبة للموتوسيكلات والتروسيكلات وبعض
-              حلول تتبع الأصول والمركبات، ويختلف اختيار الجهاز حسب نوع
-              المركبة وطريقة التركيب واحتياجات الاستخدام.
+              تتوفر أجهزة GPS للسيارات والمركبات، بالإضافة إلى حلول مناسبة
+              لتتبع الموتوسيكلات والتروسيكلات، مع أجهزة تعمل بتقنيات 2G و4G
+              حسب نوع الجهاز واحتياجات الاستخدام.
             </p>
 
             <p className="mb-5">
-              أجهزة GPS للسيارات تساعد في متابعة الموقع والحركة والرحلات من
-              خلال أنظمة وبرامج GPS Tracking المتوافقة مع الجهاز. بعض
-              الموديلات توفر خصائص إضافية مثل التنبيهات، سجل الرحلات،
-              التتبع اللحظي، والمراقبة حسب إمكانيات كل جهاز والنظام المستخدم.
-            </p>
-
-            <p className="mb-5">
-              يمكنك من خلال الموقع التعرف على موديلات أجهزة GPS المختلفة
-              مثل GT06N وEV402 وEV404 وJ16PRO Max وAK300 وB100 وEV505 وTK303
-              وOBD22 وOBD VL505 وQBIT وW15L وAT4 وAT4 PLUS، والانتقال إلى
-              صفحة كل جهاز لمعرفة المعلومات المتاحة عنه.
+              إذا كنت تبحث عن جهاز تتبع سيارة أو جهاز GPS للسيارات أو جهاز
+              لتتبع مركبة، يمكنك استعراض الموديلات المتاحة والتعرف على تفاصيل
+              كل جهاز واختيار الحل المناسب لاحتياجات التتبع والمراقبة.
             </p>
 
             <p>
-              نهدف إلى توفير معلومات واضحة تساعد العميل على فهم الفرق بين
-              أجهزة GPS واختيار جهاز تتبع السيارة أو المركبة المناسب قبل
-              الشراء أو التركيب، مع إمكانية التواصل معنا للحصول على
-              المساعدة والدعم الفني.
+              نهدف إلى توفير معلومات واضحة عن أجهزة GPS وحلول التتبع، بحيث
+              يستطيع العميل معرفة الفرق بين الأجهزة واختيار الجهاز المناسب
+              قبل الشراء أو التركيب.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto py-16 px-5" dir="rtl">
+      {/* Why Choose Us */}
+      <section className="max-w-7xl mx-auto py-16 px-5">
         <h2 className="text-3xl font-bold text-center mb-5 text-blue-900">
           لماذا تختار GPS World Egypt؟
         </h2>
@@ -516,9 +455,8 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-800 font-semibold leading-7">
-              مجموعة متنوعة من أجهزة GPS لتتبع السيارات والمركبات
-              والموتوسيكلات والتروسيكلات، مع خيارات مختلفة حسب احتياجات
-              الاستخدام.
+              مجموعة متنوعة من أجهزة GPS لتتبع السيارات والمركبات والموتوسيكلات
+              والتروسيكلات، مع خيارات مختلفة حسب احتياجات الاستخدام.
             </p>
           </div>
 
@@ -543,8 +481,8 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-800 font-semibold leading-7">
-              دعم ومساعدة في تركيب أجهزة GPS وتشغيلها ومتابعة المشكلات
-              المتعلقة بأجهزة وأنظمة التتبع.
+              دعم ومساعدة في تركيب أجهزة GPS وتشغيلها ومتابعة المشكلات المتعلقة
+              بأجهزة وأنظمة التتبع.
             </p>
           </div>
 
@@ -563,17 +501,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-5xl mx-auto py-16 px-5" dir="rtl">
+      {/* How To Choose */}
+      <section className="max-w-5xl mx-auto py-16 px-5">
         <div className="border rounded-2xl p-8 bg-white shadow-sm">
           <h2 className="text-3xl font-bold text-center mb-8 text-blue-900">
             كيف تختار جهاز GPS المناسب؟
           </h2>
 
-          <div className="text-right text-gray-900 font-semibold text-lg leading-9">
+          <div
+            className="text-right text-gray-900 font-semibold text-lg leading-9"
+            dir="rtl"
+          >
             <p className="mb-5">
-              اختيار جهاز GPS المناسب لا يعتمد على اسم الموديل فقط، ولكن
-              يعتمد على نوع المركبة وطريقة التركيب ونوع الاتصال واحتياجات
-              التتبع.
+              اختيار جهاز GPS المناسب لا يعتمد على اسم الموديل فقط، ولكن يعتمد
+              على نوع المركبة وطريقة التركيب ونوع الاتصال واحتياجات التتبع.
             </p>
 
             <ul className="space-y-4 list-disc pr-7">
@@ -583,30 +524,24 @@ export default function Home() {
               </li>
 
               <li>
-                إذا كان الاستخدام لموتوسيكل أو تروسيكل، يراعى حجم الجهاز
-                وطريقة توصيله ومكان تركيبه.
+                إذا كان الاستخدام لموتوسيكل أو تروسيكل، يراعى حجم الجهاز وطريقة
+                توصيله ومكان تركيبه.
               </li>
 
               <li>
-                يمكن الاختيار بين أجهزة 2G و4G حسب نوع الجهاز والشبكة
-                المتاحة وطبيعة الاستخدام.
+                يمكن الاختيار بين أجهزة 2G و4G حسب نوع الجهاز والشبكة المتاحة
+                وطبيعة الاستخدام.
               </li>
 
               <li>
                 قبل اختيار الجهاز، من الأفضل معرفة نظام المتابعة أو السيرفر
                 والبرنامج المتوافق معه.
               </li>
-
-              <li>
-                بعض الأجهزة تكون مناسبة أكثر للتثبيت التقليدي، بينما توجد
-                أجهزة لاسلكية أو أجهزة تعمل من خلال منفذ OBD حسب طبيعة
-                الاستخدام.
-              </li>
             </ul>
 
             <div className="mt-8 text-center">
               <a
-                href={whatsappInquiryUrl}
+                href="https://wa.me/201006687163"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-green-600 text-white px-7 py-3 rounded-lg hover:bg-green-700 transition font-bold"
@@ -618,21 +553,20 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section
         id="faq"
         className="max-w-5xl mx-auto py-16 px-5"
-        dir="rtl"
       >
         <h2 className="text-3xl font-bold text-center mb-4 text-blue-900">
           الأسئلة الشائعة عن أجهزة GPS
         </h2>
 
         <p className="text-center text-gray-800 font-semibold text-lg mb-10">
-          إجابات عن أهم الأسئلة التي تساعدك قبل اختيار جهاز تتبع GPS
-          للسيارات والمركبات.
+          إجابات عن أهم الأسئلة التي تساعدك قبل اختيار جهاز تتبع GPS.
         </p>
 
-        <div className="space-y-5">
+        <div className="space-y-5" dir="rtl">
           {faqs.map((faq, index) => (
             <details
               key={index}
@@ -650,10 +584,10 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Software */}
       <section
         id="software"
         className="max-w-7xl mx-auto py-16 px-5"
-        dir="rtl"
       >
         <h2 className="text-3xl font-bold text-center mb-4 text-blue-900">
           برامج وحلول GPS
@@ -688,10 +622,10 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact */}
       <section
         id="contact"
         className="max-w-5xl mx-auto py-16 px-5"
-        dir="rtl"
       >
         <div className="bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-5">
@@ -712,7 +646,7 @@ export default function Home() {
             </a>
 
             <a
-              href={whatsappBaseUrl}
+              href="https://wa.me/201006687163"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 text-white px-7 py-3 rounded-lg hover:bg-green-700 transition font-bold"
@@ -723,7 +657,8 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-blue-900 text-white mt-20" dir="rtl">
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white mt-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 py-12">
           <div>
             <h3 className="text-2xl font-bold mb-4">
@@ -761,18 +696,7 @@ export default function Home() {
             <ul className="space-y-2 text-gray-100 font-semibold">
               <li>📞 01006687163</li>
               <li>📍 القاهرة - مصر</li>
-
-              <li>
-                📱{" "}
-                <a
-                  href={whatsappBaseUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-yellow-300 transition"
-                >
-                  WhatsApp
-                </a>
-              </li>
+              <li>📱 WhatsApp</li>
             </ul>
           </div>
         </div>
@@ -782,8 +706,9 @@ export default function Home() {
         </div>
       </footer>
 
+      {/* Floating WhatsApp */}
       <a
-        href={whatsappBaseUrl}
+        href="https://wa.me/201006687163"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white text-3xl flex items-center justify-center shadow-2xl transition z-40"

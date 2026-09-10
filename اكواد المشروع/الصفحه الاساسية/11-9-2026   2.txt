@@ -174,10 +174,11 @@ export default function Home() {
 
   const whatsappNumber = "201006687163";
 
-  const whatsappBaseUrl = "https://wa.me/" + whatsappNumber;
+  const whatsappBaseUrl = "https://wa.me/201006687163";
 
   const whatsappInquiryUrl =
-    whatsappBaseUrl +
+    "https://wa.me/" +
+    whatsappNumber +
     "?text=" +
     encodeURIComponent("مرحبًا، أريد الاستفسار عن أجهزة GPS");
 
@@ -232,33 +233,34 @@ export default function Home() {
       <style>{`
         @keyframes priceMove {
           0%, 100% {
-            transform: translateX(0) scale(1);
+            transform: translateX(0);
           }
 
           20% {
-            transform: translateX(12px) scale(1.08);
+            transform: translateX(10px);
           }
 
           40% {
-            transform: translateX(-12px) scale(1);
+            transform: translateX(-10px);
           }
 
           60% {
-            transform: translateX(8px) scale(1.06);
+            transform: translateX(8px);
           }
 
           80% {
-            transform: translateX(-6px) scale(1);
+            transform: translateX(-6px);
           }
         }
 
         .animate-price-move {
           display: inline-block;
-          animation: priceMove 1.1s ease-in-out infinite;
+          animation: priceMove 1.2s ease-in-out infinite;
           will-change: transform;
         }
       `}</style>
 
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -266,6 +268,7 @@ export default function Home() {
         }}
       />
 
+      {/* Header */}
       <header className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-5 py-4">
           <div className="flex justify-between items-center">
@@ -344,6 +347,7 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Hero */}
       <section className="text-center py-24 px-5" dir="rtl">
         <h1 className="text-5xl font-bold text-blue-900 mb-6">
           أجهزة GPS وأجهزة تتبع السيارات في مصر
@@ -374,6 +378,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Products */}
       <section
         id="products"
         className="max-w-7xl mx-auto py-16 px-5"
@@ -397,10 +402,7 @@ export default function Home() {
             >
               <Image
                 src={device.image}
-                alt={
-                  device.name +
-                  " - جهاز GPS لتتبع السيارات والمركبات"
-                }
+                alt={device.name + " - جهاز GPS لتتبع السيارات والمركبات"}
                 width={300}
                 height={220}
                 className="rounded-lg w-full h-52 object-contain"
@@ -432,18 +434,16 @@ export default function Home() {
 
               <a
                 href={
-                  whatsappBaseUrl +
-                  "?text=" +
+                  "https://wa.me/201006687163?text=" +
                   encodeURIComponent(
-                    "مرحبًا، أريد معرفة سعر جهاز GPS موديل " +
-                      device.name
+                    "مرحبًا، أريد معرفة سعر جهاز GPS موديل " + device.name
                   )
                 }
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 block text-center font-bold text-lg overflow-hidden"
               >
-                <span className="animate-price-move">
+                <span className="inline-block animate-price-move">
                   💰 لمعرفة السعر
                 </span>
               </a>
@@ -452,6 +452,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO Content */}
       <section className="max-w-5xl mx-auto py-16 px-5" dir="rtl">
         <div className="bg-gray-50 border rounded-2xl p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-center mb-6 text-blue-900">
@@ -466,36 +467,37 @@ export default function Home() {
             </p>
 
             <p className="mb-5">
-              تتوفر لدينا أجهزة تتبع السيارات بتقنيات اتصال مختلفة مثل 2G
-              و4G، بالإضافة إلى أجهزة مناسبة للموتوسيكلات والتروسيكلات وبعض
-              حلول تتبع الأصول والمركبات، ويختلف اختيار الجهاز حسب نوع
-              المركبة وطريقة التركيب واحتياجات الاستخدام.
+              تتوفر لدينا أجهزة تتبع السيارات بتقنيات اتصال مختلفة مثل 2G و4G،
+              بالإضافة إلى أجهزة مناسبة للموتوسيكلات والتروسيكلات وبعض حلول
+              تتبع الأصول والمركبات، ويختلف اختيار الجهاز حسب نوع المركبة
+              وطريقة التركيب واحتياجات الاستخدام.
             </p>
 
             <p className="mb-5">
               أجهزة GPS للسيارات تساعد في متابعة الموقع والحركة والرحلات من
-              خلال أنظمة وبرامج GPS Tracking المتوافقة مع الجهاز. بعض
-              الموديلات توفر خصائص إضافية مثل التنبيهات، سجل الرحلات،
-              التتبع اللحظي، والمراقبة حسب إمكانيات كل جهاز والنظام المستخدم.
+              خلال أنظمة وبرامج GPS Tracking المتوافقة مع الجهاز. بعض الموديلات
+              توفر خصائص إضافية مثل التنبيهات، سجل الرحلات، التتبع اللحظي،
+              والمراقبة حسب إمكانيات كل جهاز والنظام المستخدم.
             </p>
 
             <p className="mb-5">
-              يمكنك من خلال الموقع التعرف على موديلات أجهزة GPS المختلفة
-              مثل GT06N وEV402 وEV404 وJ16PRO Max وAK300 وB100 وEV505 وTK303
-              وOBD22 وOBD VL505 وQBIT وW15L وAT4 وAT4 PLUS، والانتقال إلى
-              صفحة كل جهاز لمعرفة المعلومات المتاحة عنه.
+              يمكنك من خلال الموقع التعرف على موديلات أجهزة GPS المختلفة مثل
+              GT06N وEV402 وEV404 وJ16PRO Max وAK300 وB100 وEV505 وTK303 وOBD22
+              وOBD VL505 وQBIT وW15L وAT4 وAT4 PLUS، والانتقال إلى صفحة كل جهاز
+              لمعرفة المعلومات المتاحة عنه.
             </p>
 
             <p>
               نهدف إلى توفير معلومات واضحة تساعد العميل على فهم الفرق بين
               أجهزة GPS واختيار جهاز تتبع السيارة أو المركبة المناسب قبل
-              الشراء أو التركيب، مع إمكانية التواصل معنا للحصول على
-              المساعدة والدعم الفني.
+              الشراء أو التركيب، مع إمكانية التواصل معنا للحصول على المساعدة
+              والدعم الفني.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Why Choose Us */}
       <section className="max-w-7xl mx-auto py-16 px-5" dir="rtl">
         <h2 className="text-3xl font-bold text-center mb-5 text-blue-900">
           لماذا تختار GPS World Egypt؟
@@ -516,9 +518,8 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-800 font-semibold leading-7">
-              مجموعة متنوعة من أجهزة GPS لتتبع السيارات والمركبات
-              والموتوسيكلات والتروسيكلات، مع خيارات مختلفة حسب احتياجات
-              الاستخدام.
+              مجموعة متنوعة من أجهزة GPS لتتبع السيارات والمركبات والموتوسيكلات
+              والتروسيكلات، مع خيارات مختلفة حسب احتياجات الاستخدام.
             </p>
           </div>
 
@@ -543,8 +544,8 @@ export default function Home() {
             </h3>
 
             <p className="text-gray-800 font-semibold leading-7">
-              دعم ومساعدة في تركيب أجهزة GPS وتشغيلها ومتابعة المشكلات
-              المتعلقة بأجهزة وأنظمة التتبع.
+              دعم ومساعدة في تركيب أجهزة GPS وتشغيلها ومتابعة المشكلات المتعلقة
+              بأجهزة وأنظمة التتبع.
             </p>
           </div>
 
@@ -563,6 +564,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How To Choose */}
       <section className="max-w-5xl mx-auto py-16 px-5" dir="rtl">
         <div className="border rounded-2xl p-8 bg-white shadow-sm">
           <h2 className="text-3xl font-bold text-center mb-8 text-blue-900">
@@ -571,9 +573,8 @@ export default function Home() {
 
           <div className="text-right text-gray-900 font-semibold text-lg leading-9">
             <p className="mb-5">
-              اختيار جهاز GPS المناسب لا يعتمد على اسم الموديل فقط، ولكن
-              يعتمد على نوع المركبة وطريقة التركيب ونوع الاتصال واحتياجات
-              التتبع.
+              اختيار جهاز GPS المناسب لا يعتمد على اسم الموديل فقط، ولكن يعتمد
+              على نوع المركبة وطريقة التركيب ونوع الاتصال واحتياجات التتبع.
             </p>
 
             <ul className="space-y-4 list-disc pr-7">
@@ -583,13 +584,13 @@ export default function Home() {
               </li>
 
               <li>
-                إذا كان الاستخدام لموتوسيكل أو تروسيكل، يراعى حجم الجهاز
-                وطريقة توصيله ومكان تركيبه.
+                إذا كان الاستخدام لموتوسيكل أو تروسيكل، يراعى حجم الجهاز وطريقة
+                توصيله ومكان تركيبه.
               </li>
 
               <li>
-                يمكن الاختيار بين أجهزة 2G و4G حسب نوع الجهاز والشبكة
-                المتاحة وطبيعة الاستخدام.
+                يمكن الاختيار بين أجهزة 2G و4G حسب نوع الجهاز والشبكة المتاحة
+                وطبيعة الاستخدام.
               </li>
 
               <li>
@@ -599,8 +600,7 @@ export default function Home() {
 
               <li>
                 بعض الأجهزة تكون مناسبة أكثر للتثبيت التقليدي، بينما توجد
-                أجهزة لاسلكية أو أجهزة تعمل من خلال منفذ OBD حسب طبيعة
-                الاستخدام.
+                أجهزة لاسلكية أو أجهزة تعمل من خلال منفذ OBD حسب طبيعة الاستخدام.
               </li>
             </ul>
 
@@ -618,6 +618,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
       <section
         id="faq"
         className="max-w-5xl mx-auto py-16 px-5"
@@ -628,8 +629,8 @@ export default function Home() {
         </h2>
 
         <p className="text-center text-gray-800 font-semibold text-lg mb-10">
-          إجابات عن أهم الأسئلة التي تساعدك قبل اختيار جهاز تتبع GPS
-          للسيارات والمركبات.
+          إجابات عن أهم الأسئلة التي تساعدك قبل اختيار جهاز تتبع GPS للسيارات
+          والمركبات.
         </p>
 
         <div className="space-y-5">
@@ -650,6 +651,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Software */}
       <section
         id="software"
         className="max-w-7xl mx-auto py-16 px-5"
@@ -688,6 +690,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact */}
       <section
         id="contact"
         className="max-w-5xl mx-auto py-16 px-5"
@@ -723,6 +726,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Footer */}
       <footer className="bg-blue-900 text-white mt-20" dir="rtl">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 py-12">
           <div>
@@ -782,6 +786,7 @@ export default function Home() {
         </div>
       </footer>
 
+      {/* Floating WhatsApp */}
       <a
         href={whatsappBaseUrl}
         target="_blank"
