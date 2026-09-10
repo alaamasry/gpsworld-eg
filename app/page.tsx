@@ -79,7 +79,7 @@ const devices = [
   {
     id: "tk303",
     name: "TK303",
-    image: "/images/tk303.jpeg",
+    image: "/images/TK303.jpeg",
     badge: "الأكثر مبيعًا",
     badgeColor: "bg-yellow-500",
     description: "مناسب للسيارات والدراجات النارية.",
