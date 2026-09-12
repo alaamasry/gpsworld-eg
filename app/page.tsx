@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 const devices = [
   {
@@ -20,7 +21,7 @@ const devices = [
     badge: "متوفر",
   },
   {
-    id: "ev402",
+    id: "ev402-2g",
     name: "EV402",
     image: "/images/ev402.jpeg",
     description:
@@ -28,7 +29,7 @@ const devices = [
     badge: "متوفر",
   },
   {
-    id: "ev404",
+    id: "ev404-4g",
     name: "EV404",
     image: "/images/ev404.jpeg",
     description:
@@ -44,7 +45,7 @@ const devices = [
     badge: "متوفر",
   },
   {
-    id: "ak300",
+    id: "AK300",
     name: "AK300",
     image: "/images/AK300.jpeg",
     description:
@@ -52,7 +53,7 @@ const devices = [
     badge: "متوفر",
   },
   {
-    id: "b100",
+    id: "B100",
     name: "B100",
     image: "/images/B100.jpeg",
     description:
@@ -60,7 +61,7 @@ const devices = [
     badge: "متوفر",
   },
   {
-    id: "ev505",
+    id: "EV505",
     name: "EV505",
     image: "/images/EV505.jpeg",
     description:
@@ -84,7 +85,7 @@ const devices = [
     badge: "متوفر",
   },
   {
-    id: "obd-vl505",
+    id: "obdvl505",
     name: "OBD VL505",
     image: "/images/OBDVL505.jpeg",
     description:
@@ -198,6 +199,12 @@ const structuredData = {
 };
 
 export default function HomePage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <>
       <style>{`
@@ -304,54 +311,195 @@ export default function HomePage() {
       />
 
       <main className="min-h-screen bg-white text-gray-900">
+
         {/* Header */}
-        <header className="border-b bg-white">
-          <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between gap-4">
-            <a
-              href="/"
-              className="flex items-center gap-3"
-              aria-label="GPS World Egypt"
-            >
-              <Image
-                src="/images/logo-gps-world-egypt.png"
-                alt="GPS World Egypt"
-                width={170}
-                height={60}
-                priority
-                className="h-auto w-auto max-h-14"
-              />
-            </a>
+        <header className="border-b border-blue-800 bg-blue-700 text-white shadow-lg">
+          <div className="max-w-7xl mx-auto px-5 py-3">
+            <div className="flex items-center justify-between gap-4">
 
-            <nav className="hidden md:flex items-center gap-6 text-base font-bold">
-              <a href="#products" className="hover:text-blue-600">
-                الأجهزة
+              {/* Logo */}
+              <a
+                href="/"
+                className="flex items-center gap-3 shrink-0"
+                aria-label="GPS World Egypt"
+                onClick={closeMobileMenu}
+              >
+                <Image
+                  src="/images/logo-gps-world-egypt.png"
+                  alt="GPS World Egypt"
+                  width={170}
+                  height={60}
+                  priority
+                  className="h-auto w-auto max-h-14"
+                />
               </a>
 
-              <a href="#why-us" className="hover:text-blue-600">
-                لماذا GPS World
+              {/* Desktop Menu */}
+              <nav className="hidden lg:flex items-center gap-5 text-base font-bold">
+                <a
+                  href="/"
+                  className="hover:text-yellow-300 transition"
+                >
+                  الرئيسية
+                </a>
+
+                <a
+                  href="#products"
+                  className="hover:text-yellow-300 transition"
+                >
+                  الأجهزة
+                </a>
+
+                <a
+                  href="#software"
+                  className="hover:text-yellow-300 transition"
+                >
+                  السوفت وير
+                </a>
+
+                <a
+                  href="#recharge"
+                  className="hover:text-yellow-300 transition"
+                >
+                  شحن النقاط
+                </a>
+
+                <a
+                  href="#why-us"
+                  className="hover:text-yellow-300 transition"
+                >
+                  لماذا GPS World
+                </a>
+
+                <a
+                  href="#how-to-choose"
+                  className="hover:text-yellow-300 transition"
+                >
+                  كيف تختار؟
+                </a>
+
+                <a
+                  href="#faq"
+                  className="hover:text-yellow-300 transition"
+                >
+                  الأسئلة الشائعة
+                </a>
+
+                <a
+                  href="#contact"
+                  className="hover:text-yellow-300 transition"
+                >
+                  تواصل معنا
+                </a>
+              </nav>
+
+              {/* Desktop WhatsApp */}
+              <a
+                href={whatsappBaseUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:block rounded-xl bg-green-500 px-4 py-2 text-white font-bold hover:bg-green-600 transition shrink-0"
+              >
+                واتساب
               </a>
 
-              <a href="#how-to-choose" className="hover:text-blue-600">
-                كيف تختار؟
-              </a>
+              {/* Mobile Menu Button */}
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                className="lg:hidden rounded-xl border border-white/40 bg-blue-800 px-4 py-2 text-2xl font-bold hover:bg-blue-900 transition"
+                aria-label="فتح القائمة"
+                aria-expanded={mobileMenuOpen}
+              >
+                {mobileMenuOpen ? "✕" : "☰"}
+              </button>
+            </div>
 
-              <a href="#faq" className="hover:text-blue-600">
-                الأسئلة الشائعة
-              </a>
+            {/* Mobile Menu */}
+            {mobileMenuOpen && (
+              <nav
+                className="lg:hidden mt-4 border-t border-blue-500 pt-4 pb-2"
+                dir="rtl"
+              >
+                <div className="flex flex-col gap-2">
 
-              <a href="#contact" className="hover:text-blue-600">
-                تواصل معنا
-              </a>
-            </nav>
+                  <a
+                    href="/"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    🏠 الرئيسية
+                  </a>
 
-            <a
-              href={whatsappBaseUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-green-600 px-4 py-2 text-white font-bold hover:bg-green-700"
-            >
-              واتساب
-            </a>
+                  <a
+                    href="#products"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    📦 الأجهزة
+                  </a>
+
+                  <a
+                    href="#software"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    💻 السوفت وير
+                  </a>
+
+                  <a
+                    href="#recharge"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    💳 شحن النقاط
+                  </a>
+
+                  <a
+                    href="#why-us"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    ⭐ لماذا GPS World
+                  </a>
+
+                  <a
+                    href="#how-to-choose"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    🔎 كيف تختار؟
+                  </a>
+
+                  <a
+                    href="#faq"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    ❓ الأسئلة الشائعة
+                  </a>
+
+                  <a
+                    href="#contact"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
+                  >
+                    📞 تواصل معنا
+                  </a>
+
+                  <a
+                    href={whatsappBaseUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={closeMobileMenu}
+                    className="mt-2 rounded-xl bg-green-500 px-4 py-3 text-center font-bold hover:bg-green-600 transition"
+                  >
+                    🟢 تواصل معنا على واتساب
+                  </a>
+
+                </div>
+              </nav>
+            )}
           </div>
         </header>
 
@@ -650,7 +798,11 @@ export default function HomePage() {
         </section>
 
         {/* Software */}
-        <section className="bg-gray-50 py-16 px-5" dir="rtl">
+        <section
+          id="software"
+          className="bg-gray-50 py-16 px-5"
+          dir="rtl"
+        >
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center">
               متابعة جهاز GPS من الهاتف
@@ -667,6 +819,40 @@ export default function HomePage() {
               تختلف طريقة الإعداد والأوامر من جهاز إلى آخر، ولذلك يجب
               استخدام الإعدادات والأوامر المناسبة للموديل المستخدم.
             </p>
+          </div>
+        </section>
+
+        {/* Recharge */}
+        <section
+          id="recharge"
+          className="py-14 px-5"
+          dir="rtl"
+        >
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold">
+              شحن نقاط السيرفرات
+            </h2>
+
+            <p className="mt-5 text-lg leading-9 text-gray-800">
+              لشحن نقاط السيرفر أو الاستفسار عن الباقات وتجديد خدمة المتابعة،
+              تواصل معنا مباشرة على واتساب وسنساعدك في معرفة المطلوب حسب
+              الجهاز والحساب المستخدم.
+            </p>
+
+            <a
+              href={
+                whatsappBaseUrl +
+                "?text=" +
+                encodeURIComponent(
+                  "مرحبًا، أريد شحن نقاط السيرفر أو الاستفسار عن الباقة."
+                )
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-7 rounded-xl bg-green-600 px-7 py-4 text-white font-bold text-lg hover:bg-green-700"
+            >
+              تواصل معنا لشحن النقاط
+            </a>
           </div>
         </section>
 
@@ -704,9 +890,13 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-gray-900 text-white py-10 px-5" dir="rtl">
+        <footer
+          className="bg-gray-900 text-white py-10 px-5"
+          dir="rtl"
+        >
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
               <div>
                 <h3 className="text-xl font-extrabold">
                   GPS World Egypt
@@ -725,25 +915,64 @@ export default function HomePage() {
 
                 <ul className="mt-4 space-y-3 text-lg">
                   <li>
-                    <a href="#products" className="hover:text-blue-300">
+                    <a
+                      href="/"
+                      className="hover:text-blue-300"
+                    >
+                      الرئيسية
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#products"
+                      className="hover:text-blue-300"
+                    >
                       أجهزة GPS
                     </a>
                   </li>
 
                   <li>
-                    <a href="#why-us" className="hover:text-blue-300">
+                    <a
+                      href="#software"
+                      className="hover:text-blue-300"
+                    >
+                      السوفت وير
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#recharge"
+                      className="hover:text-blue-300"
+                    >
+                      شحن النقاط
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#why-us"
+                      className="hover:text-blue-300"
+                    >
                       لماذا GPS World؟
                     </a>
                   </li>
 
                   <li>
-                    <a href="#faq" className="hover:text-blue-300">
+                    <a
+                      href="#faq"
+                      className="hover:text-blue-300"
+                    >
                       الأسئلة الشائعة
                     </a>
                   </li>
 
                   <li>
-                    <a href="#contact" className="hover:text-blue-300">
+                    <a
+                      href="#contact"
+                      className="hover:text-blue-300"
+                    >
                       تواصل معنا
                     </a>
                   </li>
@@ -781,6 +1010,7 @@ export default function HomePage() {
                   القاهرة - مصر
                 </p>
               </div>
+
             </div>
 
             <div className="border-t border-gray-700 mt-8 pt-6 text-center text-lg">
@@ -789,6 +1019,7 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
+
       </main>
     </>
   );
