@@ -259,7 +259,6 @@ export default function Home() {
         }
       `}</style>
 
-      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -267,7 +266,6 @@ export default function Home() {
         }}
       />
 
-      {/* Header */}
       <header className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-5 py-4">
           <div className="flex justify-between items-center">
@@ -346,7 +344,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
       <section className="text-center py-24 px-5" dir="rtl">
         <h1 className="text-5xl font-bold text-blue-900 mb-6">
           أجهزة GPS وأجهزة تتبع السيارات في مصر
@@ -377,7 +374,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products */}
       <section
         id="products"
         className="max-w-7xl mx-auto py-16 px-5"
@@ -456,7 +452,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SEO Content */}
       <section className="max-w-5xl mx-auto py-16 px-5" dir="rtl">
         <div className="bg-gray-50 border rounded-2xl p-8 shadow-sm">
           <h2 className="text-3xl font-bold text-center mb-6 text-blue-900">
@@ -501,7 +496,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
       <section className="max-w-7xl mx-auto py-16 px-5" dir="rtl">
         <h2 className="text-3xl font-bold text-center mb-5 text-blue-900">
           لماذا تختار GPS World Egypt؟
@@ -569,7 +563,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How To Choose */}
       <section className="max-w-5xl mx-auto py-16 px-5" dir="rtl">
         <div className="border rounded-2xl p-8 bg-white shadow-sm">
           <h2 className="text-3xl font-bold text-center mb-8 text-blue-900">
@@ -625,7 +618,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section
         id="faq"
         className="max-w-5xl mx-auto py-16 px-5"
@@ -658,7 +650,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Software */}
       <section
         id="software"
         className="max-w-7xl mx-auto py-16 px-5"
@@ -697,7 +688,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
       <section
         id="contact"
         className="max-w-5xl mx-auto py-16 px-5"
@@ -733,7 +723,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-blue-900 text-white mt-20" dir="rtl">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 py-12">
           <div>
@@ -793,7 +782,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Floating WhatsApp */}
       <a
         href={whatsappBaseUrl}
         target="_blank"
