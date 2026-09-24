@@ -345,7 +345,10 @@ export default function HomePage() {
 
               {/* Desktop Menu */}
               <nav className="hidden lg:flex items-center gap-5 text-base font-bold">
-                <a href="/" className="hover:text-yellow-300 transition">
+                <a
+                  href="/"
+                  className="hover:text-yellow-300 transition"
+                >
                   الرئيسية
                 </a>
 
@@ -384,7 +387,10 @@ export default function HomePage() {
                   كيف تختار؟
                 </a>
 
-                <a href="#faq" className="hover:text-yellow-300 transition">
+                <a
+                  href="#faq"
+                  className="hover:text-yellow-300 transition"
+                >
                   الأسئلة الشائعة
                 </a>
 
@@ -517,19 +523,6 @@ export default function HomePage() {
             <h1 className="animate-hero-title text-4xl md:text-5xl font-extrabold leading-tight">
               أجهزة GPS وتتبع السيارات والمركبات في مصر
             </h1>
-
-            <p className="mt-7 text-xl leading-9 text-gray-800">
-              أجهزة GPS وأجهزة جي بي اس لتتبع السيارات والموتوسيكلات
-              والتروسيكلات والمركبات، مع إمكانية متابعة الموقع والحركة من
-              الهاتف ومعرفة حالة المركبة والاستفادة من وظائف الحماية والتحكم
-              حسب نوع الجهاز.
-            </p>
-
-            <p className="mt-4 text-lg leading-8 text-gray-700">
-              إذا كنت تبحث عن جهاز جي بي اس أو جهاز GPS للسيارة في مصر، يمكنك
-              مقارنة الموديلات المتوفرة ومعرفة تفاصيل كل جهاز واختيار الحل
-              المناسب حسب نوع المركبة والاستخدام.
-            </p>
 
             <div className="mt-9 flex flex-col sm:flex-row justify-center gap-4">
               <a
