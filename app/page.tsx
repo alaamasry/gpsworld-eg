@@ -133,6 +133,16 @@ const faqs = [
       "جهاز GPS لتتبع السيارات هو جهاز إلكتروني يتم تركيبه في السيارة أو المركبة، ويستخدم نظام تحديد المواقع لمعرفة مكان المركبة ومتابعة حركتها من خلال تطبيق أو منصة متابعة.",
   },
   {
+    question: "ما الفرق بين جهاز GPS وجهاز تتبع السيارات؟",
+    answer:
+      "في الاستخدام العملي قد يتم استخدام الاسمين لنفس الفكرة، فجهاز GPS للسيارات هو جهاز تتبع يساعد على معرفة موقع المركبة ومتابعة حركتها، وتختلف الوظائف الإضافية حسب الموديل ونظام التشغيل والتركيب.",
+  },
+  {
+    question: "أين أجد أجهزة جي بي اس لتتبع السيارات في مصر؟",
+    answer:
+      "تتوفر أجهزة جي بي اس وأجهزة GPS لتتبع السيارات والمركبات بموديلات مختلفة، ويختلف الجهاز المناسب حسب نوع المركبة وشبكة الاتصال والوظائف المطلوبة. يمكن التواصل مع GPS World Egypt لمعرفة الموديل المناسب والسعر.",
+  },
+  {
     question: "هل يمكن متابعة السيارة من الموبايل؟",
     answer:
       "نعم، معظم أجهزة GPS الحديثة يمكن متابعتها من خلال الهاتف عن طريق التطبيق أو المنصة الخاصة بالجهاز، حسب نوع الجهاز ونظام التشغيل المستخدم.",
@@ -163,25 +173,26 @@ const structuredData = {
     {
       "@type": "Organization",
       name: "GPS World Egypt",
-      url: "https://gpsworld-eg.com",
+      url: "https://www.gpsworld-eg.com",
       telephone: "+201006687163",
       description:
-        "GPS World Egypt متخصص في أجهزة GPS وتتبع السيارات والمركبات في مصر.",
+        "GPS World Egypt متخصص في أجهزة GPS وأجهزة جي بي اس وتتبع السيارات والمركبات في مصر.",
     },
     {
       "@type": "WebSite",
       name: "GPS World Egypt",
-      url: "https://gpsworld-eg.com",
+      url: "https://www.gpsworld-eg.com",
       inLanguage: "ar-EG",
     },
     {
       "@type": "ItemList",
-      name: "أجهزة GPS المتوفرة",
+      name: "أجهزة GPS وأجهزة جي بي اس المتوفرة",
       itemListElement: devices.map((device, index) => ({
         "@type": "ListItem",
         position: index + 1,
         name: device.name,
-        url: "https://gpsworld-eg.com/devices/" + device.id,
+        url:
+          "https://www.gpsworld-eg.com/devices/" + device.id,
       })),
     },
     {
@@ -311,22 +322,20 @@ export default function HomePage() {
       />
 
       <main className="min-h-screen bg-white text-gray-900">
-
         {/* Header */}
         <header className="border-b border-blue-800 bg-blue-700 text-white shadow-lg">
           <div className="max-w-7xl mx-auto px-5 py-3">
             <div className="flex items-center justify-between gap-4">
-
               {/* Logo */}
               <a
                 href="/"
                 className="flex items-center gap-3 shrink-0"
-                aria-label="GPS World Egypt"
+                aria-label="GPS World Egypt - أجهزة GPS وأجهزة جي بي اس"
                 onClick={closeMobileMenu}
               >
                 <Image
                   src="/images/logo-gps-world-egypt.png"
-                  alt="GPS World Egypt"
+                  alt="GPS World Egypt - أجهزة GPS وأجهزة جي بي اس وتتبع السيارات في مصر"
                   width={170}
                   height={60}
                   priority
@@ -336,10 +345,7 @@ export default function HomePage() {
 
               {/* Desktop Menu */}
               <nav className="hidden lg:flex items-center gap-5 text-base font-bold">
-                <a
-                  href="/"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="/" className="hover:text-yellow-300 transition">
                   الرئيسية
                 </a>
 
@@ -378,10 +384,7 @@ export default function HomePage() {
                   كيف تختار؟
                 </a>
 
-                <a
-                  href="#faq"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#faq" className="hover:text-yellow-300 transition">
                   الأسئلة الشائعة
                 </a>
 
@@ -422,7 +425,6 @@ export default function HomePage() {
                 dir="rtl"
               >
                 <div className="flex flex-col gap-2">
-
                   <a
                     href="/"
                     onClick={closeMobileMenu}
@@ -496,7 +498,6 @@ export default function HomePage() {
                   >
                     🟢 تواصل معنا على واتساب
                   </a>
-
                 </div>
               </nav>
             )}
@@ -518,9 +519,16 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-7 text-xl leading-9 text-gray-800">
-              أجهزة تتبع GPS للسيارات والموتوسيكلات والتروسيكلات والمركبات،
-              مع إمكانية متابعة الموقع والحركة من الهاتف ومعرفة حالة المركبة
-              والاستفادة من وظائف الحماية والتحكم حسب نوع الجهاز.
+              أجهزة GPS وأجهزة جي بي اس لتتبع السيارات والموتوسيكلات
+              والتروسيكلات والمركبات، مع إمكانية متابعة الموقع والحركة من
+              الهاتف ومعرفة حالة المركبة والاستفادة من وظائف الحماية والتحكم
+              حسب نوع الجهاز.
+            </p>
+
+            <p className="mt-4 text-lg leading-8 text-gray-700">
+              إذا كنت تبحث عن جهاز جي بي اس أو جهاز GPS للسيارة في مصر، يمكنك
+              مقارنة الموديلات المتوفرة ومعرفة تفاصيل كل جهاز واختيار الحل
+              المناسب حسب نوع المركبة والاستخدام.
             </p>
 
             <div className="mt-9 flex flex-col sm:flex-row justify-center gap-4">
@@ -551,13 +559,14 @@ export default function HomePage() {
         >
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold">
-              أجهزة GPS المتوفرة
+              أجهزة GPS وأجهزة جي بي اس المتوفرة
             </h2>
 
             <p className="mt-5 text-lg leading-9 text-gray-800">
-              مجموعة من أجهزة GPS لتتبع السيارات والمركبات، تشمل أجهزة 2G
-              و4G وأجهزة OBD وأجهزة مناسبة لاستخدامات متعددة. اختر الموديل
-              المناسب لك وتعرف على تفاصيله أو تواصل معنا لمعرفة السعر.
+              مجموعة من أجهزة GPS وأجهزة جي بي اس لتتبع السيارات والمركبات،
+              تشمل أجهزة 2G و4G وأجهزة OBD وأجهزة مناسبة لاستخدامات متعددة.
+              اختر الموديل المناسب لك وتعرف على تفاصيله أو تواصل معنا لمعرفة
+              السعر.
             </p>
           </div>
 
@@ -580,7 +589,7 @@ export default function HomePage() {
                     src={device.image}
                     alt={
                       device.name +
-                      " - جهاز GPS لتتبع السيارات"
+                      " - جهاز GPS وجهاز جي بي اس لتتبع السيارات والمركبات في مصر"
                     }
                     width={300}
                     height={220}
@@ -594,10 +603,6 @@ export default function HomePage() {
                   <h3 className="text-2xl font-bold mt-4 text-gray-900">
                     {device.name}
                   </h3>
-
-                  <p className="text-lg text-gray-900 font-semibold mt-3 leading-8">
-                    {device.description}
-                  </p>
 
                   <a
                     href={"/devices/" + device.id}
@@ -626,14 +631,21 @@ export default function HomePage() {
         <section className="bg-gray-50 py-16 px-5" dir="rtl">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-extrabold text-center">
-              أجهزة GPS في مصر لتتبع السيارات والمركبات
+              أجهزة جي بي اس وأجهزة GPS في مصر لتتبع السيارات والمركبات
             </h2>
 
             <div className="mt-8 text-gray-900 font-semibold text-lg leading-9 text-right">
               <p>
-                إذا كنت تبحث عن جهاز GPS لتتبع السيارة أو جهاز تتبع سيارات
-                في مصر، فإن اختيار الجهاز المناسب يعتمد على نوع المركبة
-                وطريقة الاستخدام وشبكة الاتصال والوظائف التي تحتاج إليها.
+                إذا كنت تبحث عن أجهزة جي بي اس أو جهاز GPS لتتبع السيارة أو
+                جهاز تتبع سيارات في مصر، فإن اختيار الجهاز المناسب يعتمد على
+                نوع المركبة وطريقة الاستخدام وشبكة الاتصال والوظائف التي
+                تحتاج إليها.
+              </p>
+
+              <p className="mt-5">
+                أجهزة GPS هي من الحلول المستخدمة لمتابعة السيارات والمركبات
+                ومعرفة موقعها وحركتها، وتوجد موديلات مختلفة تناسب الاستخدام
+                الشخصي والتجاري ومتابعة المركبات والأساطيل.
               </p>
 
               <p className="mt-5">
@@ -646,14 +658,21 @@ export default function HomePage() {
               <p className="mt-5">
                 تتوفر أجهزة مناسبة للسيارات والموتوسيكلات والتروسيكلات
                 والمركبات المختلفة، كما توجد أجهزة تعمل على شبكات 2G وأجهزة
-                أحدث تعمل على 4G، لذلك من المهم اختيار الجهاز المناسب قبل
-                التركيب.
+                أحدث تعمل على 4G، لذلك من المهم اختيار جهاز جي بي اس مناسب
+                قبل التركيب.
               </p>
 
               <p className="mt-5">
-                في GPS World Egypt نساعدك في اختيار جهاز GPS المناسب حسب
-                نوع المركبة والاستخدام المطلوب، مع إمكانية التركيب والمتابعة
-                وشرح طريقة استخدام الجهاز.
+                إذا كنت تبحث عن جهاز GPS للسيارات في مصر، يمكنك الاطلاع على
+                الموديلات المختلفة مثل GT06N وEV402 وEV404 وJ16PRO Max وAK300
+                وB100 وEV505 وTK303 وأجهزة OBD وغيرها، ثم اختيار الجهاز حسب
+                احتياجاتك الفعلية.
+              </p>
+
+              <p className="mt-5">
+                في GPS World Egypt نساعدك في اختيار جهاز GPS أو جهاز جي بي اس
+                المناسب حسب نوع المركبة والاستخدام المطلوب، مع إمكانية
+                التركيب والمتابعة وشرح طريقة استخدام الجهاز.
               </p>
             </div>
           </div>
@@ -667,8 +686,9 @@ export default function HomePage() {
             </h2>
 
             <p className="mt-5 text-lg leading-9 text-gray-800 text-center max-w-4xl mx-auto">
-              هدفنا توفير أجهزة GPS مناسبة للاستخدام الحقيقي، مع شرح واضح
-              للجهاز وطريقة الاستخدام والمساعدة في اختيار الحل المناسب.
+              هدفنا توفير أجهزة GPS وأجهزة جي بي اس مناسبة للاستخدام الحقيقي،
+              مع شرح واضح للجهاز وطريقة الاستخدام والمساعدة في اختيار الحل
+              المناسب.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
@@ -732,8 +752,9 @@ export default function HomePage() {
 
             <div className="mt-8 text-lg leading-9 text-gray-900">
               <p>
-                اختيار جهاز GPS لا يعتمد على اسم الجهاز فقط، ولكن يعتمد على
-                نوع السيارة أو المركبة وطريقة الاستخدام والوظائف التي تريدها.
+                اختيار جهاز GPS أو جهاز جي بي اس لا يعتمد على اسم الجهاز فقط،
+                ولكن يعتمد على نوع السيارة أو المركبة وطريقة الاستخدام
+                والوظائف التي تريدها.
               </p>
 
               <ul className="mt-6 list-disc pr-7 space-y-3">
@@ -770,12 +791,12 @@ export default function HomePage() {
         <section id="faq" className="py-16 px-5" dir="rtl">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center">
-              الأسئلة الشائعة عن أجهزة GPS
+              الأسئلة الشائعة عن أجهزة GPS وأجهزة جي بي اس
             </h2>
 
             <p className="mt-5 text-lg leading-9 text-gray-800 text-center">
               إجابات على بعض الأسئلة التي يبحث عنها العملاء قبل شراء أو
-              تركيب جهاز GPS لتتبع السيارات والمركبات.
+              تركيب جهاز GPS أو جهاز جي بي اس لتتبع السيارات والمركبات.
             </p>
 
             <div className="mt-10 space-y-5">
@@ -896,15 +917,15 @@ export default function HomePage() {
         >
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-
               <div>
                 <h3 className="text-xl font-extrabold">
                   GPS World Egypt
                 </h3>
 
                 <p className="mt-4 text-lg leading-8 text-gray-200">
-                  متخصصون في أجهزة GPS وتتبع السيارات والمركبات في مصر،
-                  مع توفير المساعدة في اختيار الجهاز والتركيب والمتابعة.
+                  متخصصون في أجهزة GPS وأجهزة جي بي اس وتتبع السيارات
+                  والمركبات في مصر، مع توفير المساعدة في اختيار الجهاز
+                  والتركيب والمتابعة.
                 </p>
               </div>
 
@@ -928,7 +949,7 @@ export default function HomePage() {
                       href="#products"
                       className="hover:text-blue-300"
                     >
-                      أجهزة GPS
+                      أجهزة GPS وأجهزة جي بي اس
                     </a>
                   </li>
 
@@ -1010,7 +1031,6 @@ export default function HomePage() {
                   القاهرة - مصر
                 </p>
               </div>
-
             </div>
 
             <div className="border-t border-gray-700 mt-8 pt-6 text-center text-lg">
@@ -1019,7 +1039,6 @@ export default function HomePage() {
             </div>
           </div>
         </footer>
-
       </main>
     </>
   );
