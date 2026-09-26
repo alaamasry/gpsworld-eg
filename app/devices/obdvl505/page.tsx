@@ -2,28 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "OBD VL505 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+  title: "OBD VL505 | جهاز تتبع سيارات GPS OBD في مصر",
 
   description:
-    "جهاز OBD VL505 لتتبع السيارات والمركبات في مصر، بتركيب مباشر من خلال منفذ OBD-II، مع تتبع لحظي وتنبيهات ذكية وتحديد موقع GPS.",
+    "جهاز OBD VL505 لتتبع السيارات والمركبات في مصر، بتركيب مباشر عبر منفذ OBD-II بدون أسلاك إضافية، مع 4G CAT1 وتحديد موقع GPS وتنبيهات ومتابعة حركة السيارة.",
 
   keywords: [
     "OBD VL505",
-    "جهاز OBD VL505",
     "OBD VL505 GPS",
+    "جهاز OBD VL505",
     "جهاز تتبع OBD VL505",
     "جهاز GPS OBD VL505",
+    "OBD GPS Tracker",
     "جهاز تتبع OBD",
     "جهاز GPS OBD",
-    "OBD GPS Tracker",
-    "جهاز GPS",
     "جهاز تتبع سيارات",
-    "أجهزة تتبع GPS",
+    "جهاز تتبع سيارات GPS",
     "جهاز GPS للسيارات",
     "جهاز تتبع للسيارة",
+    "أجهزة تتبع GPS",
     "GPS Tracker",
     "GPS Tracker مصر",
+    "GPS مصر",
     "أجهزة GPS مصر",
+    "أجهزة GPS",
     "تتبع السيارات",
     "تتبع المركبات",
     "جهاز تتبع سيارات مصر",
@@ -34,9 +36,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "OBD VL505 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+    title: "OBD VL505 | جهاز تتبع سيارات GPS OBD في مصر",
     description:
-      "جهاز OBD VL505 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II، مع تتبع لحظي وتنبيهات ذكية وتحديد موقع GPS.",
+      "جهاز OBD VL505 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II، مع اتصال 4G CAT1 وتحديد موقع GPS وتنبيهات ومتابعة حركة السيارة.",
     url: "https://gpsworld-eg.com/devices/obdvl505",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -53,9 +55,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "OBD VL505 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+    title: "OBD VL505 | جهاز تتبع سيارات GPS في مصر",
     description:
-      "جهاز OBD VL505 لتتبع السيارات والمركبات مع تركيب مباشر من منفذ OBD-II ومتابعة الموقع والحركة.",
+      "جهاز OBD VL505 لتتبع السيارات مع تركيب مباشر عبر منفذ OBD-II ودعم 4G CAT1 وتحديد الموقع والتنبيهات.",
     images: ["/images/OBDVL505.jpeg"],
   },
 };
@@ -88,17 +90,27 @@ const faqs = [
   {
     question: "ما هو جهاز OBD VL505؟",
     answer:
-      "جهاز OBD VL505 هو جهاز تتبع GPS يتم تركيبه مباشرة من خلال منفذ OBD-II في السيارة، ويوفر متابعة الموقع والحركة والتنبيهات من خلال نظام التتبع المتوافق.",
+      "جهاز OBD VL505 هو جهاز تتبع GPS للسيارات والمركبات يتم تركيبه مباشرة في منفذ OBD-II، ويوفر متابعة موقع وحركة السيارة والتنبيهات من خلال نظام التتبع والمنصة المتوافقة.",
   },
   {
     question: "هل يحتاج OBD VL505 إلى تمديد أسلاك؟",
     answer:
-      "لا، يتم تركيب الجهاز مباشرة في منفذ OBD-II بطريقة Plug & Play، دون الحاجة إلى تمديد أسلاك إضافية.",
+      "لا، يتم تركيب جهاز OBD VL505 مباشرة في منفذ OBD-II بطريقة Plug & Play، لذلك لا يحتاج إلى تمديد أسلاك إضافية أثناء التركيب.",
+  },
+  {
+    question: "هل يدعم OBD VL505 شبكة 4G؟",
+    answer:
+      "نعم، يدعم جهاز OBD VL505 اتصال 4G CAT1 LTE بالإضافة إلى GSM، مع دعم مجموعة من ترددات LTE المناسبة للاتصال حسب إصدار الجهاز والشبكة المستخدمة.",
   },
   {
     question: "هل يدعم OBD VL505 تتبع السيارة بشكل لحظي؟",
     answer:
-      "نعم، يدعم الجهاز متابعة موقع وحركة السيارة بشكل مباشر من خلال نظام التتبع والمنصة المتوافقة.",
+      "نعم، يدعم الجهاز متابعة موقع وحركة السيارة بشكل مباشر عبر نظام التتبع والمنصة المتوافقة، حسب إعدادات النظام والاتصال المتاح.",
+  },
+  {
+    question: "هل يدعم OBD VL505 تحديد الموقع GPS؟",
+    answer:
+      "نعم، يدعم الجهاز تحديد الموقع باستخدام GPS وBDS وGNSS وLBS للمساعدة في متابعة موقع المركبة وحركتها.",
   },
   {
     question: "هل يدعم OBD VL505 فصل محرك السيارة؟",
@@ -110,6 +122,11 @@ const faqs = [
     answer:
       "يعمل جهاز OBD VL505 على نطاق جهد من 9V إلى 36V DC.",
   },
+  {
+    question: "هل يمكن استخدام OBD VL505 مع السيارات الخاصة؟",
+    answer:
+      "نعم، الجهاز مناسب للسيارات التي تحتوي على منفذ OBD-II متوافق، ويمكن استخدامه لمتابعة موقع السيارة وحركتها من خلال نظام التتبع.",
+  },
 ];
 
 const structuredData = {
@@ -118,15 +135,19 @@ const structuredData = {
     {
       "@type": "Product",
       name: product.name,
-      image: ["https://gpsworld-eg.com/images/OBDVL505.jpeg"],
+      image: [
+        "https://gpsworld-eg.com/images/OBDVL505.jpeg",
+      ],
       url: product.url,
       description:
-        "جهاز OBD VL505 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II مع تتبع GPS وتنبيهات ذكية.",
+        "جهاز OBD VL505 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II، مع 4G CAT1 وتحديد موقع GPS وتنبيهات ومتابعة حركة السيارة.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
+      category: "GPS Vehicle Tracker",
     },
+
     {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -150,6 +171,7 @@ const structuredData = {
         },
       ],
     },
+
     {
       "@type": "FAQPage",
       mainEntity: faqs.map((faq) => ({
@@ -236,14 +258,21 @@ export default function OBDVL505Page() {
               </h1>
 
               <p className="mt-3 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS بتركيب مباشر عبر منفذ OBD-II
+                جهاز تتبع GPS بتركيب مباشر عبر منفذ OBD-II ويدعم 4G CAT1
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز OBD VL505 مصمم لتوفير طريقة عملية وسهلة لمتابعة السيارات
-                والمركبات، حيث يتم تركيبه مباشرة في منفذ OBD-II بدون الحاجة إلى
-                تمديد أسلاك، مع إمكانية متابعة الموقع والحركة والتنبيهات من
-                خلال نظام التتبع المتوافق.
+                جهاز OBD VL505 هو جهاز تتبع سيارات GPS مصمم لمن يبحث عن
+                تركيب سريع وسهل بدون تمديد أسلاك. يتم توصيل الجهاز مباشرة
+                في منفذ OBD-II بالسيارة، ليتيح متابعة الموقع والحركة
+                والتنبيهات من خلال نظام التتبع المتوافق.
+              </p>
+
+              <p className="mt-4 text-lg leading-9 text-gray-600">
+                يدعم OBD VL505 اتصال 4G CAT1 LTE بالإضافة إلى GSM، مع
+                تحديد الموقع باستخدام GPS وBDS وGNSS وLBS، ويتميز بحجم
+                صغير وتركيب عملي يناسب العديد من السيارات التي تحتوي على
+                منفذ OBD-II متوافق.
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -274,11 +303,24 @@ export default function OBDVL505Page() {
               <div className="text-4xl">🔌</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تركيب سريع
+                تركيب Plug & Play
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تركيب مباشر من خلال منفذ OBD-II بدون أسلاك إضافية.
+                تركيب مباشر من خلال منفذ OBD-II بدون الحاجة إلى تمديد
+                أسلاك إضافية.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">📡</div>
+
+              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
+                4G CAT1
+              </h2>
+
+              <p className="mt-2 leading-7 text-gray-600">
+                دعم اتصال 4G CAT1 LTE بالإضافة إلى شبكة GSM.
               </p>
             </div>
 
@@ -286,11 +328,11 @@ export default function OBDVL505Page() {
               <div className="text-4xl">📍</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تتبع لحظي
+                تتبع GPS
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع وحركة المركبة بشكل مباشر عبر الإنترنت.
+                متابعة موقع وحركة السيارة من خلال نظام التتبع المتوافق.
               </p>
             </div>
 
@@ -298,23 +340,12 @@ export default function OBDVL505Page() {
               <div className="text-4xl">🚨</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تنبيهات ذكية
+                تنبيهات متعددة
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تنبيهات للسرعة والاهتزاز والتسارع والكبح والمناطق الجغرافية.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🔄</div>
-
-              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تحديث OTA
-              </h2>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                دعم تحديث الجهاز عن بُعد حسب النظام والإصدار.
+                دعم تنبيهات مرتبطة بالسرعة والاهتزاز والتسارع والكبح
+                والمناطق الجغرافية.
               </p>
             </div>
           </div>
@@ -330,10 +361,17 @@ export default function OBDVL505Page() {
               </h2>
 
               <ul className="space-y-4 text-lg leading-8 text-gray-700">
-                <li>📍 متابعة موقع المركبة بشكل لحظي عبر الإنترنت.</li>
+                <li>
+                  📍 متابعة موقع المركبة بشكل لحظي عبر الإنترنت.
+                </li>
 
                 <li>
-                  🔌 تركيب مباشر وسريع من خلال منفذ OBD-II بدون أسلاك.
+                  🔌 تركيب مباشر وسريع من خلال منفذ OBD-II بدون أسلاك
+                  إضافية.
+                </li>
+
+                <li>
+                  📡 دعم اتصال 4G CAT1 LTE بالإضافة إلى GSM.
                 </li>
 
                 <li>
@@ -345,11 +383,13 @@ export default function OBDVL505Page() {
                 </li>
 
                 <li>
-                  📡 دعم التنبيه عند الدخول أو الخروج من منطقة جغرافية محددة
-                  Geo-Fence.
+                  📍 دعم التنبيه عند الدخول أو الخروج من منطقة جغرافية
+                  محددة Geo-Fence.
                 </li>
 
-                <li>💡 إنذار تغير الإضاءة المفاجئ حسب الإصدار.</li>
+                <li>
+                  💡 إنذار تغير الإضاءة المفاجئ حسب الإصدار.
+                </li>
 
                 <li>
                   🔋 إنذار انخفاض البطارية ودعم بطارية احتياطية.
@@ -359,7 +399,9 @@ export default function OBDVL505Page() {
                   💾 إمكانية حفظ بيانات الرحلات على السيرفر حتى 6 أشهر.
                 </li>
 
-                <li>🔄 دعم التحديثات عن بُعد OTA.</li>
+                <li>
+                  🔄 دعم التحديثات عن بُعد OTA.
+                </li>
 
                 <li>
                   🌡️ إمكانية دعم أجهزة إضافية لمراقبة الحرارة والرطوبة.
@@ -369,7 +411,9 @@ export default function OBDVL505Page() {
                   🎙️ إمكانية المراقبة الصوتية في بعض الإصدارات.
                 </li>
 
-                <li>🛡️ مقاومة للماء والغبار بمعيار IP65.</li>
+                <li>
+                  🛡️ مقاومة للماء والغبار بمعيار IP65.
+                </li>
 
                 <li>
                   ⚡ استهلاك منخفض للطاقة ومناسب للتشغيل المستمر.
@@ -397,7 +441,9 @@ export default function OBDVL505Page() {
                   <span className="font-bold text-gray-800">
                     نوع الجهاز
                   </span>
-                  <span className="text-gray-600">OBD GPS Tracker</span>
+                  <span className="text-gray-600">
+                    OBD GPS Tracker
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -487,7 +533,9 @@ export default function OBDVL505Page() {
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                   <span className="font-bold text-gray-800">الوزن</span>
-                  <span className="text-gray-600">حوالي 40 جرام</span>
+                  <span className="text-gray-600">
+                    حوالي 40 جرام
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -531,7 +579,8 @@ export default function OBDVL505Page() {
 
               <p className="mt-5 text-lg leading-9 text-gray-600">
                 يوفر جهاز OBD VL505 مجموعة من وظائف المتابعة والتنبيهات
-                التي تساعد على مراقبة المركبة ومعرفة ما يحدث أثناء الرحلة.
+                التي تساعد على مراقبة المركبة ومعرفة موقعها وحركتها
+                أثناء الرحلات، مع سهولة التركيب المباشر من منفذ OBD-II.
               </p>
             </div>
 
@@ -542,8 +591,8 @@ export default function OBDVL505Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  متابعة حركة المركبة والرجوع إلى بيانات الرحلات المحفوظة
-                  على المنصة حسب مدة الحفظ المتاحة.
+                  متابعة حركة المركبة والرجوع إلى بيانات الرحلات
+                  المحفوظة على المنصة حسب مدة الحفظ المتاحة.
                 </p>
               </div>
 
@@ -553,8 +602,8 @@ export default function OBDVL505Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  تنبيه عند دخول المركبة أو خروجها من منطقة جغرافية محددة
-                  مسبقًا.
+                  تنبيه عند دخول المركبة أو خروجها من منطقة جغرافية
+                  محددة مسبقًا.
                 </p>
               </div>
 
@@ -574,8 +623,8 @@ export default function OBDVL505Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  تنبيهات مرتبطة بالطاقة وانخفاض البطارية مع بطارية احتياطية
-                  داخل الجهاز.
+                  تنبيهات مرتبطة بالطاقة وانخفاض البطارية مع بطارية
+                  احتياطية داخل الجهاز.
                 </p>
               </div>
             </div>
@@ -679,9 +728,10 @@ export default function OBDVL505Page() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              إذا كنت تبحث عن جهاز تتبع يمكن تركيبه بسرعة وبدون تمديد أسلاك،
-              فإن OBD VL505 يوفر تركيبًا مباشرًا من منفذ OBD-II مع مجموعة
-              من وظائف التتبع والتنبيهات ومتابعة حركة السيارة.
+              إذا كنت تبحث عن جهاز تتبع سيارات GPS يمكن تركيبه بسرعة
+              وبدون تمديد أسلاك، فإن OBD VL505 يوفر تركيبًا مباشرًا من
+              منفذ OBD-II مع دعم 4G CAT1 ومجموعة من وظائف التتبع
+              والتنبيهات ومتابعة حركة السيارة.
             </p>
 
             <div className="mt-10 grid gap-5 text-right sm:grid-cols-2">
@@ -691,7 +741,8 @@ export default function OBDVL505Page() {
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  يتم توصيل الجهاز مباشرة في منفذ OBD-II.
+                  يتم توصيل الجهاز مباشرة في منفذ OBD-II بدون الحاجة
+                  إلى تمديد أسلاك إضافية.
                 </p>
               </div>
 
@@ -721,8 +772,8 @@ export default function OBDVL505Page() {
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  مناسب للاستخدام الشخصي وكذلك لمتابعة المركبات وإدارة
-                  الأساطيل.
+                  مناسب للاستخدام الشخصي وكذلك لمتابعة المركبات
+                  وإدارة الأساطيل.
                 </p>
               </div>
             </div>
@@ -739,6 +790,12 @@ export default function OBDVL505Page() {
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
               مناسب لمجموعة متنوعة من الاستخدامات
             </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
+              يمكن استخدام جهاز OBD VL505 في متابعة السيارات الخاصة
+              ومركبات الشركات والأساطيل، خاصة عندما يكون المطلوب
+              تركيب جهاز GPS سريع بدون أعمال توصيل أسلاك إضافية.
+            </p>
           </div>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

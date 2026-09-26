@@ -243,8 +243,8 @@ export default function AT4PlusPage() {
             <p className="mt-6 text-lg leading-9 text-gray-600">
               جهاز AT4 PLUS هو جهاز تتبع GPS لاسلكي محمول مصمم لمتابعة
               السيارات والمركبات والأصول، مع بطارية قوية بسعة 10000mAh
-              وتصميم عملي مزود بمغناطيس قوي للتثبيت السريع دون الحاجة
-              إلى توصيلات أو تركيب معقد.
+              وتصميم عملي مزود بمغناطيس قوي للتثبيت السريع دون الحاجة إلى
+              توصيلات أو تركيب معقد.
             </p>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -278,9 +278,7 @@ export default function AT4PlusPage() {
               بطارية 10000mAh
             </h3>
 
-            <p className="mt-2 text-gray-600">
-              تشغيل لفترات طويلة
-            </p>
+            <p className="mt-2 text-gray-600">تشغيل لفترات طويلة</p>
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
@@ -290,9 +288,7 @@ export default function AT4PlusPage() {
               تتبع لحظي
             </h3>
 
-            <p className="mt-2 text-gray-600">
-              متابعة الموقع والحركة
-            </p>
+            <p className="mt-2 text-gray-600">متابعة الموقع والحركة</p>
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
@@ -302,9 +298,7 @@ export default function AT4PlusPage() {
               تثبيت مغناطيسي
             </h3>
 
-            <p className="mt-2 text-gray-600">
-              تركيب سريع وسهل
-            </p>
+            <p className="mt-2 text-gray-600">تركيب سريع وسهل</p>
           </div>
 
           <div className="rounded-3xl bg-white p-6 text-center shadow-md">
@@ -314,9 +308,7 @@ export default function AT4PlusPage() {
               مقاوم للماء والأتربة
             </h3>
 
-            <p className="mt-2 text-gray-600">
-              حماية بمعيار IP65
-            </p>
+            <p className="mt-2 text-gray-600">حماية بمعيار IP65</p>
           </div>
         </div>
       </section>
@@ -340,24 +332,20 @@ export default function AT4PlusPage() {
                 🔋 بطارية قوية بسعة 10000mAh لتوفير فترة تشغيل طويلة.
               </li>
 
-              <li>
-                💧 مقاومة للماء والأتربة بمعيار IP65.
-              </li>
+              <li>💧 مقاومة للماء والأتربة بمعيار IP65.</li>
+
+              <li>🚨 تنبيه عند انخفاض مستوى البطارية.</li>
 
               <li>
-                🚨 تنبيه عند انخفاض مستوى البطارية.
-              </li>
-
-              <li>
-                💡 تنبيه حساس الضوء عند حدوث تغير مفاجئ في الإضاءة،
-                وهو مفيد في حالات العبث أو الفتح غير المصرح به.
+                💡 تنبيه حساس الضوء عند حدوث تغير مفاجئ في الإضاءة، وهو مفيد
+                في حالات العبث أو الفتح غير المصرح به.
               </li>
 
               <li>🎙️ دعم خاصية المراقبة الصوتية.</li>
 
               <li>
-                🌡️ إمكانية إضافة مستشعرات درجة الحرارة والرطوبة
-                حسب التجهيز والنظام المستخدم.
+                🌡️ إمكانية إضافة مستشعرات درجة الحرارة والرطوبة حسب التجهيز
+                والنظام المستخدم.
               </li>
 
               <li>
@@ -365,13 +353,11 @@ export default function AT4PlusPage() {
               </li>
 
               <li>
-                🔄 دعم التحديث عن بُعد OTA لإضافة تحسينات وخصائص جديدة
-                دون الحاجة إلى فك الجهاز.
+                🔄 دعم التحديث عن بُعد OTA لإضافة تحسينات وخصائص جديدة دون
+                الحاجة إلى فك الجهاز.
               </li>
 
-              <li>
-                🛠️ مناسب للاستخدام الشخصي والتجاري ومتابعة الأصول.
-              </li>
+              <li>🛠️ مناسب للاستخدام الشخصي والتجاري ومتابعة الأصول.</li>
 
               <li>🤝 دعم فني ومتابعة من GPS World Egypt.</li>
             </ul>
@@ -389,13 +375,9 @@ export default function AT4PlusPage() {
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">
-                  نوع الجهاز
-                </span>
+                <span className="font-bold text-gray-800">نوع الجهاز</span>
 
-                <span className="text-gray-600">
-                  GPS Tracker لاسلكي
-                </span>
+                <span className="text-gray-600">GPS Tracker لاسلكي</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -409,9 +391,7 @@ export default function AT4PlusPage() {
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">
-                  شبكة الاتصال
-                </span>
+                <span className="font-bold text-gray-800">شبكة الاتصال</span>
 
                 <span className="text-gray-600">4G</span>
               </div>
@@ -427,9 +407,7 @@ export default function AT4PlusPage() {
               <div className="grid grid-cols-2 border-b border-gray-200 p-4">
                 <span className="font-bold text-gray-800">الأبعاد</span>
 
-                <span className="text-gray-600">
-                  86 × 63 × 34 مم
-                </span>
+                <span className="text-gray-600">86 × 63 × 34 مم</span>
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -463,9 +441,7 @@ export default function AT4PlusPage() {
               </div>
 
               <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">
-                  مؤشرات LED
-                </span>
+                <span className="font-bold text-gray-800">مؤشرات LED</span>
 
                 <span className="text-gray-600">
                   GSM / GPS / الطاقة
@@ -473,13 +449,9 @@ export default function AT4PlusPage() {
               </div>
 
               <div className="grid grid-cols-2 p-4">
-                <span className="font-bold text-gray-800">
-                  التحديث
-                </span>
+                <span className="font-bold text-gray-800">التحديث</span>
 
-                <span className="text-gray-600">
-                  OTA عن بُعد
-                </span>
+                <span className="text-gray-600">OTA عن بُعد</span>
               </div>
             </div>
           </div>
@@ -490,9 +462,7 @@ export default function AT4PlusPage() {
       <section className="bg-white px-5 py-16">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
-            <span className="font-bold text-blue-700">
-              الاستخدامات
-            </span>
+            <span className="font-bold text-blue-700">الاستخدامات</span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
               أين يمكن استخدام جهاز AT4 PLUS؟
@@ -500,8 +470,8 @@ export default function AT4PlusPage() {
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
               تصميم AT4 PLUS اللاسلكي والبطارية الكبيرة يجعله مناسبًا
-              لمتابعة المركبات والأصول التي تحتاج إلى حل تتبع عملي
-              وسهل التركيب.
+              لمتابعة المركبات والأصول التي تحتاج إلى حل تتبع عملي وسهل
+              التركيب.
             </p>
           </div>
 
@@ -585,9 +555,7 @@ export default function AT4PlusPage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
           <div className="text-center">
-            <span className="font-bold text-blue-700">
-              أوضاع التشغيل
-            </span>
+            <span className="font-bold text-blue-700">أوضاع التشغيل</span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
               اختر وضع التشغيل المناسب لاحتياجك
@@ -649,9 +617,7 @@ export default function AT4PlusPage() {
       {/* Why */}
       <section className="bg-blue-50 px-5 py-16">
         <div className="mx-auto max-w-5xl text-center">
-          <span className="font-bold text-blue-700">
-            GPS World Egypt
-          </span>
+          <span className="font-bold text-blue-700">GPS World Egypt</span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
             لماذا تختار جهاز AT4 PLUS؟
@@ -710,9 +676,7 @@ export default function AT4PlusPage() {
       {/* FAQ */}
       <section className="mx-auto max-w-5xl px-5 py-16">
         <div className="text-center">
-          <span className="font-bold text-blue-700">
-            الأسئلة الشائعة
-          </span>
+          <span className="font-bold text-blue-700">الأسئلة الشائعة</span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
             أسئلة شائعة عن جهاز AT4 PLUS
@@ -729,9 +693,7 @@ export default function AT4PlusPage() {
                 {faq.question}
               </summary>
 
-              <p className="mt-4 leading-8 text-gray-600">
-                {faq.answer}
-              </p>
+              <p className="mt-4 leading-8 text-gray-600">{faq.answer}</p>
             </details>
           ))}
         </div>
@@ -771,17 +733,13 @@ export default function AT4PlusPage() {
       {/* Footer */}
       <footer className="bg-blue-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-          <h3 className="text-2xl font-extrabold">
-            GPS World Egypt
-          </h3>
+          <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
 
           <p className="mt-3 text-blue-200">
             أجهزة GPS للتتبع والمراقبة في مصر
           </p>
 
-          <p className="mt-5 text-blue-300">
-            📞 01006687163
-          </p>
+          <p className="mt-5 text-blue-300">📞 01006687163</p>
 
           <a
             href={whatsappBaseUrl}

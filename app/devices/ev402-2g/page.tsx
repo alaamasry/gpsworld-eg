@@ -3,8 +3,10 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "EV402 | جهاز تتبع سيارات GPS في مصر",
+
   description:
     "جهاز EV402 لتتبع السيارات والمركبات ومتابعة الموقع والحركة، مع مجموعة من وظائف التتبع والمراقبة المناسبة للأفراد والشركات وأصحاب الأساطيل في مصر.",
+
   keywords: [
     "EV402",
     "جهاز EV402",
@@ -24,17 +26,25 @@ export const metadata: Metadata = {
     "جهاز تتبع للمركبات",
     "GPS World Egypt",
   ],
+
   alternates: {
-    canonical: "https://gpsworld-eg.com/devices/ev402",
+    canonical: "https://gpsworld-eg.com/devices/ev402-2g",
   },
+
   openGraph: {
     title: "EV402 | جهاز تتبع سيارات GPS في مصر",
+
     description:
       "جهاز EV402 لتتبع السيارات والمركبات ومتابعة الموقع والحركة باستخدام أنظمة ومنصات GPS.",
-    url: "https://gpsworld-eg.com/devices/ev402",
+
+    url: "https://gpsworld-eg.com/devices/ev402-2g",
+
     siteName: "GPS World Egypt",
+
     locale: "ar_EG",
+
     type: "website",
+
     images: [
       {
         url: "/images/ev402.jpeg",
@@ -44,11 +54,15 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
+
     title: "EV402 | جهاز تتبع سيارات GPS في مصر",
+
     description:
       "جهاز EV402 لتتبع السيارات والمركبات ومتابعة الموقع والحركة عبر منصة GPS.",
+
     images: ["/images/ev402.jpeg"],
   },
 };
@@ -56,7 +70,7 @@ export const metadata: Metadata = {
 const product = {
   name: "EV402",
   image: "/images/ev402.jpeg",
-  url: "https://gpsworld-eg.com/devices/ev402",
+  url: "https://gpsworld-eg.com/devices/ev402-2g",
 };
 
 const whatsappNumber = "201006687163";
@@ -102,21 +116,29 @@ const faqs = [
 
 const structuredData = {
   "@context": "https://schema.org",
+
   "@graph": [
     {
       "@type": "Product",
+
       name: product.name,
+
       image: ["https://gpsworld-eg.com/images/ev402.jpeg"],
+
       url: product.url,
+
       description:
         "جهاز EV402 لتتبع السيارات والمركبات ومتابعة الموقع والحركة باستخدام أنظمة ومنصات GPS.",
+
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
     },
+
     {
       "@type": "BreadcrumbList",
+
       itemListElement: [
         {
           "@type": "ListItem",
@@ -124,25 +146,31 @@ const structuredData = {
           name: "الرئيسية",
           item: "https://gpsworld-eg.com/",
         },
+
         {
           "@type": "ListItem",
           position: 2,
           name: "أجهزة GPS",
           item: "https://gpsworld-eg.com/#products",
         },
+
         {
           "@type": "ListItem",
           position: 3,
           name: "EV402",
-          item: "https://gpsworld-eg.com/devices/ev402",
+          item: "https://gpsworld-eg.com/devices/ev402-2g",
         },
       ],
     },
+
     {
       "@type": "FAQPage",
+
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
+
         name: faq.question,
+
         acceptedAnswer: {
           "@type": "Answer",
           text: faq.answer,
@@ -162,7 +190,10 @@ export default function EV402Page() {
         }}
       />
 
-      <main className="min-h-screen bg-gray-50 text-gray-900" dir="rtl">
+      <main
+        className="min-h-screen bg-gray-50 text-gray-900"
+        dir="rtl"
+      >
         {/* ================= HEADER ================= */}
 
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
@@ -319,6 +350,8 @@ export default function EV402Page() {
 
         <section className="mx-auto max-w-7xl px-5 py-12">
           <div className="grid gap-8 lg:grid-cols-2">
+            {/* FEATURES */}
+
             <div className="rounded-3xl border border-gray-200 bg-white p-7 shadow-md">
               <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
                 ⭐ أهم مميزات جهاز EV402
@@ -326,12 +359,23 @@ export default function EV402Page() {
 
               <ul className="space-y-4 text-lg leading-8 text-gray-800">
                 <li>✓ تتبع موقع المركبة ومتابعة حركتها.</li>
+
                 <li>✓ مناسب لمتابعة السيارات والمركبات.</li>
+
                 <li>✓ تصميم عملي ومناسب للتركيب داخل المركبة.</li>
-                <li>✓ إمكانية المتابعة من خلال منصة GPS المناسبة.</li>
+
+                <li>
+                  ✓ إمكانية المتابعة من خلال منصة GPS المناسبة.
+                </li>
+
                 <li>✓ يساعد على متابعة حركة المركبة.</li>
-                <li>✓ مناسب للأفراد والشركات وأصحاب الأساطيل.</li>
+
+                <li>
+                  ✓ مناسب للأفراد والشركات وأصحاب الأساطيل.
+                </li>
+
                 <li>✓ يساعد على تنظيم ومراقبة المركبات.</li>
+
                 <li>✓ حل عملي لأنظمة التتبع والمراقبة.</li>
               </ul>
             </div>
@@ -583,9 +627,9 @@ export default function EV402Page() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-blue-100">
-              EV402 خيار عملي لمن يبحث عن جهاز تتبع GPS لمتابعة المركبات وتنظيم
-              حركة السيارات، مع إمكانية استخدامه ضمن أنظمة التتبع والمراقبة
-              المناسبة.
+              EV402 خيار عملي لمن يبحث عن جهاز تتبع GPS لمتابعة المركبات
+              وتنظيم حركة السيارات، مع إمكانية استخدامه ضمن أنظمة التتبع
+              والمراقبة المناسبة.
             </p>
 
             <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -643,18 +687,18 @@ export default function EV402Page() {
 
           <div className="mt-10 space-y-5">
             {faqs.map((faq) => (
-              <div
+              <details
                 key={faq.question}
                 className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
               >
-                <h3 className="text-xl font-extrabold text-blue-950">
+                <summary className="cursor-pointer text-xl font-extrabold text-blue-950">
                   {faq.question}
-                </h3>
+                </summary>
 
                 <p className="mt-3 leading-8 text-gray-700">
                   {faq.answer}
                 </p>
-              </div>
+              </details>
             ))}
           </div>
         </section>

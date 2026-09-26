@@ -4,12 +4,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AT4 | جهاز تتبع سيارات GPS مغناطيسي بدون أسلاك في مصر",
   description:
-    "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، ببطارية 10000mAh ومغناطيس قوي، مع تتبع مباشر عبر Tracksolid Pro وتنبيهات الحركة والسرعة والسياج الجغرافي.",
+    "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، ببطارية 10000mAh ومغناطيس قوي، مع متابعة موقع المركبة عبر Tracksolid Pro وتنبيهات الحركة والسرعة والسياج الجغرافي.",
   keywords: [
     "AT4",
     "جهاز AT4",
     "جهاز تتبع AT4",
     "جهاز GPS AT4",
+    "جهاز تتبع سيارات بدون أسلاك",
     "جهاز تتبع السيارات بدون أسلاك",
     "GPS مغناطيسي للسيارات",
     "جهاز تتبع بمغناطيس قوي",
@@ -25,7 +26,8 @@ export const metadata: Metadata = {
     "تتبع المركبات",
     "تتبع السيارة من الموبايل",
     "Tracksolid Pro",
-    "جهاز تتبع السيارات ضد السرقة",
+    "جهاز تتبع سيارات ضد السرقة",
+    "جهاز GPS مغناطيسي",
   ],
   alternates: {
     canonical: "https://gpsworld-eg.com/devices/at4",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AT4 | جهاز تتبع سيارات GPS مغناطيسي بدون أسلاك",
     description:
-      "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، مع بطارية 10000mAh ومتابعة مباشرة عبر Tracksolid Pro.",
+      "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، مع بطارية 10000mAh ومتابعة عبر Tracksolid Pro.",
     url: "https://gpsworld-eg.com/devices/at4",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -43,7 +45,7 @@ export const metadata: Metadata = {
         url: "/images/AT4.jpeg",
         width: 650,
         height: 500,
-        alt: "AT4 جهاز تتبع سيارات GPS مغناطيسي",
+        alt: "AT4 جهاز تتبع سيارات GPS مغناطيسي بدون أسلاك",
       },
     ],
   },
@@ -84,37 +86,62 @@ const faqs = [
   {
     question: "ما هو جهاز AT4؟",
     answer:
-      "AT4 هو جهاز تتبع GPS مغناطيسي للسيارات والمركبات، مصمم للعمل بدون توصيل أسلاك داخل المركبة، ويحتوي على بطارية 10000mAh ومغناطيس قوي للتثبيت.",
+      "AT4 هو جهاز تتبع GPS مغناطيسي للسيارات والمركبات، مصمم للعمل بدون توصيل أسلاك داخل المركبة، ويحتوي على بطارية 10000mAh ومغناطيس قوي للتثبيت على الأسطح المعدنية.",
   },
   {
     question: "هل جهاز AT4 يحتاج إلى تركيب أسلاك؟",
     answer:
-      "لا، جهاز AT4 مصمم للعمل بدون أسلاك داخل السيارة، ويتم تثبيته باستخدام المغناطيس القوي، مع شحن البطارية عند الحاجة.",
+      "لا، جهاز AT4 مصمم للعمل بدون توصيل أسلاك داخل السيارة، ويتم تثبيته باستخدام المغناطيس القوي، مع شحن البطارية عند الحاجة.",
   },
   {
     question: "كم سعة بطارية جهاز AT4؟",
     answer:
-      "بطارية جهاز AT4 بسعة 10000mAh، وتساعد على تشغيل الجهاز لفترة طويلة حسب الاستخدام وإعدادات التتبع.",
+      "بطارية جهاز AT4 بسعة 10000mAh، وهي سعة كبيرة تساعد على تشغيل الجهاز لفترة طويلة، وتختلف مدة التشغيل الفعلية حسب معدل التتبع والاستخدام وإعدادات الجهاز.",
   },
   {
-    question: "هل يمكن متابعة AT4 من الموبايل؟",
+    question: "هل يمكن متابعة جهاز AT4 من الموبايل؟",
     answer:
-      "نعم، يمكن متابعة الجهاز من خلال منصة وتطبيق Tracksolid Pro على الهواتف التي تعمل بنظام Android وiOS حسب إعداد النظام والحساب.",
+      "نعم، يمكن متابعة جهاز AT4 من خلال منصة وتطبيق Tracksolid Pro على الهواتف التي تعمل بنظام Android وiOS، وفقًا لإعداد الجهاز والحساب والمنصة المستخدمة.",
   },
   {
     question: "هل جهاز AT4 مناسب لتتبع السيارات ضد السرقة؟",
     answer:
-      "يمكن استخدام AT4 لمتابعة موقع السيارة وحركتها وإرسال التنبيهات المتعلقة بالحركة والسرعة والسياج الجغرافي، مما يساعد في متابعة المركبة والحماية من الاستخدام غير المصرح به.",
+      "يمكن استخدام AT4 لمتابعة موقع السيارة وحركتها وإرسال تنبيهات مرتبطة بالحركة والسرعة والسياج الجغرافي، مما يساعد في متابعة المركبة واكتشاف الاستخدام غير المصرح به.",
+  },
+  {
+    question: "هل جهاز AT4 مناسب للسيارات الخاصة والمركبات؟",
+    answer:
+      "نعم، يمكن استخدام الجهاز لمتابعة السيارات الخاصة والمركبات المختلفة والأصول والمعدات التي تحتاج إلى معرفة موقعها وحركتها.",
   },
   {
     question: "هل جهاز AT4 مقاوم للماء والغبار؟",
     answer:
-      "الجهاز مصمم ليكون مناسبًا للاستخدام في ظروف الطقس المختلفة، مع مقاومة للماء والغبار حسب مواصفات الجهاز.",
+      "الجهاز مصمم ليكون مناسبًا للاستخدام في ظروف الطقس المختلفة، مع مقاومة للماء والغبار وفقًا لمواصفات الجهاز وطريقة الاستخدام والتركيب.",
+  },
+  {
+    question: "هل يوجد ميكروفون داخل جهاز AT4؟",
+    answer:
+      "يحتوي جهاز AT4 على ميكروفون داخلي، ويمكن الاستفادة من خاصية الاستماع وفقًا لدعم الجهاز والمنصة والإعدادات المتاحة.",
+  },
+  {
+    question: "هل يمكن معرفة مستوى بطارية جهاز AT4؟",
+    answer:
+      "نعم، يمكن متابعة حالة بطارية الجهاز من خلال النظام أو المنصة الداعمة للجهاز، حسب إعدادات الجهاز ونظام التتبع المستخدم.",
   },
   {
     question: "هل يوجد ضمان على جهاز AT4؟",
     answer:
       "يوجد ضمان لمدة سنة ضد عيوب التصنيع، ولا يشمل الحرق أو الكسر أو التلف الناتج عن سوء الاستخدام.",
+  },
+  {
+    question: "هل يمكن مراجعة سجل حركة السيارة؟",
+    answer:
+      "يمكن مراجعة سجل ومسار حركة المركبة من خلال منصة التتبع، وتختلف مدة الاحتفاظ بالسجل حسب إعدادات النظام والمنصة المستخدمة.",
+  },
+  {
+    question: "كيف يتم تشغيل جهاز AT4؟",
+    answer:
+      "يتم تجهيز شريحة SIM المناسبة داخل الجهاز، ثم تشغيل الجهاز وشحن البطارية عند الحاجة، وبعد ذلك يتم إعداد الجهاز على منصة Tracksolid Pro لبدء متابعة المركبة.",
   },
 ];
 
@@ -124,10 +151,12 @@ const structuredData = {
     {
       "@type": "Product",
       name: product.name,
-      image: ["https://gpsworld-eg.com/images/AT4.jpeg"],
+      image: [
+        "https://gpsworld-eg.com/images/AT4.jpeg",
+      ],
       url: product.url,
       description:
-        "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، ببطارية 10000mAh ومتابعة مباشرة عبر Tracksolid Pro.",
+        "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، ببطارية 10000mAh ومغناطيس قوي ومتابعة عبر Tracksolid Pro.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -217,7 +246,7 @@ export default function AT4Page() {
         </a>
       </div>
 
-      {/* Product */}
+      {/* Product Hero */}
       <section className="mx-auto max-w-7xl px-5 py-10">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
@@ -246,9 +275,16 @@ export default function AT4Page() {
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
               جهاز AT4 هو جهاز تتبع سيارات GPS مغناطيسي مصمم لمتابعة السيارات
-              والمركبات بدون الحاجة إلى توصيل أسلاك معقدة. يمكن تثبيته بسرعة
-              على الأسطح المعدنية بفضل المغناطيس القوي، مع بطارية ليثيوم
-              بسعة 10000mAh تساعد على تشغيل الجهاز لفترات طويلة.
+              والمركبات بدون الحاجة إلى توصيل أسلاك داخل المركبة. يتميز
+              ببطارية ليثيوم كبيرة بسعة 10000mAh ومغناطيس قوي يساعد على
+              تثبيته بسهولة على الأسطح المعدنية، مع إمكانية متابعة موقع
+              المركبة وحركتها من خلال منصة Tracksolid Pro.
+            </p>
+
+            <p className="mt-4 text-lg leading-9 text-gray-600">
+              ويعتبر AT4 خيارًا مناسبًا لمن يبحث عن جهاز GPS مغناطيسي للسيارات
+              يمكن تركيبه بسرعة، خصوصًا في الحالات التي يكون فيها التتبع
+              بدون توصيلات كهربائية داخل السيارة هو الاختيار الأنسب.
             </p>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -272,6 +308,36 @@ export default function AT4Page() {
         </div>
       </section>
 
+      {/* SEO Introduction */}
+      <section className="mx-auto max-w-7xl px-5 pb-10">
+        <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+          <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
+            جهاز AT4 لتتبع السيارات GPS في مصر
+          </h2>
+
+          <div className="mt-5 space-y-4 text-lg leading-9 text-gray-600">
+            <p>
+              إذا كنت تبحث عن جهاز تتبع سيارات GPS بدون أسلاك، فإن جهاز AT4
+              يوفر طريقة مختلفة لتركيب جهاز التتبع داخل أو خارج المركبة
+              باستخدام المغناطيس القوي والبطارية الداخلية.
+            </p>
+
+            <p>
+              يمكن استخدام جهاز AT4 في تتبع السيارات والمركبات والأصول
+              والمعدات، مع إمكانية متابعة موقع المركبة وحركتها من خلال
+              Tracksolid Pro، بالإضافة إلى التنبيهات المتاحة مثل الحركة
+              والسرعة والسياج الجغرافي وفقًا لإعدادات النظام.
+            </p>
+
+            <p>
+              البطارية بسعة 10000mAh تساعد الجهاز على العمل لفترة طويلة،
+              بينما يتيح التصميم المغناطيسي تثبيت الجهاز على الأسطح المعدنية
+              دون الحاجة إلى تركيب أسلاك كهربائية داخل السيارة.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Features & Specs */}
       <section className="mx-auto max-w-7xl px-5 pb-16">
         <div className="grid gap-8 lg:grid-cols-2">
@@ -288,36 +354,46 @@ export default function AT4Page() {
               </li>
 
               <li>
-                ✓ يمكن أن يصل التشغيل المستمر إلى حوالي 30 يومًا حسب الاستخدام.
+                ✓ يمكن أن يصل التشغيل المستمر إلى حوالي 30 يومًا حسب
+                الاستخدام وإعدادات التتبع.
               </li>
 
               <li>✓ مغناطيس قوي للتثبيت السريع على الأسطح المعدنية.</li>
 
-              <li>✓ إمكانية تركيب الجهاز داخل أو خارج المركبة حسب الاستخدام.</li>
+              <li>
+                ✓ إمكانية تركيب الجهاز داخل أو خارج المركبة حسب طبيعة
+                الاستخدام.
+              </li>
 
-              <li>✓ متابعة مباشرة لموقع المركبة من خلال Tracksolid Pro.</li>
+              <li>✓ متابعة موقع المركبة من خلال Tracksolid Pro.</li>
 
               <li>✓ يعمل مع تطبيق Tracksolid Pro على Android وiOS.</li>
 
-              <li>✓ ميكروفون داخلي للاستماع إلى ما يحدث داخل المركبة.</li>
+              <li>
+                ✓ ميكروفون داخلي، مع توفر خاصية الاستماع وفقًا لدعم النظام
+                والإعدادات.
+              </li>
 
-              <li>✓ تنبيه عند تجاوز السرعة.</li>
+              <li>✓ تنبيه عند تجاوز السرعة حسب إعدادات النظام.</li>
 
               <li>✓ تنبيه عند الاهتزاز أو الحركة غير الطبيعية.</li>
 
               <li>✓ تنبيه عند الخروج من النطاق الجغرافي Geo-Fence.</li>
 
-              <li>✓ تنبيه عند تغيير شريحة SIM.</li>
+              <li>✓ تنبيه عند تغيير شريحة SIM وفقًا لدعم النظام.</li>
 
-              <li>✓ متابعة حالة بطارية الجهاز.</li>
+              <li>✓ إمكانية متابعة حالة بطارية الجهاز.</li>
 
               <li>
-                ✓ مقاوم للماء والغبار ومناسب للاستخدام في ظروف الطقس المختلفة.
+                ✓ مقاومة للماء والغبار وفقًا لمواصفات الجهاز وطريقة الاستخدام.
               </li>
 
               <li>✓ شحن الجهاز بسهولة عن طريق USB.</li>
 
-              <li>✓ إمكانية مراجعة مسار وتاريخ حركة المركبة حتى 6 أشهر.</li>
+              <li>
+                ✓ إمكانية مراجعة مسار وتاريخ حركة المركبة حسب مدة الاحتفاظ
+                بالسجل في المنصة.
+              </li>
             </ul>
           </div>
 
@@ -331,7 +407,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الموديل
                 </div>
-
                 <div className="p-4 text-gray-600">AT4</div>
               </div>
 
@@ -339,7 +414,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   النوع
                 </div>
-
                 <div className="p-4 text-gray-600">
                   جهاز تتبع GPS مغناطيسي
                 </div>
@@ -349,7 +423,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   طريقة التركيب
                 </div>
-
                 <div className="p-4 text-gray-600">
                   مغناطيس قوي - بدون أسلاك
                 </div>
@@ -359,7 +432,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   البطارية
                 </div>
-
                 <div className="p-4 text-gray-600">
                   Lithium 10000mAh
                 </div>
@@ -369,7 +441,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   مدة التشغيل
                 </div>
-
                 <div className="p-4 text-gray-600">
                   حتى حوالي 30 يومًا حسب الاستخدام
                 </div>
@@ -377,9 +448,8 @@ export default function AT4Page() {
 
               <div className="grid grid-cols-2 border-b border-gray-200">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                  المتابعة
+                  نظام المتابعة
                 </div>
-
                 <div className="p-4 text-gray-600">
                   Tracksolid Pro
                 </div>
@@ -389,7 +459,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   التطبيق
                 </div>
-
                 <div className="p-4 text-gray-600">
                   Android و iOS
                 </div>
@@ -399,7 +468,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الميكروفون
                 </div>
-
                 <div className="p-4 text-gray-600">
                   ميكروفون داخلي
                 </div>
@@ -409,7 +477,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   مقاومة الماء والغبار
                 </div>
-
                 <div className="p-4 text-gray-600">نعم</div>
               </div>
 
@@ -417,7 +484,6 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الشحن
                 </div>
-
                 <div className="p-4 text-gray-600">USB</div>
               </div>
 
@@ -425,15 +491,15 @@ export default function AT4Page() {
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   سجل الحركة
                 </div>
-
-                <div className="p-4 text-gray-600">حتى 6 أشهر</div>
+                <div className="p-4 text-gray-600">
+                  حسب مدة الاحتفاظ بالسجل في المنصة
+                </div>
               </div>
 
               <div className="grid grid-cols-2">
                 <div className="bg-gray-50 p-4 font-bold text-gray-700">
                   الحالة
                 </div>
-
                 <div className="p-4 text-green-600">متوفر</div>
               </div>
             </div>
@@ -454,9 +520,9 @@ export default function AT4Page() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              جهاز AT4 مصمم ليكون سهل الاستخدام بدون الحاجة إلى تركيب أسلاك
-              داخل السيارة، ويمكن بدء المتابعة بعد تجهيز الشريحة وتشغيل الجهاز
-              واستخدام تطبيق Tracksolid Pro.
+              جهاز AT4 مصمم ليكون سهل الاستخدام بدون الحاجة إلى توصيل أسلاك
+              داخل السيارة. بعد تجهيز شريحة SIM وتشغيل الجهاز وإعداده على
+              النظام، يمكن بدء متابعة المركبة من خلال Tracksolid Pro.
             </p>
           </div>
 
@@ -469,7 +535,7 @@ export default function AT4Page() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                ضع شريحة SIM المناسبة داخل الجهاز.
+                ضع شريحة SIM المناسبة داخل الجهاز وفقًا لطريقة تركيب الجهاز.
               </p>
             </div>
 
@@ -477,11 +543,11 @@ export default function AT4Page() {
               <div className="text-3xl font-extrabold text-blue-900">2</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
-                تشغيل الجهاز
+                شحن الجهاز
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                قم بتشغيل جهاز AT4 وتجهيزه للعمل.
+                تأكد من شحن بطارية AT4 وتجهيز الجهاز للعمل.
               </p>
             </div>
 
@@ -489,11 +555,11 @@ export default function AT4Page() {
               <div className="text-3xl font-extrabold text-blue-900">3</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
-                تحميل التطبيق
+                تشغيل الجهاز
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                حمّل تطبيق Tracksolid Pro على الموبايل.
+                قم بتشغيل الجهاز والتأكد من جاهزيته للاتصال بالشبكة.
               </p>
             </div>
 
@@ -501,11 +567,11 @@ export default function AT4Page() {
               <div className="text-3xl font-extrabold text-blue-900">4</div>
 
               <h3 className="mt-3 text-lg font-bold text-blue-950">
-                تسجيل الدخول
+                إعداد التطبيق
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                استخدم بيانات الدخول الخاصة بالجهاز.
+                استخدم Tracksolid Pro وبيانات الحساب الخاصة بالجهاز.
               </p>
             </div>
 
@@ -517,7 +583,7 @@ export default function AT4Page() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                ابدأ متابعة المركبة ومراجعة موقعها وحركتها.
+                ابدأ متابعة موقع المركبة وحركتها من خلال منصة التتبع.
               </p>
             </div>
           </div>
@@ -535,6 +601,12 @@ export default function AT4Page() {
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
               أين يمكن استخدام جهاز AT4؟
             </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
+              التصميم المغناطيسي والبطارية الكبيرة يجعل جهاز AT4 مناسبًا
+              للعديد من الاستخدامات التي تحتاج إلى تتبع موقع المركبة أو الأصل
+              بدون تركيب توصيلات كهربائية داخلية.
+            </p>
           </div>
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -546,7 +618,7 @@ export default function AT4Page() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                متابعة السيارة وموقعها وحركتها.
+                متابعة السيارة ومعرفة موقعها وحركتها.
               </p>
             </div>
 
@@ -582,7 +654,7 @@ export default function AT4Page() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                يمكن استخدامه لمتابعة الأصول المهمة.
+                يمكن استخدامه لمتابعة الأصول المهمة والمعدات المتحركة.
               </p>
             </div>
           </div>
@@ -603,21 +675,68 @@ export default function AT4Page() {
           <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
             جهاز AT4 مناسب لمن يبحث عن جهاز تتبع سيارات GPS بدون أسلاك،
             مع إمكانية تثبيته بسهولة باستخدام المغناطيس القوي ومتابعة موقع
-            المركبة مباشرة من الموبايل من خلال Tracksolid Pro. كما يوفر
-            بطارية كبيرة وتنبيهات متعددة تساعد على متابعة المركبة والحركة
-            بشكل أفضل.
+            المركبة وحركتها من الموبايل من خلال Tracksolid Pro. كما توفر
+            بطارية 10000mAh فترة تشغيل طويلة نسبيًا حسب الاستخدام وإعدادات
+            التتبع.
           </p>
+
+          <div className="mx-auto mt-8 grid max-w-4xl gap-4 text-right sm:grid-cols-2">
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-bold text-blue-950">
+                بدون توصيلات كهربائية
+              </h3>
+              <p className="mt-2 leading-7 text-gray-600">
+                مناسب لمن يريد جهاز تتبع يمكن تثبيته بسهولة دون تركيب أسلاك
+                داخل السيارة.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-bold text-blue-950">
+                بطارية كبيرة
+              </h3>
+              <p className="mt-2 leading-7 text-gray-600">
+                بطارية 10000mAh تساعد على تشغيل الجهاز لفترات طويلة حسب
+                الاستخدام.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-bold text-blue-950">
+                تثبيت مغناطيسي
+              </h3>
+              <p className="mt-2 leading-7 text-gray-600">
+                المغناطيس القوي يسمح بالتثبيت على الأسطح المعدنية المناسبة.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <h3 className="font-bold text-blue-950">
+                متابعة من الموبايل
+              </h3>
+              <p className="mt-2 leading-7 text-gray-600">
+                متابعة المركبة من خلال منصة Tracksolid Pro حسب إعداد النظام.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
       <section className="mx-auto max-w-5xl px-5 py-16">
         <div className="text-center">
-          <span className="font-bold text-blue-700">الأسئلة الشائعة</span>
+          <span className="font-bold text-blue-700">
+            الأسئلة الشائعة
+          </span>
 
           <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
             أسئلة شائعة عن جهاز AT4
           </h2>
+
+          <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-600">
+            أهم الأسئلة التي يبحث عنها العملاء قبل شراء جهاز تتبع السيارات
+            AT4 المغناطيسي.
+          </p>
         </div>
 
         <div className="mt-10 space-y-4">
@@ -660,8 +779,15 @@ export default function AT4Page() {
             </a>
 
             <a
-              href="/#products"
+              href="tel:01006687163"
               className="rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
+            >
+              📞 اتصل بنا
+            </a>
+
+            <a
+              href="/#products"
+              className="rounded-xl bg-blue-800 px-8 py-4 text-lg font-bold text-white transition hover:bg-blue-700"
             >
               📡 مشاهدة باقي الأجهزة
             </a>
@@ -672,13 +798,17 @@ export default function AT4Page() {
       {/* Footer */}
       <footer className="bg-blue-950 text-white">
         <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-          <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
+          <h3 className="text-2xl font-extrabold">
+            GPS World Egypt
+          </h3>
 
           <p className="mt-3 text-blue-200">
             أجهزة GPS للتتبع والمراقبة في مصر
           </p>
 
-          <p className="mt-5 text-blue-300">📞 01006687163</p>
+          <p className="mt-5 text-blue-300">
+            📞 01006687163
+          </p>
 
           <a
             href={whatsappBaseUrl}

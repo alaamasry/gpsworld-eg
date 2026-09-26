@@ -296,7 +296,8 @@ export default function B100Page() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع المركبة وحركتها بشكل مباشر.
+                متابعة موقع المركبة وحركتها بشكل مباشر من خلال النظام
+                المتوافق.
               </p>
             </div>
 
@@ -308,7 +309,8 @@ export default function B100Page() {
               </h3>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تنبيهات عند بعض الحالات التي تؤثر على أمان المركبة.
+                تنبيهات عند بعض الحالات التي تؤثر على أمان المركبة حسب
+                إعدادات النظام.
               </p>
             </div>
 
@@ -353,7 +355,8 @@ export default function B100Page() {
                 <li className="flex gap-3">
                   <span>📍</span>
                   <span>
-                    تتبع مباشر ومتابعة موقع المركبة لحظة بلحظة.
+                    تتبع مباشر ومتابعة موقع المركبة لحظة بلحظة من خلال
+                    النظام المتوافق.
                   </span>
                 </li>
 
@@ -367,36 +370,38 @@ export default function B100Page() {
                 <li className="flex gap-3">
                   <span>📡</span>
                   <span>
-                    دعم شبكة 4G LTE Cat.1 مع 2G Fallback.
+                    دعم شبكة 4G LTE Cat.1 مع 2G Fallback حسب توافر الشبكة.
                   </span>
                 </li>
 
                 <li className="flex gap-3">
                   <span>🗺️</span>
                   <span>
-                    عرض المسارات وسجل الرحلات والحركة السابقة.
+                    عرض المسارات وسجل الرحلات والحركة السابقة من خلال
+                    النظام أو السيرفر المتوافق.
                   </span>
                 </li>
 
                 <li className="flex gap-3">
                   <span>🚨</span>
                   <span>
-                    تنبيهات عند فصل مصدر الطاقة أو العبث بالجهاز.
+                    تنبيهات عند فصل مصدر الطاقة أو العبث بالجهاز حسب
+                    إعدادات النظام.
                   </span>
                 </li>
 
                 <li className="flex gap-3">
                   <span>⚡</span>
                   <span>
-                    إمكانية إيقاف المركبة عن بُعد من خلال النظام
-                    المتوافق.
+                    إمكانية إيقاف المركبة عن بُعد من خلال النظام المتوافق
+                    وبعد التركيب والتوصيل بشكل صحيح.
                   </span>
                 </li>
 
                 <li className="flex gap-3">
                   <span>🎙️</span>
                   <span>
-                    دعم المراقبة الصوتية حسب التجهيز والنظام المتوافق.
+                    دعم المراقبة الصوتية حسب تجهيز الجهاز والنظام المتوافق.
                   </span>
                 </li>
 
@@ -410,16 +415,15 @@ export default function B100Page() {
                 <li className="flex gap-3">
                   <span>🚚</span>
                   <span>
-                    مناسب للشاحنات والحافلات والمركبات التجارية
-                    والخدمية.
+                    مناسب للشاحنات والحافلات والمركبات التجارية والخدمية.
                   </span>
                 </li>
 
                 <li className="flex gap-3">
                   <span>🧑‍✈️</span>
                   <span>
-                    إمكانية متابعة سلوك السائق والمركبة من خلال
-                    الوظائف المتاحة بالنظام.
+                    إمكانية متابعة سلوك السائق والمركبة من خلال الوظائف
+                    المتاحة بالنظام.
                   </span>
                 </li>
 
@@ -433,8 +437,8 @@ export default function B100Page() {
                 <li className="flex gap-3">
                   <span>🔋</span>
                   <span>
-                    بطارية احتياطية مدمجة للمساعدة عند فصل مصدر
-                    الطاقة الرئيسي.
+                    بطارية احتياطية مدمجة للمساعدة عند فصل مصدر الطاقة
+                    الرئيسي.
                   </span>
                 </li>
 
@@ -473,9 +477,7 @@ export default function B100Page() {
                     تقنية الاتصال
                   </span>
 
-                  <span className="text-gray-600">
-                    4G LTE Cat.1
-                  </span>
+                  <span className="text-gray-600">4G LTE Cat.1</span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
@@ -493,9 +495,7 @@ export default function B100Page() {
                     أنظمة التحديد
                   </span>
 
-                  <span className="text-gray-600">
-                    GNSS + LBS
-                  </span>
+                  <span className="text-gray-600">GNSS + LBS</span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
@@ -523,9 +523,7 @@ export default function B100Page() {
                     البطارية الاحتياطية
                   </span>
 
-                  <span className="text-gray-600">
-                    250mAh / 3.7V
-                  </span>
+                  <span className="text-gray-600">250mAh / 3.7V</span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
@@ -559,9 +557,7 @@ export default function B100Page() {
                     استهلاك الطاقة
                   </span>
 
-                  <span className="text-gray-600">
-                    أقل من 4mA
-                  </span>
+                  <span className="text-gray-600">أقل من 4mA</span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] bg-gray-50 p-4">
@@ -673,7 +669,8 @@ export default function B100Page() {
 
               <p className="mt-3 leading-8 text-gray-600">
                 متابعة بعض أنماط القيادة مثل السرعة الزائدة
-                والتسارع المفاجئ والتوقفات الطويلة.
+                والتسارع المفاجئ والتوقفات الطويلة حسب وظائف النظام
+                المتوافق.
               </p>
             </div>
 
@@ -684,7 +681,7 @@ export default function B100Page() {
 
               <p className="mt-3 leading-8 text-gray-600">
                 عرض تاريخ الحركة واسترجاع المسارات السابقة ومراجعة
-                نقاط التوقف والانطلاق.
+                نقاط التوقف والانطلاق من خلال النظام المتوافق.
               </p>
             </div>
 
@@ -695,7 +692,8 @@ export default function B100Page() {
 
               <p className="mt-3 leading-8 text-gray-600">
                 دعم التنبيهات عند فصل الطاقة أو العبث بالجهاز أو
-                تجاوز السرعة أو الخروج من النطاق الجغرافي المحدد.
+                تجاوز السرعة أو الخروج من النطاق الجغرافي المحدد،
+                وفق إعدادات النظام.
               </p>
             </div>
 
@@ -890,72 +888,20 @@ export default function B100Page() {
             </div>
 
             <div className="mt-10 space-y-5">
-              <details className="rounded-2xl bg-white p-5 shadow-sm">
-                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                  ما هو جهاز B100؟
-                </summary>
+              {faqs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="rounded-2xl bg-white p-5 shadow-sm"
+                >
+                  <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
+                    {faq.question}
+                  </summary>
 
-                <p className="mt-4 leading-8 text-gray-600">
-                  جهاز B100 هو جهاز تتبع GPS للمركبات، مصمم لمتابعة
-                  الموقع والحركة ودعم استخدامات الأفراد والشركات
-                  وإدارة الأساطيل.
-                </p>
-              </details>
-
-              <details className="rounded-2xl bg-white p-5 shadow-sm">
-                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                  هل يناسب B100 الشركات وإدارة الأساطيل؟
-                </summary>
-
-                <p className="mt-4 leading-8 text-gray-600">
-                  نعم، الجهاز مناسب لمتابعة المركبات التجارية
-                  والخدمية وإدارة الأساطيل ومراقبة الرحلات وحركة
-                  المركبات.
-                </p>
-              </details>
-
-              <details className="rounded-2xl bg-white p-5 shadow-sm">
-                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                  ما جهد تشغيل جهاز B100؟
-                </summary>
-
-                <p className="mt-4 leading-8 text-gray-600">
-                  يعمل الجهاز على نطاق جهد من 9V إلى 90V DC.
-                </p>
-              </details>
-
-              <details className="rounded-2xl bg-white p-5 shadow-sm">
-                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                  هل يدعم B100 شبكة 4G؟
-                </summary>
-
-                <p className="mt-4 leading-8 text-gray-600">
-                  نعم، يدعم الجهاز شبكة 4G LTE Cat.1 مع دعم 2G
-                  Fallback حسب توافر الشبكة.
-                </p>
-              </details>
-
-              <details className="rounded-2xl bg-white p-5 shadow-sm">
-                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                  هل يوجد ضمان للجهاز؟
-                </summary>
-
-                <p className="mt-4 leading-8 text-gray-600">
-                  يوجد ضمان لمدة سنة ضد عيوب الصناعة، ولا يشمل
-                  الضمان الحرق أو الكسر.
-                </p>
-              </details>
-
-              <details className="rounded-2xl bg-white p-5 shadow-sm">
-                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                  كيف أعرف تفاصيل الجهاز والتوفر؟
-                </summary>
-
-                <p className="mt-4 leading-8 text-gray-600">
-                  يمكنك التواصل معنا عبر واتساب لمعرفة التفاصيل
-                  والتوفر وطلب الجهاز.
-                </p>
-              </details>
+                  <p className="mt-4 leading-8 text-gray-600">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

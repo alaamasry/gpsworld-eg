@@ -2,31 +2,38 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "OBD22 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
-
+  title: "OBD22 | جهاز تتبع سيارات GPS OBD في مصر",
   description:
-    "جهاز OBD22 لتتبع السيارات والمركبات في مصر، بتركيب مباشر من خلال منفذ OBD-II، مع تتبع لحظي وتنبيهات ذكية وتحديد موقع GPS.",
-
+    "جهاز OBD22 لتتبع السيارات والمركبات في مصر، يركب مباشرة في منفذ OBD-II بدون أسلاك إضافية، مع تتبع لحظي وتحديد موقع GPS وتنبيهات ذكية وGeo-Fence.",
   keywords: [
     "OBD22",
     "جهاز OBD22",
     "OBD22 GPS",
+    "OBD22 مصر",
     "جهاز تتبع OBD22",
     "جهاز GPS OBD22",
     "جهاز تتبع OBD",
     "جهاز GPS OBD",
     "OBD GPS Tracker",
+    "OBD GPS Tracker مصر",
     "جهاز GPS",
-    "جهاز تتبع سيارات",
-    "أجهزة تتبع GPS",
     "جهاز GPS للسيارات",
+    "جهاز تتبع سيارات",
+    "جهاز تتبع سيارات GPS",
+    "جهاز تتبع سيارات مصر",
     "جهاز تتبع للسيارة",
+    "جهاز تتبع مركبات",
+    "أجهزة تتبع GPS",
+    "أجهزة GPS",
+    "أجهزة GPS مصر",
     "GPS Tracker",
     "GPS Tracker مصر",
-    "أجهزة GPS مصر",
+    "GPS مصر",
     "تتبع السيارات",
+    "تتبع السيارة",
     "تتبع المركبات",
-    "جهاز تتبع سيارات مصر",
+    "جهاز تتبع بدون أسلاك",
+    "جهاز تتبع OBD للسيارات",
   ],
 
   alternates: {
@@ -34,37 +41,28 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "OBD22 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
-
+    title: "OBD22 | جهاز تتبع سيارات GPS OBD في مصر",
     description:
-      "جهاز OBD22 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II، مع تتبع لحظي وتنبيهات ذكية وتحديد موقع GPS.",
-
+      "جهاز OBD22 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II بدون أسلاك إضافية، مع تتبع لحظي وتحديد موقع GPS وتنبيهات ذكية.",
     url: "https://gpsworld-eg.com/devices/obd22",
-
     siteName: "GPS World Egypt",
-
     locale: "ar_EG",
-
     type: "website",
-
     images: [
       {
         url: "/images/OBD22.jpeg",
         width: 1200,
         height: 630,
-        alt: "OBD22 جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+        alt: "OBD22 جهاز تتبع سيارات GPS OBD في مصر",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-
-    title: "OBD22 | جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
-
+    title: "OBD22 | جهاز تتبع سيارات GPS OBD في مصر",
     description:
-      "جهاز OBD22 لتتبع السيارات والمركبات مع تركيب مباشر من منفذ OBD-II ومتابعة الموقع والحركة.",
-
+      "جهاز OBD22 لتتبع السيارات مع تركيب مباشر من منفذ OBD-II ومتابعة الموقع والحركة والتنبيهات.",
     images: ["/images/OBD22.jpeg"],
   },
 };
@@ -79,12 +77,17 @@ const faqs = [
   {
     question: "ما هو جهاز OBD22؟",
     answer:
-      "جهاز OBD22 هو جهاز تتبع GPS للسيارات يتم تركيبه مباشرة من خلال منفذ OBD-II، ويوفر متابعة الموقع والحركة والتنبيهات من خلال نظام التتبع المتوافق.",
+      "جهاز OBD22 هو جهاز تتبع GPS للسيارات يتم تركيبه مباشرة من خلال منفذ OBD-II، ويوفر متابعة موقع وحركة المركبة والتنبيهات من خلال نظام التتبع المتوافق.",
   },
   {
-    question: "هل يحتاج جهاز OBD22 إلى توصيل أسلاك؟",
+    question: "هل جهاز OBD22 يحتاج إلى توصيل أسلاك؟",
     answer:
-      "لا، يتم تركيب الجهاز مباشرة في منفذ OBD-II في السيارة دون الحاجة إلى تمديد أسلاك كهربائية إضافية.",
+      "لا، يتم تركيب جهاز OBD22 مباشرة في منفذ OBD-II في السيارة دون الحاجة إلى تمديد أسلاك كهربائية إضافية، ولذلك يعتبر من أجهزة التتبع سهلة وسريعة التركيب.",
+  },
+  {
+    question: "هل جهاز OBD22 مناسب للسيارات؟",
+    answer:
+      "نعم، جهاز OBD22 مصمم للاستخدام مع السيارات التي يتوفر بها منفذ OBD-II المتوافق مع الجهاز.",
   },
   {
     question: "هل جهاز OBD22 يدعم التتبع اللحظي؟",
@@ -92,14 +95,29 @@ const faqs = [
       "نعم، يدعم جهاز OBD22 متابعة موقع وحركة المركبة بشكل مباشر من خلال نظام التتبع المتوافق.",
   },
   {
+    question: "هل جهاز OBD22 يدعم GPS وLBS؟",
+    answer:
+      "نعم، يدعم الجهاز تحديد الموقع باستخدام GPS وBDS وGNSS وLBS وفقًا للنظام والإصدار المستخدم.",
+  },
+  {
     question: "هل يدعم OBD22 تحديد المناطق الجغرافية Geo-Fence؟",
     answer:
-      "نعم، يدعم الجهاز التنبيه عند دخول المركبة أو خروجها من منطقة جغرافية محددة حسب النظام المستخدم.",
+      "نعم، يدعم الجهاز التنبيه عند دخول المركبة أو خروجها من منطقة جغرافية محددة حسب نظام التتبع المستخدم.",
   },
   {
     question: "هل جهاز OBD22 يدعم فصل محرك السيارة؟",
     answer:
       "لا، جهاز OBD22 لا يدعم فصل محرك السيارة، وهو مخصص للتتبع والمراقبة والتنبيهات.",
+  },
+  {
+    question: "هل يمكن متابعة السيارة من خلال الهاتف؟",
+    answer:
+      "يمكن متابعة موقع وحركة السيارة من الهاتف عند استخدام تطبيق أو منصة تتبع متوافقة مع جهاز OBD22.",
+  },
+  {
+    question: "هل جهاز OBD22 مناسب لإدارة الأساطيل؟",
+    answer:
+      "نعم، يمكن استخدام جهاز OBD22 لمتابعة المركبات وإدارة الأساطيل من خلال منصة التتبع المناسبة.",
   },
 ];
 
@@ -112,12 +130,14 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/OBD22.jpeg"],
       url: product.url,
       description:
-        "جهاز OBD22 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II ومتابعة الموقع والحركة باستخدام أنظمة GPS.",
+        "جهاز OBD22 لتتبع السيارات والمركبات في مصر بتركيب مباشر من منفذ OBD-II، مع تحديد الموقع GPS وBDS وGNSS وLBS والتتبع والتنبيهات.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
+      category: "أجهزة GPS لتتبع السيارات والمركبات",
     },
+
     {
       "@type": "BreadcrumbList",
       itemListElement: [
@@ -141,6 +161,7 @@ const structuredData = {
         },
       ],
     },
+
     {
       "@type": "FAQPage",
       mainEntity: faqs.map((faq) => ({
@@ -184,7 +205,7 @@ export default function OBD22Page() {
       />
 
       <main className="min-h-screen bg-gray-50" dir="rtl">
-        {/* HEADER */}
+        {/* ================= HEADER ================= */}
 
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
           <div className="mx-auto max-w-7xl px-5 py-4">
@@ -212,7 +233,7 @@ export default function OBD22Page() {
           </div>
         </header>
 
-        {/* BACK */}
+        {/* ================= BACK ================= */}
 
         <div className="mx-auto max-w-7xl px-5 pt-6">
           <a
@@ -223,14 +244,14 @@ export default function OBD22Page() {
           </a>
         </div>
 
-        {/* PRODUCT HERO */}
+        {/* ================= PRODUCT HERO ================= */}
 
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
               <Image
                 src={product.image}
-                alt="OBD22 جهاز تتبع سيارات GPS بمنفذ OBD في مصر"
+                alt="OBD22 جهاز تتبع سيارات GPS OBD في مصر"
                 width={650}
                 height={500}
                 priority
@@ -252,10 +273,16 @@ export default function OBD22Page() {
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز OBD22 مصمم لتوفير طريقة عملية وسهلة لمتابعة السيارات
-                والمركبات، حيث يتم تركيبه مباشرة في منفذ OBD-II بدون الحاجة
-                إلى تمديد أسلاك، مع إمكانية متابعة الموقع والحركة والتنبيهات
-                من خلال نظام التتبع المتوافق.
+                جهاز OBD22 هو جهاز تتبع سيارات GPS مصمم لتوفير طريقة عملية
+                وسهلة لمتابعة السيارة والمركبة، حيث يتم تركيبه مباشرة في منفذ
+                OBD-II بدون الحاجة إلى تمديد أسلاك كهربائية إضافية، مع إمكانية
+                متابعة الموقع والحركة والتنبيهات من خلال نظام التتبع المتوافق.
+              </p>
+
+              <p className="mt-4 text-lg leading-9 text-gray-600">
+                إذا كنت تبحث عن جهاز GPS للسيارة أو جهاز تتبع OBD في مصر،
+                فإن OBD22 يوفر تركيبًا سريعًا ومتابعة مستمرة للمركبة مع دعم
+                وظائف مثل التتبع اللحظي وGeo-Fence والتنبيهات.
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -279,7 +306,7 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* QUICK FEATURES */}
+        {/* ================= QUICK FEATURES ================= */}
 
         <section className="mx-auto max-w-7xl px-5 pb-16">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -291,7 +318,7 @@ export default function OBD22Page() {
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تركيب مباشر من خلال منفذ OBD-II بدون أسلاك إضافية.
+                تركيب مباشر من خلال منفذ OBD-II بدون أسلاك كهربائية إضافية.
               </p>
             </div>
 
@@ -303,7 +330,7 @@ export default function OBD22Page() {
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع وحركة المركبة بشكل مباشر عبر الإنترنت.
+                متابعة موقع وحركة المركبة بشكل مباشر عبر نظام التتبع.
               </p>
             </div>
 
@@ -333,22 +360,22 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* FEATURES + TECHNICAL SPECS */}
+        {/* ================= FEATURES + TECHNICAL SPECS ================= */}
 
         <section className="mx-auto max-w-7xl px-5 pb-16">
           <div className="grid gap-8 lg:grid-cols-2">
-            {/* FEATURES */}
-
             <div className="rounded-3xl bg-white p-7 shadow-md">
               <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز OBD22
+                ⭐ أهم مميزات جهاز OBD22 GPS
               </h2>
 
               <ul className="space-y-4 text-lg leading-8 text-gray-700">
-                <li>📍 متابعة موقع المركبة بشكل لحظي عبر الإنترنت.</li>
+                <li>
+                  📍 متابعة موقع المركبة بشكل لحظي عبر الإنترنت.
+                </li>
 
                 <li>
-                  🔌 تركيب مباشر وسريع من خلال منفذ OBD-II بدون أسلاك.
+                  🔌 تركيب مباشر وسريع من خلال منفذ OBD-II بدون أسلاك إضافية.
                 </li>
 
                 <li>
@@ -360,8 +387,8 @@ export default function OBD22Page() {
                 </li>
 
                 <li>
-                  📡 دعم التنبيه عند الدخول أو الخروج من منطقة جغرافية
-                  محددة Geo-Fence.
+                  📡 دعم التنبيه عند الدخول أو الخروج من منطقة جغرافية محددة
+                  Geo-Fence.
                 </li>
 
                 <li>
@@ -376,7 +403,9 @@ export default function OBD22Page() {
                   💾 إمكانية حفظ بيانات الرحلات على السيرفر حتى 6 أشهر.
                 </li>
 
-                <li>🔄 دعم التحديثات عن بُعد OTA.</li>
+                <li>
+                  🔄 دعم التحديثات عن بُعد OTA.
+                </li>
 
                 <li>
                   🌡️ إمكانية دعم أجهزة إضافية لمراقبة الحرارة والرطوبة.
@@ -386,7 +415,9 @@ export default function OBD22Page() {
                   🎙️ إمكانية المراقبة الصوتية في بعض الإصدارات.
                 </li>
 
-                <li>🛡️ مقاومة للماء والغبار بمعيار IP65.</li>
+                <li>
+                  🛡️ مقاومة للماء والغبار بمعيار IP65.
+                </li>
 
                 <li>
                   ⚡ استهلاك منخفض للطاقة ومناسب للتشغيل المستمر.
@@ -398,7 +429,7 @@ export default function OBD22Page() {
               </ul>
             </div>
 
-            {/* TECHNICAL SPECS */}
+            {/* ================= TECHNICAL SPECS ================= */}
 
             <div className="rounded-3xl bg-white p-7 shadow-md">
               <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
@@ -412,8 +443,12 @@ export default function OBD22Page() {
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">نوع الجهاز</span>
-                  <span className="text-gray-600">OBD GPS Tracker</span>
+                  <span className="font-bold text-gray-800">
+                    نوع الجهاز
+                  </span>
+                  <span className="text-gray-600">
+                    OBD GPS Tracker
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -426,8 +461,12 @@ export default function OBD22Page() {
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">الشبكات</span>
-                  <span className="text-gray-600">2G GSM</span>
+                  <span className="font-bold text-gray-800">
+                    الشبكات
+                  </span>
+                  <span className="text-gray-600">
+                    2G GSM
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -440,8 +479,12 @@ export default function OBD22Page() {
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">GPRS</span>
-                  <span className="text-gray-600">Class 12</span>
+                  <span className="font-bold text-gray-800">
+                    GPRS
+                  </span>
+                  <span className="text-gray-600">
+                    Class 12
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -457,14 +500,18 @@ export default function OBD22Page() {
                   <span className="font-bold text-gray-800">
                     بروتوكول الاتصال
                   </span>
-                  <span className="text-gray-600">TCP/IP</span>
+                  <span className="text-gray-600">
+                    TCP/IP
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                   <span className="font-bold text-gray-800">
                     جهد التشغيل
                   </span>
-                  <span className="text-gray-600">9–36V DC</span>
+                  <span className="text-gray-600">
+                    9–36V DC
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
@@ -480,24 +527,36 @@ export default function OBD22Page() {
                   <span className="font-bold text-gray-800">
                     البطارية الاحتياطية
                   </span>
-                  <span className="text-gray-600">100mAh</span>
+                  <span className="text-gray-600">
+                    100mAh
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">الأبعاد</span>
+                  <span className="font-bold text-gray-800">
+                    الأبعاد
+                  </span>
                   <span className="text-gray-600">
                     54 × 34 × 32 مم
                   </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">الوزن</span>
-                  <span className="text-gray-600">حوالي 40 جرام</span>
+                  <span className="font-bold text-gray-800">
+                    الوزن
+                  </span>
+                  <span className="text-gray-600">
+                    حوالي 40 جرام
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">الحماية</span>
-                  <span className="text-gray-600">IP65</span>
+                  <span className="font-bold text-gray-800">
+                    الحماية
+                  </span>
+                  <span className="text-gray-600">
+                    IP65
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
@@ -522,7 +581,7 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* SMART FUNCTIONS */}
+        {/* ================= SMART FUNCTIONS ================= */}
 
         <section className="bg-white px-5 py-16">
           <div className="mx-auto max-w-7xl">
@@ -536,8 +595,9 @@ export default function OBD22Page() {
               </h2>
 
               <p className="mt-5 text-lg leading-9 text-gray-600">
-                يوفر جهاز OBD22 مجموعة من وظائف المتابعة والتنبيهات
-                التي تساعد على مراقبة المركبة ومعرفة ما يحدث أثناء الرحلة.
+                يوفر جهاز OBD22 مجموعة من وظائف المتابعة والتنبيهات التي
+                تساعد على مراقبة السيارة والمركبة ومعرفة ما يحدث أثناء الرحلة،
+                من خلال نظام التتبع المتوافق مع الجهاز.
               </p>
             </div>
 
@@ -548,8 +608,8 @@ export default function OBD22Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  متابعة حركة المركبة والرجوع إلى بيانات الرحلات
-                  المحفوظة على المنصة حسب مدة الحفظ المتاحة.
+                  متابعة حركة المركبة والرجوع إلى بيانات الرحلات المحفوظة
+                  على المنصة حسب مدة الحفظ المتاحة.
                 </p>
               </div>
 
@@ -559,8 +619,8 @@ export default function OBD22Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  تنبيه عند دخول المركبة أو خروجها من منطقة جغرافية
-                  محددة مسبقًا.
+                  تنبيه عند دخول المركبة أو خروجها من منطقة جغرافية محددة
+                  مسبقًا.
                 </p>
               </div>
 
@@ -580,15 +640,15 @@ export default function OBD22Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  تنبيهات مرتبطة بالطاقة وانخفاض البطارية مع بطارية
-                  احتياطية داخل الجهاز.
+                  تنبيهات مرتبطة بالطاقة وانخفاض البطارية مع بطارية احتياطية
+                  داخل الجهاز.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* WORK MODES */}
+        {/* ================= WORK MODES ================= */}
 
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
@@ -654,7 +714,7 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* IMPORTANT NOTE */}
+        {/* ================= IMPORTANT NOTE ================= */}
 
         <section className="mx-auto max-w-5xl px-5 pb-16">
           <div className="rounded-3xl border border-yellow-200 bg-yellow-50 p-8 text-center shadow-sm">
@@ -669,13 +729,13 @@ export default function OBD22Page() {
             </p>
 
             <p className="mt-2 leading-8 text-gray-600">
-              الجهاز مخصص للتتبع والمراقبة والتنبيهات، ويتم تركيبه
-              مباشرة من خلال منفذ OBD-II.
+              الجهاز مخصص للتتبع والمراقبة والتنبيهات، ويتم تركيبه مباشرة
+              من خلال منفذ OBD-II.
             </p>
           </div>
         </section>
 
-        {/* WHY */}
+        {/* ================= WHY ================= */}
 
         <section className="bg-blue-50 px-5 py-16">
           <div className="mx-auto max-w-5xl text-center">
@@ -688,8 +748,8 @@ export default function OBD22Page() {
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              إذا كنت تبحث عن جهاز تتبع يمكن تركيبه بسرعة وبدون تمديد
-              أسلاك، فإن OBD22 يوفر تركيبًا مباشرًا من منفذ OBD-II
+              إذا كنت تبحث عن جهاز تتبع سيارات GPS يمكن تركيبه بسرعة وبدون
+              تمديد أسلاك، فإن OBD22 يوفر تركيبًا مباشرًا من منفذ OBD-II
               مع مجموعة من وظائف التتبع والتنبيهات ومتابعة حركة السيارة.
             </p>
 
@@ -730,15 +790,15 @@ export default function OBD22Page() {
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  مناسب للاستخدام الشخصي وكذلك لمتابعة المركبات
-                  وإدارة الأساطيل.
+                  مناسب للاستخدام الشخصي وكذلك لمتابعة المركبات وإدارة
+                  الأساطيل.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* APPLICATIONS */}
+        {/* ================= APPLICATIONS ================= */}
 
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="text-center">
@@ -747,7 +807,7 @@ export default function OBD22Page() {
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              مناسب لمجموعة متنوعة من الاستخدامات
+              استخدامات جهاز OBD22 لتتبع السيارات
             </h2>
           </div>
 
@@ -802,7 +862,7 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* FAQ */}
+        {/* ================= FAQ ================= */}
 
         <section className="bg-white px-5 py-16">
           <div className="mx-auto max-w-5xl">
@@ -835,7 +895,7 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* CONTACT */}
+        {/* ================= CONTACT ================= */}
 
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
@@ -844,7 +904,8 @@ export default function OBD22Page() {
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-blue-200">
-              تواصل معنا لمعرفة التفاصيل والتوفر وطلب الجهاز.
+              تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز التتبع المناسب
+              لسيارتك.
             </p>
 
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -867,7 +928,7 @@ export default function OBD22Page() {
           </div>
         </section>
 
-        {/* FOOTER */}
+        {/* ================= FOOTER ================= */}
 
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
@@ -876,7 +937,7 @@ export default function OBD22Page() {
             </h3>
 
             <p className="mt-3 text-blue-200">
-              أجهزة GPS للتتبع والمراقبة
+              أجهزة GPS للتتبع والمراقبة في مصر
             </p>
 
             <p className="mt-5 text-blue-300">
@@ -898,7 +959,7 @@ export default function OBD22Page() {
           </div>
         </footer>
 
-        {/* FLOATING WHATSAPP */}
+        {/* ================= FLOATING WHATSAPP ================= */}
 
         <a
           href={whatsappBaseUrl}

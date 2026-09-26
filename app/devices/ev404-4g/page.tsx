@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
+const siteUrl = "https://gpsworld-eg.com";
+const pageUrl = `${siteUrl}/devices/ev404-4g`;
+
 export const metadata: Metadata = {
   title: "EV404 | جهاز تتبع سيارات GPS في مصر",
 
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   ],
 
   alternates: {
-    canonical: "https://gpsworld-eg.com/devices/ev404-4g",
+    canonical: pageUrl,
   },
 
   openGraph: {
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
     description:
       "جهاز EV404 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل من خلال أنظمة GPS المتوافقة.",
 
-    url: "https://gpsworld-eg.com/devices/ev404-4g",
+    url: pageUrl,
 
     siteName: "GPS World Egypt",
 
@@ -47,7 +50,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/images/ev404.jpeg",
+        url: `${siteUrl}/images/ev404.jpeg`,
         width: 1200,
         height: 630,
         alt: "EV404 جهاز تتبع سيارات GPS في مصر",
@@ -63,14 +66,14 @@ export const metadata: Metadata = {
     description:
       "جهاز EV404 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل.",
 
-    images: ["/images/ev404.jpeg"],
+    images: [`${siteUrl}/images/ev404.jpeg`],
   },
 };
 
 const product = {
   name: "EV404",
   image: "/images/ev404.jpeg",
-  url: "https://gpsworld-eg.com/devices/ev404-4g",
+  url: pageUrl,
 };
 
 const faqs = [
@@ -86,8 +89,7 @@ const faqs = [
   },
   {
     question: "ما جهد تشغيل جهاز EV404؟",
-    answer:
-      "يعمل الجهاز على نطاق جهد من 9V إلى 90V DC.",
+    answer: "يعمل الجهاز على نطاق جهد من 9V إلى 90V DC.",
   },
   {
     question: "هل يوجد ضمان للجهاز؟",
@@ -103,14 +105,20 @@ const faqs = [
 
 const structuredData = {
   "@context": "https://schema.org",
+
   "@graph": [
     {
       "@type": "Product",
+
       name: product.name,
-      image: ["https://gpsworld-eg.com/images/ev404.jpeg"],
+
+      image: [`${siteUrl}/images/ev404.jpeg`],
+
       url: product.url,
+
       description:
         "جهاز EV404 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة بشكل لحظي، ودعم إدارة الأساطيل والتنبيهات.",
+
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -119,33 +127,39 @@ const structuredData = {
 
     {
       "@type": "BreadcrumbList",
+
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "الرئيسية",
-          item: "https://gpsworld-eg.com/",
+          item: `${siteUrl}/`,
         },
+
         {
           "@type": "ListItem",
           position: 2,
           name: "أجهزة GPS",
-          item: "https://gpsworld-eg.com/#products",
+          item: `${siteUrl}/#products`,
         },
+
         {
           "@type": "ListItem",
           position: 3,
           name: "EV404",
-          item: "https://gpsworld-eg.com/devices/ev404-4g",
+          item: pageUrl,
         },
       ],
     },
 
     {
       "@type": "FAQPage",
+
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
+
         name: faq.question,
+
         acceptedAnswer: {
           "@type": "Answer",
           text: faq.answer,
@@ -165,10 +179,10 @@ export default function EV404Page() {
   );
 
   const whatsappInquiryUrl =
-    "https://wa.me/201006687163?text=" + whatsappInquiry;
+    `https://wa.me/201006687163?text=${whatsappInquiry}`;
 
   const whatsappOrderUrl =
-    "https://wa.me/201006687163?text=" + whatsappOrder;
+    `https://wa.me/201006687163?text=${whatsappOrder}`;
 
   const whatsappBaseUrl = "https://wa.me/201006687163";
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "W15L | جهاز تتبع GPS لاسلكي للأصول في مصر",
+  title: "W15L | جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر",
 
   description:
     "جهاز W15L لتتبع السيارات والمركبات والأصول في مصر، بتصميم لاسلكي وبطارية 7500mAh ومغناطيس قوي، مع تتبع لحظي وتنبيهات ومقاومة للماء والأتربة.",
@@ -15,20 +15,23 @@ export const metadata: Metadata = {
     "جهاز تتبع W15L",
     "جهاز GPS W15L",
     "جهاز GPS",
+    "أجهزة GPS",
+    "أجهزة GPS مصر",
     "جهاز تتبع سيارات",
-    "أجهزة تتبع GPS",
+    "جهاز تتبع سيارات مصر",
     "جهاز GPS للسيارات",
     "جهاز تتبع للسيارة",
-    "GPS Tracker",
-    "GPS Tracker مصر",
-    "أجهزة GPS مصر",
+    "جهاز تتبع مركبات",
     "أجهزة تتبع السيارات",
     "تتبع السيارات",
     "تتبع المركبات",
-    "جهاز تتبع أصول",
+    "GPS Tracker",
+    "GPS Tracker مصر",
+    "GPS مصر",
     "جهاز تتبع لاسلكي",
     "جهاز تتبع مغناطيسي",
-    "جهاز تتبع سيارات مصر",
+    "جهاز تتبع أصول",
+    "جهاز GPS لاسلكي",
   ],
 
   alternates: {
@@ -36,10 +39,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "W15L | جهاز تتبع GPS لاسلكي للأصول في مصر",
+    title: "W15L | جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر",
 
     description:
-      "جهاز W15L لتتبع السيارات والمركبات والأصول، بتصميم لاسلكي وبطارية ممتدة وتتبع لحظي وتنبيهات ومقاومة للماء والأتربة.",
+      "جهاز W15L لتتبع السيارات والمركبات والأصول، بتصميم لاسلكي وبطارية 7500mAh ومغناطيس قوي مع تتبع لحظي وتنبيهات ومقاومة للماء والأتربة.",
 
     url: "https://gpsworld-eg.com/devices/w15l",
 
@@ -62,7 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
 
-    title: "W15L | جهاز تتبع GPS لاسلكي للأصول في مصر",
+    title: "W15L | جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر",
 
     description:
       "جهاز W15L لتتبع السيارات والمركبات والأصول مع بطارية 7500mAh وتتبع لحظي وتنبيهات.",
@@ -79,6 +82,11 @@ const product = {
 
 const faqs = [
   {
+    question: "ما هو جهاز W15L؟",
+    answer:
+      "جهاز W15L هو جهاز تتبع GPS لاسلكي مصمم لمتابعة السيارات والمركبات والأصول، ويتميز ببطارية 7500mAh ومغناطيس قوي يساعد على التثبيت السريع دون الحاجة إلى توصيلات كهربائية معقدة.",
+  },
+  {
     question: "هل جهاز W15L يحتاج إلى تركيب وتوصيلات؟",
     answer:
       "الجهاز مصمم ليكون لاسلكيًا وسهل التثبيت، ويحتوي على مغناطيس قوي يساعد على تركيبه دون الحاجة إلى توصيلات كهربائية معقدة.",
@@ -94,14 +102,14 @@ const faqs = [
       "نعم، الجهاز حاصل على تصنيف IP65 للحماية من الأتربة ورذاذ الماء، مما يجعله مناسبًا للاستخدام في ظروف مختلفة.",
   },
   {
-    question: "هل يدعم الجهاز تتبع الموقع بشكل لحظي؟",
+    question: "هل يدعم جهاز W15L تتبع الموقع بشكل لحظي؟",
     answer:
-      "نعم، يدعم W15L التتبع اللحظي ومتابعة موقع وحركة الأصل من خلال النظام أو السيرفر المتوافق مع الجهاز.",
+      "نعم، يدعم W15L التتبع اللحظي ومتابعة موقع وحركة الأصل أو المركبة من خلال النظام أو السيرفر المتوافق مع الجهاز.",
   },
   {
     question: "هل يمكن استخدام W15L لمتابعة الأصول؟",
     answer:
-      "نعم، الجهاز مناسب لمتابعة المركبات والأصول، وخاصة الحالات التي تحتاج إلى جهاز لاسلكي سهل التثبيت وبطارية كبيرة.",
+      "نعم، الجهاز مناسب لمتابعة المركبات والأصول، وخاصة الحالات التي تحتاج إلى جهاز GPS لاسلكي سهل التثبيت وبطارية كبيرة.",
   },
   {
     question: "هل يدعم جهاز W15L المراقبة الصوتية؟",
@@ -112,14 +120,20 @@ const faqs = [
 
 const structuredData = {
   "@context": "https://schema.org",
+
   "@graph": [
     {
       "@type": "Product",
+
       name: product.name,
+
       image: ["https://gpsworld-eg.com/images/W15L.jpeg"],
+
       url: product.url,
+
       description:
-        "جهاز W15L لتتبع السيارات والمركبات والأصول مع تصميم لاسلكي وبطارية 7500mAh وتتبع لحظي وتنبيهات.",
+        "جهاز W15L لتتبع السيارات والمركبات والأصول في مصر مع تصميم لاسلكي وبطارية 7500mAh ومغناطيس قوي وتتبع لحظي وتنبيهات.",
+
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -128,6 +142,7 @@ const structuredData = {
 
     {
       "@type": "BreadcrumbList",
+
       itemListElement: [
         {
           "@type": "ListItem",
@@ -135,12 +150,14 @@ const structuredData = {
           name: "الرئيسية",
           item: "https://gpsworld-eg.com/",
         },
+
         {
           "@type": "ListItem",
           position: 2,
           name: "أجهزة GPS",
           item: "https://gpsworld-eg.com/#products",
         },
+
         {
           "@type": "ListItem",
           position: 3,
@@ -152,9 +169,12 @@ const structuredData = {
 
     {
       "@type": "FAQPage",
+
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
+
         name: faq.question,
+
         acceptedAnswer: {
           "@type": "Answer",
           text: faq.answer,
@@ -261,7 +281,7 @@ export default function W15LPage() {
               </h1>
 
               <p className="mt-3 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS لاسلكي ببطارية ممتدة
+                جهاز تتبع GPS لاسلكي ببطارية 7500mAh
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
@@ -403,7 +423,6 @@ export default function W15LPage() {
               <div className="overflow-hidden rounded-2xl border border-gray-200">
                 <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
                   <span className="font-bold text-gray-800">الموديل</span>
-
                   <span className="text-gray-600">W15L</span>
                 </div>
 

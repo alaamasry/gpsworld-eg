@@ -2,34 +2,42 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "J16PRO Max Intel | جهاز تتبع سيارات GPS في مصر",
+  title: "J16PRO Max Intel | جهاز تتبع سيارات GPS 4G في مصر",
   description:
-    "جهاز J16PRO Max Intel لتتبع السيارات والمركبات بتقنية 4G LTE Cat.1 مع 2G Fallback، وتحديد الموقع GPS وLBS، وتتبع لحظي وتنبيهات الحماية وإدارة الأساطيل.",
+    "جهاز J16PRO Max Intel لتتبع السيارات والمركبات في مصر، يدعم 4G LTE Cat.1 و2G Fallback وتحديد الموقع GPS وLBS والتتبع اللحظي وتنبيهات الحماية وإدارة الأساطيل.",
   keywords: [
     "J16PRO Max Intel",
     "J16 PRO Max Intel",
     "J16PRO Max",
+    "J16PRO Max مصر",
     "جهاز J16PRO Max Intel",
     "GPS J16PRO Max Intel",
     "جهاز تتبع سيارات",
+    "جهاز تتبع سيارات 4G",
     "جهاز تتبع GPS",
+    "جهاز GPS للسيارات",
+    "جهاز GPS 4G",
+    "GPS Tracker",
     "GPS Tracker Egypt",
+    "GPS Tracker مصر",
+    "GPS مصر",
     "أجهزة GPS مصر",
     "أجهزة GPS",
-    "جهاز GPS للسيارات",
     "تتبع السيارات",
+    "تتبع السيارة",
     "تتبع المركبات",
     "تتبع الشاحنات",
-    "جهاز تتبع 4G",
-    "GPS 4G",
+    "جهاز تتبع مركبات",
+    "تتبع السيارات من الموبايل",
+    "إدارة أسطول السيارات",
   ],
   alternates: {
     canonical: "https://gpsworld-eg.com/devices/j16pro-max",
   },
   openGraph: {
-    title: "J16PRO Max Intel | جهاز تتبع سيارات GPS",
+    title: "J16PRO Max Intel | جهاز تتبع سيارات GPS 4G في مصر",
     description:
-      "جهاز تتبع GPS احترافي للمركبات مع 4G LTE Cat.1 و2G Fallback وتحديد الموقع GPS وLBS وتنبيهات الحماية.",
+      "جهاز J16PRO Max Intel لتتبع السيارات والمركبات مع 4G LTE Cat.1 و2G Fallback وتحديد الموقع GPS وLBS والتتبع اللحظي وتنبيهات الحماية.",
     url: "https://gpsworld-eg.com/devices/j16pro-max",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -39,15 +47,15 @@ export const metadata: Metadata = {
         url: "/images/J16PRO max.jpeg",
         width: 1024,
         height: 1024,
-        alt: "J16PRO Max Intel GPS Tracker",
+        alt: "J16PRO Max Intel جهاز تتبع سيارات GPS 4G في مصر",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "J16PRO Max Intel | جهاز تتبع سيارات GPS",
+    title: "J16PRO Max Intel | جهاز تتبع سيارات GPS 4G",
     description:
-      "جهاز تتبع GPS احترافي للمركبات مع 4G و2G وتحديد الموقع GPS وLBS.",
+      "جهاز J16PRO Max Intel لتتبع السيارات والمركبات مع 4G و2G وتحديد الموقع GPS وLBS.",
     images: ["/images/J16PRO max.jpeg"],
   },
 };
@@ -79,14 +87,19 @@ const whatsappBaseUrl = "https://wa.me/201006687163";
 
 const faqs = [
   {
-    question: "هل الجهاز يعمل على شبكة 4G؟",
+    question: "ما هو جهاز J16PRO Max Intel؟",
+    answer:
+      "جهاز J16PRO Max Intel هو جهاز تتبع GPS للسيارات والمركبات، ويدعم شبكة 4G LTE Cat.1 مع 2G Fallback، بالإضافة إلى تحديد الموقع باستخدام GPS وLBS ومجموعة من وظائف التتبع والتنبيهات والحماية.",
+  },
+  {
+    question: "هل جهاز J16PRO Max Intel يعمل على شبكة 4G؟",
     answer:
       "نعم، يدعم J16PRO Max Intel شبكة 4G LTE Cat.1، مع دعم 2G Fallback كشبكة احتياطية.",
   },
   {
-    question: "ما هو جهد تشغيل الجهاز؟",
+    question: "ما جهد تشغيل جهاز J16PRO Max Intel؟",
     answer:
-      "يعمل الجهاز على نطاق جهد من 9V إلى 90V DC، ولذلك فهو مناسب لمجموعة واسعة من المركبات.",
+      "يعمل الجهاز على نطاق جهد من 9V إلى 90V DC، ولذلك فهو مناسب لمجموعة واسعة من السيارات والمركبات.",
   },
   {
     question: "هل الجهاز مناسب للشاحنات والمركبات الكبيرة؟",
@@ -94,12 +107,27 @@ const faqs = [
       "نعم، الجهاز مناسب للسيارات والشاحنات والأتوبيسات والمركبات التجارية وتطبيقات إدارة الأساطيل.",
   },
   {
-    question: "هل يوجد تتبع لحظي؟",
+    question: "هل يوجد تتبع لحظي للسيارة؟",
     answer:
       "نعم، يدعم الجهاز التتبع اللحظي من خلال نظام GPS المتوافق مع الجهاز والسيرفر المستخدم.",
   },
   {
-    question: "هل يوجد ضمان؟",
+    question: "هل يمكن استخدام الجهاز لتتبع السيارة من الموبايل؟",
+    answer:
+      "يمكن متابعة بيانات وموقع المركبة من الهاتف عند استخدام تطبيق أو نظام تتبع متوافق مع جهاز J16PRO Max Intel.",
+  },
+  {
+    question: "هل يدعم الجهاز السياج الجغرافي؟",
+    answer:
+      "نعم، يدعم الجهاز وظيفة السياج الجغرافي Geo-Fence من خلال نظام التتبع المتوافق، ويمكن استخدامها لمتابعة دخول المركبة إلى منطقة محددة أو خروجها منها.",
+  },
+  {
+    question: "هل يدعم الجهاز التحكم في فصل الكهرباء أو الوقود؟",
+    answer:
+      "يمكن استخدام وظيفة فصل الكهرباء أو الوقود عند تجهيز المركبة بالتوصيل المناسب، وتوفر دعم هذه الوظيفة في نظام التتبع المستخدم.",
+  },
+  {
+    question: "هل يوجد ضمان على الجهاز؟",
     answer:
       "يوجد ضمان لمدة سنة ضد عيوب الصناعة، ولا يشمل الحرق أو الكسر أو التلف الناتج عن سوء الاستخدام.",
   },
@@ -114,11 +142,12 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/J16PRO%20max.jpeg"],
       url: product.url,
       description:
-        "جهاز J16PRO Max Intel لتتبع السيارات والمركبات بتقنية 4G LTE Cat.1 مع 2G Fallback وتحديد الموقع GPS وLBS وتتبع لحظي وتنبيهات الحماية.",
+        "جهاز J16PRO Max Intel لتتبع السيارات والمركبات في مصر بتقنية 4G LTE Cat.1 مع 2G Fallback وتحديد الموقع GPS وLBS وتتبع لحظي وتنبيهات الحماية.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
+      category: "أجهزة GPS لتتبع السيارات والمركبات",
     },
     {
       "@type": "BreadcrumbList",
@@ -216,7 +245,7 @@ export default function J16ProMaxIntelPage() {
             <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
               <Image
                 src={product.image}
-                alt={product.name + " - جهاز تتبع سيارات GPS"}
+                alt="J16PRO Max Intel جهاز تتبع سيارات GPS 4G في مصر"
                 width={650}
                 height={500}
                 priority
@@ -240,10 +269,11 @@ export default function J16ProMaxIntelPage() {
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز J16PRO Max Intel لتتبع السيارات والمركبات بشكل احترافي،
-                ويدعم شبكة 4G LTE Cat.1 مع التحويل إلى 2G عند الحاجة، مع تحديد
-                الموقع باستخدام GPS وLBS ومتابعة المركبة لحظيًا، بالإضافة إلى
-                مجموعة من التنبيهات ووظائف الحماية وإدارة الأساطيل.
+                جهاز J16PRO Max Intel هو جهاز تتبع GPS للسيارات والمركبات
+                بتقنية 4G LTE Cat.1، مع دعم 2G Fallback كشبكة احتياطية. يوفر
+                الجهاز تحديد الموقع باستخدام GPS وLBS، ومتابعة المركبة بشكل
+                لحظي، بالإضافة إلى مجموعة من التنبيهات ووظائف الحماية وإدارة
+                الأساطيل.
               </p>
 
               {/* ================= PRICE ================= */}
@@ -281,6 +311,45 @@ export default function J16ProMaxIntelPage() {
           </div>
         </section>
 
+        {/* ================= SEO INTRO ================= */}
+
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-white p-8 shadow-md md:p-10">
+            <h2 className="text-center text-3xl font-extrabold text-blue-950">
+              J16PRO Max Intel جهاز تتبع سيارات GPS 4G في مصر
+            </h2>
+
+            <div className="mt-6 text-lg font-semibold leading-9 text-gray-700">
+              <p className="mb-5">
+                جهاز J16PRO Max Intel هو جهاز GPS لتتبع السيارات والمركبات
+                باستخدام شبكة 4G LTE Cat.1، مع دعم 2G Fallback عند الحاجة.
+                ويتيح الجهاز متابعة موقع المركبة وحركتها من خلال نظام أو
+                سيرفر GPS متوافق.
+              </p>
+
+              <p className="mb-5">
+                يعتمد الجهاز على تحديد الموقع GPS وLBS، ويقدم مجموعة من وظائف
+                التتبع والتنبيهات التي تناسب الاستخدام الشخصي والتجاري، مثل
+                متابعة حركة السيارة وتنبيهات السرعة والسياج الجغرافي وفصل
+                مصدر الكهرباء، وفقًا لإمكانيات نظام التتبع المستخدم.
+              </p>
+
+              <p className="mb-5">
+                ويمكن استخدام جهاز تتبع السيارات J16PRO Max Intel في السيارات
+                الخاصة والشاحنات والأتوبيسات والمركبات التجارية وسيارات الأجرة،
+                كما يناسب الشركات التي تحتاج إلى متابعة وإدارة أسطول من
+                المركبات من خلال نظام GPS.
+              </p>
+
+              <p>
+                إذا كنت تبحث عن جهاز GPS للسيارات أو GPS Tracker 4G في مصر،
+                يمكنك التواصل معنا لمعرفة تفاصيل جهاز J16PRO Max Intel
+                والتوفر وطريقة التركيب والنظام المناسب لاستخدامك.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ================= MAIN FEATURES ================= */}
 
         <section className="mx-auto max-w-7xl px-5 pb-16">
@@ -289,14 +358,14 @@ export default function J16ProMaxIntelPage() {
 
             <div className="rounded-3xl bg-white p-7 shadow-md">
               <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات الجهاز
+                ⭐ أهم مميزات جهاز J16PRO Max Intel
               </h2>
 
               <ul className="space-y-4 text-lg leading-8 text-gray-700">
-                <li>📍 تتبع الموقع بشكل لحظي.</li>
+                <li>📍 تتبع موقع المركبة بشكل لحظي.</li>
                 <li>📡 دعم شبكة 4G LTE Cat.1.</li>
-                <li>📶 دعم 2G Fallback عند الحاجة.</li>
-                <li>🛰️ تحديد الموقع باستخدام GNSS وLBS.</li>
+                <li>📶 دعم 2G Fallback كشبكة احتياطية.</li>
+                <li>🛰️ تحديد الموقع باستخدام GPS وLBS.</li>
                 <li>🚨 تنبيهات السرعة والحركة والاهتزاز.</li>
                 <li>🔌 تنبيه عند فصل مصدر الكهرباء.</li>
                 <li>🛡️ تنبيهات الحماية ومحاولات العبث.</li>
@@ -315,7 +384,7 @@ export default function J16ProMaxIntelPage() {
 
             <div className="rounded-3xl bg-white p-7 shadow-md">
               <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⚙️ المواصفات الفنية
+                ⚙️ المواصفات الفنية لجهاز J16PRO Max Intel
               </h2>
 
               <div className="overflow-hidden rounded-2xl border border-gray-200">
@@ -411,18 +480,21 @@ export default function J16ProMaxIntelPage() {
               </h2>
 
               <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-                تم تصميم الجهاز ليكون مناسبًا للاستخدام الاحترافي في متابعة
-                المركبات وإدارة الأساطيل، مع مجموعة من وظائف التتبع والتنبيهات
-                التي تساعد على متابعة المركبة واكتشاف الحالات غير الطبيعية.
+                تم تصميم جهاز J16PRO Max Intel ليكون مناسبًا لمتابعة السيارات
+                والمركبات وإدارة الأساطيل، مع مجموعة من وظائف التتبع والتنبيهات
+                والحماية التي تساعد على متابعة المركبة ومعرفة الحالات غير
+                الطبيعية.
               </p>
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
               <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
                 <div className="text-3xl">📍</div>
+
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   التتبع اللحظي
                 </h3>
+
                 <p className="mt-3 leading-8 text-gray-600">
                   متابعة موقع المركبة وحركتها بشكل لحظي من خلال نظام التتبع
                   المتوافق مع الجهاز.
@@ -431,9 +503,11 @@ export default function J16ProMaxIntelPage() {
 
               <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
                 <div className="text-3xl">🚨</div>
+
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   تنبيهات السرعة
                 </h3>
+
                 <p className="mt-3 leading-8 text-gray-600">
                   استقبال تنبيهات عند تجاوز السرعة المحددة للمركبة.
                 </p>
@@ -441,20 +515,24 @@ export default function J16ProMaxIntelPage() {
 
               <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
                 <div className="text-3xl">🗺️</div>
+
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   السياج الجغرافي
                 </h3>
+
                 <p className="mt-3 leading-8 text-gray-600">
                   إمكانية إنشاء نطاق جغرافي واستقبال تنبيه عند خروج المركبة
-                  من النطاق المحدد.
+                  من النطاق المحدد أو دخولها إليه.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
                 <div className="text-3xl">🔌</div>
+
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   فصل مصدر الطاقة
                 </h3>
+
                 <p className="mt-3 leading-8 text-gray-600">
                   تنبيه عند اكتشاف فصل مصدر الكهرباء عن الجهاز أو حدوث مشكلة
                   في مصدر الطاقة.
@@ -463,9 +541,11 @@ export default function J16ProMaxIntelPage() {
 
               <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
                 <div className="text-3xl">🛡️</div>
+
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   الحماية ومكافحة السرقة
                 </h3>
+
                 <p className="mt-3 leading-8 text-gray-600">
                   يساعد في متابعة المركبة واكتشاف الحركة أو الحالات غير
                   الطبيعية المرتبطة بالحماية.
@@ -474,9 +554,11 @@ export default function J16ProMaxIntelPage() {
 
               <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
                 <div className="text-3xl">📊</div>
+
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   إدارة الأساطيل
                 </h3>
+
                 <p className="mt-3 leading-8 text-gray-600">
                   مناسب للشركات والمؤسسات التي تحتاج إلى متابعة عدد من
                   المركبات وإدارتها من خلال نظام GPS.
@@ -492,12 +574,13 @@ export default function J16ProMaxIntelPage() {
           <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
             <div className="text-center">
               <h2 className="text-3xl font-extrabold text-blue-950 md:text-4xl">
-                🚘 استخدامات J16PRO Max Intel
+                🚘 استخدامات جهاز J16PRO Max Intel
               </h2>
 
               <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
-                يمكن استخدام الجهاز في مجموعة متنوعة من تطبيقات تتبع وإدارة
-                المركبات، سواء للأفراد أو الشركات والمؤسسات.
+                يمكن استخدام جهاز J16PRO Max Intel في مجموعة متنوعة من تطبيقات
+                تتبع وإدارة المركبات، سواء للاستخدام الشخصي أو التجاري أو
+                لمتابعة أساطيل الشركات.
               </p>
             </div>
 
@@ -570,14 +653,14 @@ export default function J16ProMaxIntelPage() {
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              لماذا J16PRO Max Intel؟
+              لماذا تختار جهاز J16PRO Max Intel؟
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              لأنه يجمع بين الاتصال بشبكة 4G وسرعة نقل البيانات، مع دعم 2G
-              كشبكة احتياطية، وتحديد الموقع GPS وLBS، ومجموعة من وظائف
-              التتبع والتنبيهات والحماية المناسبة للاستخدام الشخصي والتجاري
-              وإدارة الأساطيل.
+              لأنه يجمع بين الاتصال بشبكة 4G LTE Cat.1 ودعم 2G كشبكة
+              احتياطية، مع تحديد الموقع GPS وLBS، ومجموعة من وظائف التتبع
+              والتنبيهات والحماية المناسبة للاستخدام الشخصي والتجاري وإدارة
+              الأساطيل.
             </p>
           </div>
         </section>
@@ -586,7 +669,7 @@ export default function J16ProMaxIntelPage() {
 
         <section className="mx-auto max-w-5xl px-5 py-16">
           <h2 className="text-center text-3xl font-extrabold text-blue-950 md:text-4xl">
-            ❓ الأسئلة الشائعة
+            ❓ الأسئلة الشائعة عن J16PRO Max Intel
           </h2>
 
           <div className="mt-10 space-y-5">
@@ -612,11 +695,12 @@ export default function J16ProMaxIntelPage() {
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
             <h2 className="text-3xl font-extrabold md:text-4xl">
-              هل تريد معرفة المزيد عن الجهاز؟
+              هل تريد معرفة المزيد عن جهاز J16PRO Max Intel؟
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-blue-200">
-              تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز J16PRO Max Intel.
+              تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز التتبع المناسب
+              لسيارتك أو مركبتك.
             </p>
 
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -643,13 +727,17 @@ export default function J16ProMaxIntelPage() {
 
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-            <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
+            <h3 className="text-2xl font-extrabold">
+              GPS World Egypt
+            </h3>
 
             <p className="mt-3 text-blue-200">
-              أجهزة GPS للتتبع والمراقبة
+              أجهزة GPS للتتبع والمراقبة في مصر
             </p>
 
-            <p className="mt-5 text-blue-300">📞 01006687163</p>
+            <p className="mt-5 text-blue-300">
+              📞 01006687163
+            </p>
 
             <a
               href={whatsappBaseUrl}

@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "QBIT | جهاز تتبع GPS صغير ومحمول في مصر",
   description:
-    "جهاز QBIT GPS لتتبع السيارات والمركبات والأشخاص والحيوانات والأمتعة، بحجم صغير وبطارية تدوم 2 إلى 3 أيام، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
+    "جهاز QBIT لتتبع السيارات والمركبات والأشخاص والحيوانات والأمتعة. جهاز GPS صغير ومحمول ببطارية تدوم حوالي 2 إلى 3 أيام، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
   keywords: [
     "QBIT",
     "QBIT GPS",
@@ -12,18 +12,24 @@ export const metadata: Metadata = {
     "جهاز تتبع QBIT",
     "QBIT GPS Tracker",
     "جهاز GPS صغير",
-    "جهاز تتبع صغير",
+    "جهاز تتبع GPS صغير",
     "جهاز تتبع محمول",
+    "جهاز GPS محمول",
     "جهاز تتبع سيارات",
     "جهاز تتبع السيارة",
+    "جهاز تتبع المركبات",
     "جهاز تتبع GPS",
     "أجهزة GPS مصر",
+    "GPS مصر",
     "GPS Tracker مصر",
+    "GPS Tracker Egypt",
     "تتبع السيارات",
     "تتبع المركبات",
+    "تتبع الأشخاص",
     "تتبع الأطفال",
     "تتبع كبار السن",
     "تتبع الحيوانات",
+    "تتبع الأمتعة",
     "Tracksolid Pro",
   ],
   alternates: {
@@ -63,6 +69,11 @@ const product = {
 
 const faqs = [
   {
+    question: "ما هو جهاز QBIT GPS؟",
+    answer:
+      "QBIT هو جهاز تتبع GPS صغير ومحمول يمكن استخدامه لمتابعة السيارات والمركبات والأشخاص والحيوانات والأمتعة والمقتنيات المهمة، مع دعم GPS وLBS وWiFi وتطبيق Tracksolid Pro.",
+  },
+  {
     question: "هل يحتاج جهاز QBIT إلى تركيب أسلاك؟",
     answer:
       "لا، جهاز QBIT جهاز محمول يعمل ببطارية داخلية ولا يحتاج إلى توصيل أسلاك داخل السيارة.",
@@ -73,17 +84,17 @@ const faqs = [
       "تعمل البطارية حوالي 2 إلى 3 أيام، وتختلف المدة حسب طريقة الاستخدام ووضع التشغيل.",
   },
   {
-    question: "هل يدعم QBIT المكالمات؟",
+    question: "هل يدعم QBIT المكالمات الصوتية؟",
     answer:
       "نعم، يدعم الجهاز إجراء واستقبال المكالمات الصوتية، بالإضافة إلى خاصية الاستماع الصوتي عند تفعيلها.",
   },
   {
-    question: "هل يوجد سجل لحركة الجهاز؟",
+    question: "هل يوجد سجل لحركة جهاز QBIT؟",
     answer:
       "نعم، يمكن مراجعة سجل الحركة لمدة تصل إلى 90 يومًا وفقًا لنظام المتابعة المستخدم.",
   },
   {
-    question: "ما التطبيق المستخدم مع QBIT؟",
+    question: "ما التطبيق المستخدم مع جهاز QBIT؟",
     answer:
       "يعمل QBIT مع تطبيق Tracksolid Pro للمتابعة وعرض الموقع والتنبيهات والتقارير.",
   },
@@ -98,7 +109,7 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/QBIT.jpeg"],
       url: product.url,
       description:
-        "جهاز QBIT GPS صغير ومحمول لتتبع السيارات والأشخاص والحيوانات والأمتعة، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
+        "جهاز QBIT GPS صغير ومحمول لتتبع السيارات والمركبات والأشخاص والحيوانات والأمتعة، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -183,7 +194,7 @@ export default function QBITPage() {
                 </span>
 
                 <span className="mt-1 text-xs text-blue-200 md:text-sm">
-                  حلول التتبع والمراقبة GPS
+                  أجهزة GPS وحلول التتبع والمراقبة
                 </span>
               </a>
 
@@ -213,7 +224,7 @@ export default function QBITPage() {
             <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
               <Image
                 src={product.image}
-                alt="QBIT جهاز تتبع GPS صغير ومحمول"
+                alt="QBIT جهاز تتبع GPS صغير ومحمول في مصر"
                 width={650}
                 height={500}
                 priority
@@ -237,8 +248,9 @@ export default function QBITPage() {
               <p className="mt-6 text-lg leading-9 text-gray-600">
                 جهاز QBIT هو جهاز تتبع GPS صغير ومحمول، مناسب لمتابعة السيارات
                 والمركبات وكذلك الأطفال وكبار السن والحيوانات والأمتعة
-                والمقتنيات المهمة. يتميز بحجمه الصغير وسهولة استخدامه، مع
-                إمكانية المتابعة من خلال تطبيق Tracksolid Pro.
+                والمقتنيات المهمة. يتميز بحجمه الصغير وسهولة حمله، مع إمكانية
+                المتابعة من خلال تطبيق Tracksolid Pro وعرض الموقع والحركة
+                والتنبيهات.
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -267,7 +279,7 @@ export default function QBITPage() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-3xl bg-white p-7 shadow-md">
               <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز QBIT
+                ⭐ أهم مميزات جهاز QBIT GPS
               </h2>
 
               <ul className="space-y-4 text-lg leading-8 text-gray-700">
@@ -455,7 +467,7 @@ export default function QBITPage() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                طريقة تشغيل جهاز QBIT
+                طريقة تشغيل جهاز QBIT GPS
               </h2>
 
               <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
@@ -528,6 +540,12 @@ export default function QBITPage() {
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
                 أين يمكن استخدام جهاز QBIT؟
               </h2>
+
+              <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-600">
+                يمكن استخدام جهاز QBIT كجهاز تتبع GPS محمول في العديد من
+                الاستخدامات التي تحتاج إلى متابعة الموقع والحركة، سواء داخل
+                السيارة أو أثناء التنقل.
+              </p>
             </div>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
@@ -609,7 +627,9 @@ export default function QBITPage() {
               إذا كنت تبحث عن جهاز تتبع GPS صغير وسهل الحمل، فإن QBIT يوفر
               مجموعة من وظائف التتبع والتنبيهات في حجم صغير، مع دعم GPS وLBS
               وWiFi وتطبيق Tracksolid Pro، بالإضافة إلى البطارية القابلة للشحن
-              وسهولة الاستخدام في السيارة أو أثناء التنقل.
+              وسهولة الاستخدام في السيارة أو أثناء التنقل. لذلك يمكن أن يكون
+              مناسبًا لمن يبحث عن جهاز GPS محمول لتتبع السيارات أو الأشخاص أو
+              الحيوانات أو المقتنيات.
             </p>
           </div>
         </section>
@@ -622,7 +642,7 @@ export default function QBITPage() {
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              أسئلة مهمة عن جهاز QBIT
+              أسئلة مهمة عن جهاز QBIT GPS
             </h2>
           </div>
 
@@ -710,7 +730,7 @@ export default function QBITPage() {
           href={whatsappBaseUrl}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="التواصل عبر واتساب"
+          aria-label="التواصل عبر واتساب مع GPS World Egypt"
           className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-2xl transition hover:bg-green-600"
         >
           💬
