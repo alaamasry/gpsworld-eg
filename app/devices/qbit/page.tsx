@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import QbitGallery from "./QbitGallery";
 
 export const metadata: Metadata = {
   title: "QBIT | جهاز تتبع GPS صغير ومحمول في مصر",
@@ -221,16 +221,7 @@ export default function QBITPage() {
         {/* PRODUCT */}
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid gap-10 lg:grid-cols-2">
-            <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-              <Image
-                src={product.image}
-                alt="QBIT جهاز تتبع GPS صغير ومحمول في مصر"
-                width={650}
-                height={500}
-                priority
-                className="max-h-[500px] w-full object-contain"
-              />
-            </div>
+            <QbitGallery />
 
             <div className="flex flex-col justify-center">
               <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
