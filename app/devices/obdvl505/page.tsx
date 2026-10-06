@@ -2,18 +2,21 @@ import type { Metadata } from "next";
 import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
-  title: "OBD VL505 | جهاز تتبع سيارات GPS OBD في مصر",
+  title: "OBD VL505 4G | جهاز تتبع سيارات GPS OBD في مصر",
 
   description:
-    "جهاز OBD VL505 لتتبع السيارات والمركبات في مصر، بتركيب مباشر عبر منفذ OBD-II بدون أسلاك إضافية، مع 4G CAT1 وتحديد موقع GPS وتنبيهات ومتابعة حركة السيارة.",
+    "جهاز OBD VL505 4G لتتبع السيارات بنظام Plug & Play، يعمل بشبكة 4G LTE Cat.1، مع إمكانية دعم 2G حسب الإصدار، وتتبع مباشر وتنبيه نزع الجهاز ومراقبة سلوك القيادة.",
 
   keywords: [
     "OBD VL505",
+    "OBD VL505 4G",
     "OBD VL505 GPS",
     "جهاز OBD VL505",
+    "جهاز OBD VL505 4G",
     "جهاز تتبع OBD VL505",
     "جهاز GPS OBD VL505",
     "OBD GPS Tracker",
+    "OBD GPS Tracker مصر",
     "جهاز تتبع OBD",
     "جهاز GPS OBD",
     "جهاز تتبع سيارات",
@@ -36,9 +39,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "OBD VL505 | جهاز تتبع سيارات GPS OBD في مصر",
+    title: "OBD VL505 4G | جهاز تتبع سيارات GPS OBD في مصر",
     description:
-      "جهاز OBD VL505 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II، مع اتصال 4G CAT1 وتحديد موقع GPS وتنبيهات ومتابعة حركة السيارة.",
+      "جهاز OBD VL505 4G بتركيب Plug & Play من منفذ OBD-II، مع 4G LTE Cat.1، تتبع مباشر، تنبيه نزع الجهاز ومراقبة سلوك القيادة.",
     url: "https://gpsworld-eg.com/devices/obdvl505",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -48,22 +51,22 @@ export const metadata: Metadata = {
         url: "/images/OBDVL505.jpeg",
         width: 1200,
         height: 630,
-        alt: "OBD VL505 جهاز تتبع سيارات GPS بمنفذ OBD في مصر",
+        alt: "OBD VL505 4G جهاز تتبع سيارات GPS بمنفذ OBD",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "OBD VL505 | جهاز تتبع سيارات GPS في مصر",
+    title: "OBD VL505 4G | جهاز تتبع سيارات GPS في مصر",
     description:
-      "جهاز OBD VL505 لتتبع السيارات مع تركيب مباشر عبر منفذ OBD-II ودعم 4G CAT1 وتحديد الموقع والتنبيهات.",
+      "جهاز OBD VL505 4G بتركيب مباشر عبر منفذ OBD-II، مع 4G LTE Cat.1 وتتبع مباشر وتنبيه نزع الجهاز ومراقبة سلوك القيادة.",
     images: ["/images/OBDVL505.jpeg"],
   },
 };
 
 const product = {
-  name: "OBD VL505",
+  name: "OBD VL505 4G",
   image: "/images/OBDVL505.jpeg",
   url: "https://gpsworld-eg.com/devices/obdvl505",
 };
@@ -71,11 +74,11 @@ const product = {
 const whatsappNumber = "201006687163";
 
 const whatsappInquiry = encodeURIComponent(
-  "مرحبًا، أريد الاستفسار عن جهاز OBD VL505"
+  "مرحبًا، أريد الاستفسار عن جهاز OBD VL505 4G"
 );
 
 const whatsappOrder = encodeURIComponent(
-  "مرحبًا، أريد طلب جهاز OBD VL505"
+  "مرحبًا، أريد طلب جهاز OBD VL505 4G"
 );
 
 const whatsappInquiryUrl =
@@ -88,44 +91,59 @@ const whatsappBaseUrl = "https://wa.me/201006687163";
 
 const faqs = [
   {
-    question: "ما هو جهاز OBD VL505؟",
+    question: "ما هو جهاز OBD VL505 4G؟",
     answer:
-      "جهاز OBD VL505 هو جهاز تتبع GPS للسيارات والمركبات يتم تركيبه مباشرة في منفذ OBD-II، ويوفر متابعة موقع وحركة السيارة والتنبيهات من خلال نظام التتبع والمنصة المتوافقة.",
+      "جهاز OBD VL505 4G هو جهاز تتبع GPS صغير الحجم يعمل بنظام Plug & Play، ويتم تركيبه مباشرة في منفذ OBD-II الموجود في السيارة بدون قطع أو تعديل أسلاك السيارة.",
   },
   {
-    question: "هل يحتاج OBD VL505 إلى تمديد أسلاك؟",
+    question: "هل يحتاج OBD VL505 4G إلى قطع أسلاك؟",
     answer:
-      "لا، يتم تركيب جهاز OBD VL505 مباشرة في منفذ OBD-II بطريقة Plug & Play، لذلك لا يحتاج إلى تمديد أسلاك إضافية أثناء التركيب.",
+      "لا، يتم تركيب الجهاز مباشرة في منفذ OBD-II بدون الحاجة إلى قطع أو توصيل أسلاك السيارة.",
   },
   {
-    question: "هل يدعم OBD VL505 شبكة 4G؟",
+    question: "هل يدعم OBD VL505 4G شبكة 4G؟",
     answer:
-      "نعم، يدعم جهاز OBD VL505 اتصال 4G CAT1 LTE بالإضافة إلى GSM، مع دعم مجموعة من ترددات LTE المناسبة للاتصال حسب إصدار الجهاز والشبكة المستخدمة.",
+      "نعم، يعمل الجهاز على شبكة 4G LTE Cat.1، مع إمكانية دعم شبكة 2G في بعض الإصدارات والشبكات عند ضعف أو عدم توافر تغطية 4G.",
   },
   {
-    question: "هل يدعم OBD VL505 تتبع السيارة بشكل لحظي؟",
+    question: "هل يدعم OBD VL505 4G التتبع المباشر؟",
     answer:
-      "نعم، يدعم الجهاز متابعة موقع وحركة السيارة بشكل مباشر عبر نظام التتبع والمنصة المتوافقة، حسب إعدادات النظام والاتصال المتاح.",
+      "نعم، يدعم الجهاز متابعة موقع السيارة وحركتها بشكل مباشر من خلال نظام التتبع المستخدم.",
   },
   {
-    question: "هل يدعم OBD VL505 تحديد الموقع GPS؟",
+    question: "هل يدعم OBD VL505 4G تنبيه نزع الجهاز؟",
     answer:
-      "نعم، يدعم الجهاز تحديد الموقع باستخدام GPS وBDS وGNSS وLBS للمساعدة في متابعة موقع المركبة وحركتها.",
+      "نعم، يمكن للجهاز إرسال تنبيه عند نزع الجهاز من منفذ OBD-II حسب تجهيز الجهاز وإعدادات النظام المستخدم.",
   },
   {
-    question: "هل يدعم OBD VL505 فصل محرك السيارة؟",
+    question: "هل يدعم OBD VL505 4G مراقبة سلوك السائق؟",
     answer:
-      "لا، جهاز OBD VL505 لا يدعم فصل محرك السيارة، وهو مخصص للتتبع والمراقبة والتنبيهات.",
+      "نعم، يحتوي الجهاز على مستشعر تسارع يمكن الاستفادة منه في اكتشاف التسارع المفاجئ والفرملة المفاجئة وبعض حالات الانعطاف الحاد.",
   },
   {
-    question: "ما جهد تشغيل جهاز OBD VL505؟",
+    question: "هل يدعم OBD VL505 4G متابعة ACC؟",
     answer:
-      "يعمل جهاز OBD VL505 على نطاق جهد من 9V إلى 36V DC.",
+      "نعم، يدعم الجهاز متابعة حالة ACC لمعرفة فترات تشغيل السيارة وتوقفها حسب النظام المستخدم.",
   },
   {
-    question: "هل يمكن استخدام OBD VL505 مع السيارات الخاصة؟",
+    question: "هل يحتوي OBD VL505 4G على ميكروفون؟",
     answer:
-      "نعم، الجهاز مناسب للسيارات التي تحتوي على منفذ OBD-II متوافق، ويمكن استخدامه لمتابعة موقع السيارة وحركتها من خلال نظام التتبع.",
+      "يدعم الجهاز الاستماع الصوتي من خلال الميكروفون حسب تجهيز الجهاز والنظام المستخدم.",
+  },
+  {
+    question: "ما جهد تشغيل OBD VL505 4G؟",
+    answer:
+      "يعمل جهاز OBD VL505 4G على نطاق جهد من 9 إلى 36 فولت DC.",
+  },
+  {
+    question: "هل يدعم OBD VL505 4G فصل محرك السيارة؟",
+    answer:
+      "لا، الجهاز مخصص للتتبع والمراقبة والتنبيهات ولا يدعم فصل محرك السيارة.",
+  },
+  {
+    question: "هل يمكن نقل الجهاز إلى سيارة أخرى؟",
+    answer:
+      "نعم، من مميزات نظام Plug & Play إمكانية فك الجهاز وتركيبه في سيارة أخرى بشرط وجود منفذ OBD-II متوافق.",
   },
 ];
 
@@ -135,12 +153,10 @@ const structuredData = {
     {
       "@type": "Product",
       name: product.name,
-      image: [
-        "https://gpsworld-eg.com/images/OBDVL505.jpeg",
-      ],
+      image: ["https://gpsworld-eg.com/images/OBDVL505.jpeg"],
       url: product.url,
       description:
-        "جهاز OBD VL505 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II، مع 4G CAT1 وتحديد موقع GPS وتنبيهات ومتابعة حركة السيارة.",
+        "جهاز OBD VL505 4G لتتبع السيارات بنظام Plug & Play، يعمل بشبكة 4G LTE Cat.1 مع إمكانية دعم 2G حسب الإصدار، وتتبع مباشر وتنبيه نزع الجهاز ومراقبة سلوك القيادة.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -166,7 +182,7 @@ const structuredData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "OBD VL505",
+          name: "OBD VL505 4G",
           item: "https://gpsworld-eg.com/devices/obdvl505",
         },
       ],
@@ -198,6 +214,7 @@ export default function OBDVL505Page() {
 
       <main className="min-h-screen bg-gray-50" dir="rtl">
         {/* HEADER */}
+
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
           <div className="mx-auto max-w-7xl px-5 py-4">
             <div className="flex items-center justify-between gap-4">
@@ -225,6 +242,7 @@ export default function OBDVL505Page() {
         </header>
 
         {/* BACK */}
+
         <div className="mx-auto max-w-7xl px-5 pt-6">
           <a
             href="/#products"
@@ -234,7 +252,8 @@ export default function OBDVL505Page() {
           </a>
         </div>
 
-        {/* PRODUCT HERO */}
+        {/* HERO */}
+
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="relative">
@@ -247,7 +266,7 @@ export default function OBDVL505Page() {
                   "/images/OBDVL505-5.jpeg",
                   "/images/OBDVL505-6.jpeg",
                 ]}
-                deviceName="OBD VL505"
+                deviceName="OBD VL505 4G"
               />
             </div>
 
@@ -257,25 +276,24 @@ export default function OBDVL505Page() {
               </span>
 
               <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-                جهاز OBD VL505 لتتبع السيارات والمركبات في مصر
+                جهاز OBD VL505 4G لتتبع السيارات والمركبات
               </h1>
 
               <p className="mt-3 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS بتركيب مباشر عبر منفذ OBD-II ويدعم 4G CAT1
+                جهاز GPS صغير بنظام Plug &amp; Play وشبكة 4G LTE Cat.1
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز OBD VL505 هو جهاز تتبع سيارات GPS مصمم لمن يبحث عن
-                تركيب سريع وسهل بدون تمديد أسلاك. يتم توصيل الجهاز مباشرة
-                في منفذ OBD-II بالسيارة، ليتيح متابعة الموقع والحركة
-                والتنبيهات من خلال نظام التتبع المتوافق.
+                جهاز OBD VL505 4G هو جهاز تتبع GPS صغير الحجم يتم تركيبه
+                مباشرة في منفذ OBD-II الموجود في السيارة، بدون الحاجة إلى
+                قطع أو تعديل أسلاك السيارة.
               </p>
 
               <p className="mt-4 text-lg leading-9 text-gray-600">
-                يدعم OBD VL505 اتصال 4G CAT1 LTE بالإضافة إلى GSM، مع
-                تحديد الموقع باستخدام GPS وBDS وGNSS وLBS، ويتميز بحجم
-                صغير وتركيب عملي يناسب العديد من السيارات التي تحتوي على
-                منفذ OBD-II متوافق.
+                يعمل الجهاز على شبكة 4G LTE Cat.1، مع إمكانية دعم 2G في
+                بعض الإصدارات والشبكات، ويوفر تتبعًا مباشرًا ومتابعة
+                للسرعة وخط السير وتنبيهات نزع الجهاز والحركة، بالإضافة
+                إلى إمكانية مراقبة بعض سلوكيات القيادة.
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -300,18 +318,18 @@ export default function OBDVL505Page() {
         </section>
 
         {/* QUICK FEATURES */}
+
         <section className="mx-auto max-w-7xl px-5 pb-16">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-3xl bg-white p-6 text-center shadow-md">
               <div className="text-4xl">🔌</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تركيب Plug & Play
+                Plug &amp; Play
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تركيب مباشر من خلال منفذ OBD-II بدون الحاجة إلى تمديد
-                أسلاك إضافية.
+                تركيب مباشر في منفذ OBD-II بدون قطع أو تعديل أسلاك السيارة.
               </p>
             </div>
 
@@ -319,23 +337,12 @@ export default function OBDVL505Page() {
               <div className="text-4xl">📡</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                4G CAT1
+                4G LTE Cat.1
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                دعم اتصال 4G CAT1 LTE بالإضافة إلى شبكة GSM.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">📍</div>
-
-              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تتبع GPS
-              </h2>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع وحركة السيارة من خلال نظام التتبع المتوافق.
+                اتصال 4G سريع لنقل بيانات التتبع، مع دعم 2G في بعض
+                الإصدارات والشبكات.
               </p>
             </div>
 
@@ -343,356 +350,524 @@ export default function OBDVL505Page() {
               <div className="text-4xl">🚨</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تنبيهات متعددة
+                تنبيه نزع الجهاز
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                دعم تنبيهات مرتبطة بالسرعة والاهتزاز والتسارع والكبح
-                والمناطق الجغرافية.
+                إمكانية التنبيه عند فصل الجهاز من منفذ OBD-II.
+              </p>
+            </div>
+
+            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">🚦</div>
+
+              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
+                مراقبة القيادة
+              </h2>
+
+              <p className="mt-2 leading-7 text-gray-600">
+                متابعة التسارع والفرملة والانعطافات الحادة حسب إعدادات النظام.
               </p>
             </div>
           </div>
         </section>
 
-        {/* FEATURES + TECHNICAL SPECS */}
+        {/* MAIN FEATURES */}
+
         <section className="mx-auto max-w-7xl px-5 pb-16">
-          <div className="grid gap-8 lg:grid-cols-2">
-            {/* FEATURES */}
-            <div className="rounded-3xl bg-white p-7 shadow-md">
-              <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز OBD VL505
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+            <div className="text-center">
+              <span className="font-bold text-blue-700">
+                مميزات الجهاز
+              </span>
+
+              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+                مميزات جهاز OBD VL505 4G بالتفصيل
               </h2>
 
-              <ul className="space-y-4 text-lg leading-8 text-gray-700">
-                <li>
-                  📍 متابعة موقع المركبة بشكل لحظي عبر الإنترنت.
-                </li>
-
-                <li>
-                  🔌 تركيب مباشر وسريع من خلال منفذ OBD-II بدون أسلاك
-                  إضافية.
-                </li>
-
-                <li>
-                  📡 دعم اتصال 4G CAT1 LTE بالإضافة إلى GSM.
-                </li>
-
-                <li>
-                  🗺️ دعم تحديد الموقع باستخدام GPS وBDS وGNSS وLBS.
-                </li>
-
-                <li>
-                  🚨 تنبيهات السرعة والاهتزاز والتسارع والكبح المفاجئ.
-                </li>
-
-                <li>
-                  📍 دعم التنبيه عند الدخول أو الخروج من منطقة جغرافية
-                  محددة Geo-Fence.
-                </li>
-
-                <li>
-                  💡 إنذار تغير الإضاءة المفاجئ حسب الإصدار.
-                </li>
-
-                <li>
-                  🔋 إنذار انخفاض البطارية ودعم بطارية احتياطية.
-                </li>
-
-                <li>
-                  💾 إمكانية حفظ بيانات الرحلات على السيرفر حتى 6 أشهر.
-                </li>
-
-                <li>
-                  🔄 دعم التحديثات عن بُعد OTA.
-                </li>
-
-                <li>
-                  🌡️ إمكانية دعم أجهزة إضافية لمراقبة الحرارة والرطوبة.
-                </li>
-
-                <li>
-                  🎙️ إمكانية المراقبة الصوتية في بعض الإصدارات.
-                </li>
-
-                <li>
-                  🛡️ مقاومة للماء والغبار بمعيار IP65.
-                </li>
-
-                <li>
-                  ⚡ استهلاك منخفض للطاقة ومناسب للتشغيل المستمر.
-                </li>
-
-                <li>
-                  🤝 دعم فني ومتابعة من GPS World Egypt.
-                </li>
-              </ul>
+              <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
+                جهاز صغير يجمع بين سهولة التركيب واتصال 4G ومجموعة من
+                وظائف التتبع والتنبيهات ومراقبة سلوك القيادة.
+              </p>
             </div>
 
-            {/* TECHNICAL SPECS */}
-            <div className="rounded-3xl bg-white p-7 shadow-md">
-              <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⚙️ المواصفات الفنية لجهاز OBD VL505
-              </h2>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {/* 1 */}
 
-              <div className="overflow-hidden rounded-2xl border border-gray-200">
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">الموديل</span>
-                  <span className="text-gray-600">OBD VL505</span>
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    1
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      تركيب سريع بدون أسلاك 🔌
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يتم تركيب الجهاز مباشرة في منفذ OBD-II بدون قطع أو
+                      توصيل أسلاك السيارة.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      ويمكن فك الجهاز ونقله إلى سيارة أخرى عند الحاجة،
+                      بشرط وجود منفذ OBD-II متوافق.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    نوع الجهاز
-                  </span>
-                  <span className="text-gray-600">
-                    OBD GPS Tracker
-                  </span>
+              {/* 2 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    2
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      الاتصال بشبكة 4G 📡
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يعمل الجهاز على شبكة 4G LTE Cat.1 لنقل بيانات
+                      التتبع ومعلومات السيارة إلى النظام المستخدم.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      بعض الإصدارات تدعم الانتقال إلى 2G عند ضعف أو
+                      عدم توافر تغطية 4G حسب نسخة الجهاز والشبكة.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    طريقة التركيب
-                  </span>
-                  <span className="text-gray-600">
-                    Plug &amp; Play عبر منفذ OBD-II
-                  </span>
+              {/* 3 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    3
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      تحديد الموقع ومتابعة الحركة 📍
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      متابعة موقع السيارة على الخريطة ومعرفة مكانها
+                      وتحركاتها بشكل مباشر.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      كما يمكن متابعة السرعة وخط السير والرحلات السابقة
+                      من خلال النظام المستخدم، مع إمكانية الاستفادة من
+                      LBS حسب الجهاز والشبكة والنظام.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">الشبكات</span>
-                  <span className="text-gray-600">
-                    4G CAT1 LTE + GSM
-                  </span>
+              {/* 4 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    4
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      تنبيه نزع الجهاز 🚨
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يمكن للجهاز إرسال تنبيه عند نزع الجهاز من منفذ
+                      OBD-II حسب إعدادات الجهاز والنظام المستخدم.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      ويمكن الاستفادة من البطارية الداخلية في بعض حالات
+                      فصل الجهاز لإرسال التنبيه، حسب تجهيز الإصدار.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    ترددات LTE
-                  </span>
-                  <span className="text-gray-600">
-                    B1 / B3 / B5 / B7 / B8 / B20
-                  </span>
+              {/* 5 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    5
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      مراقبة الحركة والاهتزاز 🚗
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يحتوي الجهاز على مستشعر حركة يساعد في اكتشاف بعض
+                      الحالات غير الطبيعية.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      مثل حركة السيارة بعد توقفها والاهتزازات غير الطبيعية
+                      وبعض حالات السحب أو الرفع حسب إعدادات الجهاز والنظام.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    ترددات GSM
-                  </span>
-                  <span className="text-gray-600">
-                    850 / 900 / 1800 / 1900 MHz
-                  </span>
+              {/* 6 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    6
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      مراقبة سلوك السائق 🚦
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يدعم الجهاز مستشعر تسارع Accelerometer يمكن
+                      الاستفادة منه في مراقبة بعض سلوكيات القيادة.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      مثل التسارع المفاجئ والفرملة المفاجئة وبعض حالات
+                      الانعطاف الحاد.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">GPRS</span>
-                  <span className="text-gray-600">Class 12</span>
+              {/* 7 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    7
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      متابعة حالة ACC 🔑
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يدعم الجهاز متابعة حالة ACC لمعرفة فترات تشغيل
+                      السيارة وفترات توقفها.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      وتساعد هذه البيانات في معرفة أوقات استخدام المركبة
+                      ومتابعة نشاطها من خلال النظام المستخدم.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    تحديد الموقع
-                  </span>
-                  <span className="text-gray-600">
-                    GPS + BDS + GNSS + LBS
-                  </span>
+              {/* 8 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    8
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      الاستماع الصوتي 🎙️
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يدعم الجهاز الاستماع إلى الأصوات المحيطة من خلال
+                      الميكروفون حسب تجهيز الجهاز والنظام المستخدم.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      تختلف طريقة تشغيل خاصية الاستماع حسب النظام وإعدادات
+                      الجهاز.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    بروتوكول الاتصال
-                  </span>
-                  <span className="text-gray-600">TCP/IP</span>
+              {/* 9 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    9
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      جهد التشغيل ⚙️
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يعمل الجهاز على جهد من <strong>9 إلى 36 فولت DC</strong>.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      لذلك يجب التأكد من توافق منفذ OBD-II في السيارة
+                      مع نطاق التشغيل قبل التركيب.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    جهد التشغيل
-                  </span>
-                  <span className="text-gray-600">9–36V DC</span>
-                </div>
+              {/* 10 */}
 
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    استهلاك الطاقة
-                  </span>
-                  <span className="text-gray-600">
-                    29mA تشغيل / 7mA سكون
-                  </span>
-                </div>
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    10
+                  </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    البطارية الاحتياطية
-                  </span>
-                  <span className="text-gray-600">100mAh</span>
-                </div>
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      حجم صغير ووزن خفيف 📏
+                    </h3>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">الأبعاد</span>
-                  <span className="text-gray-600">
-                    54 × 34 × 32 مم
-                  </span>
-                </div>
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يتميز الجهاز بحجم صغير جدًا مناسب للتركيب أسفل
+                      التابلوه ولا يشغل مساحة كبيرة.
+                    </p>
 
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">الوزن</span>
-                  <span className="text-gray-600">
-                    حوالي 40 جرام
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">الحماية</span>
-                  <span className="text-gray-600">IP65</span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    مؤشرات LED
-                  </span>
-                  <span className="text-gray-600">
-                    GSM أحمر / GPS أزرق
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    نطاق الحرارة
-                  </span>
-                  <span className="text-gray-600">
-                    من -20° إلى +75° / +80° م
-                  </span>
+                    <p className="mt-3 leading-8 text-gray-600">
+                      المقاس <strong>45 × 30 × 22.5 مم</strong> والوزن
+                      حوالي <strong>26 جرامًا</strong>.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* SMART FUNCTIONS */}
+        {/* TECHNICAL SPECS */}
+
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+            <div className="text-center">
+              <span className="font-bold text-blue-700">
+                المواصفات الأساسية
+              </span>
+
+              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+                مواصفات جهاز OBD VL505 4G
+              </h2>
+            </div>
+
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200">
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  الموديل
+                </span>
+
+                <span className="text-gray-600">
+                  OBD VL505 4G
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  نوع الجهاز
+                </span>
+
+                <span className="text-gray-600">
+                  OBD GPS Tracker
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  طريقة التركيب
+                </span>
+
+                <span className="text-gray-600">
+                  Plug &amp; Play عبر منفذ OBD-II
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  الشبكة
+                </span>
+
+                <span className="text-gray-600">
+                  4G LTE Cat.1
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  دعم 2G
+                </span>
+
+                <span className="text-gray-600">
+                  حسب إصدار الجهاز والشبكة المتاحة
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  تحديد الموقع
+                </span>
+
+                <span className="text-gray-600">
+                  أنظمة تحديد الموقع المتاحة بالجهاز + LBS حسب الجهاز والشبكة والنظام
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  جهد التشغيل
+                </span>
+
+                <span className="text-gray-600">
+                  9–36V DC
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  مستشعر الحركة
+                </span>
+
+                <span className="text-gray-600">
+                  متوفر
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  Accelerometer
+                </span>
+
+                <span className="text-gray-600">
+                  مراقبة التسارع والفرملة والانعطاف
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  ACC
+                </span>
+
+                <span className="text-gray-600">
+                  متابعة حالة تشغيل وإيقاف السيارة
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  تنبيه نزع الجهاز
+                </span>
+
+                <span className="text-gray-600">
+                  Unplug Alert حسب الإعدادات والتجهيز
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  الميكروفون
+                </span>
+
+                <span className="text-gray-600">
+                  متوفر حسب تجهيز الجهاز والنظام
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  الأبعاد
+                </span>
+
+                <span className="text-gray-600">
+                  45 × 30 × 22.5 مم
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  الوزن
+                </span>
+
+                <span className="text-gray-600">
+                  حوالي 26 جرامًا
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* DRIVING BEHAVIOR */}
+
         <section className="bg-white px-5 py-16">
           <div className="mx-auto max-w-7xl">
             <div className="mx-auto max-w-4xl text-center">
               <span className="font-bold text-blue-700">
-                وظائف ذكية
+                مراقبة سلوك القيادة
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                متابعة وتنبيهات تساعدك على مراقبة سيارتك
+                تابع طريقة استخدام السيارة
               </h2>
 
               <p className="mt-5 text-lg leading-9 text-gray-600">
-                يوفر جهاز OBD VL505 مجموعة من وظائف المتابعة والتنبيهات
-                التي تساعد على مراقبة المركبة ومعرفة موقعها وحركتها
-                أثناء الرحلات، مع سهولة التركيب المباشر من منفذ OBD-II.
+                بفضل مستشعر التسارع الموجود بالجهاز، يمكن الاستفادة من
+                OBD VL505 4G في متابعة بعض سلوكيات القيادة، وهو ما يجعله
+                مناسبًا بشكل خاص للسيارات التابعة للشركات والأساطيل.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  🚗 تتبع الرحلات
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              <div className="rounded-3xl bg-gray-50 p-7 text-center shadow-sm">
+                <div className="text-4xl">🚀</div>
+
+                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                  التسارع المفاجئ
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  متابعة حركة المركبة والرجوع إلى بيانات الرحلات
-                  المحفوظة على المنصة حسب مدة الحفظ المتاحة.
+                  إمكانية اكتشاف التسارع القوي أو المفاجئ حسب إعدادات
+                  الجهاز والنظام.
                 </p>
               </div>
 
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  🚨 Geo-Fence
+              <div className="rounded-3xl bg-gray-50 p-7 text-center shadow-sm">
+                <div className="text-4xl">🛑</div>
+
+                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                  الفرملة المفاجئة
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  تنبيه عند دخول المركبة أو خروجها من منطقة جغرافية
-                  محددة مسبقًا.
+                  إمكانية اكتشاف الفرملة أو التوقف العنيف أثناء القيادة.
                 </p>
               </div>
 
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  ⚡ القيادة المفاجئة
+              <div className="rounded-3xl bg-gray-50 p-7 text-center shadow-sm">
+                <div className="text-4xl">↪️</div>
+
+                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                  الانعطاف الحاد
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-600">
-                  دعم التنبيه عند التسارع أو الكبح المفاجئ والاهتزاز.
-                </p>
-              </div>
-
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  🔋 الطاقة
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  تنبيهات مرتبطة بالطاقة وانخفاض البطارية مع بطارية
-                  احتياطية داخل الجهاز.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* WORK MODES */}
-        <section className="mx-auto max-w-7xl px-5 py-16">
-          <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
-            <div className="text-center">
-              <span className="font-bold text-blue-700">
-                أوضاع التشغيل
-              </span>
-
-              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أوضاع متعددة حسب احتياج الاستخدام
-              </h2>
-            </div>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">📡</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Real-Time
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  متابعة مباشرة.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🧠</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Smart
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  تشغيل ذكي حسب الاستخدام.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🔋</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Power Saving
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  توفير استهلاك الطاقة.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🚨</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Alarm Tracking
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  متابعة مرتبطة بالتنبيهات.
+                  إمكانية اكتشاف بعض حالات الانعطاف القوي أثناء الحركة.
                 </p>
               </div>
             </div>
@@ -700,41 +875,44 @@ export default function OBDVL505Page() {
         </section>
 
         {/* IMPORTANT NOTE */}
+
         <section className="mx-auto max-w-5xl px-5 pb-16">
           <div className="rounded-3xl border border-yellow-200 bg-yellow-50 p-8 text-center shadow-sm">
             <div className="text-4xl">⚠️</div>
 
             <h2 className="mt-3 text-2xl font-extrabold text-blue-950">
-              ملاحظة مهمة
+              نقطة مهمة قبل الشراء
             </h2>
 
             <p className="mt-4 text-lg font-bold leading-9 text-gray-700">
-              جهاز OBD VL505 لا يدعم فصل محرك السيارة.
+              جهاز OBD VL505 4G يحتاج إلى وجود منفذ OBD-II متوافق في السيارة.
             </p>
 
-            <p className="mt-2 leading-8 text-gray-600">
-              الجهاز مخصص للتتبع والمراقبة والتنبيهات، ويتم تركيبه مباشرة
-              من خلال منفذ OBD-II.
+            <p className="mt-3 leading-8 text-gray-600">
+              لذلك يجب التأكد من وجود المنفذ وتوافق السيارة مع الجهاز قبل
+              الشراء، كما يفضل التأكد من توافر تغطية 4G في مكان استخدام
+              الجهاز.
             </p>
           </div>
         </section>
 
         {/* WHY */}
+
         <section className="bg-blue-50 px-5 py-16">
           <div className="mx-auto max-w-5xl text-center">
             <span className="font-bold text-blue-700">
-              GPS World Egypt
+              أهم نقطة تميزه
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              لماذا تختار جهاز OBD VL505؟
+              4G + Plug &amp; Play + حجم صغير
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              إذا كنت تبحث عن جهاز تتبع سيارات GPS يمكن تركيبه بسرعة
-              وبدون تمديد أسلاك، فإن OBD VL505 يوفر تركيبًا مباشرًا من
-              منفذ OBD-II مع دعم 4G CAT1 ومجموعة من وظائف التتبع
-              والتنبيهات ومتابعة حركة السيارة.
+              يجمع OBD VL505 4G بين تركيب Plug &amp; Play بدون قص أو تعديل
+              أسلاك السيارة، واتصال 4G LTE Cat.1، والحجم الصغير جدًا،
+              بالإضافة إلى تنبيه نزع الجهاز وإمكانية مراقبة بعض سلوكيات
+              القيادة.
             </p>
 
             <div className="mt-10 grid gap-5 text-right sm:grid-cols-2">
@@ -744,60 +922,58 @@ export default function OBDVL505Page() {
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  يتم توصيل الجهاز مباشرة في منفذ OBD-II بدون الحاجة
-                  إلى تمديد أسلاك إضافية.
+                  يتم توصيل الجهاز مباشرة في منفذ OBD-II.
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white p-5 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
-                  📍 متابعة مستمرة
+                  📡 شبكة 4G
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  متابعة موقع وحركة المركبة من خلال نظام التتبع.
+                  اتصال 4G LTE Cat.1 مع دعم 2G في بعض الإصدارات والشبكات.
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white p-5 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
-                  🚨 تنبيهات متعددة
+                  🚨 تنبيه نزع الجهاز
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  تنبيهات تساعد على مراقبة سلوك المركبة وحالتها.
+                  إمكانية اكتشاف فصل الجهاز من منفذ OBD-II وإرسال التنبيه.
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white p-5 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
-                  🛠️ مناسب للأفراد والشركات
+                  🚦 مراقبة القيادة
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  مناسب للاستخدام الشخصي وكذلك لمتابعة المركبات
-                  وإدارة الأساطيل.
+                  متابعة التسارع والفرملة والانعطافات الحادة حسب الإعدادات.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* APPLICATIONS */}
+        {/* SUITABLE FOR */}
+
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="text-center">
             <span className="font-bold text-blue-700">
-              الاستخدامات
+              مناسب لمين؟
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              مناسب لمجموعة متنوعة من الاستخدامات
+              جهاز OBD VL505 4G مناسب لمن يريد
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              يمكن استخدام جهاز OBD VL505 في متابعة السيارات الخاصة
-              ومركبات الشركات والأساطيل، خاصة عندما يكون المطلوب
-              تركيب جهاز GPS سريع بدون أعمال توصيل أسلاك إضافية.
+              جهاز GPS حديث وسهل التركيب بدون أي قص أو تعديل في أسلاك
+              السيارة، مع إمكانية فك الجهاز ونقله بسهولة بين المركبات.
             </p>
           </div>
 
@@ -806,11 +982,11 @@ export default function OBDVL505Page() {
               <div className="text-4xl">🚘</div>
 
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                السيارات الخاصة
+                السيارات الملاكي
               </h3>
 
               <p className="mt-3 leading-7 text-gray-600">
-                متابعة السيارة ومعرفة موقعها وحركتها.
+                متابعة السيارة وموقعها وحركتها بدون تعديل الأسلاك.
               </p>
             </div>
 
@@ -818,11 +994,11 @@ export default function OBDVL505Page() {
               <div className="text-4xl">🏢</div>
 
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                الشركات
+                سيارات الشركات
               </h3>
 
               <p className="mt-3 leading-7 text-gray-600">
-                متابعة المركبات ضمن أسطول الشركة.
+                متابعة استخدام السيارات ومعرفة نشاطها أثناء العمل.
               </p>
             </div>
 
@@ -830,29 +1006,72 @@ export default function OBDVL505Page() {
               <div className="text-4xl">📊</div>
 
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                إدارة الأسطول
+                الأساطيل
               </h3>
 
               <p className="mt-3 leading-7 text-gray-600">
-                متابعة الرحلات والبيانات من خلال منصة التتبع.
+                مراقبة الرحلات وبعض سلوكيات القيادة.
               </p>
             </div>
 
             <div className="rounded-3xl bg-white p-7 text-center shadow-md">
-              <div className="text-4xl">🛡️</div>
+              <div className="text-4xl">🔄</div>
 
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                الحماية والمراقبة
+                النقل بين السيارات
               </h3>
 
               <p className="mt-3 leading-7 text-gray-600">
-                تنبيهات ومتابعة تساعد على مراقبة المركبة.
+                يمكن فك الجهاز ونقله إلى سيارة أخرى بها منفذ متوافق.
               </p>
             </div>
           </div>
         </section>
 
+        {/* COMPARISON CTA */}
+
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
+            <span className="font-bold text-blue-200">
+              محتار بين جهازين؟
+            </span>
+
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              قارن بين أجهزة GPS واختار الأنسب لسيارتك
+            </h2>
+
+            <p className="mt-4 text-lg leading-8 text-blue-200">
+              تعرف على الفرق بين الأجهزة من حيث طريقة التركيب والشبكة
+              والمميزات والاستخدام المناسب لكل جهاز.
+            </p>
+
+            <a
+              href="/devices/compare"
+              className="mt-8 inline-flex rounded-xl bg-yellow-400 px-8 py-4 text-lg font-extrabold text-blue-950 transition hover:bg-yellow-300"
+            >
+              🔍 مقارنة بين الأجهزة
+            </a>
+          </div>
+        </section>
+
+        {/* WARRANTY */}
+
+        <section className="mx-auto max-w-4xl px-5 pb-16">
+          <div className="rounded-3xl border border-green-200 bg-green-50 p-8 text-center">
+            <div className="text-4xl">🛡️</div>
+
+            <h2 className="mt-3 text-2xl font-extrabold text-blue-950">
+              الضمان
+            </h2>
+
+            <p className="mt-3 text-xl font-bold text-green-700">
+              سنة ضد عيوب الصناعة.
+            </p>
+          </div>
+        </section>
+
         {/* FAQ */}
+
         <section className="bg-white px-5 py-16">
           <div className="mx-auto max-w-5xl">
             <div className="text-center">
@@ -861,7 +1080,7 @@ export default function OBDVL505Page() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أسئلة شائعة عن جهاز OBD VL505
+                أسئلة شائعة عن جهاز OBD VL505 4G
               </h2>
             </div>
 
@@ -885,10 +1104,11 @@ export default function OBDVL505Page() {
         </section>
 
         {/* CONTACT */}
+
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
             <h2 className="text-3xl font-extrabold md:text-4xl">
-              هل تريد معرفة المزيد عن جهاز OBD VL505؟
+              هل تريد معرفة المزيد عن جهاز OBD VL505 4G؟
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-blue-200">
@@ -916,6 +1136,7 @@ export default function OBDVL505Page() {
         </section>
 
         {/* FOOTER */}
+
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
             <h3 className="text-2xl font-extrabold">
@@ -946,6 +1167,7 @@ export default function OBDVL505Page() {
         </footer>
 
         {/* FLOATING WHATSAPP */}
+
         <a
           href={whatsappBaseUrl}
           target="_blank"
