@@ -2,101 +2,106 @@ import type { Metadata } from "next";
 import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
-  title: "EV505 | جهاز تتبع سيارات GPS في مصر",
-
+  title: "EV505 4G | جهاز تتبع سيارات GPS في مصر",
   description:
-    "جهاز EV505 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة بشكل لحظي، ودعم إدارة الأساطيل والتنبيهات وأنظمة GPS المتوافقة.",
-
+    "جهاز EV505 4G لتتبع السيارات والمركبات والشاحنات والمعدات الثقيلة، يعمل بشبكة 4G LTE Cat.1 وبجهد تشغيل 9–90V DC، مع تتبع مباشر وتنبيهات وإمكانية فصل المحرك.",
   keywords: [
     "EV505",
+    "EV505 4G",
     "جهاز EV505",
-    "EV505 GPS",
     "جهاز تتبع EV505",
-    "جهاز GPS EV505",
-    "جهاز GPS",
+    "EV505 GPS",
+    "EV505 GPS Tracker",
     "جهاز تتبع سيارات",
-    "أجهزة تتبع GPS",
     "جهاز GPS للسيارات",
-    "جهاز تتبع للسيارة",
-    "GPS Tracker",
     "GPS Tracker مصر",
     "أجهزة GPS مصر",
     "تتبع السيارات",
     "تتبع المركبات",
-    "إدارة الأساطيل",
-    "جهاز تتبع سيارات مصر",
+    "GPS 4G",
+    "جهاز GPS 4G",
+    "تتبع الشاحنات",
+    "تتبع المعدات الثقيلة",
   ],
-
   alternates: {
     canonical: "https://gpsworld-eg.com/devices/ev505",
   },
-
   openGraph: {
-    title: "EV505 | جهاز تتبع سيارات GPS في مصر",
-
+    title: "EV505 4G | جهاز تتبع سيارات GPS في مصر",
     description:
-      "جهاز EV505 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل من خلال أنظمة GPS المتوافقة.",
-
+      "جهاز EV505 4G سلكي لتتبع السيارات والشاحنات والمعدات الثقيلة، بجهد تشغيل 9–90V DC ومجموعة من وظائف التتبع والتنبيهات.",
     url: "https://gpsworld-eg.com/devices/ev505",
-
     siteName: "GPS World Egypt",
-
     locale: "ar_EG",
-
     type: "website",
-
     images: [
       {
         url: "/images/EV505.jpeg",
         width: 1200,
-        height: 630,
-        alt: "EV505 جهاز تتبع سيارات GPS في مصر",
+        height: 1200,
+        alt: "EV505 4G جهاز تتبع سيارات GPS",
       },
     ],
   },
-
   twitter: {
     card: "summary_large_image",
-
-    title: "EV505 | جهاز تتبع سيارات GPS في مصر",
-
+    title: "EV505 4G | جهاز تتبع سيارات GPS",
     description:
-      "جهاز EV505 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل.",
-
+      "جهاز EV505 4G لتتبع السيارات والشاحنات والمعدات الثقيلة بجهد تشغيل 9–90V DC.",
     images: ["/images/EV505.jpeg"],
   },
 };
 
 const product = {
-  name: "EV505",
+  name: "EV505 4G",
   image: "/images/EV505.jpeg",
   url: "https://gpsworld-eg.com/devices/ev505",
 };
 
+const images = [
+  "/images/EV505.jpeg",
+  "/images/EV505-2.jpeg",
+  "/images/EV505-3.jpeg",
+  "/images/EV505-4.jpeg",
+  "/images/EV505-5.jpeg",
+  "/images/EV505-6.jpeg",
+];
+
 const faqs = [
   {
-    question: "ما هو جهاز EV505؟",
+    question: "ما هو جهاز EV505 4G؟",
     answer:
-      "جهاز EV505 هو جهاز تتبع GPS للمركبات، مصمم لمتابعة الموقع والحركة ودعم استخدامات الأفراد والشركات وإدارة الأساطيل.",
+      "EV505 4G هو جهاز تتبع GPS سلكي يعمل على شبكة 4G LTE Cat.1، ومناسب للسيارات والمركبات التجارية والشاحنات والمعدات الثقيلة.",
   },
   {
-    question: "هل يناسب EV505 الشركات وإدارة الأساطيل؟",
+    question: "ما هو جهد تشغيل جهاز EV505؟",
     answer:
-      "نعم، الجهاز مناسب لمتابعة المركبات التجارية والخدمية وإدارة الأساطيل ومراقبة الرحلات وحركة المركبات.",
+      "يعمل جهاز EV505 على نطاق جهد من 9 إلى 90 فولت DC.",
   },
   {
-    question: "ما جهد تشغيل جهاز EV505؟",
-    answer: "يعمل الجهاز على نطاق جهد من 9V إلى 90V DC.",
+    question: "هل يمكن استخدام EV505 في الشاحنات والمعدات الثقيلة؟",
+    answer:
+      "نعم، نطاق التشغيل من 9 إلى 90 فولت يجعله مناسبًا لعدد كبير من المركبات والمعدات، مع مراعاة طريقة التوصيل ونظام الكهرباء الخاص بالمركبة أو المعدة.",
   },
   {
-    question: "هل يوجد ضمان للجهاز؟",
+    question: "هل يمكن فصل المحرك عن بُعد؟",
     answer:
-      "يوجد ضمان لمدة سنة ضد عيوب الصناعة، ولا يشمل الضمان الحرق أو الكسر.",
+      "نعم، يمكن توصيل الجهاز بريلاي للتحكم في فصل الوقود أو الكهرباء عن بُعد، عند تنفيذ التوصيل بالطريقة الصحيحة.",
   },
   {
-    question: "كيف أعرف تفاصيل الجهاز والتوفر؟",
+    question: "هل يدعم EV505 الميكروفون والسماعة؟",
     answer:
-      "يمكنك التواصل معنا عبر واتساب لمعرفة التفاصيل والتوفر وطلب الجهاز.",
+      "يدعم توصيل ميكروفون وسماعة حسب تجهيز الجهاز وطريقة التوصيل، ويمكن استخدامهما للاستماع والتواصل الصوتي في التطبيقات التي تدعم هذه الوظيفة.",
+  },
+  {
+    question: "هل يمكن توصيل حساسات إضافية؟",
+    answer:
+      "نعم، يحتوي الجهاز على مداخل ومخارج يمكن الاستفادة منها في توصيل بعض الإضافات والحساسات، مثل حساسات الأبواب أو مستوى الوقود، حسب نوع الحساس وطريقة التوصيل.",
+  },
+  {
+    question: "هل يوجد ضمان لجهاز EV505؟",
+    answer:
+      "يوجد ضمان لمدة سنة ضد عيوب الصناعة.",
   },
 ];
 
@@ -109,11 +114,12 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/EV505.jpeg"],
       url: product.url,
       description:
-        "جهاز EV505 لتتبع السيارات والمركبات ومتابعة الموقع والحركة باستخدام أنظمة ومنصات GPS.",
+        "جهاز EV505 4G سلكي لتتبع السيارات والمركبات والشاحنات والمعدات الثقيلة، يعمل بشبكة 4G LTE Cat.1 وبجهد تشغيل 9–90V DC.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
+      category: "GPS Vehicle Tracker",
     },
     {
       "@type": "BreadcrumbList",
@@ -133,7 +139,7 @@ const structuredData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "EV505",
+          name: "EV505 4G",
           item: "https://gpsworld-eg.com/devices/ev505",
         },
       ],
@@ -152,15 +158,63 @@ const structuredData = {
   ],
 };
 
+const features = [
+  {
+    number: "1",
+    title: "التتبع والمراقبة المباشرة 📍",
+    text: "متابعة موقع المركبة على الخريطة ومعرفة مكانها وتحركاتها بشكل مستمر، مع إمكانية متابعة السرعة وخط السير.",
+  },
+  {
+    number: "2",
+    title: "السياج الجغرافي Geo-Fence 🗺️",
+    text: "تحديد منطقة معينة على الخريطة واستقبال تنبيه عند دخول المركبة إلى المنطقة أو خروجها منها.",
+  },
+  {
+    number: "3",
+    title: "مناسب للمركبات والمعدات الثقيلة ⚙️",
+    text: "يعمل الجهاز بجهد تشغيل واسع من 9 إلى 90 فولت DC، مما يجعله مناسبًا للسيارات والمركبات التجارية والشاحنات والمعدات المتوافقة.",
+  },
+  {
+    number: "4",
+    title: "فصل المحرك عن بُعد 🛑",
+    text: "يمكن توصيل الجهاز بريلاي للتحكم في فصل الوقود أو الكهرباء عن بُعد عند تنفيذ التوصيل بالطريقة الصحيحة.",
+  },
+  {
+    number: "5",
+    title: "الاستماع والتواصل الصوتي 🎙️",
+    text: "يدعم توصيل ميكروفون وسماعة حسب تجهيز الجهاز وطريقة التوصيل، للاستماع والتواصل الصوتي في التطبيقات التي تدعم هذه الوظيفة.",
+  },
+  {
+    number: "6",
+    title: "مداخل ومخارج إضافية 🔌",
+    text: "يمكن الاستفادة من المداخل والمخارج المتاحة في توصيل بعض الإضافات والحساسات مثل حساسات الأبواب أو مستوى الوقود، حسب نوع الحساس وطريقة التوصيل.",
+  },
+  {
+    number: "7",
+    title: "تنبيهات وأنظمة أمان 🚨",
+    text: "يدعم مجموعة من التنبيهات مثل تجاوز السرعة والسياج الجغرافي والحركة والاهتزاز والسحب أو الرفع وفصل الكهرباء أو العبث بالجهاز.",
+  },
+  {
+    number: "8",
+    title: "مراقبة سلوك القيادة 🚗",
+    text: "يمكن مراقبة بعض سلوكيات القيادة مثل التسارع المفاجئ والتباطؤ أو الفرملة المفاجئة حسب إعدادات الجهاز والنظام المستخدم.",
+  },
+  {
+    number: "9",
+    title: "بطارية احتياطية 🔋",
+    text: "يحتوي الجهاز على بطارية داخلية احتياطية تساعد على استمرار إرسال التنبيه عند فصل مصدر الكهرباء الرئيسي عن الجهاز.",
+  },
+];
+
 export default function EV505Page() {
   const whatsappNumber = "201006687163";
 
   const whatsappInquiry = encodeURIComponent(
-    "مرحبًا، أريد الاستفسار عن جهاز GPS موديل EV505"
+    "مرحبًا، أريد الاستفسار عن جهاز GPS موديل EV505 4G"
   );
 
   const whatsappOrder = encodeURIComponent(
-    "مرحبًا، أريد طلب جهاز GPS موديل EV505"
+    "مرحبًا، أريد طلب جهاز GPS موديل EV505 4G"
   );
 
   const whatsappInquiryUrl =
@@ -181,8 +235,7 @@ export default function EV505Page() {
       />
 
       <main className="min-h-screen bg-gray-50" dir="rtl">
-        {/* ================= HEADER ================= */}
-
+        {/* HEADER */}
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
           <div className="mx-auto max-w-7xl px-5 py-4">
             <div className="flex items-center justify-between gap-4">
@@ -209,8 +262,7 @@ export default function EV505Page() {
           </div>
         </header>
 
-        {/* ================= BACK ================= */}
-
+        {/* BACK */}
         <div className="mx-auto max-w-7xl px-5 pt-6">
           <a
             href="/#products"
@@ -220,45 +272,33 @@ export default function EV505Page() {
           </a>
         </div>
 
-        {/* ================= PRODUCT HERO ================= */}
-
+        {/* HERO */}
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid items-center gap-10 lg:grid-cols-2">
-            {/* IMAGE */}
-
             <div className="relative">
               <DeviceGallery
-                images={[
-                  "/images/EV505.jpeg",
-                  "/images/EV505-2.jpeg",
-                  "/images/EV505-3.jpeg",
-                  "/images/EV505-4.jpeg",
-                  "/images/EV505-5.jpeg",
-                  "/images/EV505-6.jpeg",
-                ]}
-                deviceName="EV505"
+                images={images}
+                deviceName="EV505 4G"
               />
             </div>
 
-            {/* INFORMATION */}
-
             <div className="flex flex-col justify-center">
               <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
-                ✓ متوفر
+                ✓ EV505 4G
               </span>
 
               <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-                جهاز EV505 لتتبع السيارات والمركبات في مصر
+                جهاز EV505 4G لتتبع السيارات والمركبات
               </h1>
 
               <p className="mt-4 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS احترافي
+                جهاز تتبع GPS سلكي متعدد الاستخدامات
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز EV505 لمتابعة المركبات ومراقبة الموقع والحركة، ومناسب
-                للأفراد والشركات التي تحتاج إلى متابعة المركبات وإدارة
-                الأساطيل وتحسين مستوى الأمان والتشغيل.
+                جهاز EV505 4G يعمل على شبكات الجيل الرابع 4G LTE Cat.1،
+                ومصمم للاستخدام في السيارات والمركبات التجارية والشاحنات
+                والمعدات الثقيلة، مع نطاق جهد تشغيل واسع من 9 إلى 90 فولت DC.
               </p>
 
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
@@ -282,582 +322,304 @@ export default function EV505Page() {
           </div>
         </section>
 
-        {/* ================= QUICK FEATURES ================= */}
-
+        {/* QUICK FEATURES */}
         <section className="mx-auto max-w-7xl px-5 pb-12">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">📍</div>
-
+              <div className="text-4xl">📡</div>
               <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                تتبع لحظي
+                4G LTE Cat.1
               </h3>
-
               <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع المركبة وحركتها بشكل مباشر.
+                اتصال عبر شبكة الجيل الرابع لمتابعة المركبة.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">⚡</div>
+              <h3 className="mt-3 text-lg font-extrabold text-blue-950">
+                9–90V DC
+              </h3>
+              <p className="mt-2 leading-7 text-gray-600">
+                نطاق تشغيل واسع مناسب لعدد كبير من المركبات والمعدات.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 text-center shadow-md">
               <div className="text-4xl">🚨</div>
-
               <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                حماية وأمان
+                تنبيهات أمان
               </h3>
-
               <p className="mt-2 leading-7 text-gray-600">
-                تنبيهات عند بعض الحالات التي تؤثر على أمان المركبة.
+                سرعة وحركة وسياج جغرافي وفصل كهرباء وغيرها حسب الإعدادات.
               </p>
             </div>
 
             <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🏢</div>
-
+              <div className="text-4xl">🔌</div>
               <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                إدارة الأساطيل
+                إضافات وحساسات
               </h3>
-
               <p className="mt-2 leading-7 text-gray-600">
-                مناسب للشركات وإدارة المركبات والخدمات الميدانية.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🛠️</div>
-
-              <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                دعم فني
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                دعم ومتابعة من GPS World Egypt.
+                إمكانية توصيل بعض الحساسات والإضافات حسب التجهيز.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ================= FEATURES + SPECS ================= */}
-
+        {/* FEATURES */}
         <section className="mx-auto max-w-7xl px-5 pb-16">
-          <div className="grid gap-8 lg:grid-cols-2">
-            {/* FEATURES */}
-
-            <div className="rounded-3xl bg-white p-7 shadow-md md:p-8">
-              <h2 className="mb-7 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز EV505
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="text-3xl font-extrabold text-blue-950 md:text-4xl">
+                مميزات جهاز EV505 4G بالتفصيل
               </h2>
 
-              <ul className="space-y-5 text-lg leading-8 text-gray-700">
-                <li className="flex gap-3">
-                  <span>📍</span>
-                  <span>
-                    تتبع مباشر ومتابعة موقع المركبة لحظة بلحظة.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🛰️</span>
-                  <span>
-                    تحديد المواقع باستخدام أنظمة GNSS مع دعم LBS.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🗺️</span>
-                  <span>
-                    عرض المسارات وسجل الرحلات والحركة السابقة.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🚨</span>
-                  <span>
-                    تنبيهات عند فصل مصدر الطاقة أو العبث بالجهاز.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>⚡</span>
-                  <span>
-                    إمكانية إيقاف المركبة عن بُعد من خلال النظام المتوافق.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🎙️</span>
-                  <span>
-                    دعم المراقبة الصوتية حسب التجهيز والنظام المتوافق.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🏢</span>
-                  <span>
-                    دعم استخدامات إدارة الأساطيل والشركات والمؤسسات.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🚚</span>
-                  <span>
-                    مناسب للشاحنات والحافلات والمركبات التجارية والخدمية.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🧑‍✈️</span>
-                  <span>
-                    إمكانية متابعة سلوك السائق والمركبة من خلال الوظائف
-                    المتاحة بالنظام.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🆘</span>
-                  <span>
-                    دعم زر الاستغاثة SOS حسب التجهيزات المتوافقة.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🔋</span>
-                  <span>
-                    بطارية احتياطية مدمجة للمساعدة عند فصل مصدر الطاقة
-                    الرئيسي.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🤝</span>
-                  <span>دعم فني ومتابعة من GPS World Egypt.</span>
-                </li>
-              </ul>
+              <p className="mt-5 text-lg leading-9 text-gray-600">
+                جهاز سلكي متعدد الاستخدامات، يجمع بين التتبع المباشر ونطاق
+                التشغيل الواسع ومجموعة من وظائف الحماية والإضافات.
+              </p>
             </div>
 
-            {/* SPECIFICATIONS */}
+            <div className="mt-10 grid gap-5 md:grid-cols-2">
+              {features.map((feature) => (
+                <article
+                  key={feature.number}
+                  className="rounded-2xl border border-gray-200 bg-gray-50 p-6"
+                >
+                  <div className="flex gap-4">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-blue-900 text-lg font-extrabold text-white">
+                      {feature.number}
+                    </div>
 
-            <div className="rounded-3xl bg-white p-7 shadow-md md:p-8">
-              <h2 className="mb-7 text-2xl font-extrabold text-blue-950">
-                ⚙️ المواصفات الفنية لجهاز EV505
+                    <div>
+                      <h3 className="text-xl font-extrabold text-blue-950">
+                        {feature.title}
+                      </h3>
+
+                      <p className="mt-3 leading-8 text-gray-600">
+                        {feature.text}
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* PRACTICAL DIFFERENCE */}
+        <section className="bg-blue-50 px-5 py-16">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center">
+              <span className="font-bold text-blue-700">EV505 4G</span>
+
+              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+                ليه EV505 مناسب للاستخدامات المتنوعة؟
               </h2>
 
-              <div className="overflow-hidden rounded-2xl border border-gray-200">
+              <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
+                أهم نقطة في EV505 هي الجمع بين اتصال 4G ونطاق جهد واسع،
+                بالإضافة إلى إمكانية الاستفادة من المداخل والمخارج والحساسات
+                حسب احتياج المركبة.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              <div className="rounded-2xl bg-white p-7 shadow-sm">
+                <h3 className="text-xl font-extrabold text-blue-950">
+                  ⚡ جهد تشغيل واسع
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-600">
+                  من 9 إلى 90 فولت DC، لذلك يمكن استخدامه مع أنواع متعددة من
+                  المركبات والمعدات المتوافقة.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white p-7 shadow-sm">
+                <h3 className="text-xl font-extrabold text-blue-950">
+                  🚛 مناسب للمعدات
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-600">
+                  مناسب للسيارات والشاحنات والمركبات التجارية والموتوسيكلات
+                  وبعض المعدات الثقيلة مع مراعاة طريقة التوصيل.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white p-7 shadow-sm">
+                <h3 className="text-xl font-extrabold text-blue-950">
+                  🔌 قابل للتوسعة
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-600">
+                  يمكن توصيل بعض الحساسات والإضافات والميكروفون والسماعة حسب
+                  تجهيز الجهاز وطريقة التوصيل.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* APPLICATIONS */}
+        <section className="mx-auto max-w-7xl px-5 py-16">
+          <div className="text-center">
+            <span className="font-bold text-blue-700">
+              الاستخدامات
+            </span>
+
+            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+              مناسب لمين؟
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
+              EV505 مناسب لمن يبحث عن جهاز GPS سلكي 4G متعدد الاستخدامات،
+              خصوصًا للمركبات التي تحتاج إلى نطاق جهد تشغيل واسع.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "🚗 السيارات الملاكي والأجرة",
+                text: "متابعة الموقع والحركة والسرعة والرحلات.",
+              },
+              {
+                title: "🚛 الشاحنات",
+                text: "مناسب لمتابعة الشاحنات والنقل الخفيف والثقيل.",
+              },
+              {
+                title: "🏢 المركبات التجارية",
+                text: "حل مناسب للمركبات المستخدمة في الأعمال والخدمات.",
+              },
+              {
+                title: "🏍️ الموتوسيكلات",
+                text: "يمكن استخدامه مع المركبات المتوافقة مع جهد التشغيل وطريقة التركيب.",
+              },
+              {
+                title: "⚙️ المعدات الثقيلة",
+                text: "مناسب للعديد من المعدات مثل اللوادر والفورك لفت.",
+              },
+              {
+                title: "🚚 الأساطيل",
+                text: "مفيد للشركات التي تحتاج إلى متابعة مجموعة من المركبات.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-2xl bg-gray-50 p-6 shadow-sm"
+              >
+                <h3 className="text-lg font-extrabold text-blue-950">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-600">
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* TECHNICAL */}
+        <section className="bg-gray-100 px-5 py-16">
+          <div className="mx-auto max-w-5xl">
+            <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+              <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
+                ⚙️ المواصفات الأساسية
+              </h2>
+
+              <div className="mt-8 overflow-hidden rounded-2xl border border-gray-200">
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
                   <span className="font-bold text-gray-800">الموديل</span>
-
-                  <span className="text-gray-600">EV505</span>
+                  <span className="text-gray-600">EV505 4G</span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
                   <span className="font-bold text-gray-800">
                     نوع الجهاز
                   </span>
-
-                  <span className="text-gray-600">GPS Tracker</span>
+                  <span className="text-gray-600">
+                    GPS Tracker سلكي
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
                   <span className="font-bold text-gray-800">
                     تقنية الاتصال
                   </span>
-
-                  <span className="text-gray-600">4G LTE Cat.1</span>
+                  <span className="font-bold text-blue-700">
+                    4G LTE Cat.1
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    دعم الشبكات
-                  </span>
-
-                  <span className="text-gray-600">
-                    4G + 2G Fallback
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    أنظمة التحديد
-                  </span>
-
-                  <span className="text-gray-600">GNSS + LBS</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    دقة تحديد الموقع
-                  </span>
-
-                  <span className="text-gray-600">
-                    تحديد مواقع عالي الدقة
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
                   <span className="font-bold text-gray-800">
                     جهد التشغيل
                   </span>
-
                   <span className="font-bold text-blue-700">
-                    9V – 90V DC
+                    9–90V DC
                   </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    البطارية الاحتياطية
-                  </span>
-
-                  <span className="text-gray-600">250mAh / 3.7V</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    درجة حرارة التشغيل
-                  </span>
-
-                  <span className="text-gray-600">
-                    -20°C ~ +75°C
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    حساسية استقبال الإشارة
-                  </span>
-
-                  <span className="text-gray-600">-162dBm</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    مقاومة الماء والغبار
-                  </span>
-
-                  <span className="text-gray-600">IPX5</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    استهلاك الطاقة
-                  </span>
-
-                  <span className="text-gray-600">أقل من 4mA</span>
                 </div>
 
                 <div className="grid grid-cols-[42%_58%] bg-gray-50 p-4">
                   <span className="font-bold text-gray-800">
-                    التوسعات
+                    الضمان
                   </span>
-
                   <span className="text-gray-600">
-                    دعم الحساسات والملحقات
+                    سنة ضد عيوب الصناعة
                   </span>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
 
-        {/* ================= FLEET MANAGEMENT ================= */}
-
-        <section className="bg-blue-50 px-5 py-16">
-          <div className="mx-auto max-w-6xl">
-            <div className="text-center">
-              <span className="font-bold text-blue-700">EV505</span>
-
-              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                مناسب لإدارة ومتابعة الأساطيل
-              </h2>
-
-              <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-                يوفر EV505 مجموعة من الوظائف التي تساعد الشركات
-                والمؤسسات على متابعة المركبات وتحسين كفاءة التشغيل
-                ومراقبة أداء السائقين.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🚚</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  شركات النقل
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  متابعة الشاحنات والرحلات وتحسين كفاءة التشغيل.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🏢</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  الشركات والمؤسسات
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  إدارة أساطيل الشركات والمركبات الخدمية.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🚕</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  المركبات التجارية
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  مناسب لسيارات الأجرة والحافلات والفانات والتأجير.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🛡️</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  الحماية
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  المساعدة في متابعة المركبات وتقليل مخاطر السرقة.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= SMART FUNCTIONS ================= */}
-
-        <section className="mx-auto max-w-7xl px-5 py-16">
-          <div className="text-center">
-            <span className="font-bold text-blue-700">
-              وظائف ذكية
-            </span>
-
-            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              متابعة وتحليل حركة المركبة
-            </h2>
-
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              يساعد EV505 في جمع ومتابعة بيانات الحركة والرحلات
-              والتنبيهات، مما يدعم مراقبة المركبات وتحسين إدارة
-              الأسطول.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                📊 تحليل سلوك القيادة
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                متابعة بعض أنماط القيادة مثل السرعة الزائدة
-                والتسارع المفاجئ والتوقفات الطويلة.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🗺️ سجل الرحلات
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                عرض تاريخ الحركة واسترجاع المسارات السابقة ومراجعة
-                نقاط التوقف والانطلاق.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🚨 التنبيهات الذكية
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                دعم التنبيهات عند فصل الطاقة أو العبث بالجهاز أو
-                تجاوز السرعة أو الخروج من النطاق الجغرافي المحدد.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🆘 SOS
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                دعم زر الاستغاثة للطوارئ حسب التجهيزات والنظام
-                المتوافق.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🎙️ مراقبة صوتية
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                إمكانية المراقبة الصوتية حسب تجهيز الجهاز والنظام
-                المستخدم.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🔐 استرجاع المركبات
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                يساعد التتبع المستمر في تحديد موقع المركبة ومتابعتها
-                عند الحاجة.
+              <p className="mt-6 text-sm leading-7 text-gray-500">
+                بعض الوظائف مثل فصل المحرك والاستماع والتواصل الصوتي وتوصيل
+                الحساسات تعتمد على تجهيز الجهاز وطريقة التوصيل والنظام المستخدم.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ================= APPLICATIONS ================= */}
-
-        <section className="bg-gray-100 px-5 py-16">
-          <div className="mx-auto max-w-6xl">
-            <div className="text-center">
-              <span className="font-bold text-blue-700">
-                الاستخدامات المثالية
-              </span>
-
-              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أين يمكن استخدام EV505؟
-              </h2>
-            </div>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚛 النقل والخدمات اللوجستية
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة الشاحنات والنقل الثقيل والتوزيع والرحلات.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚗 شركات التأجير
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  مراقبة المركبات وتقليل مخاطر الاستخدام غير المصرح
-                  به.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🏢 الشركات والمؤسسات
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  إدارة أساطيل الشركات وسيارات المبيعات والخدمة.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚌 الحافلات والفانات
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة المركبات التجارية والخدمية.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚕 سيارات الأجرة
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة الحركة والرحلات وسجل المسارات.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🏛️ المؤسسات الكبرى
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  إدارة ومراقبة الأساطيل من خلال منصة موحدة.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= CERTIFICATES ================= */}
-
+        {/* COMPARISON CTA */}
         <section className="mx-auto max-w-5xl px-5 py-16">
-          <div className="rounded-3xl bg-white p-8 text-center shadow-md">
-            <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
-              🏆 الاعتمادات والشهادات
+          <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
+            <h2 className="text-3xl font-extrabold md:text-4xl">
+              محتار بين EV505 وجهاز تاني؟
             </h2>
 
-            <div className="mt-7 flex flex-wrap justify-center gap-4">
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                CE
-              </span>
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-9 text-blue-200">
+              قريبًا تقدر تقارن بين EV505 والموديلات الأخرى وتشوف الفرق بينهم
+              بشكل واضح وتختار الجهاز الأنسب لاستخدامك.
+            </p>
 
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                FCC
-              </span>
+            <a
+              href="/devices/compare"
+              className="mt-8 inline-flex rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
+            >
+              📊 مقارنة بين الأجهزة
+            </a>
+          </div>
+        </section>
 
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                RoHS
-              </span>
+        {/* WARRANTY */}
+        <section className="bg-blue-50 px-5 py-16">
+          <div className="mx-auto max-w-4xl">
+            <div className="rounded-3xl bg-white p-8 text-center shadow-md">
+              <div className="text-5xl">🛡️</div>
 
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                ANATEL
-              </span>
+              <h2 className="mt-4 text-3xl font-extrabold text-blue-950">
+                الضمان
+              </h2>
+
+              <p className="mt-4 text-xl font-bold text-gray-700">
+                سنة ضد عيوب الصناعة
+              </p>
             </div>
           </div>
         </section>
 
-        {/* ================= WARRANTY ================= */}
-
-        <section className="mx-auto max-w-5xl px-5 pb-16">
-          <div className="rounded-3xl bg-blue-50 p-8">
-            <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
-              🛡️ الضمان والتشغيل
-            </h2>
-
-            <div className="mt-7 grid gap-5 md:grid-cols-2">
-              <div className="rounded-2xl bg-white p-6">
-                <h3 className="font-extrabold text-blue-950">
-                  تشغيل السيرفر
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  مدة تشغيل السيرفر سنة، ويتم التجديد حسب نوع السيرفر.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6">
-                <h3 className="font-extrabold text-blue-950">
-                  الضمان
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  ضمان سنة ضد عيوب الصناعة، ولا يشمل الضمان الحرق أو
-                  الكسر.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= FAQ ================= */}
-
+        {/* FAQ */}
         <section className="bg-gray-100 px-5 py-16">
           <div className="mx-auto max-w-5xl">
             <div className="text-center">
@@ -866,7 +628,7 @@ export default function EV505Page() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أسئلة عن جهاز EV505
+                أسئلة عن جهاز EV505 4G
               </h2>
             </div>
 
@@ -889,16 +651,15 @@ export default function EV505Page() {
           </div>
         </section>
 
-        {/* ================= CONTACT ================= */}
-
+        {/* CONTACT */}
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
             <h2 className="text-3xl font-extrabold md:text-4xl">
-              هل تريد معرفة المزيد عن جهاز EV505؟
+              عايز تعرف هل EV505 مناسب لاستخدامك؟
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-blue-200">
-              تواصل معنا لمعرفة التفاصيل والتوفر وطلب الجهاز.
+              تواصل معنا لمعرفة التفاصيل والتوفر وطريقة التركيب المناسبة.
             </p>
 
             <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -912,17 +673,16 @@ export default function EV505Page() {
               </a>
 
               <a
-                href="/#products"
+                href="tel:01006687163"
                 className="rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
               >
-                📡 مشاهدة باقي الأجهزة
+                📞 اتصل بنا
               </a>
             </div>
           </div>
         </section>
 
-        {/* ================= FOOTER ================= */}
-
+        {/* FOOTER */}
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
             <h3 className="text-2xl font-extrabold">
@@ -933,7 +693,9 @@ export default function EV505Page() {
               أجهزة GPS للتتبع والمراقبة
             </p>
 
-            <p className="mt-5 text-blue-300">📞 01006687163</p>
+            <p className="mt-5 text-blue-300">
+              📞 01006687163
+            </p>
 
             <a
               href={whatsappBaseUrl}
@@ -950,8 +712,7 @@ export default function EV505Page() {
           </div>
         </footer>
 
-        {/* ================= FLOATING WHATSAPP ================= */}
-
+        {/* FLOATING WHATSAPP */}
         <a
           href={whatsappBaseUrl}
           target="_blank"
