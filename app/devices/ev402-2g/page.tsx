@@ -4,7 +4,7 @@ import DeviceGallery from "../DeviceGallery";
 export const metadata: Metadata = {
   title: "EV402 2G | جهاز تتبع GPS صغير للسيارات والمركبات",
   description:
-    "جهاز EV402 2G لتتبع السيارات والمركبات، جهاز GPS سلكي صغير الحجم يعمل بجهد 9–90V DC، مع تتبع مباشر وتنبيهات وفصل المحرك بالريلاي.",
+    "جهاز EV402 2G لتتبع السيارات والمركبات، جهاز GPS سلكي صغير الحجم يعمل بجهد 9–36V DC، مع تتبع مباشر وسجل رحلات ومايك وSOS وتنبيهات وفصل المحرك بالريلاي.",
   keywords: [
     "EV402",
     "EV402 2G",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "EV402 2G | جهاز تتبع GPS صغير للسيارات والمركبات",
     description:
-      "جهاز EV402 2G صغير الحجم لتتبع السيارات والمركبات، يعمل بجهد 9–90V DC مع تتبع مباشر وتنبيهات وفصل المحرك بالريلاي.",
+      "جهاز EV402 2G صغير الحجم لتتبع السيارات والمركبات، يعمل بجهد 9–36V DC مع تتبع مباشر وسجل رحلات ومايك وSOS وتنبيهات وفصل المحرك.",
     url: "https://gpsworld-eg.com/devices/ev402-2g",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EV402 2G | جهاز تتبع GPS صغير",
     description:
-      "جهاز EV402 2G لتتبع السيارات والمركبات، صغير الحجم ويعمل بجهد 9–90V DC.",
+      "جهاز EV402 2G لتتبع السيارات والمركبات، صغير الحجم ويعمل بجهد 9–36V DC.",
     images: ["/images/ev402.jpeg"],
   },
 };
@@ -80,12 +80,12 @@ const faqs = [
   {
     question: "ما هو جهاز EV402؟",
     answer:
-      "EV402 هو جهاز تتبع GPS سلكي صغير الحجم يعمل على شبكة 2G، ومخصص لمتابعة السيارات والمركبات ومعرفة موقعها وحركتها.",
+      "EV402 هو جهاز تتبع GPS سلكي صغير الحجم يعمل على شبكة 2G، ومخصص لمتابعة السيارات والمركبات ومعرفة موقعها وحركتها، مع مجموعة من وظائف الأمان والتنبيهات.",
   },
   {
     question: "هل EV402 مناسب للموتوسيكلات؟",
     answer:
-      "نعم، الحجم الصغير ومدى جهد التشغيل 9–90V DC يجعلان EV402 مناسبًا بشكل خاص للموتوسيكلات والسكوترات، بالإضافة إلى السيارات والمركبات الأخرى التي تناسبها مواصفات الجهاز.",
+      "نعم، الحجم الصغير وجهد التشغيل من 9 إلى 36V DC يجعلان EV402 مناسبًا للموتوسيكلات والسكوترات، بالإضافة إلى السيارات والمركبات الأخرى التي تناسبها مواصفات الجهاز.",
   },
   {
     question: "هل يمكن فصل محرك السيارة باستخدام EV402؟",
@@ -93,14 +93,29 @@ const faqs = [
       "نعم، يمكن استخدام وظيفة فصل المحرك من خلال ريلاي مع التوصيل الصحيح بدائرة الوقود أو الكهرباء، وتُنفذ العملية حسب طريقة التركيب ونظام المركبة.",
   },
   {
-    question: "هل يوجد ميكروفون أو زر SOS في EV402؟",
+    question: "هل يوجد ميكروفون أو خاصية الاستماع في EV402؟",
     answer:
-      "لا، النسخة التي نعتمدها من EV402 لا تحتوي على ميكروفون للاستماع ولا على زر SOS.",
+      "نعم، يحتوي EV402 على ميكروفون ويدعم خاصية الاستماع عن بُعد حسب إعدادات الجهاز وطريقة التوصيل والنظام المستخدم.",
+  },
+  {
+    question: "هل يوجد زر SOS في EV402؟",
+    answer:
+      "نعم، يدعم EV402 زر SOS لإرسال تنبيه في حالات الطوارئ حسب إعدادات الجهاز وطريقة التركيب.",
   },
   {
     question: "ما جهد تشغيل EV402؟",
     answer:
-      "يعمل EV402 على نطاق جهد 9–90V DC، ولذلك يمكن استخدامه مع مجموعة واسعة من المركبات المناسبة لهذا النطاق.",
+      "يعمل EV402 على نطاق جهد 9–36V DC، ولذلك يمكن استخدامه مع السيارات والموتوسيكلات والمركبات المناسبة لهذا النطاق.",
+  },
+  {
+    question: "هل EV402 يعمل على 4G؟",
+    answer:
+      "لا، النسخة المعتمدة لدينا من EV402 تعمل على شبكة 2G.",
+  },
+  {
+    question: "ما مقاس ووزن EV402؟",
+    answer:
+      "مقاس الجهاز حوالي 72 × 31 × 12 مم، ووزنه حوالي 30 جرام.",
   },
   {
     question: "كيف أطلب جهاز EV402؟",
@@ -118,7 +133,7 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/ev402.jpeg"],
       url: product.url,
       description:
-        "جهاز EV402 2G صغير الحجم لتتبع السيارات والمركبات، يعمل بجهد 9–90V DC مع تتبع مباشر وتنبيهات وإمكانية فصل المحرك بالريلاي.",
+        "جهاز EV402 2G صغير الحجم لتتبع السيارات والمركبات، يعمل بجهد 9–36V DC مع تتبع مباشر وسجل رحلات ومايك وSOS وتنبيهات وإمكانية فصل المحرك بالريلاي.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -179,8 +194,7 @@ export default function EV402Page() {
           color: "#0f172a",
         }}
       >
-        {/* ================= HEADER ================= */}
-
+        {/* HEADER */}
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
           <div className="mx-auto max-w-7xl px-5 py-4">
             <div className="flex items-center justify-between gap-4">
@@ -207,8 +221,7 @@ export default function EV402Page() {
           </div>
         </header>
 
-        {/* ================= BACK ================= */}
-
+        {/* BACK */}
         <div className="mx-auto max-w-7xl px-5 pt-6">
           <a
             href="/#products"
@@ -218,8 +231,7 @@ export default function EV402Page() {
           </a>
         </div>
 
-        {/* ================= HERO ================= */}
-
+        {/* HERO */}
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div className="relative">
@@ -246,14 +258,15 @@ export default function EV402Page() {
               </h1>
 
               <p className="mt-4 text-xl font-bold text-blue-700">
-                جهاز GPS سلكي صغير الحجم بجهد تشغيل 9–90V
+                جهاز GPS سلكي صغير الحجم بجهد تشغيل 9–36V
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-700">
                 لو بتدور على جهاز تتبع GPS صغير وسهل إخفاؤه داخل المركبة،
                 فجهاز EV402 من الاختيارات العملية. الجهاز يعمل على شبكة 2G،
-                ويدعم تتبع موقع المركبة وحركتها، مع التنبيهات وإمكانية فصل
-                المحرك باستخدام ريلاي عند تركيبه وتوصيله بشكل صحيح.
+                ويدعم تتبع موقع المركبة وحركتها وسجل الرحلات، مع السرعة
+                والتنبيهات والمايك وSOS وإمكانية فصل المحرك باستخدام ريلاي
+                عند تركيبه وتوصيله بشكل صحيح.
               </p>
 
               <div className="mt-7 grid gap-4 sm:grid-cols-2">
@@ -277,8 +290,7 @@ export default function EV402Page() {
           </div>
         </section>
 
-        {/* ================= QUICK FEATURES ================= */}
-
+        {/* QUICK FEATURES */}
         <section className="mx-auto max-w-7xl px-5 pb-12">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-2xl border border-blue-100 bg-white p-6 text-center shadow-md">
@@ -297,11 +309,12 @@ export default function EV402Page() {
               <div className="text-3xl">⚡</div>
 
               <h3 className="mt-3 font-extrabold text-blue-950">
-                9–90V DC
+                9–36V DC
               </h3>
 
               <p className="mt-2 text-gray-700">
-                نطاق جهد تشغيل واسع لمركبات مختلفة.
+                نطاق جهد تشغيل مناسب للسيارات والموتوسيكلات والمركبات
+                المناسبة.
               </p>
             </div>
 
@@ -318,21 +331,20 @@ export default function EV402Page() {
             </div>
 
             <div className="rounded-2xl border border-blue-100 bg-white p-6 text-center shadow-md">
-              <div className="text-3xl">🔒</div>
+              <div className="text-3xl">🎙️</div>
 
               <h3 className="mt-3 font-extrabold text-blue-950">
-                فصل المحرك
+                مايك + SOS
               </h3>
 
               <p className="mt-2 text-gray-700">
-                إمكانية فصل المحرك باستخدام ريلاي وتوصيل صحيح.
+                مايك للاستماع عن بُعد وزر SOS للطوارئ حسب الإعداد والتركيب.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ================= DETAILED FEATURES ================= */}
-
+        {/* DETAILED FEATURES */}
         <section className="mx-auto max-w-7xl px-5 py-12">
           <div className="rounded-3xl border border-gray-200 bg-white p-7 shadow-md md:p-10">
             <div className="text-center">
@@ -345,15 +357,14 @@ export default function EV402Page() {
               </h2>
 
               <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-700">
-                جهاز EV402 يجمع بين الحجم الصغير ووظائف التتبع الأساسية، مما
-                يجعله مناسبًا خصوصًا للمركبات التي تحتاج إلى جهاز يمكن إخفاؤه
-                بسهولة.
+                جهاز EV402 يجمع بين الحجم الصغير ومجموعة متكاملة من وظائف
+                التتبع والأمان، مما يجعله مناسبًا خصوصًا للمركبات التي تحتاج
+                إلى جهاز يمكن إخفاؤه بسهولة.
               </p>
             </div>
 
             <div className="mt-10 grid gap-5 md:grid-cols-2">
               {/* 1 */}
-
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
                 <div className="text-3xl">1️⃣</div>
 
@@ -368,7 +379,6 @@ export default function EV402Page() {
               </div>
 
               {/* 2 */}
-
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
                 <div className="text-3xl">2️⃣</div>
 
@@ -383,9 +393,22 @@ export default function EV402Page() {
               </div>
 
               {/* 3 */}
-
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
                 <div className="text-3xl">3️⃣</div>
+
+                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                  معرفة السرعة
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-700">
+                  يمكن متابعة سرعة المركبة أثناء الحركة واستقبال تنبيه عند
+                  تجاوز السرعة المحددة حسب إعدادات النظام.
+                </p>
+              </div>
+
+              {/* 4 */}
+              <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
+                <div className="text-3xl">4️⃣</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   فصل المحرك بالريلاي
@@ -398,10 +421,37 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 4 */}
-
+              {/* 5 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">4️⃣</div>
+                <div className="text-3xl">5️⃣</div>
+
+                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                  الميكروفون والاستماع
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-700">
+                  يحتوي الجهاز على ميكروفون ويدعم خاصية الاستماع عن بُعد حسب
+                  إعدادات الجهاز وطريقة التوصيل والنظام المستخدم.
+                </p>
+              </div>
+
+              {/* 6 */}
+              <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
+                <div className="text-3xl">6️⃣</div>
+
+                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                  زر SOS للطوارئ
+                </h3>
+
+                <p className="mt-3 leading-8 text-gray-700">
+                  يدعم الجهاز زر SOS لإرسال تنبيه في حالات الطوارئ إلى الأرقام
+                  أو النظام المحدد حسب إعدادات الجهاز وطريقة التركيب.
+                </p>
+              </div>
+
+              {/* 7 */}
+              <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
+                <div className="text-3xl">7️⃣</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   تنبيه عند فصل الكهرباء
@@ -413,10 +463,9 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 5 */}
-
+              {/* 8 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">5️⃣</div>
+                <div className="text-3xl">8️⃣</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   تنبيه الحركة والاهتزاز
@@ -428,25 +477,9 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 6 */}
-
+              {/* 9 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">6️⃣</div>
-
-                <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                  تنبيه السرعة
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-700">
-                  يمكن إعداد تنبيه عند تجاوز سرعة معينة لمساعدة صاحب المركبة
-                  على متابعة أسلوب القيادة والحركة.
-                </p>
-              </div>
-
-              {/* 7 */}
-
-              <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">7️⃣</div>
+                <div className="text-3xl">9️⃣</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   Geo-Fence
@@ -458,10 +491,9 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 8 */}
-
+              {/* 10 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">8️⃣</div>
+                <div className="text-3xl">🔟</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   ACC تشغيل وإيقاف
@@ -473,10 +505,9 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 9 */}
-
+              {/* 11 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">9️⃣</div>
+                <div className="text-3xl">🔋</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
                   بطارية داخلية 55mAh
@@ -488,24 +519,21 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 10 */}
-
+              {/* 12 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
-                <div className="text-3xl">🔌</div>
+                <div className="text-3xl">⚡</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                  نطاق جهد واسع
+                  جهد تشغيل 9–36V
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-700">
-                  يعمل الجهاز على نطاق 9–90V DC، مما يجعله مناسبًا لمجموعة
-                  واسعة من السيارات والموتوسيكلات والسكوترات والمركبات التي
-                  تقع ضمن هذا النطاق.
+                  يعمل الجهاز على نطاق 9–36V DC، مما يجعله مناسبًا للسيارات
+                  والموتوسيكلات والسكوترات والمركبات التي تقع ضمن هذا النطاق.
                 </p>
               </div>
 
-              {/* 11 */}
-
+              {/* 13 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
                 <div className="text-3xl">📦</div>
 
@@ -519,8 +547,7 @@ export default function EV402Page() {
                 </p>
               </div>
 
-              {/* 12 */}
-
+              {/* 14 */}
               <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">
                 <div className="text-3xl">🏍️</div>
 
@@ -529,17 +556,16 @@ export default function EV402Page() {
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-700">
-                  الحجم الصغير ومدى جهد التشغيل الواسع يجعلان EV402 اختيارًا
-                  عمليًا للموتوسيكلات والسكوترات، بالإضافة إلى السيارات
-                  والمركبات الأخرى المناسبة لمواصفاته.
+                  الحجم الصغير ومدى جهد التشغيل يجعلان EV402 اختيارًا عمليًا
+                  للموتوسيكلات والسكوترات، بالإضافة إلى السيارات والمركبات
+                  الأخرى المناسبة لمواصفاته.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ================= PRACTICAL DIFFERENCES ================= */}
-
+        {/* PRACTICAL DIFFERENCES */}
         <section className="bg-gray-50 px-5 py-16">
           <div className="mx-auto max-w-6xl">
             <div className="text-center">
@@ -552,9 +578,9 @@ export default function EV402Page() {
               </h2>
 
               <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-700">
-                لو أهم حاجة عندك جهاز صغير وسهل إخفاؤه ويعمل على نطاق جهد واسع،
-                فـ EV402 يقدم مجموعة مناسبة من وظائف التتبع الأساسية بدون
-                إضافة وظائف غير موجودة في النسخة المعتمدة من الجهاز.
+                لو أهم حاجة عندك جهاز صغير وسهل إخفاؤه ويعمل على 9–36V، فـ
+                EV402 يقدم مجموعة متكاملة من وظائف التتبع والأمان مثل المايك
+                وSOS والتنبيهات وفصل المحرك.
               </p>
             </div>
 
@@ -576,72 +602,71 @@ export default function EV402Page() {
                 <div className="text-4xl">⚡</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                  9–90V
+                  9–36V
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-700">
-                  نطاق تشغيل واسع يجعله مناسبًا لعدد كبير من المركبات حسب
-                  الجهد وطريقة التركيب.
+                  نطاق تشغيل مناسب للسيارات والموتوسيكلات والمركبات التي تقع
+                  ضمن نطاق الجهد.
                 </p>
               </div>
 
               <div className="rounded-3xl bg-white p-7 shadow-md">
-                <div className="text-4xl">🏍️</div>
+                <div className="text-4xl">🎙️</div>
 
                 <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                  مناسب للموتوسيكل
+                  مايك + SOS
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-700">
-                  حجمه الصغير يجعله من الاختيارات العملية للموتوسيكلات
-                  والسكوترات التي تحتاج جهاز تتبع مخفي.
+                  يجمع بين التتبع ووظائف الأمان مثل الاستماع عن بُعد وزر SOS،
+                  بالإضافة إلى إمكانية فصل المحرك.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ================= WHAT IT DOES NOT HAVE ================= */}
-
+        {/* IMPORTANT INFORMATION */}
         <section className="mx-auto max-w-6xl px-5 py-16">
-          <div className="rounded-3xl border border-amber-200 bg-amber-50 p-8 md:p-10">
+          <div className="rounded-3xl border border-blue-200 bg-blue-50 p-8 md:p-10">
             <div className="text-center">
-              <span className="font-bold text-amber-700">
+              <span className="font-bold text-blue-700">
                 معلومات مهمة قبل التركيب
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950">
-                إمكانيات يجب معرفتها عن EV402
+                إمكانيات EV402
               </h2>
             </div>
 
             <div className="mt-8 grid gap-5 md:grid-cols-2">
               <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-extrabold text-blue-950">
-                  🎙️ بدون ميكروفون
+                  🎙️ الميكروفون والاستماع
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-700">
-                  النسخة المعتمدة من EV402 لا تحتوي على ميكروفون للاستماع
-                  عن بُعد.
+                  الجهاز مزود بميكروفون ويدعم خاصية الاستماع عن بُعد حسب
+                  إعدادات الجهاز وطريقة التوصيل والنظام المستخدم.
                 </p>
               </div>
 
               <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-extrabold text-blue-950">
-                  🆘 بدون زر SOS
+                  🆘 زر SOS
                 </h3>
 
                 <p className="mt-3 leading-8 text-gray-700">
-                  الجهاز لا يحتوي على زر SOS مخصص في النسخة التي نعتمدها.
+                  يدعم الجهاز زر SOS لإرسال تنبيه في حالات الطوارئ حسب طريقة
+                  التركيب وإعدادات الجهاز.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ================= APPLICATIONS ================= */}
-
+        {/* APPLICATIONS */}
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
             <div className="text-center">
@@ -705,8 +730,7 @@ export default function EV402Page() {
           </div>
         </section>
 
-        {/* ================= TECHNICAL NOTES ================= */}
-
+        {/* TECHNICAL NOTES */}
         <section className="mx-auto max-w-5xl px-5 pb-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-white md:p-10">
             <div className="text-center">
@@ -726,18 +750,23 @@ export default function EV402Page() {
               </p>
 
               <p>
+                • جهد تشغيل الجهاز من 9 إلى 36V DC، ويجب التأكد من أن جهد
+                المركبة مناسب قبل التركيب.
+              </p>
+
+              <p>
                 • فصل المحرك يحتاج إلى ريلاي وتركيب صحيح، ويجب تنفيذ التوصيل
                 بواسطة فني يعرف دائرة المركبة.
               </p>
 
               <p>
-                • وظائف التنبيهات وسجل الرحلات تعتمد على نظام التتبع وإعداداته
-                وطريقة تشغيل الجهاز.
+                • وظائف المايك والاستماع وSOS والتنبيهات وسجل الرحلات تعتمد
+                على إعدادات الجهاز والنظام وطريقة التركيب.
               </p>
 
               <p>
-                • بطارية 55mAh داخلية ومهمتها الأساسية دعم الجهاز عند انقطاع
-                كهرباء المركبة وإرسال تنبيه فصل الطاقة.
+                • بطارية 55mAh داخلية تساعد الجهاز عند انقطاع كهرباء المركبة
+                وتدعم إرسال تنبيه فصل الطاقة.
               </p>
             </div>
 
@@ -751,8 +780,7 @@ export default function EV402Page() {
           </div>
         </section>
 
-        {/* ================= COMPARISON CTA ================= */}
-
+        {/* COMPARISON CTA */}
         <section className="mx-auto max-w-5xl px-5 pb-16">
           <div className="rounded-3xl border border-blue-200 bg-blue-50 p-8 text-center shadow-md md:p-10">
             <span className="font-bold text-blue-700">
@@ -777,8 +805,7 @@ export default function EV402Page() {
           </div>
         </section>
 
-        {/* ================= FAQ ================= */}
-
+        {/* FAQ */}
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="text-center">
             <span className="font-bold text-blue-700">
@@ -808,8 +835,7 @@ export default function EV402Page() {
           </div>
         </section>
 
-        {/* ================= CONTACT ================= */}
-
+        {/* CONTACT */}
         <section className="mx-auto max-w-5xl px-5 pb-16">
           <div className="rounded-3xl bg-gradient-to-l from-blue-950 to-blue-900 p-8 text-center text-white shadow-xl md:p-12">
             <h2 className="text-3xl font-extrabold md:text-4xl">
@@ -840,8 +866,7 @@ export default function EV402Page() {
           </div>
         </section>
 
-        {/* ================= FOOTER ================= */}
-
+        {/* FOOTER */}
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
             <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
@@ -867,8 +892,7 @@ export default function EV402Page() {
           </div>
         </footer>
 
-        {/* ================= FLOATING WHATSAPP ================= */}
-
+        {/* FLOATING WHATSAPP */}
         <a
           href={whatsappBaseUrl}
           target="_blank"
