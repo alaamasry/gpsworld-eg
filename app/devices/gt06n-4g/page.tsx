@@ -4,7 +4,7 @@ import DeviceGallery from "../DeviceGallery";
 export const metadata: Metadata = {
   title: "GT06N 4G | جهاز تتبع سيارات GPS 4G في مصر",
   description:
-    "جهاز GT06N 4G لتتبع السيارات والمركبات في مصر، مع GPS واتصال 4G ومتابعة موقع السيارة وحركتها والتنبيهات ودعم أنظمة وسيرفرات التتبع المتوافقة.",
+    "جهاز GT06N 4G سلكي لتتبع السيارات والمركبات، يعمل بشبكة 4G LTE وجهد تشغيل 9–90V DC، مع تتبع مباشر وسجل مسارات 3 أشهر وتنبيهات وSOS وإمكانية فصل المحرك.",
   keywords: [
     "GT06N 4G",
     "GT06N 4G مصر",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GT06N 4G | جهاز تتبع سيارات GPS 4G في مصر",
     description:
-      "تعرف على جهاز GT06N 4G لتتبع السيارات والمركبات في مصر، ومتابعة الموقع والحركة والتنبيهات من خلال أنظمة التتبع المتوافقة.",
+      "جهاز GT06N 4G سلكي لتتبع السيارات والمركبات، يعمل بشبكة 4G LTE وجهد تشغيل 9–90V DC، مع تتبع مباشر وتنبيهات وSOS وإمكانية فصل المحرك.",
     url: "https://gpsworld-eg.com/devices/gt06n-4g",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
         url: "/images/GT06N 4G.jpeg",
         width: 650,
         height: 500,
-        alt: "GT06N 4G جهاز تتبع سيارات GPS في مصر",
+        alt: "GT06N 4G جهاز تتبع سيارات GPS",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GT06N 4G | جهاز تتبع سيارات GPS 4G في مصر",
+    title: "GT06N 4G | جهاز تتبع سيارات GPS 4G",
     description:
-      "جهاز GT06N 4G لتتبع السيارات والمركبات ومتابعة الموقع والحركة باستخدام GPS واتصال 4G.",
+      "جهاز GT06N 4G سلكي لتتبع السيارات والمركبات مع 4G LTE وجهد تشغيل 9–90V DC.",
     images: ["/images/GT06N 4G.jpeg"],
   },
 };
@@ -83,36 +83,42 @@ const faqItems = [
   {
     question: "ما هو جهاز GT06N 4G؟",
     answer:
-      "جهاز GT06N 4G هو جهاز تتبع GPS للسيارات والمركبات يعمل من خلال شبكة 4G، ويساعد على متابعة موقع المركبة وحركتها باستخدام نظام أو سيرفر GPS متوافق.",
-  },
-  {
-    question: "هل جهاز GT06N 4G مناسب لتتبع السيارات؟",
-    answer:
-      "نعم، جهاز GT06N 4G مناسب لتطبيقات تتبع ومراقبة السيارات والمركبات، ويمكن استخدامه في السيارات الخاصة والمركبات التجارية والأساطيل حسب نظام التتبع وطريقة التركيب.",
+      "جهاز GT06N 4G هو جهاز تتبع GPS سلكي للسيارات والمركبات، يعمل على شبكات 4G LTE ويوفر متابعة مباشرة لموقع السيارة وتحركاتها، مع مجموعة من التنبيهات ووظائف التحكم عن بُعد.",
   },
   {
     question: "ما جهد تشغيل جهاز GT06N 4G؟",
-    answer: "جهد تشغيل جهاز GT06N 4G هو 9V – 90V DC.",
+    answer:
+      "جهد تشغيل جهاز GT06N 4G من 9 إلى 90 فولت DC، مما يجعله مناسبًا لمجموعة متنوعة من المركبات مع مراعاة جهد المركبة وطريقة التركيب.",
   },
   {
-    question: "هل جهاز GT06N 4G يدعم التتبع اللحظي؟",
+    question: "هل يحتفظ الجهاز بالرحلات السابقة؟",
     answer:
-      "نعم، يدعم الجهاز التتبع اللحظي من خلال نظام أو سيرفر GPS متوافق، ويمكن من خلال النظام متابعة موقع المركبة وحركتها.",
+      "نعم، يتم الاحتفاظ بتقارير ومسارات حركة السيارة لمدة 3 أشهر، للرجوع إليها ومراجعة التحركات والتوقفات والسرعات السابقة.",
   },
   {
-    question: "هل يدعم GT06N 4G السياج الجغرافي؟",
+    question: "هل يمكن فصل المحرك عن بُعد؟",
     answer:
-      "نعم، يدعم وظائف السياج الجغرافي حسب نظام التتبع المستخدم، بحيث يمكن تحديد منطقة ومتابعة دخول المركبة إليها أو خروجها منها.",
+      "نعم، يمكن فصل المحرك عن طريق الريلاي عند توصيله بالطريقة الصحيحة، ويمكن تنفيذ أمر الفصل حسب إعدادات الجهاز وطريقة استخدامه.",
   },
   {
-    question: "هل يمكن التحكم في فصل الكهرباء أو الوقود؟",
+    question: "هل يدعم جهاز GT06N 4G الاستماع داخل السيارة؟",
     answer:
-      "يمكن ذلك عند تجهيز السيارة بالتوصيل المناسب وتوفر دعم هذه الوظيفة في السيرفر أو نظام التتبع المستخدم.",
+      "نعم، يدعم توصيل ميكروفون خارجي للاستماع إلى الصوت داخل السيارة حسب تجهيز الجهاز وطريقة التوصيل.",
   },
   {
-    question: "هل يمكن متابعة السيارة من الموبايل؟",
+    question: "هل يوجد زر SOS؟",
     answer:
-      "يمكن متابعة بيانات وموقع السيارة من الهاتف عند استخدام نظام أو تطبيق تتبع متوافق مع جهاز GT06N 4G.",
+      "يمكن توصيل زر SOS بالقرب من السائق، وعند الضغط عليه في حالة الطوارئ يتم إرسال تنبيه إلى الأرقام المحددة مسبقًا مع بيانات الموقع حسب إعدادات النظام.",
+  },
+  {
+    question: "ما سعة البطارية الداخلية؟",
+    answer:
+      "يحتوي جهاز GT06N 4G على بطارية داخلية بسعة 250mAh تساعد الجهاز على الاستمرار في العمل وإرسال البيانات لفترة عند فصل بطارية السيارة.",
+  },
+  {
+    question: "هل جهاز GT06N 4G مناسب للشاحنات والمركبات الكبيرة؟",
+    answer:
+      "نعم، نطاق التشغيل من 9 إلى 90 فولت يجعله مناسبًا للعديد من السيارات والشاحنات والأتوبيسات والدراجات النارية والمركبات المتوافقة مع جهد التشغيل.",
   },
 ];
 
@@ -125,7 +131,7 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/GT06N%204G.jpeg"],
       url: product.url,
       description:
-        "جهاز GT06N 4G لتتبع السيارات والمركبات في مصر باستخدام GPS وتقنية 4G، مع دعم وظائف التتبع والتنبيهات حسب نظام التتبع المتوافق.",
+        "جهاز GT06N 4G سلكي لتتبع السيارات والمركبات، يعمل بشبكة 4G LTE وجهد تشغيل 9–90V DC، مع تتبع مباشر وتقارير ومسارات لمدة 3 أشهر وتنبيهات وSOS وإمكانية فصل المحرك.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -169,6 +175,69 @@ const structuredData = {
   ],
 };
 
+const features = [
+  {
+    number: "1",
+    title: "التتبع والمراقبة الحية 📍",
+    text: "متابعة موقع السيارة على الخريطة ومعرفة مكانها وحركتها بشكل لحظي، مع إمكانية متابعة السرعة وخط السير والرحلات السابقة.",
+  },
+  {
+    number: "2",
+    title: "تقارير ومسارات لمدة 3 أشهر 🗺️",
+    text: "يتم الاحتفاظ بتقارير ومسارات حركة السيارة لمدة 3 أشهر، للرجوع إليها ومراجعة التحركات والتوقفات والسرعات السابقة.",
+  },
+  {
+    number: "3",
+    title: "فصل المحرك عن بُعد 🛑",
+    text: "يمكن فصل المحرك عن طريق الريلاي عند توصيله بالطريقة الصحيحة، مما يتيح التحكم في فصل الوقود أو الكهرباء عن بُعد.",
+  },
+  {
+    number: "4",
+    title: "تنبيهات فصل الكهرباء والعبث 🔌",
+    text: "يمكن للجهاز إرسال تنبيه عند فصل مصدر الكهرباء أو حدوث عبث بتوصيلات الجهاز حسب الإعدادات المتاحة.",
+  },
+  {
+    number: "5",
+    title: "تنبيه الاهتزاز والحركة 🚨",
+    text: "يساعد الجهاز في اكتشاف الحركة أو الاهتزاز غير الطبيعي للمركبة، حسب إعدادات التنبيه المستخدمة.",
+  },
+  {
+    number: "6",
+    title: "تنبيه السحب أو الرفع 🚗",
+    text: "يمكن إعداد تنبيه عند اكتشاف سحب أو رفع السيارة وهي في وضع التوقف، حسب إعدادات الجهاز.",
+  },
+  {
+    number: "7",
+    title: "السياج الجغرافي Geo-Fence 🗺️",
+    text: "يمكن تحديد منطقة معينة على الخريطة واستقبال تنبيه عند دخول السيارة إليها أو خروجها منها.",
+  },
+  {
+    number: "8",
+    title: "تنبيه تجاوز السرعة ⚠️",
+    text: "يمكن إعداد سرعة محددة واستقبال تنبيه عند تجاوزها أثناء قيادة السيارة.",
+  },
+  {
+    number: "9",
+    title: "متابعة تشغيل وإيقاف السيارة ACC 🔑",
+    text: "متابعة حالة تشغيل وإيقاف السيارة من خلال إشارة ACC حسب طريقة التوصيل والإعدادات المستخدمة.",
+  },
+  {
+    number: "10",
+    title: "الاستماع داخل السيارة 🎙️",
+    text: "يدعم توصيل ميكروفون خارجي للاستماع إلى الصوت داخل السيارة حسب تجهيز الجهاز وطريقة التوصيل.",
+  },
+  {
+    number: "11",
+    title: "زر الاستغاثة SOS 🆘",
+    text: "يمكن توصيل زر SOS بالقرب من السائق، وعند الضغط عليه في حالة الطوارئ يتم إرسال تنبيه إلى الأرقام المحددة مسبقًا مع بيانات الموقع حسب الإعدادات.",
+  },
+  {
+    number: "12",
+    title: "بطارية احتياطية 250mAh 🔋",
+    text: "يحتوي الجهاز على بطارية داخلية بسعة 250mAh تساعده على الاستمرار في العمل وإرسال بيانات الموقع لفترة عند فصل بطارية السيارة.",
+  },
+];
+
 export default function GT06N4GPage() {
   return (
     <main className="min-h-screen bg-gray-50" dir="rtl">
@@ -183,7 +252,7 @@ export default function GT06N4GPage() {
 
       <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
         <div className="mx-auto max-w-7xl px-5 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-4">
             <a
               href="/"
               className="flex flex-col leading-tight transition hover:text-yellow-300"
@@ -218,12 +287,10 @@ export default function GT06N4GPage() {
         </a>
       </div>
 
-      {/* PRODUCT */}
+      {/* HERO */}
 
       <section className="mx-auto max-w-7xl px-5 py-10">
-        <div className="grid gap-10 lg:grid-cols-2">
-          {/* IMAGE */}
-
+        <div className="grid items-center gap-10 lg:grid-cols-2">
           <div className="relative">
             <DeviceGallery
               images={[
@@ -238,31 +305,27 @@ export default function GT06N4GPage() {
             />
           </div>
 
-          {/* DETAILS */}
-
           <div className="flex flex-col justify-center">
             <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
-              ✓ متوفر
+              ✓ GT06N 4G
             </span>
 
             <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              جهاز GT06N 4G لتتبع السيارات والمركبات في مصر
+              جهاز GT06N 4G لتتبع السيارات والمركبات
             </h1>
 
             <p className="mt-3 text-xl font-bold text-blue-700">
-              جهاز تتبع GPS احترافي بتقنية 4G
+              جهاز تتبع GPS سلكي بتقنية 4G LTE
             </p>
 
             <p className="mt-6 text-lg leading-9 text-gray-600">
-              جهاز GT06N 4G هو جهاز تتبع GPS للسيارات والمركبات يعمل بتقنية
-              4G، ويساعد على متابعة موقع السيارة وحركتها بشكل لحظي من خلال
-              نظام أو سيرفر GPS متوافق. ويُعد مناسبًا لمن يبحث عن جهاز GPS
-              للسيارات أو جهاز تتبع مركبات يعمل بشبكة 4G.
+              جهاز GT06N 4G هو جهاز تتبع GPS سلكي للسيارات والمركبات، يعمل على
+              شبكات 4G LTE ويوفر متابعة مباشرة لموقع السيارة وتحركاتها، مع
+              مجموعة من التنبيهات ووظائف التحكم عن بُعد، بالإضافة إلى بطارية
+              داخلية 250mAh ونطاق جهد تشغيل واسع من 9 إلى 90 فولت DC.
             </p>
 
-            {/* BUTTONS */}
-
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="mt-7 grid gap-4 sm:grid-cols-2">
               <a
                 href={whatsappInquiryUrl}
                 target="_blank"
@@ -283,39 +346,85 @@ export default function GT06N4GPage() {
         </div>
       </section>
 
-      {/* SEO INTRO */}
+      {/* QUICK FEATURES */}
+
+      <section className="mx-auto max-w-7xl px-5 pb-12">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-2xl bg-white p-6 text-center shadow-md">
+            <div className="text-4xl">📡</div>
+
+            <h3 className="mt-3 text-lg font-extrabold text-blue-950">
+              4G LTE
+            </h3>
+
+            <p className="mt-2 leading-7 text-gray-600">
+              يعمل على شبكات الجيل الرابع.
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 text-center shadow-md">
+            <div className="text-4xl">⚡</div>
+
+            <h3 className="mt-3 text-lg font-extrabold text-blue-950">
+              9–90V DC
+            </h3>
+
+            <p className="mt-2 leading-7 text-gray-600">
+              نطاق جهد تشغيل واسع للمركبات المتوافقة.
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 text-center shadow-md">
+            <div className="text-4xl">🗺️</div>
+
+            <h3 className="mt-3 text-lg font-extrabold text-blue-950">
+              3 أشهر
+            </h3>
+
+            <p className="mt-2 leading-7 text-gray-600">
+              الاحتفاظ بالتقارير والمسارات السابقة.
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-white p-6 text-center shadow-md">
+            <div className="text-4xl">🔋</div>
+
+            <h3 className="mt-3 text-lg font-extrabold text-blue-950">
+              250mAh
+            </h3>
+
+            <p className="mt-2 leading-7 text-gray-600">
+              بطارية داخلية احتياطية.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* INTRO */}
 
       <section className="mx-auto max-w-5xl px-5 pb-16">
         <div className="rounded-3xl bg-white p-8 shadow-md md:p-10">
-          <h2 className="text-center text-3xl font-extrabold text-blue-950">
-            GT06N 4G جهاز تتبع سيارات GPS في مصر
+          <h2 className="text-center text-3xl font-extrabold text-blue-950 md:text-4xl">
+            GT06N 4G جهاز تتبع سيارات GPS
           </h2>
 
-          <div className="mt-6 text-lg font-semibold leading-9 text-gray-700">
+          <div className="mt-7 text-lg leading-9 text-gray-700">
             <p className="mb-5">
-              جهاز GT06N 4G هو جهاز GPS لتتبع السيارات والمركبات باستخدام شبكة
-              4G، ويتيح متابعة موقع المركبة وحركتها من خلال نظام أو سيرفر GPS
-              متوافق. ويستخدم الجهاز في تطبيقات تتبع السيارات ومراقبة المركبات
-              التي تحتاج إلى اتصال 4G.
+              جهاز GT06N 4G هو جهاز تتبع GPS سلكي مناسب للسيارات والمركبات،
+              يعمل على شبكات 4G LTE ويوفر متابعة مباشرة لموقع السيارة
+              وتحركاتها.
             </p>
 
             <p className="mb-5">
-              يمكن استخدام جهاز تتبع السيارات GT06N 4G في السيارات الخاصة
-              والمركبات التجارية وسيارات الأجرة وأساطيل الشركات، حسب طبيعة
-              الاستخدام وطريقة تركيب الجهاز ونظام التتبع المستخدم.
-            </p>
-
-            <p className="mb-5">
-              ومن وظائف جهاز GPS للسيارات إمكانية متابعة موقع المركبة والحركة
-              والتنبيهات وبعض وظائف الحماية، مثل تنبيه فصل مصدر الكهرباء
-              والسياج الجغرافي، وذلك وفقًا لإمكانيات النظام أو السيرفر المتوافق
-              مع الجهاز.
+              الجهاز مناسب لمن يحتاج إلى متابعة السيارة ومعرفة سرعتها وخط
+              سيرها، مع إمكانية الرجوع إلى التقارير والمسارات السابقة لمدة
+              3 أشهر.
             </p>
 
             <p>
-              إذا كنت تبحث عن جهاز تتبع سيارة 4G أو GPS Tracker في مصر، يمكنك
-              التواصل معنا لمعرفة تفاصيل جهاز GT06N 4G والتوفر وطريقة التركيب
-              والنظام المناسب لاستخدامك.
+              كما يوفر الجهاز مجموعة من وظائف التنبيه والحماية، بالإضافة إلى
+              إمكانية فصل المحرك عن بُعد عند تركيب الريلاي والتوصيل بالطريقة
+              الصحيحة.
             </p>
           </div>
         </div>
@@ -324,181 +433,179 @@ export default function GT06N4GPage() {
       {/* FEATURES */}
 
       <section className="mx-auto max-w-7xl px-5 pb-16">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl bg-white p-7 shadow-md">
-            <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات جهاز GT06N 4G
+        <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-extrabold text-blue-950 md:text-4xl">
+              مميزات جهاز GT06N 4G بالتفصيل
             </h2>
 
-            <ul className="space-y-4 text-lg leading-8 text-gray-700">
-              <li>📡 يعمل بتقنية 4G للاتصال السريع والمستقر.</li>
-
-              <li>📍 متابعة موقع المركبة بشكل لحظي.</li>
-
-              <li>🚗 مناسب لمختلف أنواع السيارات والمركبات.</li>
-
-              <li>🚨 دعم التنبيهات الخاصة بالحركة والحماية.</li>
-
-              <li>🔌 تنبيه عند فصل مصدر الكهرباء عن الجهاز.</li>
-
-              <li>
-                ⚡ إمكانية التحكم في فصل الكهرباء أو الوقود عند تجهيز السيارة
-                بالنظام المناسب.
-              </li>
-
-              <li>
-                🗺️ دعم السياج الجغرافي ومتابعة دخول وخروج المركبة من المناطق
-                المحددة.
-              </li>
-
-              <li>🛠️ مناسب للعمل مع أنظمة وسيرفرات GPS المتوافقة.</li>
-
-              <li>
-                📲 إمكانية متابعة بيانات الجهاز من خلال أنظمة التتبع المناسبة.
-              </li>
-
-              <li>🛡️ مناسب لحماية السيارة ومراقبة الحركة والمسار.</li>
-            </ul>
+            <p className="mt-5 text-lg leading-9 text-gray-600">
+              مجموعة متكاملة من وظائف التتبع والمراقبة والتنبيهات والتحكم
+              لتوفير متابعة أفضل للمركبة.
+            </p>
           </div>
 
-          {/* SPECIFICATIONS */}
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {features.map((feature) => (
+              <article
+                key={feature.number}
+                className="rounded-2xl border border-gray-200 bg-gray-50 p-6"
+              >
+                <div className="flex gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-blue-900 text-lg font-extrabold text-white">
+                    {feature.number}
+                  </div>
 
-          <div className="rounded-3xl bg-white p-7 shadow-md">
-            <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية لجهاز GT06N 4G
-            </h2>
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      {feature.title}
+                    </h3>
 
-            <div className="overflow-hidden rounded-2xl border border-gray-200">
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">الموديل</span>
-                <span className="text-gray-600">GT06N 4G</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">الشبكة</span>
-                <span className="text-gray-600">4G LTE</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">
-                  تحديد الموقع
-                </span>
-                <span className="text-gray-600">GPS</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">
-                  جهد التشغيل
-                </span>
-
-                <span className="font-bold text-blue-700">
-                  9V – 90V DC
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">الاتصال</span>
-                <span className="text-gray-600">GPRS / TCP-IP</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">التتبع</span>
-                <span className="text-gray-600">تتبع لحظي</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">
-                  التنبيهات
-                </span>
-
-                <span className="text-gray-600">
-                  حركة / سياج جغرافي / فصل كهرباء
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 p-4">
-                <span className="font-bold text-gray-800">الاستخدام</span>
-
-                <span className="text-gray-600">
-                  تتبع ومراقبة المركبات
-                </span>
-              </div>
-            </div>
+                    <p className="mt-3 leading-8 text-gray-600">
+                      {feature.text}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SMART FUNCTIONS */}
+      {/* PRACTICAL DIFFERENCE */}
 
-      <section className="bg-white px-5 py-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-10 text-center">
+      <section className="bg-blue-50 px-5 py-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
             <span className="font-bold text-blue-700">
               GT06N 4G
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              وظائف التتبع والحماية في جهاز GT06N 4G
+              إيه اللي يميز GT06N 4G؟
             </h2>
 
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
-              تم تصميم جهاز GT06N 4G ليكون مناسبًا لمتابعة السيارات والمركبات
-              ومراقبة الحركة، مع مجموعة من وظائف التنبيه والحماية التي تعتمد
-              على إمكانيات الجهاز ونظام التتبع المتوافق.
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
+              جهاز سلكي صغير وخفيف، يجمع بين شبكة 4G ونطاق جهد تشغيل واسع،
+              مع وظائف متعددة لمتابعة السيارة وحمايتها.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-3xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-4xl">📍</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                تتبع لحظي
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl bg-white p-7 shadow-sm">
+              <h3 className="text-xl font-extrabold text-blue-950">
+                📡 اتصال 4G
               </h3>
 
               <p className="mt-3 leading-8 text-gray-600">
-                معرفة موقع المركبة ومتابعة حركتها من خلال نظام التتبع
-                المتوافق.
+                مناسب لتطبيقات تتبع المركبات التي تعتمد على شبكة الجيل الرابع.
               </p>
             </div>
 
-            <div className="rounded-3xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-4xl">🗺️</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                السياج الجغرافي
+            <div className="rounded-2xl bg-white p-7 shadow-sm">
+              <h3 className="text-xl font-extrabold text-blue-950">
+                📏 صغير وخفيف
               </h3>
 
               <p className="mt-3 leading-8 text-gray-600">
-                تحديد منطقة جغرافية ومتابعة دخول المركبة إليها أو خروجها
-                منها.
+                مقاس حوالي 6 × 2 سم، بسمك 16.4 مم ووزن 60 جرام، مما يساعد على
+                تركيبه وإخفائه بسهولة داخل السيارة.
               </p>
             </div>
 
-            <div className="rounded-3xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-4xl">🔌</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                تنبيه فصل الكهرباء
+            <div className="rounded-2xl bg-white p-7 shadow-sm">
+              <h3 className="text-xl font-extrabold text-blue-950">
+                🛡️ وظائف حماية متعددة
               </h3>
 
               <p className="mt-3 leading-8 text-gray-600">
-                المساعدة في اكتشاف فصل مصدر الكهرباء عن جهاز التتبع.
+                تنبيهات للحركة والاهتزاز والسحب والسرعة والسياج الجغرافي
+                وفصل الكهرباء، مع إمكانية SOS وفصل المحرك.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="rounded-3xl bg-gray-50 p-6 text-center shadow-sm">
-              <div className="text-4xl">🛡️</div>
+      {/* SPECIFICATIONS */}
 
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                حماية ومراقبة
-              </h3>
+      <section className="bg-gray-100 px-5 py-16">
+        <div className="mx-auto max-w-5xl">
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+            <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
+              ⚙️ المواصفات الأساسية
+            </h2>
 
-              <p className="mt-3 leading-8 text-gray-600">
-                مناسب لمتابعة حركة السيارة والمساعدة في الحماية من الاستخدام
-                غير المصرح به.
-              </p>
+            <div className="mt-8 overflow-hidden rounded-2xl border border-gray-200">
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
+                <span className="font-bold text-gray-800">الموديل</span>
+                <span className="text-gray-600">GT06N 4G</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
+                <span className="font-bold text-gray-800">نوع الجهاز</span>
+                <span className="text-gray-600">GPS Tracker سلكي</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
+                <span className="font-bold text-gray-800">الشبكة</span>
+                <span className="font-bold text-blue-700">
+                  4G LTE
+                </span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
+                <span className="font-bold text-gray-800">
+                  جهد التشغيل
+                </span>
+                <span className="font-bold text-blue-700">
+                  9–90V DC
+                </span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
+                <span className="font-bold text-gray-800">
+                  البطارية الداخلية
+                </span>
+                <span className="text-gray-600">250mAh</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
+                <span className="font-bold text-gray-800">
+                  حفظ التقارير والمسارات
+                </span>
+                <span className="text-gray-600">3 أشهر</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
+                <span className="font-bold text-gray-800">
+                  المقاس التقريبي
+                </span>
+                <span className="text-gray-600">6 × 2 سم</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
+                <span className="font-bold text-gray-800">السُمك</span>
+                <span className="text-gray-600">16.4 مم</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
+                <span className="font-bold text-gray-800">الوزن</span>
+                <span className="text-gray-600">60 جرام</span>
+              </div>
+
+              <div className="grid grid-cols-[42%_58%] p-4">
+                <span className="font-bold text-gray-800">الضمان</span>
+                <span className="text-gray-600">
+                  سنة ضد عيوب الصناعة
+                </span>
+              </div>
             </div>
+
+            <p className="mt-6 text-sm leading-7 text-gray-500">
+              بعض الوظائف مثل الاستماع وفصل المحرك وSOS تعتمد على تجهيز الجهاز
+              وطريقة التوصيل والإعدادات المستخدمة.
+            </p>
           </div>
         </div>
       </section>
@@ -508,128 +615,120 @@ export default function GT06N4GPage() {
       <section className="mx-auto max-w-7xl px-5 py-16">
         <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
           <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-blue-950 md:text-4xl">
-              🚗 استخدامات جهاز GT06N 4G
+            <span className="font-bold text-blue-700">
+              الاستخدامات
+            </span>
+
+            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+              مناسب لمين؟
             </h2>
 
-            <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
-              يمكن استخدام جهاز GT06N 4G في العديد من تطبيقات تتبع ومراقبة
-              السيارات والمركبات، سواء للاستخدام الشخصي أو التجاري أو لمتابعة
-              الأساطيل.
+            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
+              مناسب لمن يبحث عن جهاز GPS سلكي صغير وخفيف يعمل على شبكة 4G
+              لمتابعة السيارة والمركبة مع مجموعة من وظائف الحماية والتنبيهات.
             </p>
           </div>
 
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-              <div className="text-3xl">🚘</div>
-
-              <h3 className="mt-3 font-extrabold text-blue-950">
-                السيارات الخاصة
-              </h3>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-              <div className="text-3xl">🚚</div>
-
-              <h3 className="mt-3 font-extrabold text-blue-950">
-                الشاحنات والمركبات
-              </h3>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-              <div className="text-3xl">🚕</div>
-
-              <h3 className="mt-3 font-extrabold text-blue-950">
-                سيارات الأجرة
-              </h3>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-              <div className="text-3xl">🚐</div>
-
-              <h3 className="mt-3 font-extrabold text-blue-950">
-                أساطيل الشركات
-              </h3>
-            </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {[
+              "🚘 السيارات الملاكي",
+              "🚕 سيارات الأجرة",
+              "🚛 الشاحنات",
+              "🚌 الأتوبيسات",
+              "🏍️ الدراجات النارية",
+            ].map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl bg-white p-6 text-center shadow-sm"
+              >
+                <h3 className="font-extrabold text-blue-950">
+                  {item}
+                </h3>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* WHY */}
+      {/* COVERAGE NOTE */}
 
-      <section className="bg-blue-50 px-5 py-16">
-        <div className="mx-auto max-w-5xl text-center">
-          <span className="font-bold text-blue-700">
-            GPS World Egypt
-          </span>
-
-          <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا تختار جهاز GT06N 4G؟
+      <section className="mx-auto max-w-5xl px-5 pb-16">
+        <div className="rounded-3xl border border-blue-100 bg-blue-50 p-7 md:p-9">
+          <h2 className="text-2xl font-extrabold text-blue-950">
+            📡 نقطة مهمة قبل الشراء
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-            اختيار عملي لمن يبحث عن جهاز GPS لمتابعة السيارات والمركبات، مع
-            اتصال 4G ومجموعة من وظائف التتبع والتنبيهات والحماية، وإمكانية
-            العمل مع أنظمة وسيرفرات GPS المتوافقة.
+          <p className="mt-4 text-lg leading-9 text-gray-700">
+            لأن الجهاز يعمل على شبكة 4G LTE، يُفضّل التأكد من توافر تغطية 4G
+            في مكان استخدام السيارة قبل الشراء.
+          </p>
+        </div>
+      </section>
+
+      {/* COMPARISON CTA */}
+
+      <section className="mx-auto max-w-5xl px-5 pb-16">
+        <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
+          <h2 className="text-3xl font-extrabold md:text-4xl">
+            محتار بين GT06N 4G وجهاز تاني؟
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-9 text-blue-200">
+            قريبًا تقدر تقارن بين GT06N 4G والموديلات الأخرى وتشوف الفرق بينهم
+            بشكل واضح وتختار الجهاز الأنسب لاستخدامك.
           </p>
 
-          <div className="mt-8 grid gap-5 text-right md:grid-cols-3">
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                📡 اتصال 4G
-              </h3>
+          <a
+            href="/devices/compare"
+            className="mt-8 inline-flex rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
+          >
+            📊 مقارنة بين الأجهزة
+          </a>
+        </div>
+      </section>
 
-              <p className="mt-2 leading-7 text-gray-600">
-                اتصال مناسب لتطبيقات التتبع التي تعتمد على شبكات 4G.
-              </p>
-            </div>
+      {/* WARRANTY */}
 
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                ⚙️ مرونة في الاستخدام
-              </h3>
+      <section className="bg-blue-50 px-5 py-16">
+        <div className="mx-auto max-w-4xl">
+          <div className="rounded-3xl bg-white p-8 text-center shadow-md">
+            <div className="text-5xl">🛡️</div>
 
-              <p className="mt-2 leading-7 text-gray-600">
-                مناسب للسيارات والمركبات وتطبيقات متابعة الأساطيل حسب
-                احتياجات الاستخدام.
-              </p>
-            </div>
+            <h2 className="mt-4 text-3xl font-extrabold text-blue-950">
+              الضمان
+            </h2>
 
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                🛠️ دعم GPS
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                إمكانية العمل مع أنظمة وسيرفرات التتبع المتوافقة.
-              </p>
-            </div>
+            <p className="mt-4 text-xl font-bold text-gray-700">
+              سنة ضد عيوب الصناعة
+            </p>
           </div>
         </div>
       </section>
 
       {/* FAQ */}
 
-      <section className="mx-auto max-w-5xl px-5 py-16">
-        <h2 className="text-center text-3xl font-extrabold text-blue-950 md:text-4xl">
-          الأسئلة الشائعة عن جهاز GT06N 4G
-        </h2>
+      <section className="bg-gray-100 px-5 py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-center text-3xl font-extrabold text-blue-950 md:text-4xl">
+            الأسئلة الشائعة عن جهاز GT06N 4G
+          </h2>
 
-        <div className="mt-10 space-y-5">
-          {faqItems.map((item) => (
-            <details
-              key={item.question}
-              className="rounded-2xl bg-white p-6 shadow-md"
-            >
-              <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                {item.question}
-              </summary>
+          <div className="mt-10 space-y-5">
+            {faqItems.map((item) => (
+              <details
+                key={item.question}
+                className="rounded-2xl bg-white p-6 shadow-md"
+              >
+                <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
+                  {item.question}
+                </summary>
 
-              <p className="mt-4 leading-8 text-gray-600">
-                {item.answer}
-              </p>
-            </details>
-          ))}
+                <p className="mt-4 leading-8 text-gray-600">
+                  {item.answer}
+                </p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -642,8 +741,8 @@ export default function GT06N4GPage() {
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-blue-200">
-            تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز التتبع المناسب
-            لسيارتك أو مركبتك.
+            تواصل معنا لمعرفة التفاصيل والتوفر وطريقة التركيب المناسبة لسيارتك
+            أو مركبتك.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -657,10 +756,10 @@ export default function GT06N4GPage() {
             </a>
 
             <a
-              href="/#products"
+              href="tel:01006687163"
               className="rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
             >
-              📡 مشاهدة باقي الأجهزة
+              📞 اتصل بنا
             </a>
           </div>
         </div>
@@ -686,7 +785,7 @@ export default function GT06N4GPage() {
             href={whatsappBaseUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block text-green-400 hover:text-green-300"
+            className="mt-3 inline-block text-green-400 transition hover:text-green-300"
           >
             💬 تواصل معنا عبر واتساب
           </a>
