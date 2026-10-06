@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
-  title: "OBD22 | جهاز تتبع سيارات GPS OBD في مصر",
+  title: "OBD22 | جهاز تتبع GPS للسيارات بنظام OBD في مصر",
   description:
-    "جهاز OBD22 لتتبع السيارات والمركبات في مصر، يركب مباشرة في منفذ OBD-II بدون أسلاك إضافية، مع تتبع لحظي وتحديد موقع GPS وتنبيهات ذكية وGeo-Fence.",
+    "جهاز OBD22 لتتبع السيارات بنظام Plug & Play، يركب مباشرة في منفذ OBD-II بدون قطع أو تعديل أسلاك، مع تتبع مباشر وتنبيهات الحركة والسرعة وGeo-Fence وتنبيه نزع الجهاز.",
   keywords: [
     "OBD22",
     "جهاز OBD22",
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
     "جهاز GPS OBD",
     "OBD GPS Tracker",
     "OBD GPS Tracker مصر",
-    "جهاز GPS",
     "جهاز GPS للسيارات",
     "جهاز تتبع سيارات",
     "جهاز تتبع سيارات GPS",
@@ -24,7 +23,6 @@ export const metadata: Metadata = {
     "جهاز تتبع للسيارة",
     "جهاز تتبع مركبات",
     "أجهزة تتبع GPS",
-    "أجهزة GPS",
     "أجهزة GPS مصر",
     "GPS Tracker",
     "GPS Tracker مصر",
@@ -41,9 +39,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "OBD22 | جهاز تتبع سيارات GPS OBD في مصر",
+    title: "OBD22 | جهاز تتبع GPS للسيارات بنظام OBD في مصر",
     description:
-      "جهاز OBD22 لتتبع السيارات والمركبات بتركيب مباشر من منفذ OBD-II بدون أسلاك إضافية، مع تتبع لحظي وتحديد موقع GPS وتنبيهات ذكية.",
+      "جهاز OBD22 صغير الحجم يعمل على شبكة 2G، يركب مباشرة في منفذ OBD-II بدون قطع أو تعديل أسلاك، مع تتبع مباشر وتنبيهات متعددة.",
     url: "https://gpsworld-eg.com/devices/obd22",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -53,16 +51,16 @@ export const metadata: Metadata = {
         url: "/images/OBD22.jpeg",
         width: 1200,
         height: 630,
-        alt: "OBD22 جهاز تتبع سيارات GPS OBD في مصر",
+        alt: "OBD22 جهاز تتبع سيارات GPS في مصر",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "OBD22 | جهاز تتبع سيارات GPS OBD في مصر",
+    title: "OBD22 | جهاز تتبع GPS للسيارات بنظام OBD",
     description:
-      "جهاز OBD22 لتتبع السيارات مع تركيب مباشر من منفذ OBD-II ومتابعة الموقع والحركة والتنبيهات.",
+      "جهاز OBD22 بتركيب مباشر من منفذ OBD-II بدون قطع أسلاك، مع تتبع مباشر وتنبيهات الحركة والسرعة ونزع الجهاز.",
     images: ["/images/OBD22.jpeg"],
   },
 };
@@ -77,47 +75,52 @@ const faqs = [
   {
     question: "ما هو جهاز OBD22؟",
     answer:
-      "جهاز OBD22 هو جهاز تتبع GPS للسيارات يتم تركيبه مباشرة من خلال منفذ OBD-II، ويوفر متابعة موقع وحركة المركبة والتنبيهات من خلال نظام التتبع المتوافق.",
+      "جهاز OBD22 هو جهاز تتبع GPS صغير للسيارات يعمل بنظام Plug & Play، ويتم تركيبه مباشرة في منفذ OBD-II الموجود في السيارة بدون قطع أو تعديل أسلاك السيارة.",
   },
   {
-    question: "هل جهاز OBD22 يحتاج إلى توصيل أسلاك؟",
+    question: "هل جهاز OBD22 يحتاج إلى قطع أسلاك؟",
     answer:
-      "لا، يتم تركيب جهاز OBD22 مباشرة في منفذ OBD-II في السيارة دون الحاجة إلى تمديد أسلاك كهربائية إضافية، ولذلك يعتبر من أجهزة التتبع سهلة وسريعة التركيب.",
+      "لا، يتم تركيب جهاز OBD22 مباشرة في منفذ OBD-II، لذلك لا يحتاج إلى قطع أو تعديل ضفيرة الكهرباء في السيارة.",
   },
   {
-    question: "هل جهاز OBD22 مناسب للسيارات؟",
+    question: "هل يمكن تركيب وفك جهاز OBD22 بسهولة؟",
     answer:
-      "نعم، جهاز OBD22 مصمم للاستخدام مع السيارات التي يتوفر بها منفذ OBD-II المتوافق مع الجهاز.",
+      "نعم، من مميزات جهاز OBD22 أنه يمكن تركيبه وفكه بسهولة من منفذ OBD-II بدون أعمال كهرباء إضافية.",
   },
   {
-    question: "هل جهاز OBD22 يدعم التتبع اللحظي؟",
+    question: "هل جهاز OBD22 يدعم التتبع المباشر؟",
     answer:
-      "نعم، يدعم جهاز OBD22 متابعة موقع وحركة المركبة بشكل مباشر من خلال نظام التتبع المتوافق.",
+      "نعم، يدعم جهاز OBD22 متابعة موقع السيارة وحركتها بشكل مباشر من خلال نظام التتبع المستخدم.",
   },
   {
-    question: "هل جهاز OBD22 يدعم GPS وLBS؟",
+    question: "هل جهاز OBD22 يدعم تنبيه نزع الجهاز؟",
     answer:
-      "نعم، يدعم الجهاز تحديد الموقع باستخدام GPS وBDS وGNSS وLBS وفقًا للنظام والإصدار المستخدم.",
+      "نعم، يمكن للجهاز اكتشاف نزع أو فصل الجهاز من منفذ OBD-II وإرسال تنبيه حسب تجهيز الجهاز وإعدادات نظام التتبع.",
   },
   {
-    question: "هل يدعم OBD22 تحديد المناطق الجغرافية Geo-Fence؟",
+    question: "هل جهاز OBD22 يحتوي على ميكروفون؟",
     answer:
-      "نعم، يدعم الجهاز التنبيه عند دخول المركبة أو خروجها من منطقة جغرافية محددة حسب نظام التتبع المستخدم.",
+      "نعم، يحتوي جهاز OBD22 على ميكروفون داخلي يمكن استخدامه للاستماع إلى الأصوات المحيطة بالجهاز، حسب تجهيز الجهاز والنظام المستخدم.",
+  },
+  {
+    question: "هل جهاز OBD22 يدعم Geo-Fence؟",
+    answer:
+      "نعم، يدعم الجهاز التنبيه عند دخول السيارة أو خروجها من منطقة جغرافية محددة حسب إعدادات نظام التتبع.",
   },
   {
     question: "هل جهاز OBD22 يدعم فصل محرك السيارة؟",
     answer:
-      "لا، جهاز OBD22 لا يدعم فصل محرك السيارة، وهو مخصص للتتبع والمراقبة والتنبيهات.",
+      "لا، جهاز OBD22 مخصص للتتبع والمراقبة والتنبيهات، ولا يدعم فصل محرك السيارة.",
   },
   {
-    question: "هل يمكن متابعة السيارة من خلال الهاتف؟",
+    question: "هل جهاز OBD22 يعمل على شبكة 4G؟",
     answer:
-      "يمكن متابعة موقع وحركة السيارة من الهاتف عند استخدام تطبيق أو منصة تتبع متوافقة مع جهاز OBD22.",
+      "لا، النسخة المذكورة من جهاز OBD22 تعمل على شبكة 2G، لذلك يفضل التأكد من توافر تغطية 2G في مكان استخدام السيارة.",
   },
   {
-    question: "هل جهاز OBD22 مناسب لإدارة الأساطيل؟",
+    question: "هل كل السيارات مناسبة لجهاز OBD22؟",
     answer:
-      "نعم، يمكن استخدام جهاز OBD22 لمتابعة المركبات وإدارة الأساطيل من خلال منصة التتبع المناسبة.",
+      "يعتمد الجهاز على وجود منفذ OBD-II متوافق في السيارة، لذلك يجب التأكد من وجود المنفذ وتوافق الجهاز معه قبل الشراء.",
   },
 ];
 
@@ -130,7 +133,7 @@ const structuredData = {
       image: ["https://gpsworld-eg.com/images/OBD22.jpeg"],
       url: product.url,
       description:
-        "جهاز OBD22 لتتبع السيارات والمركبات في مصر بتركيب مباشر من منفذ OBD-II، مع تحديد الموقع GPS وBDS وGNSS وLBS والتتبع والتنبيهات.",
+        "جهاز OBD22 لتتبع السيارات بنظام Plug & Play، يركب مباشرة في منفذ OBD-II بدون قطع أو تعديل أسلاك، مع تتبع مباشر وتنبيهات الحركة والسرعة وGeo-Fence وتنبيه نزع الجهاز.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -268,24 +271,24 @@ export default function OBD22Page() {
               </span>
 
               <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-                جهاز OBD22 لتتبع السيارات والمركبات في مصر
+                جهاز OBD22 لتتبع السيارات في مصر
               </h1>
 
               <p className="mt-3 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS بتركيب مباشر عبر منفذ OBD-II
+                جهاز تتبع GPS بنظام Plug &amp; Play
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز OBD22 هو جهاز تتبع سيارات GPS مصمم لتوفير طريقة عملية
-                وسهلة لمتابعة السيارة والمركبة، حيث يتم تركيبه مباشرة في منفذ
-                OBD-II بدون الحاجة إلى تمديد أسلاك كهربائية إضافية، مع إمكانية
-                متابعة الموقع والحركة والتنبيهات من خلال نظام التتبع المتوافق.
+                جهاز OBD22 هو جهاز تتبع GPS صغير الحجم يتم تركيبه مباشرة في
+                منفذ OBD-II الموجود في السيارة، بدون الحاجة إلى قطع أو تعديل
+                أسلاك السيارة.
               </p>
 
               <p className="mt-4 text-lg leading-9 text-gray-600">
-                إذا كنت تبحث عن جهاز GPS للسيارة أو جهاز تتبع OBD في مصر،
-                فإن OBD22 يوفر تركيبًا سريعًا ومتابعة مستمرة للمركبة مع دعم
-                وظائف مثل التتبع اللحظي وGeo-Fence والتنبيهات.
+                الجهاز يعمل على شبكة 2G، ويجمع بين سهولة التركيب والتتبع
+                المباشر وتنبيهات الحركة والسرعة والسياج الجغرافي، بالإضافة إلى
+                تنبيه نزع الجهاز ووجود ميكروفون داخلي حسب تجهيز الجهاز والنظام
+                المستخدم.
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -317,11 +320,12 @@ export default function OBD22Page() {
               <div className="text-4xl">🔌</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تركيب سريع
+                تركيب Plug &amp; Play
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تركيب مباشر من خلال منفذ OBD-II بدون أسلاك كهربائية إضافية.
+                يتم تركيب الجهاز مباشرة في منفذ OBD-II بدون قطع أو تعديل
+                الأسلاك.
               </p>
             </div>
 
@@ -329,11 +333,11 @@ export default function OBD22Page() {
               <div className="text-4xl">📍</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تتبع لحظي
+                تتبع مباشر
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع وحركة المركبة بشكل مباشر عبر نظام التتبع.
+                متابعة موقع السيارة وحركتها وسرعتها من خلال نظام التتبع.
               </p>
             </div>
 
@@ -341,377 +345,381 @@ export default function OBD22Page() {
               <div className="text-4xl">🚨</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تنبيهات ذكية
+                تنبيه نزع الجهاز
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                تنبيهات للسرعة والاهتزاز والتسارع والكبح والمناطق الجغرافية.
+                إمكانية التنبيه عند فصل أو نزع الجهاز من منفذ OBD-II.
               </p>
             </div>
 
             <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🔄</div>
+              <div className="text-4xl">🎙️</div>
 
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                تحديث OTA
+                ميكروفون داخلي
               </h2>
 
               <p className="mt-2 leading-7 text-gray-600">
-                دعم تحديث الجهاز عن بُعد حسب النظام والإصدار.
+                ميكروفون داخلي للاستماع حسب تجهيز الجهاز والنظام المستخدم.
               </p>
             </div>
           </div>
         </section>
 
-        {/* ================= FEATURES + TECHNICAL SPECS ================= */}
+        {/* ================= MAIN FEATURES ================= */}
 
         <section className="mx-auto max-w-7xl px-5 pb-16">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="rounded-3xl bg-white p-7 shadow-md">
-              <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز OBD22 GPS
-              </h2>
-
-              <ul className="space-y-4 text-lg leading-8 text-gray-700">
-                <li>
-                  📍 متابعة موقع المركبة بشكل لحظي عبر الإنترنت.
-                </li>
-
-                <li>
-                  🔌 تركيب مباشر وسريع من خلال منفذ OBD-II بدون أسلاك إضافية.
-                </li>
-
-                <li>
-                  🗺️ دعم تحديد الموقع باستخدام GPS وBDS وGNSS وLBS.
-                </li>
-
-                <li>
-                  🚨 تنبيهات السرعة والاهتزاز والتسارع والكبح المفاجئ.
-                </li>
-
-                <li>
-                  📡 دعم التنبيه عند الدخول أو الخروج من منطقة جغرافية محددة
-                  Geo-Fence.
-                </li>
-
-                <li>
-                  💡 إنذار تغير الإضاءة المفاجئ حسب الإصدار.
-                </li>
-
-                <li>
-                  🔋 إنذار انخفاض البطارية ودعم بطارية احتياطية.
-                </li>
-
-                <li>
-                  💾 إمكانية حفظ بيانات الرحلات على السيرفر حتى 6 أشهر.
-                </li>
-
-                <li>
-                  🔄 دعم التحديثات عن بُعد OTA.
-                </li>
-
-                <li>
-                  🌡️ إمكانية دعم أجهزة إضافية لمراقبة الحرارة والرطوبة.
-                </li>
-
-                <li>
-                  🎙️ إمكانية المراقبة الصوتية في بعض الإصدارات.
-                </li>
-
-                <li>
-                  🛡️ مقاومة للماء والغبار بمعيار IP65.
-                </li>
-
-                <li>
-                  ⚡ استهلاك منخفض للطاقة ومناسب للتشغيل المستمر.
-                </li>
-
-                <li>
-                  🤝 دعم فني ومتابعة من GPS World Egypt.
-                </li>
-              </ul>
-            </div>
-
-            {/* ================= TECHNICAL SPECS ================= */}
-
-            <div className="rounded-3xl bg-white p-7 shadow-md">
-              <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⚙️ المواصفات الفنية لجهاز OBD22
-              </h2>
-
-              <div className="overflow-hidden rounded-2xl border border-gray-200">
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">الموديل</span>
-                  <span className="text-gray-600">OBD22</span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    نوع الجهاز
-                  </span>
-                  <span className="text-gray-600">
-                    OBD GPS Tracker
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    طريقة التركيب
-                  </span>
-                  <span className="text-gray-600">
-                    Plug &amp; Play عبر منفذ OBD-II
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    الشبكات
-                  </span>
-                  <span className="text-gray-600">
-                    2G GSM
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    ترددات GSM
-                  </span>
-                  <span className="text-gray-600">
-                    850 / 900 / 1800 / 1900 MHz
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    GPRS
-                  </span>
-                  <span className="text-gray-600">
-                    Class 12
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    تحديد الموقع
-                  </span>
-                  <span className="text-gray-600">
-                    GPS + BDS + GNSS + LBS
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    بروتوكول الاتصال
-                  </span>
-                  <span className="text-gray-600">
-                    TCP/IP
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    جهد التشغيل
-                  </span>
-                  <span className="text-gray-600">
-                    9–36V DC
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    استهلاك الطاقة
-                  </span>
-                  <span className="text-gray-600">
-                    29mA تشغيل / 7mA سكون
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    البطارية الاحتياطية
-                  </span>
-                  <span className="text-gray-600">
-                    100mAh
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    الأبعاد
-                  </span>
-                  <span className="text-gray-600">
-                    54 × 34 × 32 مم
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    الوزن
-                  </span>
-                  <span className="text-gray-600">
-                    حوالي 40 جرام
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    الحماية
-                  </span>
-                  <span className="text-gray-600">
-                    IP65
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    مؤشرات LED
-                  </span>
-                  <span className="text-gray-600">
-                    GSM أحمر / GPS أزرق
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    نطاق الحرارة
-                  </span>
-                  <span className="text-gray-600">
-                    من -20° إلى +75° / +80° م
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= SMART FUNCTIONS ================= */}
-
-        <section className="bg-white px-5 py-16">
-          <div className="mx-auto max-w-7xl">
-            <div className="mx-auto max-w-4xl text-center">
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+            <div className="text-center">
               <span className="font-bold text-blue-700">
-                وظائف ذكية
+                مميزات الجهاز
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                متابعة وتنبيهات تساعدك على مراقبة سيارتك
+                مميزات جهاز OBD22 بالتفصيل
               </h2>
 
-              <p className="mt-5 text-lg leading-9 text-gray-600">
-                يوفر جهاز OBD22 مجموعة من وظائف المتابعة والتنبيهات التي
-                تساعد على مراقبة السيارة والمركبة ومعرفة ما يحدث أثناء الرحلة،
-                من خلال نظام التتبع المتوافق مع الجهاز.
+              <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
+                جهاز صغير وسهل التركيب، مناسب لمن يريد تتبع السيارة بدون قطع
+                أو تعديل أسلاك الكهرباء.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  🚗 تتبع الرحلات
-                </h3>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {/* 1 */}
 
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة حركة المركبة والرجوع إلى بيانات الرحلات المحفوظة
-                  على المنصة حسب مدة الحفظ المتاحة.
-                </p>
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    1
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      تركيب سريع بدون أسلاك 🔌
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يتم تركيب الجهاز مباشرة في منفذ OBD-II الموجود في
+                      السيارة، بدون الحاجة إلى قطع أو توصيل أسلاك في ضفيرة
+                      الكهرباء.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      ويمكن تركيبه وفكه بسهولة عند الحاجة، مما يجعله مناسبًا
+                      لمن لا يرغب في إجراء أي تعديل على توصيلات السيارة.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  🚨 Geo-Fence
-                </h3>
+              {/* 2 */}
 
-                <p className="mt-3 leading-8 text-gray-600">
-                  تنبيه عند دخول المركبة أو خروجها من منطقة جغرافية محددة
-                  مسبقًا.
-                </p>
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    2
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      حجم صغير وسهولة الاستخدام 📏
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يتميز الجهاز بحجم صغير يساعد على تركيبه أسفل التابلوه
+                      بدون أن يشغل مساحة كبيرة.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      المقاس حوالي <strong>45 × 22.5 × 30 مم</strong> والوزن
+                      حوالي <strong>30 جرامًا</strong>.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  ⚡ القيادة المفاجئة
-                </h3>
+              {/* 3 */}
 
-                <p className="mt-3 leading-8 text-gray-600">
-                  دعم التنبيه عند التسارع أو الكبح المفاجئ والاهتزاز.
-                </p>
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    3
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      التتبع والمراقبة المباشرة 📍
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      متابعة موقع السيارة على الخريطة ومعرفة مكانها وتحركاتها
+                      بشكل مباشر من خلال نظام التتبع المستخدم.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      كما يمكن متابعة السرعة وخط السير والرحلات السابقة حسب
+                      النظام المستخدم.
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-                <h3 className="text-xl font-extrabold text-blue-950">
-                  🔋 الطاقة
-                </h3>
+              {/* 4 */}
 
-                <p className="mt-3 leading-8 text-gray-600">
-                  تنبيهات مرتبطة بالطاقة وانخفاض البطارية مع بطارية احتياطية
-                  داخل الجهاز.
-                </p>
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    4
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      تنبيه نزع الجهاز 🚨
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يمكن للجهاز اكتشاف فصله أو نزعه من منفذ OBD-II وإرسال
+                      تنبيه حسب تجهيز الجهاز وإعدادات نظام التتبع.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      تساعد هذه الخاصية على اكتشاف محاولة تعطيل جهاز التتبع
+                      أو العبث به.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 5 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    5
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      متابعة تشغيل السيارة ACC 🚗
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يدعم الجهاز متابعة حالة تشغيل وإيقاف السيارة ACC، مع
+                      إمكانية استقبال التنبيه حسب إعدادات النظام المستخدم.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 6 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    6
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      مستشعر الحركة والاهتزاز 🚨
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يحتوي الجهاز على مستشعر للحركة والاهتزاز يساعد على
+                      اكتشاف الحركة غير الطبيعية للمركبة.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      ويمكن الاستفادة منه في بعض حالات السحب أو الرفع حسب
+                      إعدادات الجهاز وطريقة اكتشاف الحركة.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 7 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    7
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      الاستماع داخل السيارة 🎙️
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يحتوي جهاز OBD22 على ميكروفون داخلي يمكن استخدامه
+                      للاستماع إلى الأصوات المحيطة بالجهاز.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      تعمل هذه الخاصية حسب تجهيز الجهاز والنظام المستخدم
+                      وتغطية شبكة المحمول.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 8 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    8
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      جهد التشغيل ⚙️
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يعمل الجهاز من خلال كهرباء منفذ OBD-II، مع نطاق جهد
+                      تشغيل مذكور من <strong>9 إلى 36 فولت DC</strong>.
+                    </p>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      لذلك يجب التأكد من توافق منفذ السيارة مع الجهاز قبل
+                      التركيب.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 9 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    9
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      السرعة والسياج الجغرافي 🗺️
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يدعم الجهاز تنبيه تجاوز السرعة، بالإضافة إلى Geo-Fence
+                      للتنبيه عند دخول السيارة أو خروجها من منطقة جغرافية
+                      محددة.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 10 */}
+
+              <div className="rounded-3xl border border-gray-200 bg-gray-50 p-7">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                    10
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-extrabold text-blue-950">
+                      يعمل على شبكة 2G 📡
+                    </h3>
+
+                    <p className="mt-3 leading-8 text-gray-600">
+                      يعمل جهاز OBD22 على شبكة <strong>2G</strong>، لذلك يفضل
+                      التأكد من توافر تغطية 2G في مكان استخدام السيارة.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ================= WORK MODES ================= */}
+        {/* ================= TECHNICAL SPECS ================= */}
 
-        <section className="mx-auto max-w-7xl px-5 py-16">
-          <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
             <div className="text-center">
               <span className="font-bold text-blue-700">
-                أوضاع التشغيل
+                المواصفات الأساسية
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أوضاع متعددة حسب احتياج الاستخدام
+                مواصفات جهاز OBD22
               </h2>
             </div>
 
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">📡</div>
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200">
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  الموديل
+                </span>
 
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Real-Time
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  متابعة مباشرة.
-                </p>
+                <span className="text-gray-600">
+                  OBD22
+                </span>
               </div>
 
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🧠</div>
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  نوع الجهاز
+                </span>
 
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Smart
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  تشغيل ذكي حسب الاستخدام.
-                </p>
+                <span className="text-gray-600">
+                  OBD GPS Tracker
+                </span>
               </div>
 
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🔋</div>
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  طريقة التركيب
+                </span>
 
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Power Saving
-                </h3>
-
-                <p className="mt-2 text-gray-600">
-                  توفير استهلاك الطاقة.
-                </p>
+                <span className="text-gray-600">
+                  Plug &amp; Play عبر منفذ OBD-II
+                </span>
               </div>
 
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🚨</div>
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  الشبكة
+                </span>
 
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  Alarm Tracking
-                </h3>
+                <span className="text-gray-600">
+                  2G
+                </span>
+              </div>
 
-                <p className="mt-2 text-gray-600">
-                  متابعة مرتبطة بالتنبيهات.
-                </p>
+              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  جهد التشغيل
+                </span>
+
+                <span className="text-gray-600">
+                  9–36V DC
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 border-b border-gray-200 p-5">
+                <span className="font-bold text-gray-800">
+                  الأبعاد
+                </span>
+
+                <span className="text-gray-600">
+                  45 × 22.5 × 30 مم
+                </span>
+              </div>
+
+              <div className="grid grid-cols-2 bg-gray-50 p-5">
+                <span className="font-bold text-gray-800">
+                  الوزن
+                </span>
+
+                <span className="text-gray-600">
+                  حوالي 30 جرام
+                </span>
               </div>
             </div>
           </div>
@@ -724,42 +732,43 @@ export default function OBD22Page() {
             <div className="text-4xl">⚠️</div>
 
             <h2 className="mt-3 text-2xl font-extrabold text-blue-950">
-              ملاحظة مهمة
+              نقطة مهمة قبل الشراء
             </h2>
 
             <p className="mt-4 text-lg font-bold leading-9 text-gray-700">
-              جهاز OBD22 لا يدعم فصل محرك السيارة.
+              جهاز OBD22 يعتمد على وجود منفذ OBD-II متوافق في السيارة.
             </p>
 
-            <p className="mt-2 leading-8 text-gray-600">
-              الجهاز مخصص للتتبع والمراقبة والتنبيهات، ويتم تركيبه مباشرة
-              من خلال منفذ OBD-II.
+            <p className="mt-3 leading-8 text-gray-600">
+              لذلك يجب التأكد من وجود المنفذ وتوافقه مع الجهاز قبل الشراء.
+              كما أن الجهاز يعمل على شبكة 2G، لذلك يفضل التأكد من توافر
+              تغطية 2G في مكان استخدام السيارة.
             </p>
           </div>
         </section>
 
-        {/* ================= WHY ================= */}
+        {/* ================= WHY OBD22 ================= */}
 
         <section className="bg-blue-50 px-5 py-16">
           <div className="mx-auto max-w-5xl text-center">
             <span className="font-bold text-blue-700">
-              GPS World Egypt
+              لماذا OBD22؟
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              لماذا تختار جهاز OBD22؟
+              الحل المناسب لمن يريد تركيبًا سريعًا بدون تعديل الأسلاك
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              إذا كنت تبحث عن جهاز تتبع سيارات GPS يمكن تركيبه بسرعة وبدون
-              تمديد أسلاك، فإن OBD22 يوفر تركيبًا مباشرًا من منفذ OBD-II
-              مع مجموعة من وظائف التتبع والتنبيهات ومتابعة حركة السيارة.
+              إذا كنت تريد جهاز تتبع GPS للسيارة بدون قطع أو تعديل في ضفيرة
+              الكهرباء، فإن OBD22 يوفر تركيبًا مباشرًا من منفذ OBD-II مع
+              مجموعة من وظائف التتبع والتنبيهات.
             </p>
 
             <div className="mt-10 grid gap-5 text-right sm:grid-cols-2">
-              <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
-                  🔌 تركيب بدون أسلاك
+                  🔌 بدون قطع أسلاك
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
@@ -767,54 +776,65 @@ export default function OBD22Page() {
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
-                  📍 متابعة مستمرة
+                  📍 متابعة السيارة
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  متابعة موقع وحركة المركبة من خلال نظام التتبع.
+                  متابعة الموقع والحركة والسرعة من خلال نظام التتبع.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
                   🚨 تنبيهات متعددة
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  تنبيهات تساعد على مراقبة سلوك المركبة وحالتها.
+                  حركة واهتزاز وسرعة وGeo-Fence وتنبيه نزع الجهاز.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-5 shadow-sm">
+              <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="font-extrabold text-blue-950">
-                  🛠️ مناسب للأفراد والشركات
+                  🎙️ ميكروفون داخلي
                 </h3>
 
                 <p className="mt-2 leading-7 text-gray-600">
-                  مناسب للاستخدام الشخصي وكذلك لمتابعة المركبات وإدارة
-                  الأساطيل.
+                  إمكانية الاستماع حسب تجهيز الجهاز والنظام المستخدم.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ================= APPLICATIONS ================= */}
+        {/* ================= SUITABLE FOR ================= */}
 
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="text-center">
             <span className="font-bold text-blue-700">
-              الاستخدامات
+              مناسب لمين؟
             </span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              استخدامات جهاز OBD22 لتتبع السيارات
+              جهاز OBD22 مناسب لمن يبحث عن
             </h2>
           </div>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-3xl bg-white p-7 text-center shadow-md">
+              <div className="text-4xl">🔌</div>
+
+              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                تركيب سهل
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-600">
+                جهاز يمكن تركيبه مباشرة بدون قطع أو تعديل الأسلاك.
+              </p>
+            </div>
+
             <div className="rounded-3xl bg-white p-7 text-center shadow-md">
               <div className="text-4xl">🚘</div>
 
@@ -823,31 +843,7 @@ export default function OBD22Page() {
               </h3>
 
               <p className="mt-3 leading-7 text-gray-600">
-                متابعة السيارة ومعرفة موقعها وحركتها.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-white p-7 text-center shadow-md">
-              <div className="text-4xl">🏢</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                الشركات
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-600">
-                متابعة المركبات ضمن أسطول الشركة.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-white p-7 text-center shadow-md">
-              <div className="text-4xl">📊</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                إدارة الأسطول
-              </h3>
-
-              <p className="mt-3 leading-7 text-gray-600">
-                متابعة الرحلات والبيانات من خلال منصة التتبع.
+                مناسب لمتابعة السيارة ومعرفة موقعها وحركتها.
               </p>
             </div>
 
@@ -855,13 +851,67 @@ export default function OBD22Page() {
               <div className="text-4xl">🛡️</div>
 
               <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                الحماية والمراقبة
+                المراقبة والحماية
               </h3>
 
               <p className="mt-3 leading-7 text-gray-600">
-                تنبيهات ومتابعة تساعد على مراقبة المركبة.
+                تنبيهات تساعد على معرفة الحركة ونزع الجهاز والسرعة.
               </p>
             </div>
+
+            <div className="rounded-3xl bg-white p-7 text-center shadow-md">
+              <div className="text-4xl">⚡</div>
+
+              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
+                تركيب وفك سريع
+              </h3>
+
+              <p className="mt-3 leading-7 text-gray-600">
+                مناسب لمن يريد جهازًا يمكن تركيبه وفكه بسهولة.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* ================= COMPARISON CTA ================= */}
+
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
+            <span className="font-bold text-blue-200">
+              محتار بين جهازين؟
+            </span>
+
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              قارن بين أجهزة GPS واختار الأنسب لسيارتك
+            </h2>
+
+            <p className="mt-4 text-lg leading-8 text-blue-200">
+              سنوفر لك مقارنة واضحة بين الأجهزة لمعرفة الفرق في طريقة
+              التركيب والمميزات والاستخدام المناسب لكل جهاز.
+            </p>
+
+            <a
+              href="/devices/compare"
+              className="mt-8 inline-flex rounded-xl bg-yellow-400 px-8 py-4 text-lg font-extrabold text-blue-950 transition hover:bg-yellow-300"
+            >
+              🔍 مقارنة بين الأجهزة
+            </a>
+          </div>
+        </section>
+
+        {/* ================= WARRANTY ================= */}
+
+        <section className="mx-auto max-w-4xl px-5 pb-16">
+          <div className="rounded-3xl border border-green-200 bg-green-50 p-8 text-center">
+            <div className="text-4xl">🛡️</div>
+
+            <h2 className="mt-3 text-2xl font-extrabold text-blue-950">
+              الضمان
+            </h2>
+
+            <p className="mt-3 text-xl font-bold text-green-700">
+              سنة ضد عيوب الصناعة.
+            </p>
           </div>
         </section>
 
