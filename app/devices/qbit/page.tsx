@@ -2,43 +2,36 @@ import type { Metadata } from "next";
 import QbitGallery from "./QbitGallery";
 
 export const metadata: Metadata = {
-  title: "QBIT | جهاز تتبع GPS صغير ومحمول في مصر",
+  title: "QBIT 4G | جهاز تتبع GPS صغير ومتنقل في مصر",
   description:
-    "جهاز QBIT لتتبع السيارات والمركبات والأشخاص والحيوانات والأمتعة. جهاز GPS صغير وخفيف ومحمول ببطارية تعمل من يوم إلى يومين تقريبًا حسب الاستخدام، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
+    "جهاز QBIT 4G صغير وخفيف لتتبع الأطفال وكبار السن والأشخاص والحقائب والحيوانات الأليفة، مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
   keywords: [
     "QBIT",
+    "QBIT 4G",
     "QBIT GPS",
     "جهاز QBIT",
     "جهاز تتبع QBIT",
-    "QBIT GPS Tracker",
-    "جهاز GPS صغير",
     "جهاز تتبع GPS صغير",
-    "جهاز تتبع محمول",
     "جهاز GPS محمول",
+    "جهاز تتبع 4G",
+    "جهاز تتبع للأطفال",
+    "جهاز تتبع كبار السن",
+    "جهاز تتبع الأشخاص",
+    "جهاز تتبع الحيوانات",
+    "جهاز تتبع الحقائب",
+    "جهاز تتبع الممتلكات",
     "جهاز تتبع سيارات",
-    "جهاز تتبع السيارة",
-    "جهاز تتبع المركبات",
-    "جهاز تتبع GPS",
-    "أجهزة GPS مصر",
-    "GPS مصر",
     "GPS Tracker مصر",
-    "GPS Tracker Egypt",
-    "تتبع السيارات",
-    "تتبع المركبات",
-    "تتبع الأشخاص",
-    "تتبع الأطفال",
-    "تتبع كبار السن",
-    "تتبع الحيوانات",
-    "تتبع الأمتعة",
-    "Tracksolid Pro",
+    "GPS مصر",
+    "أجهزة GPS مصر",
   ],
   alternates: {
     canonical: "https://gpsworld-eg.com/devices/qbit",
   },
   openGraph: {
-    title: "QBIT | جهاز تتبع GPS صغير ومحمول في مصر",
+    title: "QBIT 4G | جهاز تتبع GPS صغير ومتنقل في مصر",
     description:
-      "جهاز QBIT GPS صغير وخفيف ومحمول لتتبع السيارات والأشخاص والحيوانات والأمتعة، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
+      "جهاز QBIT 4G صغير وخفيف مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
     url: "https://gpsworld-eg.com/devices/qbit",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -48,65 +41,97 @@ export const metadata: Metadata = {
         url: "/images/QBIT.jpeg",
         width: 1200,
         height: 630,
-        alt: "QBIT جهاز تتبع GPS صغير ومحمول",
+        alt: "QBIT 4G جهاز تتبع GPS صغير ومتنقل",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QBIT | جهاز تتبع GPS صغير ومحمول",
+    title: "QBIT 4G | جهاز تتبع GPS صغير ومتنقل",
     description:
-      "جهاز QBIT لتتبع السيارات والأشخاص والحيوانات والأمتعة مع GPS وLBS وWiFi وTracksolid Pro.",
+      "جهاز QBIT 4G صغير وخفيف مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
     images: ["/images/QBIT.jpeg"],
   },
 };
 
-const product = {
-  name: "QBIT",
-  image: "/images/QBIT.jpeg",
-  url: "https://gpsworld-eg.com/devices/qbit",
-};
+const whatsappNumber = "201006687163";
+
+const whatsappInquiry = encodeURIComponent(
+  "مرحبًا، أريد الاستفسار عن جهاز QBIT 4G"
+);
+
+const whatsappOrder = encodeURIComponent(
+  "مرحبًا، أريد طلب جهاز QBIT 4G"
+);
+
+const whatsappInquiryUrl =
+  `https://wa.me/${whatsappNumber}?text=${whatsappInquiry}`;
+
+const whatsappOrderUrl =
+  `https://wa.me/${whatsappNumber}?text=${whatsappOrder}`;
+
+const whatsappBaseUrl = `https://wa.me/${whatsappNumber}`;
 
 const faqs = [
   {
-    question: "ما هو جهاز QBIT GPS؟",
+    question: "ما هو جهاز QBIT 4G؟",
     answer:
-      "QBIT هو جهاز تتبع GPS صغير وخفيف ومحمول يمكن استخدامه لمتابعة السيارات والمركبات والأشخاص والحيوانات والأمتعة والمقتنيات المهمة، مع دعم GPS وLBS وWiFi وتطبيق Tracksolid Pro.",
+      "QBIT 4G هو جهاز تتبع GPS صغير جدًا وخفيف ومتنقل، مصمم لمتابعة الأطفال وكبار السن والأشخاص أثناء التنقل، بالإضافة إلى الحقائب والممتلكات والحيوانات الأليفة، ويمكن استخدامه لتتبع السيارة بشكل مؤقت بدون تركيب أو توصيل أسلاك.",
   },
   {
-    question: "هل يحتاج جهاز QBIT إلى تركيب أسلاك؟",
+    question: "هل يحتاج QBIT 4G إلى توصيل أسلاك؟",
     answer:
-      "لا، جهاز QBIT جهاز محمول يعمل ببطارية داخلية ولا يحتاج إلى توصيل أسلاك داخل السيارة.",
+      "لا، الجهاز محمول ويعمل ببطارية داخلية، ولا يحتاج إلى توصيله بكهرباء السيارة أو قطع وتعديل أي أسلاك.",
   },
   {
-    question: "كم تستمر بطارية QBIT؟",
+    question: "هل جهاز QBIT 4G مغناطيسي؟",
     answer:
-      "تعمل بطارية QBIT من يوم إلى يومين تقريبًا حسب الاستخدام وطريقة التشغيل.",
+      "لا، جهاز QBIT 4G غير مزود بمغناطيس للتثبيت، وهو مصمم أساسًا ليكون جهازًا محمولًا يمكن وضعه داخل الجيب أو الحقيبة أو مع الشخص أو الحيوان الأليف.",
   },
   {
-    question: "هل يدعم QBIT المكالمات الصوتية؟",
+    question: "كم وزن جهاز QBIT 4G؟",
     answer:
-      "نعم، يدعم الجهاز إجراء واستقبال المكالمات الصوتية، بالإضافة إلى خاصية الاستماع الصوتي عند تفعيلها حسب إعدادات الجهاز والخدمة.",
+      "وزن الجهاز حوالي 30 جرامًا، مما يجعله خفيفًا ومناسبًا للاستخدام اليومي والحمل والتنقل.",
   },
   {
-    question: "هل يوجد زر SOS في جهاز QBIT؟",
+    question: "كم تستمر بطارية QBIT 4G؟",
     answer:
-      "نعم، يحتوي الجهاز على زر SOS يمكن استخدامه لإرسال تنبيه للطوارئ، مع إمكانية إرسال موقع الجهاز وفق إعدادات المتابعة والأرقام المسجلة.",
+      "مدة تشغيل البطارية حوالي يوم إلى يومين، وتختلف حسب معدل تحديث الموقع وطريقة الاستخدام وحركة الجهاز وجودة الشبكة وإعدادات توفير الطاقة.",
   },
   {
-    question: "هل يوجد سجل لحركة جهاز QBIT؟",
+    question: "هل يدعم QBIT تحديد الموقع بأكثر من طريقة؟",
     answer:
-      "نعم، يمكن مراجعة سجل حركة الجهاز لمدة تصل إلى 90 يومًا وفقًا لنظام المتابعة المستخدم.",
+      "نعم، يدعم الجهاز GPS وWi-Fi وLBS للمساعدة في تحديد الموقع حسب الظروف المتاحة والتغطية والنظام المستخدم.",
   },
   {
-    question: "ما التطبيق المستخدم مع جهاز QBIT؟",
+    question: "هل يدعم QBIT زر SOS؟",
     answer:
-      "يعمل QBIT مع تطبيق Tracksolid Pro للمتابعة وعرض الموقع والحركة والتنبيهات والتقارير من خلال الهاتف أو الكمبيوتر.",
+      "نعم، يحتوي الجهاز على زر SOS للطوارئ، ويمكن إعداد ما يصل إلى 3 أرقام حسب إعدادات الجهاز والنظام، مع إمكانية إرسال بيانات الموقع مع تنبيه الاستغاثة وفق الإعدادات.",
   },
   {
-    question: "هل يمكن تعليق جهاز QBIT؟",
+    question: "هل يدعم QBIT الاتصال والاستماع الصوتي؟",
     answer:
-      "نعم، تصميم الجهاز مناسب للحمل والتعليق، ويمكن استخدام الحلقة أو السلسلة لتعليقه في الرقبة أو الشنطة أو طوق الحيوان حسب الاستخدام.",
+      "نعم، يحتوي الجهاز على ميكروفون وسماعة مدمجين، ويمكن الاستفادة من الاتصال الصوتي والاستماع عن بُعد حسب تجهيز الجهاز وإعداداته والخدمة المتاحة.",
+  },
+  {
+    question: "هل يدعم QBIT السياج الجغرافي؟",
+    answer:
+      "نعم، يمكن الاستفادة من خاصية Geo-Fence لإرسال تنبيه عند دخول الجهاز إلى منطقة محددة أو خروجه منها حسب إعدادات النظام.",
+  },
+  {
+    question: "هل يمكن مراجعة خط سير QBIT؟",
+    answer:
+      "نعم، يمكن متابعة الحركة وخط السير، ويمكن الاحتفاظ بسجل المسارات لمدة تصل إلى 90 يومًا حسب النظام المستخدم وإعداداته.",
+  },
+  {
+    question: "هل جهاز QBIT مقاوم للمياه؟",
+    answer:
+      "الجهاز حاصل على تصنيف حماية IPX5 وفق مواصفات الإصدار المذكورة، ما يساعد على مقاومة رذاذ الماء، مع ضرورة عدم تعريضه لظروف تتجاوز مستوى الحماية.",
+  },
+  {
+    question: "هل يمكن استخدام QBIT مع السيارة؟",
+    answer:
+      "نعم، يمكن استخدامه لتتبع السيارة بشكل مؤقت بدون تركيب أو توصيل أسلاك، لكنه جهاز محمول وليس جهازًا مخصصًا للتركيب الدائم داخل السيارة.",
   },
 ];
 
@@ -115,15 +140,16 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Product",
-      name: product.name,
+      name: "QBIT 4G",
       image: ["https://gpsworld-eg.com/images/QBIT.jpeg"],
-      url: product.url,
+      url: "https://gpsworld-eg.com/devices/qbit",
       description:
-        "جهاز QBIT GPS صغير وخفيف ومحمول لتتبع السيارات والمركبات والأشخاص والحيوانات والأمتعة، مع GPS وLBS وWiFi ودعم Tracksolid Pro.",
+        "جهاز QBIT 4G صغير وخفيف ومتنقل لتتبع الأطفال وكبار السن والأشخاص والحقائب والحيوانات الأليفة، مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
+      category: "GPS Tracker",
     },
     {
       "@type": "BreadcrumbList",
@@ -143,7 +169,7 @@ const structuredData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "QBIT",
+          name: "QBIT 4G",
           item: "https://gpsworld-eg.com/devices/qbit",
         },
       ],
@@ -162,24 +188,6 @@ const structuredData = {
   ],
 };
 
-const whatsappNumber = "201006687163";
-
-const whatsappInquiry = encodeURIComponent(
-  "مرحبًا، أريد الاستفسار عن جهاز QBIT GPS"
-);
-
-const whatsappOrder = encodeURIComponent(
-  "مرحبًا، أريد طلب جهاز QBIT GPS"
-);
-
-const whatsappInquiryUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappInquiry;
-
-const whatsappOrderUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappOrder;
-
-const whatsappBaseUrl = "https://wa.me/201006687163";
-
 export default function QBITPage() {
   return (
     <>
@@ -191,10 +199,9 @@ export default function QBITPage() {
       />
 
       <main className="min-h-screen bg-gray-50" dir="rtl">
-        {/* HEADER */}
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
           <div className="mx-auto max-w-7xl px-5 py-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-4">
               <a
                 href="/"
                 className="flex flex-col leading-tight transition hover:text-yellow-300"
@@ -218,7 +225,6 @@ export default function QBITPage() {
           </div>
         </header>
 
-        {/* BACK */}
         <div className="mx-auto max-w-7xl px-5 pt-6">
           <a
             href="/#products"
@@ -228,10 +234,13 @@ export default function QBITPage() {
           </a>
         </div>
 
-        {/* PRODUCT */}
+        {/* HERO */}
+
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid gap-10 lg:grid-cols-2">
-            <QbitGallery />
+            <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
+              <QbitGallery />
+            </div>
 
             <div className="flex flex-col justify-center">
               <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
@@ -239,19 +248,23 @@ export default function QBITPage() {
               </span>
 
               <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-                جهاز QBIT لتتبع السيارات والأشخاص والمقتنيات
+                جهاز QBIT 4G لتتبع الأشخاص والممتلكات
               </h1>
 
               <p className="mt-3 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS صغير وخفيف ومحمول
+                جهاز GPS صغير جدًا وخفيف ومتنقل
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز QBIT هو جهاز تتبع GPS صغير وخفيف ومحمول، مناسب لمتابعة
-                السيارات والمركبات وكذلك الأطفال وكبار السن والحيوانات والأمتعة
-                والمقتنيات المهمة. يتميز بحجمه الصغير وسهولة حمله وتعليقه، مع
-                إمكانية المتابعة من خلال تطبيق Tracksolid Pro وعرض الموقع
-                والحركة والتنبيهات.
+                جهاز QBIT 4G هو جهاز تتبع GPS صغير جدًا وخفيف، مصمم
+                للاستخدامات التي تحتاج إلى جهاز متنقل وسهل الحمل بدون أي
+                توصيلات كهربائية أو تركيب معقد.
+              </p>
+
+              <p className="mt-4 text-lg leading-9 text-gray-600">
+                مناسب بشكل خاص لمتابعة الأطفال وكبار السن والأشخاص أثناء
+                التنقل، بالإضافة إلى الحقائب والممتلكات والحيوانات الأليفة،
+                ويمكن استخدامه لتتبع السيارة بشكل مؤقت بدون تركيب.
               </p>
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -275,285 +288,284 @@ export default function QBITPage() {
           </div>
         </section>
 
-        {/* FEATURES & SPECS */}
+        {/* QUICK FEATURES */}
+
         <section className="mx-auto max-w-7xl px-5 pb-16">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="rounded-3xl bg-white p-7 shadow-md">
-              <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز QBIT GPS
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">📏</div>
+              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
+                حوالي 30 جرام
               </h2>
-
-              <ul className="space-y-4 text-lg leading-8 text-gray-700">
-                <li>📍 متابعة الموقع بشكل لحظي.</li>
-
-                <li>
-                  📡 يدعم تحديد الموقع باستخدام GPS وLBS وWiFi.
-                </li>
-
-                <li>
-                  🔋 بطارية تعمل من يوم إلى يومين تقريبًا حسب الاستخدام.
-                </li>
-
-                <li>
-                  ⚡ وضع توفير الطاقة للمساعدة على إطالة عمر البطارية.
-                </li>
-
-                <li>
-                  🚨 تنبيهات عند تجاوز السرعة أو الخروج من النطاق الجغرافي.
-                </li>
-
-                <li>
-                  🆘 زر SOS لإرسال تنبيه والتواصل مع أرقام الطوارئ المسجلة.
-                </li>
-
-                <li>
-                  📞 إمكانية إجراء واستقبال المكالمات الصوتية.
-                </li>
-
-                <li>
-                  🎙️ دعم الاستماع الصوتي المحيطي عند تفعيل الخاصية.
-                </li>
-
-                <li>
-                  🔔 تنبيه عند انخفاض البطارية أو العبث بالجهاز.
-                </li>
-
-                <li>
-                  🛣️ إمكانية مراجعة سجل حركة الجهاز حتى 90 يومًا.
-                </li>
-
-                <li>
-                  🗺️ عرض الموقع والحركة على الخرائط من خلال نظام المتابعة.
-                </li>
-
-                <li>
-                  📱 يعمل مع تطبيق Tracksolid Pro على الهاتف والكمبيوتر.
-                </li>
-
-                <li>🔌 شحن الجهاز بسهولة عن طريق USB.</li>
-
-                <li>
-                  📦 حجم صغير وخفيف مناسب للاستخدام اليومي وسهل الحمل.
-                </li>
-
-                <li>
-                  🪢 إمكانية تعليق الجهاز في الرقبة أو الشنطة أو طوق الحيوان.
-                </li>
-
-                <li>
-                  🤝 دعم فني ومتابعة من GPS World Egypt.
-                </li>
-              </ul>
+              <p className="mt-2 leading-7 text-gray-600">
+                صغير وخفيف وسهل الحمل
+              </p>
             </div>
 
-            <div className="rounded-3xl bg-white p-7 shadow-md">
-              <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-                ⚙️ المواصفات الفنية لجهاز QBIT
+            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">📡</div>
+              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
+                4G
               </h2>
+              <p className="mt-2 leading-7 text-gray-600">
+                اتصال مناسب لنقل بيانات التتبع
+              </p>
+            </div>
 
-              <div className="overflow-hidden rounded-2xl border border-gray-200">
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    الموديل
-                  </div>
-                  <div className="p-4 text-gray-600">QBIT</div>
-                </div>
+            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">🆘</div>
+              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
+                SOS
+              </h2>
+              <p className="mt-2 leading-7 text-gray-600">
+                زر استغاثة حتى 3 أرقام حسب الإعدادات
+              </p>
+            </div>
 
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    نوع الجهاز
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    GPS Tracker محمول
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    تحديد الموقع
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    GPS + LBS + WiFi
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    البطارية
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    من يوم إلى يومين تقريبًا حسب الاستخدام
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    الشحن
-                  </div>
-                  <div className="p-4 text-gray-600">USB</div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    زر SOS
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    يدعم حتى 3 أرقام طوارئ
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    المكالمات الصوتية
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    إرسال واستقبال المكالمات
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    الاستماع الصوتي
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    مدعوم حسب إعدادات الجهاز والخدمة
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    سجل الحركة
-                  </div>
-                  <div className="p-4 text-gray-600">حتى 90 يومًا</div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    التطبيق
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    Tracksolid Pro
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    التنبيهات
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    السرعة - Geo-Fence - البطارية - العبث بالجهاز
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    طريقة الحمل
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    محمول مع إمكانية التعليق
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-2 border-b border-gray-200">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    بلد التصنيع
-                  </div>
-                  <div className="p-4 text-gray-600">الصين</div>
-                </div>
-
-                <div className="grid grid-cols-2">
-                  <div className="bg-gray-50 p-4 font-bold text-gray-700">
-                    الضمان
-                  </div>
-                  <div className="p-4 text-gray-600">
-                    سنة ضد عيوب الصناعة
-                  </div>
-                </div>
-              </div>
+            <div className="rounded-3xl bg-white p-6 text-center shadow-md">
+              <div className="text-4xl">🔋</div>
+              <h2 className="mt-3 text-xl font-extrabold text-blue-950">
+                يوم إلى يومين
+              </h2>
+              <p className="mt-2 leading-7 text-gray-600">
+                حسب الاستخدام والإعدادات
+              </p>
             </div>
           </div>
         </section>
 
-        {/* HOW IT WORKS */}
-        <section className="bg-white px-5 py-16">
-          <div className="mx-auto max-w-6xl">
+        {/* FEATURES */}
+
+        <section className="mx-auto max-w-7xl px-5 pb-16">
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
             <div className="text-center">
               <span className="font-bold text-blue-700">
-                طريقة الاستخدام
+                مميزات الجهاز
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                طريقة تشغيل جهاز QBIT GPS
+                مميزات جهاز QBIT 4G بالتفصيل
               </h2>
 
-              <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-                جهاز QBIT مصمم ليكون سهل الاستخدام، ولا يحتاج إلى تركيب أسلاك
-                داخل السيارة. بعد تركيب شريحة SIM وتشغيل الجهاز يمكن البدء في
-                المتابعة من خلال تطبيق Tracksolid Pro.
+              <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
+                جهاز صغير ومتنقل يجمع بين سهولة الحمل والتتبع المباشر
+                ومجموعة من وظائف الطوارئ والتنبيهات والتواصل.
               </p>
             </div>
 
-            <div className="mt-10 grid gap-5 md:grid-cols-4">
-              <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-                <div className="text-3xl font-extrabold text-blue-900">
-                  1
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {[
+                {
+                  title: "حجم صغير وسهولة الحمل 📏",
+                  text: (
+                    <>
+                      يتميز الجهاز بحجم صغير جدًا يجعله سهل الحمل والوضع
+                      داخل الجيب أو الحقيبة.
+                      <br />
+                      <br />
+                      يبلغ وزنه حوالي <strong>30 جرامًا</strong>، مما
+                      يجعله مناسبًا للاستخدام اليومي ويمكن نقله بسهولة
+                      من مكان إلى آخر.
+                    </>
+                  ),
+                },
+                {
+                  title: "يعمل بدون أسلاك 🔌",
+                  text: (
+                    <>
+                      لا يحتاج الجهاز إلى توصيله بكهرباء السيارة أو قطع
+                      وتعديل أي أسلاك.
+                      <br />
+                      <br />
+                      كما أنه <strong>غير مزود بمغناطيس</strong>، لأنه
+                      مصمم أساسًا ليكون جهازًا محمولًا يمكن نقله بسهولة.
+                    </>
+                  ),
+                },
+                {
+                  title: "الاتصال بشبكة 4G 📡",
+                  text: (
+                    <>
+                      يعمل الجهاز على شبكة <strong>4G</strong> لتوفير
+                      اتصال مناسب لنقل بيانات الموقع والتواصل مع الجهاز
+                      وإرسال التنبيهات حسب إعداداته.
+                    </>
+                  ),
+                },
+                {
+                  title: "تحديد الموقع بأكثر من طريقة 📍",
+                  text: (
+                    <>
+                      يدعم الجهاز <strong>GPS وWi-Fi وLBS</strong> للمساعدة
+                      في تحديد الموقع حسب الظروف المتاحة.
+                      <br />
+                      <br />
+                      ويمكن الاستفادة من كل وسيلة حسب المكان والتغطية
+                      والنظام المستخدم.
+                    </>
+                  ),
+                },
+                {
+                  title: "التتبع المباشر ومتابعة الحركة 🗺️",
+                  text: (
+                    <>
+                      يمكن متابعة موقع الجهاز على الخريطة ومعرفة مكانه
+                      وحركته أثناء التنقل.
+                      <br />
+                      <br />
+                      ويمكن مراجعة خط السير والرحلات السابقة، مع إمكانية
+                      الاحتفاظ بسجل المسارات لمدة تصل إلى{" "}
+                      <strong>90 يومًا</strong> حسب النظام وإعداداته.
+                    </>
+                  ),
+                },
+                {
+                  title: "زر الاستغاثة SOS 🆘",
+                  text: (
+                    <>
+                      يحتوي الجهاز على زر SOS للطوارئ لإرسال تنبيه
+                      استغاثة عند الحاجة.
+                      <br />
+                      <br />
+                      ويمكن إعداد ما يصل إلى <strong>3 أرقام</strong>{" "}
+                      حسب إعدادات الجهاز والنظام، مع إمكانية إرسال
+                      بيانات الموقع مع التنبيه.
+                    </>
+                  ),
+                },
+                {
+                  title: "التواصل والاستماع الصوتي 🎙️",
+                  text: (
+                    <>
+                      يحتوي الجهاز على ميكروفون وسماعة مدمجين، ويمكن
+                      الاستفادة من الوظائف الصوتية حسب تجهيز الجهاز
+                      والنظام المستخدم.
+                      <br />
+                      <br />
+                      يدعم الاتصال الصوتي والاستماع عن بُعد حسب إعدادات
+                      الجهاز والخدمة المتاحة.
+                    </>
+                  ),
+                },
+                {
+                  title: "تنبيه الحركة والسياج الجغرافي 🚨",
+                  text: (
+                    <>
+                      يمكن الاستفادة من مستشعر الحركة لاكتشاف تحرك الجهاز
+                      وإرسال التنبيهات حسب الإعدادات.
+                      <br />
+                      <br />
+                      كما يدعم <strong>Geo-Fence</strong> للتنبيه عند
+                      دخول الجهاز إلى منطقة محددة أو خروجه منها.
+                    </>
+                  ),
+                },
+                {
+                  title: "البطارية وأنماط توفير الطاقة 🔋",
+                  text: (
+                    <>
+                      يحتوي الجهاز على بطارية داخلية قابلة لإعادة الشحن.
+                      <br />
+                      <br />
+                      مدة التشغيل حوالي <strong>يوم إلى يومين</strong>{" "}
+                      وتختلف حسب الاستخدام ومعدل تحديث الموقع وحركة الجهاز
+                      وجودة الشبكة وإعدادات توفير الطاقة.
+                    </>
+                  ),
+                },
+                {
+                  title: "مقاومة رذاذ الماء 💧",
+                  text: (
+                    <>
+                      يتمتع الجهاز بتصنيف حماية <strong>IPX5</strong>{" "}
+                      وفق مواصفات الإصدار المذكورة.
+                      <br />
+                      <br />
+                      يساعد ذلك على مقاومة رذاذ الماء، مع ضرورة عدم
+                      تعريض الجهاز لظروف تتجاوز مستوى الحماية.
+                    </>
+                  ),
+                },
+              ].map((feature, index) => (
+                <div
+                  key={feature.title}
+                  className="rounded-3xl border border-gray-200 bg-gray-50 p-7"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-xl font-extrabold text-white">
+                      {index + 1}
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-extrabold text-blue-950">
+                        {feature.title}
+                      </h3>
+
+                      <div className="mt-3 leading-8 text-gray-600">
+                        {feature.text}
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  تركيب الشريحة
-                </h3>
+        {/* TECHNICAL SPECS */}
 
-                <p className="mt-2 leading-7 text-gray-600">
-                  افتح الجهاز وضع شريحة SIM المناسبة.
-                </p>
-              </div>
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-white p-7 shadow-md md:p-10">
+            <div className="text-center">
+              <span className="font-bold text-blue-700">
+                المواصفات الأساسية
+              </span>
 
-              <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-                <div className="text-3xl font-extrabold text-blue-900">
-                  2
+              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+                مواصفات جهاز QBIT 4G
+              </h2>
+            </div>
+
+            <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200">
+              {[
+                ["الموديل", "QBIT 4G"],
+                ["نوع الجهاز", "GPS Tracker محمول"],
+                ["الشبكة", "4G"],
+                ["تحديد الموقع", "GPS / Wi-Fi / LBS"],
+                ["البطارية", "بطارية داخلية قابلة لإعادة الشحن"],
+                ["مدة التشغيل", "حوالي يوم إلى يومين حسب الاستخدام"],
+                ["الوزن", "حوالي 30 جرامًا"],
+                ["زر SOS", "يدعم حتى 3 أرقام حسب الإعدادات"],
+                ["التواصل الصوتي", "اتصال واستماع حسب تجهيز الجهاز والخدمة"],
+                ["سجل المسارات", "حتى 90 يومًا حسب النظام"],
+                ["التنبيهات", "حركة / Geo-Fence / SOS حسب الإعدادات"],
+                ["المغناطيس", "غير مزود بمغناطيس"],
+                ["الحماية", "IPX5"],
+                ["الضمان", "سنة ضد عيوب الصناعة"],
+              ].map(([label, value], index, array) => (
+                <div
+                  key={label}
+                  className={`grid grid-cols-2 p-5 ${
+                    index !== array.length - 1
+                      ? "border-b border-gray-200"
+                      : ""
+                  } ${index % 2 === 0 ? "bg-gray-50" : "bg-white"}`}
+                >
+                  <span className="font-bold text-gray-800">
+                    {label}
+                  </span>
+
+                  <span className="text-gray-600">
+                    {value}
+                  </span>
                 </div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  تشغيل الجهاز
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  قم بتشغيل جهاز QBIT وتجهيزه للعمل.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-                <div className="text-3xl font-extrabold text-blue-900">
-                  3
-                </div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  تحميل التطبيق
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  حمّل تطبيق Tracksolid Pro على الموبايل أو استخدمه من الكمبيوتر.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-gray-50 p-6 text-center shadow-sm">
-                <div className="text-3xl font-extrabold text-blue-900">
-                  4
-                </div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  بدء التتبع
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  سجّل الدخول وابدأ متابعة الموقع والحركة والتنبيهات.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* USES */}
+
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
             <div className="text-center">
@@ -562,137 +574,145 @@ export default function QBITPage() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أين يمكن استخدام جهاز QBIT؟
+                مناسب لمين؟
               </h2>
 
               <p className="mx-auto mt-5 max-w-3xl text-lg leading-8 text-gray-600">
-                يمكن استخدام جهاز QBIT كجهاز تتبع GPS محمول في العديد من
-                الاستخدامات التي تحتاج إلى متابعة الموقع والحركة، سواء داخل
-                السيارة أو أثناء التنقل.
+                QBIT مناسب للاستخدامات التي تحتاج إلى جهاز GPS صغير
+                ومتنقل يمكن نقله بسهولة من مكان إلى آخر.
               </p>
             </div>
 
             <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🚗</div>
+              {[
+                ["👦", "الأطفال", "متابعة الحركة والتنقل مع زر SOS للطوارئ."],
+                ["👴", "كبار السن", "وسيلة متابعة إضافية أثناء التنقل."],
+                ["🐕", "الحيوانات الأليفة", "جهاز صغير يمكن حمله مع الحيوان الأليف."],
+                ["🎒", "الحقائب والممتلكات", "مناسب لمتابعة الحقائب والمقتنيات المهمة."],
+                ["🚗", "السيارة", "تتبع مؤقت للسيارة بدون تركيب أو توصيل أسلاك."],
+              ].map(([icon, title, text]) => (
+                <div
+                  key={title}
+                  className="rounded-2xl bg-white p-6 text-center shadow-sm"
+                >
+                  <div className="text-3xl">{icon}</div>
 
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  السيارات
-                </h3>
+                  <h3 className="mt-3 text-lg font-bold text-blue-950">
+                    {title}
+                  </h3>
 
-                <p className="mt-2 leading-7 text-gray-600">
-                  متابعة السيارة وموقعها وحركتها.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">👨‍👩‍👧</div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  الأطفال
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  المساعدة في متابعة حركة الأطفال أثناء التنقل.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">👴</div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  كبار السن
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  مناسب للمتابعة أثناء التنقل خارج المنزل.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🐕</div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  الحيوانات
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  إمكانية متابعة الحيوانات والأماكن التي تتحرك فيها.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-3xl">🎒</div>
-
-                <h3 className="mt-3 text-lg font-bold text-blue-950">
-                  الأمتعة والمقتنيات
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  مناسب لمتابعة الحقائب والمقتنيات المهمة.
-                </p>
-              </div>
+                  <p className="mt-2 leading-7 text-gray-600">
+                    {text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* WHY */}
-        <section className="bg-blue-50 px-5 py-16">
-          <div className="mx-auto max-w-5xl text-center">
-            <span className="font-bold text-blue-700">
-              GPS World Egypt
-            </span>
+        {/* IMPORTANT NOTE */}
 
-            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              لماذا تختار جهاز QBIT؟
+        <section className="mx-auto max-w-5xl px-5 py-16">
+          <div className="rounded-3xl border border-yellow-200 bg-yellow-50 p-8 text-center shadow-sm">
+            <div className="text-4xl">⚠️</div>
+
+            <h2 className="mt-3 text-2xl font-extrabold text-blue-950">
+              نقطة مهمة قبل الشراء
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              إذا كنت تبحث عن جهاز تتبع GPS صغير وسهل الحمل، فإن QBIT يوفر
-              مجموعة من وظائف التتبع والتنبيهات في حجم صغير، مع دعم GPS وLBS
-              وWiFi وتطبيق Tracksolid Pro، بالإضافة إلى البطارية القابلة للشحن
-              وسهولة الاستخدام في السيارة أو أثناء التنقل. كما يمكن حمل الجهاز
-              أو تعليقه حسب الاستخدام، لذلك فهو مناسب لمن يبحث عن جهاز GPS
-              محمول لتتبع السيارات أو الأشخاص أو الحيوانات أو المقتنيات.
+            <p className="mt-4 text-lg font-bold leading-9 text-gray-700">
+              QBIT جهاز محمول وليس جهازًا سلكيًا أو مغناطيسيًا.
+            </p>
+
+            <p className="mt-3 leading-8 text-gray-600">
+              يعتمد الجهاز على البطارية الداخلية، لذلك يجب مراعاة إعادة
+              شحنه بشكل منتظم حسب معدل الاستخدام ومعدل تحديث الموقع
+              وجودة الشبكة وإعدادات الجهاز.
+            </p>
+          </div>
+        </section>
+
+        {/* COMPARISON */}
+
+        <section className="mx-auto max-w-5xl px-5 pb-16">
+          <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
+            <span className="font-bold text-blue-200">
+              محتار بين جهازين؟
+            </span>
+
+            <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
+              قارن بين أجهزة GPS واختار الأنسب
+            </h2>
+
+            <p className="mt-4 text-lg leading-8 text-blue-200">
+              تعرف على الفرق بين الأجهزة من حيث طريقة التركيب والشبكة
+              والبطارية والمميزات والاستخدام المناسب لكل جهاز.
+            </p>
+
+            <a
+              href="/devices/compare"
+              className="mt-8 inline-flex rounded-xl bg-yellow-400 px-8 py-4 text-lg font-extrabold text-blue-950 transition hover:bg-yellow-300"
+            >
+              🔍 مقارنة بين الأجهزة
+            </a>
+          </div>
+        </section>
+
+        {/* WARRANTY */}
+
+        <section className="mx-auto max-w-4xl px-5 pb-16">
+          <div className="rounded-3xl border border-green-200 bg-green-50 p-8 text-center">
+            <div className="text-4xl">🛡️</div>
+
+            <h2 className="mt-3 text-2xl font-extrabold text-blue-950">
+              الضمان
+            </h2>
+
+            <p className="mt-3 text-xl font-bold text-green-700">
+              سنة ضد عيوب الصناعة.
             </p>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="mx-auto max-w-5xl px-5 py-16">
-          <div className="text-center">
-            <span className="font-bold text-blue-700">
-              الأسئلة الشائعة
-            </span>
 
-            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              أسئلة مهمة عن جهاز QBIT GPS
-            </h2>
-          </div>
+        <section className="bg-white px-5 py-16">
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center">
+              <span className="font-bold text-blue-700">
+                الأسئلة الشائعة
+              </span>
 
-          <div className="mt-10 space-y-5">
-            {faqs.map((faq) => (
-              <div
-                key={faq.question}
-                className="rounded-2xl bg-white p-6 shadow-md"
-              >
-                <h3 className="text-xl font-bold text-blue-950">
-                  {faq.question}
-                </h3>
+              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
+                أسئلة مهمة عن جهاز QBIT 4G
+              </h2>
+            </div>
 
-                <p className="mt-3 leading-8 text-gray-600">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
+            <div className="mt-10 space-y-5">
+              {faqs.map((faq) => (
+                <details
+                  key={faq.question}
+                  className="rounded-2xl bg-gray-50 p-6 shadow-sm"
+                >
+                  <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
+                    {faq.question}
+                  </summary>
+
+                  <p className="mt-4 leading-8 text-gray-600">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* CONTACT */}
+
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
             <h2 className="text-3xl font-extrabold md:text-4xl">
-              هل تريد معرفة المزيد عن جهاز QBIT؟
+              هل تريد معرفة المزيد عن جهاز QBIT 4G؟
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-blue-200">
@@ -720,6 +740,7 @@ export default function QBITPage() {
         </section>
 
         {/* FOOTER */}
+
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
             <h3 className="text-2xl font-extrabold">
@@ -750,6 +771,7 @@ export default function QBITPage() {
         </footer>
 
         {/* FLOATING WHATSAPP */}
+
         <a
           href={whatsappBaseUrl}
           target="_blank"
