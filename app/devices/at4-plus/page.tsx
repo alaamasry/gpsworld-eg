@@ -1,116 +1,195 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
-  title: "AT4 PLUS | جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر",
+  title: "AT4 PLUS 4G | جهاز تتبع GPS مغناطيسي بدون أسلاك",
   description:
-    "جهاز AT4 PLUS لتتبع السيارات والمركبات والأصول في مصر، بتصميم لاسلكي وبطارية 10000mAh ومغناطيس قوي، مع تتبع لحظي وتنبيهات ومقاومة للماء والأتربة.",
+    "جهاز AT4 PLUS 4G لتتبع السيارات والمركبات، GPS لاسلكي ومغناطيسي ببطارية 10000mAh، مع تتبع مباشر وتنبيهات الحركة ونزع الجهاز وGeo-Fence وIPX5.",
   keywords: [
     "AT4 PLUS",
+    "AT4 PLUS 4G",
     "جهاز AT4 PLUS",
-    "AT4 PLUS GPS",
-    "AT4 PLUS GPS Tracker",
-    "جهاز تتبع AT4 PLUS",
     "جهاز GPS AT4 PLUS",
-    "جهاز GPS",
+    "جهاز تتبع AT4 PLUS",
+    "جهاز تتبع GPS مغناطيسي",
+    "جهاز تتبع GPS لاسلكي",
     "جهاز تتبع سيارات",
-    "أجهزة تتبع GPS",
     "جهاز GPS للسيارات",
-    "جهاز تتبع للسيارة",
     "GPS Tracker",
     "GPS Tracker مصر",
     "أجهزة GPS مصر",
-    "أجهزة تتبع السيارات",
     "تتبع السيارات",
     "تتبع المركبات",
     "جهاز تتبع أصول",
-    "جهاز تتبع لاسلكي",
-    "جهاز تتبع مغناطيسي",
-    "جهاز تتبع سيارات مصر",
   ],
   alternates: {
     canonical: "https://gpsworld-eg.com/devices/at4-plus",
   },
   openGraph: {
-    title: "AT4 PLUS | جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر",
+    title: "AT4 PLUS 4G | جهاز تتبع GPS مغناطيسي",
     description:
-      "جهاز AT4 PLUS لتتبع السيارات والمركبات والأصول، بتصميم لاسلكي وبطارية 10000mAh وتتبع لحظي وتنبيهات ومقاومة للماء والأتربة.",
+      "جهاز AT4 PLUS 4G لاسلكي ومغناطيسي ببطارية 10000mAh، مع تتبع مباشر وتنبيهات الحركة ونزع الجهاز وGeo-Fence وحماية IPX5.",
     url: "https://gpsworld-eg.com/devices/at4-plus",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
     type: "website",
     images: [
       {
-        url: "/images/AT4 PLUS.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "AT4 PLUS جهاز تتبع GPS لاسلكي في مصر",
+        url: "https://gpsworld-eg.com/images/AT4%20PLUS.jpeg",
+        width: 2000,
+        height: 2000,
+        alt: "جهاز GPS AT4 PLUS 4G مغناطيسي",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AT4 PLUS | جهاز تتبع GPS لاسلكي للأصول في مصر",
+    title: "AT4 PLUS 4G | جهاز تتبع GPS مغناطيسي",
     description:
-      "جهاز AT4 PLUS لتتبع السيارات والمركبات والأصول مع بطارية 10000mAh وتتبع لحظي وتنبيهات.",
-    images: ["/images/AT4 PLUS.jpeg"],
+      "جهاز AT4 PLUS 4G ببطارية 10000mAh وتصميم مغناطيسي بدون أسلاك، مع تتبع مباشر وتنبيهات متعددة.",
+    images: ["https://gpsworld-eg.com/images/AT4%20PLUS.jpeg"],
   },
 };
 
-const product = {
-  name: "AT4 PLUS",
-  image: "/images/AT4 PLUS.jpeg",
-  url: "https://gpsworld-eg.com/devices/at4-plus",
-};
+const galleryImages = [
+  "/images/AT4 PLUS.jpeg",
+  "/images/AT4 PLUS-2.jpeg",
+  "/images/AT4 PLUS-3.jpeg",
+  "/images/AT4 PLUS-4.jpeg",
+  "/images/AT4 PLUS-5.jpeg",
+  "/images/AT4 PLUS-6.jpeg",
+];
 
-const whatsappNumber = "201006687163";
+const quickFeatures = [
+  "4G LTE Cat.1",
+  "10000mAh",
+  "مغناطيسي",
+  "بدون أسلاك",
+  "تتبع مباشر",
+  "IPX5",
+];
 
-const whatsappMessage = encodeURIComponent(
-  "مرحبًا، أريد الاستفسار عن جهاز AT4 PLUS"
-);
+const features = [
+  {
+    title: "بطارية كبيرة وتشغيل طويل",
+    text: "يحتوي AT4 PLUS على بطارية ليثيوم قابلة لإعادة الشحن بسعة 10000mAh، مع أكثر من وضع تشغيل يمكن اختياره حسب طبيعة الاستخدام. وتختلف مدة التشغيل الفعلية حسب معدل تحديث الموقع وحركة المركبة وإعدادات الجهاز وطريقة الاستخدام.",
+  },
+  {
+    title: "الاتصال بشبكات 4G",
+    text: "يعمل الجهاز على شبكة 4G LTE Cat.1، مما يساعد على سرعة نقل البيانات وتحديث موقع المركبة بصورة أكثر سلاسة. وبعض إصدارات الجهاز تدعم الانتقال إلى شبكة 2G عند عدم توافر تغطية 4G حسب نسخة الجهاز والشبكة المستخدمة.",
+  },
+  {
+    title: "تثبيت مغناطيسي بدون أسلاك",
+    text: "لا يحتاج الجهاز إلى توصيله بضفيرة السيارة أو كهرباء المركبة، ويحتوي على قاعدة مغناطيسية قوية تساعد على تثبيته بسهولة على الأسطح المعدنية المناسبة.",
+  },
+  {
+    title: "سهولة الفك والنقل",
+    text: "يمكن فك الجهاز وإعادة تركيبه أو نقله من مركبة إلى أخرى عند الحاجة، مما يجعله مناسبًا للاستخدامات التي تحتاج إلى جهاز تتبع قابل للنقل.",
+  },
+  {
+    title: "تنبيه نزع الجهاز والحماية من العبث",
+    text: "يحتوي الجهاز على مستشعر يساعد على اكتشاف محاولة إزالة الجهاز من مكان تثبيته، ويمكن إرسال تنبيه إلى الهاتف من خلال النظام المستخدم عند اكتشاف النزع أو العبث حسب إعدادات الجهاز والنظام.",
+  },
+  {
+    title: "تحديد موقع المركبة ومتابعة الحركة",
+    text: "يدعم AT4 PLUS تتبع موقع السيارة على الخريطة ومتابعة حركتها وخط سيرها، مع إمكانية مراجعة الرحلات والتحركات السابقة من خلال النظام المستخدم.",
+  },
+  {
+    title: "الاستماع داخل السيارة",
+    text: "يحتوي الجهاز على ميكروفون داخلي للاستماع إلى الأصوات المحيطة بالجهاز، ويمكن استخدام خاصية الاستماع عن بُعد حسب تجهيز الجهاز والنظام المستخدم وإعدادات الخدمة.",
+  },
+  {
+    title: "مستشعر الحركة والاهتزاز",
+    text: "يحتوي الجهاز على مستشعر للحركة والاهتزاز يساعد على اكتشاف تحرك السيارة أثناء توقفها أو الاهتزاز ومحاولة تحريك المركبة، ويمكن إرسال تنبيه عند اكتشاف حركة غير طبيعية.",
+  },
+  {
+    title: "تنبيه السحب أو الرفع",
+    text: "يمكن للجهاز الاستفادة من مستشعر الحركة لاكتشاف حالات السحب أو الرفع حسب إعدادات الجهاز وطريقة اكتشاف الحركة.",
+  },
+  {
+    title: "السياج الجغرافي Geo-Fence",
+    text: "يمكن تحديد منطقة معينة على الخريطة واستقبال تنبيه عند دخول المركبة إليها أو خروجها منها حسب إعدادات النظام.",
+  },
+  {
+    title: "تنبيه تجاوز السرعة",
+    text: "يمكن ضبط سرعة محددة واستقبال تنبيه عند تجاوز الحد المسموح به حسب إعدادات النظام.",
+  },
+  {
+    title: "حماية IPX5",
+    text: "يتمتع الجهاز بتصنيف حماية IPX5 وفق مواصفات الإصدار المذكورة، مما يساعد على مقاومة رذاذ الماء والأمطار والاستخدام في بيئات مختلفة، مع ضرورة اختيار مكان تركيب مناسب.",
+  },
+];
 
-const whatsappOrderMessage = encodeURIComponent(
-  "مرحبًا، أريد طلب جهاز AT4 PLUS"
-);
-
-const whatsappMessageUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappMessage;
-
-const whatsappOrderUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappOrderMessage;
-
-const whatsappBaseUrl = "https://wa.me/201006687163";
+const applications = [
+  "السيارات الملاكي",
+  "السيارات الأجرة",
+  "المركبات التي لا يرغب صاحبها في عمل توصيلات كهربائية لها",
+  "تأمين المركبات أثناء التوقف",
+  "السيارات التي تحتاج إلى جهاز يمكن فكه ونقله",
+  "المركبات التي تحتاج إلى تشغيل طويل حسب إعدادات توفير الطاقة",
+];
 
 const faqs = [
   {
-    question: "هل جهاز AT4 PLUS يحتاج إلى تركيب وتوصيلات؟",
+    question: "ما هو جهاز AT4 PLUS 4G؟",
     answer:
-      "الجهاز مصمم ليكون لاسلكيًا وسهل التثبيت، ويحتوي على مغناطيس قوي يساعد على تركيبه دون الحاجة إلى توصيلات كهربائية معقدة.",
+      "AT4 PLUS 4G هو جهاز تتبع GPS لاسلكي ومغناطيسي، لا يحتاج إلى توصيل بأسلاك السيارة، ويعتمد على بطارية داخلية كبيرة بسعة 10000mAh.",
   },
   {
-    question: "ما سعة بطارية جهاز AT4 PLUS؟",
+    question: "هل يحتاج AT4 PLUS إلى توصيل أسلاك؟",
     answer:
-      "يأتي الجهاز ببطارية بسعة 10000mAh، وتختلف مدة التشغيل الفعلية حسب وضع التتبع وطريقة الاستخدام وإعدادات الجهاز.",
+      "لا، الجهاز مصمم للعمل بالبطارية ويمكن تثبيته باستخدام القاعدة المغناطيسية على الأسطح المعدنية المناسبة.",
   },
   {
-    question: "هل جهاز AT4 PLUS مقاوم للماء؟",
+    question: "ما سعة بطارية AT4 PLUS؟",
     answer:
-      "نعم، الجهاز حاصل على تصنيف IP65 للحماية من الأتربة ورذاذ الماء، مما يجعله مناسبًا للاستخدام في ظروف مختلفة.",
+      "يحتوي الجهاز على بطارية ليثيوم قابلة لإعادة الشحن بسعة 10000mAh.",
   },
   {
-    question: "هل يدعم الجهاز تتبع الموقع بشكل لحظي؟",
+    question: "هل AT4 PLUS يعمل على شبكة 4G؟",
     answer:
-      "نعم، يدعم AT4 PLUS التتبع اللحظي ومتابعة موقع وحركة الأصل من خلال النظام أو السيرفر المتوافق مع الجهاز.",
+      "نعم، يعمل الجهاز على شبكة 4G LTE Cat.1، وبعض الإصدارات قد تدعم 2G عند عدم توافر تغطية 4G حسب نسخة الجهاز والشبكة.",
   },
   {
-    question: "هل يمكن استخدام AT4 PLUS لمتابعة الأصول؟",
+    question: "هل يمكن نقل AT4 PLUS من سيارة إلى أخرى؟",
     answer:
-      "نعم، الجهاز مناسب لمتابعة المركبات والأصول، وخاصة الحالات التي تحتاج إلى جهاز لاسلكي سهل التثبيت وبطارية كبيرة.",
+      "نعم، من مميزات التصميم المغناطيسي أنه يمكن فك الجهاز وإعادة تثبيته أو نقله من مركبة إلى أخرى عند الحاجة.",
   },
   {
-    question: "هل يدعم جهاز AT4 PLUS المراقبة الصوتية؟",
+    question: "هل يوجد تنبيه عند نزع الجهاز؟",
     answer:
-      "يدعم الجهاز خاصية المراقبة الصوتية وفقًا لتجهيز الجهاز والنظام المستخدم.",
+      "نعم، يدعم الجهاز تنبيه نزع الجهاز حسب المستشعرات وإعدادات الجهاز والنظام المستخدم.",
+  },
+  {
+    question: "هل يدعم الجهاز الاستماع الصوتي؟",
+    answer:
+      "نعم، يحتوي AT4 PLUS على ميكروفون داخلي، ويمكن استخدام خاصية الاستماع عن بُعد حسب تجهيز الجهاز والنظام المستخدم.",
+  },
+  {
+    question: "هل يدعم AT4 PLUS السياج الجغرافي؟",
+    answer:
+      "نعم، يمكن إعداد Geo-Fence لاستقبال تنبيه عند دخول المركبة إلى منطقة محددة أو خروجها منها حسب النظام.",
+  },
+  {
+    question: "هل يدعم تنبيه السرعة؟",
+    answer:
+      "نعم، يمكن ضبط حد معين للسرعة واستقبال تنبيه عند تجاوزه حسب إعدادات النظام.",
+  },
+  {
+    question: "هل AT4 PLUS مقاوم للماء؟",
+    answer:
+      "الجهاز حاصل على تصنيف حماية IPX5 وفق مواصفات الإصدار المذكورة، ويساعد ذلك على مقاومة رذاذ الماء والأمطار مع ضرورة اختيار مكان تركيب مناسب.",
+  },
+  {
+    question: "هل يمكن استخدام AT4 PLUS في حالة توقف السيارة؟",
+    answer:
+      "نعم، الجهاز مناسب لمتابعة المركبة أثناء التوقف، ويمكن الاستفادة من تنبيهات الحركة والاهتزاز ونزع الجهاز حسب الإعدادات.",
+  },
+  {
+    question: "هل يوجد ضمان على AT4 PLUS؟",
+    answer:
+      "نعم، الجهاز عليه ضمان لمدة سنة ضد عيوب الصناعة.",
   },
 ];
 
@@ -119,15 +198,16 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Product",
-      name: product.name,
+      name: "AT4 PLUS 4G",
       image: ["https://gpsworld-eg.com/images/AT4%20PLUS.jpeg"],
-      url: product.url,
+      url: "https://gpsworld-eg.com/devices/at4-plus",
       description:
-        "جهاز AT4 PLUS لتتبع السيارات والمركبات والأصول، بتصميم لاسلكي وبطارية 10000mAh ومغناطيس قوي، مع تتبع لحظي وتنبيهات.",
+        "جهاز AT4 PLUS 4G لتتبع السيارات والمركبات، لاسلكي ومغناطيسي ببطارية 10000mAh، مع تتبع مباشر وتنبيهات متعددة وحماية IPX5.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
       },
+      category: "GPS Vehicle Tracker",
     },
     {
       "@type": "BreadcrumbList",
@@ -168,7 +248,7 @@ const structuredData = {
 
 export default function AT4PlusPage() {
   return (
-    <main className="min-h-screen bg-gray-50" dir="rtl">
+    <main dir="rtl" className="min-h-screen bg-white text-gray-900">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -177,597 +257,343 @@ export default function AT4PlusPage() {
       />
 
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
-        <div className="mx-auto max-w-7xl px-5 py-4">
-          <div className="flex items-center justify-between">
-            <a
-              href="/"
-              className="flex flex-col leading-tight transition hover:text-yellow-300"
-            >
-              <span className="text-2xl font-extrabold md:text-3xl">
-                GPS World Egypt
-              </span>
+      <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/95 backdrop-blur">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
+          <Link
+            href="/"
+            className="text-lg font-bold text-gray-900 transition hover:text-blue-600"
+          >
+            GPS World Egypt
+          </Link>
 
-              <span className="mt-1 text-xs text-blue-200 md:text-sm">
-                حلول التتبع والمراقبة GPS
-              </span>
-            </a>
-
-            <a
-              href="/#products"
-              className="rounded-xl bg-blue-900 px-4 py-3 font-bold transition hover:bg-blue-800"
-            >
-              📡 الأجهزة
-            </a>
-          </div>
+          <Link
+            href="/#products"
+            className="rounded-full border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-700 transition hover:border-blue-600 hover:text-blue-600"
+          >
+            كل الأجهزة
+          </Link>
         </div>
       </header>
 
       {/* Back */}
-      <div className="mx-auto max-w-7xl px-5 pt-6">
-        <a
+      <div className="mx-auto max-w-7xl px-4 pt-6">
+        <Link
           href="/#products"
-          className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white shadow-md transition hover:bg-blue-800"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-800"
         >
-          ← العودة إلى الأجهزة
-        </a>
+          ← العودة إلى أجهزة GPS
+        </Link>
       </div>
 
-      {/* Product */}
-      <section className="mx-auto max-w-7xl px-5 py-10">
-        <div className="grid gap-10 lg:grid-cols-2">
-          <div className="relative">
-            <DeviceGallery
-              images={[
-                "/images/AT4 PLUS.jpeg",
-                "/images/AT4 PLUS-2.jpeg",
-                "/images/AT4 PLUS-3.jpeg",
-                "/images/AT4 PLUS-4.jpeg",
-                "/images/AT4 PLUS-5.jpeg",
-                "/images/AT4 PLUS-6.jpeg",
-              ]}
-              deviceName="AT4 PLUS"
-            />
-          </div>
+      {/* Hero */}
+      <section className="mx-auto max-w-7xl px-4 py-10 md:py-14">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <div className="mb-4 inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
+              AT4 PLUS 4G
+            </div>
 
-          <div className="flex flex-col justify-center">
-            <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
-              ✓ متوفر
-            </span>
-
-            <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-              جهاز AT4 PLUS لتتبع السيارات والمركبات والأصول
+            <h1 className="text-3xl font-black leading-tight md:text-5xl">
+              جهاز GPS AT4 PLUS 4G
+              <span className="mt-2 block text-blue-600">
+                مغناطيسي بدون أسلاك
+              </span>
             </h1>
 
-            <p className="mt-3 text-xl font-bold text-blue-700">
-              جهاز تتبع GPS لاسلكي ببطارية 10000mAh
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              إنت محتاج جهاز تتبع للسيارة من غير توصيلات كهربائية؟ جهاز AT4
+              PLUS 4G يجمع بين البطارية الكبيرة والتثبيت المغناطيسي، مع
+              إمكانية متابعة موقع المركبة وحركتها واستقبال التنبيهات المختلفة
+              حسب إعدادات الجهاز والنظام المستخدم.
             </p>
 
-            <p className="mt-6 text-lg leading-9 text-gray-600">
-              جهاز AT4 PLUS هو جهاز تتبع GPS لاسلكي محمول مصمم لمتابعة
-              السيارات والمركبات والأصول، مع بطارية قوية بسعة 10000mAh
-              وتصميم عملي مزود بمغناطيس قوي للتثبيت السريع دون الحاجة إلى
-              توصيلات أو تركيب معقد.
-            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {quickFeatures.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-semibold text-gray-700"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href={whatsappMessageUrl}
+                href="https://wa.me/201006687163?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AC%D9%87%D8%A7%D8%B2%20AT4%20PLUS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl bg-green-600 px-6 py-4 text-center text-lg font-bold text-white shadow-lg transition hover:bg-green-700"
+                className="rounded-xl bg-green-600 px-6 py-3 font-bold text-white transition hover:bg-green-700"
               >
-                💬 استفسر عبر واتساب
+                اسأل عن الجهاز
               </a>
 
               <a
-                href="tel:01006687163"
-                className="rounded-xl bg-blue-900 px-6 py-4 text-center text-lg font-bold text-white shadow-lg transition hover:bg-blue-800"
+                href="#comparison"
+                className="rounded-xl border border-gray-300 px-6 py-3 font-bold text-gray-800 transition hover:border-blue-600 hover:text-blue-600"
               >
-                📞 اتصل بنا
+                مقارنة بين الأجهزة
               </a>
             </div>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-gray-200 bg-gray-50 p-4 shadow-sm">
+            <DeviceGallery
+              images={galleryImages}
+              deviceName="جهاز GPS AT4 PLUS 4G"
+            />
           </div>
         </div>
       </section>
 
       {/* Quick Features */}
-      <section className="mx-auto max-w-7xl px-5 pb-16">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-            <div className="text-3xl">🔋</div>
+      <section className="border-y border-gray-100 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 py-10">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+            {quickFeatures.map((item, index) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-gray-200 bg-white p-5 text-center shadow-sm"
+              >
+                <div className="text-2xl font-black text-blue-600">
+                  {index + 1}
+                </div>
 
-            <h3 className="mt-3 font-extrabold text-blue-950">
-              بطارية 10000mAh
-            </h3>
-
-            <p className="mt-2 text-gray-600">تشغيل لفترات طويلة</p>
-          </div>
-
-          <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-            <div className="text-3xl">📍</div>
-
-            <h3 className="mt-3 font-extrabold text-blue-950">
-              تتبع لحظي
-            </h3>
-
-            <p className="mt-2 text-gray-600">متابعة الموقع والحركة</p>
-          </div>
-
-          <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-            <div className="text-3xl">🧲</div>
-
-            <h3 className="mt-3 font-extrabold text-blue-950">
-              تثبيت مغناطيسي
-            </h3>
-
-            <p className="mt-2 text-gray-600">تركيب سريع وسهل</p>
-          </div>
-
-          <div className="rounded-3xl bg-white p-6 text-center shadow-md">
-            <div className="text-3xl">💧</div>
-
-            <h3 className="mt-3 font-extrabold text-blue-950">
-              مقاوم للماء والأتربة
-            </h3>
-
-            <p className="mt-2 text-gray-600">حماية بمعيار IP65</p>
+                <p className="mt-2 font-bold text-gray-800">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Features & Specifications */}
-      <section className="mx-auto max-w-7xl px-5 pb-16">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl bg-white p-7 shadow-md">
-            <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⭐ أهم مميزات جهاز AT4 PLUS
-            </h2>
-
-            <ul className="space-y-4 text-lg leading-8 text-gray-700">
-              <li>📍 تتبع موقع المركبة ومتابعة حركتها.</li>
-
-              <li>
-                🧲 تصميم لاسلكي مع مغناطيس قوي للتثبيت السريع.
-              </li>
-
-              <li>
-                🔋 بطارية قوية بسعة 10000mAh لتوفير فترة تشغيل طويلة.
-              </li>
-
-              <li>💧 مقاومة للماء والأتربة بمعيار IP65.</li>
-
-              <li>🚨 تنبيه عند انخفاض مستوى البطارية.</li>
-
-              <li>
-                💡 تنبيه حساس الضوء عند حدوث تغير مفاجئ في الإضاءة، وهو مفيد
-                في حالات العبث أو الفتح غير المصرح به.
-              </li>
-
-              <li>🎙️ دعم خاصية المراقبة الصوتية.</li>
-
-              <li>
-                🌡️ إمكانية إضافة مستشعرات درجة الحرارة والرطوبة حسب التجهيز
-                والنظام المستخدم.
-              </li>
-
-              <li>
-                ⚙️ عدة أوضاع تشغيل لتناسب احتياجات التتبع المختلفة.
-              </li>
-
-              <li>
-                🔄 دعم التحديث عن بُعد OTA لإضافة تحسينات وخصائص جديدة دون
-                الحاجة إلى فك الجهاز.
-              </li>
-
-              <li>🛠️ مناسب للاستخدام الشخصي والتجاري ومتابعة الأصول.</li>
-
-              <li>🤝 دعم فني ومتابعة من GPS World Egypt.</li>
-            </ul>
-          </div>
-
-          <div className="rounded-3xl bg-white p-7 shadow-md">
-            <h2 className="mb-6 text-2xl font-extrabold text-blue-950">
-              ⚙️ المواصفات الفنية لجهاز AT4 PLUS
-            </h2>
-
-            <div className="overflow-hidden rounded-2xl border border-gray-200">
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">الموديل</span>
-                <span className="text-gray-600">AT4 PLUS</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">نوع الجهاز</span>
-
-                <span className="text-gray-600">GPS Tracker لاسلكي</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">
-                  أنظمة تحديد الموقع
-                </span>
-
-                <span className="text-gray-600">
-                  GPS / BDS / GNSS / LBS
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">شبكة الاتصال</span>
-
-                <span className="text-gray-600">4G</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">
-                  سعة البطارية
-                </span>
-
-                <span className="text-gray-600">10000mAh</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">الأبعاد</span>
-
-                <span className="text-gray-600">86 × 63 × 34 مم</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">الوزن</span>
-
-                <span className="text-gray-600">245 جرام</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">الحماية</span>
-
-                <span className="text-gray-600">IP65</span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">التتبع</span>
-
-                <span className="text-gray-600">
-                  تتبع لحظي وتتبع ذكي
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 p-4">
-                <span className="font-bold text-gray-800">
-                  أوضاع التشغيل
-                </span>
-
-                <span className="text-gray-600">
-                  تتبع لحظي / ذكي / توفير الطاقة / تنبيهات
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 border-b border-gray-200 bg-gray-50 p-4">
-                <span className="font-bold text-gray-800">مؤشرات LED</span>
-
-                <span className="text-gray-600">
-                  GSM / GPS / الطاقة
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 p-4">
-                <span className="font-bold text-gray-800">التحديث</span>
-
-                <span className="text-gray-600">OTA عن بُعد</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Uses */}
-      <section className="bg-white px-5 py-16">
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center">
-            <span className="font-bold text-blue-700">الاستخدامات</span>
-
-            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              أين يمكن استخدام جهاز AT4 PLUS؟
-            </h2>
-
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              تصميم AT4 PLUS اللاسلكي والبطارية الكبيرة يجعله مناسبًا
-              لمتابعة المركبات والأصول التي تحتاج إلى حل تتبع عملي وسهل
-              التركيب.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-              <div className="text-3xl">🚗</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                شركات تأجير السيارات
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                متابعة السيارات وإدارة الأصول بشكل أسهل.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-              <div className="text-3xl">📦</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                نقل ومتابعة البضائع
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                مراقبة حركة الأصول والبضائع أثناء النقل.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-              <div className="text-3xl">🏦</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                التمويل والقروض
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                مناسب لمتابعة المركبات والأصول محل التمويل.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-              <div className="text-3xl">🛡️</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                الحماية من السرقة
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                تنبيهات ومتابعة تساعد على مراقبة الأصل.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-              <div className="text-3xl">🚚</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                إدارة الأساطيل
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                متابعة المركبات والأصول ضمن أنظمة الإدارة.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gray-50 p-6 shadow-sm">
-              <div className="text-3xl">🏢</div>
-
-              <h3 className="mt-4 text-xl font-extrabold text-blue-950">
-                إدارة الأصول
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                حل عملي لمتابعة الأصول في المواقع والقطاعات المختلفة.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Operating Modes */}
-      <section className="mx-auto max-w-7xl px-5 py-16">
-        <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
-          <div className="text-center">
-            <span className="font-bold text-blue-700">أوضاع التشغيل</span>
-
-            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              اختر وضع التشغيل المناسب لاحتياجك
-            </h2>
-          </div>
-
-          <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-3xl">📍</div>
-
-              <h3 className="mt-4 font-extrabold text-blue-950">
-                التتبع اللحظي
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                متابعة الموقع والحركة بشكل مستمر.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-3xl">🧠</div>
-
-              <h3 className="mt-4 font-extrabold text-blue-950">
-                التتبع الذكي
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                تشغيل الجهاز بطريقة تساعد على إدارة استهلاك الطاقة.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-3xl">🔋</div>
-
-              <h3 className="mt-4 font-extrabold text-blue-950">
-                توفير الطاقة
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                وضع مناسب عند الحاجة إلى إطالة فترة تشغيل البطارية.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <div className="text-3xl">🚨</div>
-
-              <h3 className="mt-4 font-extrabold text-blue-950">
-                التتبع مع التنبيهات
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                متابعة الجهاز مع الاستفادة من التنبيهات المختلفة.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why */}
-      <section className="bg-blue-50 px-5 py-16">
-        <div className="mx-auto max-w-5xl text-center">
-          <span className="font-bold text-blue-700">GPS World Egypt</span>
-
-          <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            لماذا تختار جهاز AT4 PLUS؟
+      {/* Details */}
+      <section className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl font-black md:text-4xl">
+            مميزات جهاز GPS AT4 PLUS 4G بالتفصيل
           </h2>
 
-          <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-            جهاز AT4 PLUS يجمع بين سهولة التركيب والتصميم اللاسلكي
-            والبطارية الكبيرة، مما يجعله مناسبًا لمتابعة المركبات
-            والأصول التي تحتاج إلى حل تتبع عملي دون تركيب معقد.
+          <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-600">
+            جهاز لاسلكي ومغناطيسي مصمم لمن يريد تتبع المركبة بدون توصيلات
+            كهربائية، مع بطارية كبيرة وإمكانيات متعددة للتتبع والتنبيهات.
           </p>
-
-          <div className="mt-10 grid gap-5 text-right sm:grid-cols-2">
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                🔋 بطارية كبيرة
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                بطارية بسعة 10000mAh لتوفير فترة تشغيل طويلة.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                🧲 تركيب سهل
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                مغناطيس قوي يسمح بتثبيت الجهاز بسرعة وفي أماكن مختلفة.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                💧 حماية IP65
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                مقاومة للماء والأتربة للاستخدام في ظروف متنوعة.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 shadow-sm">
-              <h3 className="font-extrabold text-blue-950">
-                🔄 تحديث OTA
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                إمكانية التحديث عن بُعد دون الحاجة إلى فك الجهاز.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="mx-auto max-w-5xl px-5 py-16">
-        <div className="text-center">
-          <span className="font-bold text-blue-700">الأسئلة الشائعة</span>
-
-          <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-            أسئلة شائعة عن جهاز AT4 PLUS
-          </h2>
         </div>
 
-        <div className="mt-10 space-y-5">
-          {faqs.map((faq) => (
-            <details
-              key={faq.question}
-              className="rounded-2xl bg-white p-6 shadow-md"
+        <div className="space-y-5">
+          {features.map((feature, index) => (
+            <article
+              key={feature.title}
+              className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
             >
-              <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                {faq.question}
-              </summary>
+              <div className="flex gap-4">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-600 font-black text-white">
+                  {index + 1}
+                </div>
 
-              <p className="mt-4 leading-8 text-gray-600">{faq.answer}</p>
-            </details>
+                <div>
+                  <h3 className="text-xl font-black text-gray-900">
+                    {feature.title}
+                  </h3>
+
+                  <p className="mt-3 leading-8 text-gray-600">
+                    {feature.text}
+                  </p>
+                </div>
+              </div>
+            </article>
           ))}
         </div>
       </section>
 
-      {/* Contact */}
-      <section className="mx-auto max-w-5xl px-5 py-16">
-        <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
-          <h2 className="text-3xl font-extrabold md:text-4xl">
-            هل تريد معرفة المزيد عن جهاز AT4 PLUS؟
-          </h2>
+      {/* Why AT4 PLUS */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 py-14 md:py-20">
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <span className="text-sm font-bold text-blue-600">
+                ليه AT4 PLUS؟
+              </span>
 
-          <p className="mt-4 text-lg leading-8 text-blue-200">
-            تواصل معنا لمعرفة التفاصيل والتوفر وطلب جهاز AT4 PLUS.
-          </p>
+              <h2 className="mt-2 text-3xl font-black md:text-4xl">
+                حل عملي للتتبع بدون أسلاك
+              </h2>
 
-          <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
-              href={whatsappOrderUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl bg-green-600 px-8 py-4 text-lg font-bold text-white transition hover:bg-green-700"
-            >
-              💬 اطلب الجهاز عبر واتساب
-            </a>
+              <p className="mt-5 leading-8 text-gray-600">
+                AT4 PLUS مناسب لمن يريد جهاز GPS يمكن تثبيته وفكه بسهولة دون
+                الدخول في توصيلات كهربائية داخل المركبة، مع بطارية كبيرة
+                وإمكانية استخدام أوضاع مختلفة للتشغيل وتوفير الطاقة.
+              </p>
 
-            <a
-              href="/#products"
-              className="rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
-            >
-              📡 مشاهدة باقي الأجهزة
-            </a>
+              <div className="mt-7 space-y-4">
+                {[
+                  "بطارية 10000mAh.",
+                  "شبكة 4G LTE Cat.1.",
+                  "تثبيت مغناطيسي بدون أسلاك.",
+                  "سهولة الفك والنقل من مركبة إلى أخرى.",
+                  "تنبيه نزع الجهاز والعبث حسب الإعدادات.",
+                  "تتبع مباشر وتنبيهات الحركة والاهتزاز.",
+                  "Geo-Fence وتنبيه تجاوز السرعة.",
+                  "حماية IPX5.",
+                ].map((item) => (
+                  <div key={item} className="flex gap-3">
+                    <span className="mt-1 font-black text-green-600">✓</span>
+
+                    <p className="leading-7 text-gray-700">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-3xl bg-gray-900 p-8 text-white">
+              <h3 className="text-2xl font-black">مناسب لمين؟</h3>
+
+              <div className="mt-6 space-y-4">
+                {applications.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-white/10 bg-white/5 p-4"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-blue-950 text-white">
-        <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-          <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
+      {/* Important Notes */}
+      <section className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+        <div className="rounded-3xl border border-gray-200 bg-white p-7 shadow-sm md:p-10">
+          <h2 className="text-3xl font-black">
+            ملاحظات مهمة عن AT4 PLUS
+          </h2>
 
-          <p className="mt-3 text-blue-200">
-            أجهزة GPS للتتبع والمراقبة في مصر
-          </p>
+          <div className="mt-6 space-y-4 leading-8 text-gray-600">
+            <p>
+              مدة تشغيل البطارية تختلف حسب معدل تحديث الموقع وحركة المركبة
+              ووضع التشغيل وإعدادات توفير الطاقة وقوة الشبكة وطريقة الاستخدام.
+            </p>
 
-          <p className="mt-5 text-blue-300">📞 01006687163</p>
+            <p>
+              يمكن اختيار وضع التشغيل المناسب حسب طبيعة الاستخدام، مثل
+              التتبع المستمر أو توفير الطاقة أو الاستعداد وإرسال الموقع على
+              فترات متباعدة.
+            </p>
 
-          <a
-            href={whatsappBaseUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-3 inline-block text-green-400 hover:text-green-300"
-          >
-            💬 تواصل معنا عبر واتساب
-          </a>
+            <p>
+              بعض وظائف التنبيهات والاستماع تعتمد على تجهيز الجهاز والنظام
+              المستخدم والإعدادات المتاحة.
+            </p>
 
-          <div className="mt-8 border-t border-blue-800 pt-5 text-sm text-blue-300">
-            © 2026 GPS World Egypt - جميع الحقوق محفوظة
+            <p>
+              تصنيف الحماية هو <strong>IPX5</strong> وفق مواصفات الإصدار
+              المذكورة، لذلك يجب اختيار مكان تركيب مناسب وعدم تعريض الجهاز
+              لظروف تتجاوز مستوى الحماية.
+            </p>
+
+            <p className="font-bold text-gray-900">
+              الضمان: سنة ضد عيوب الصناعة.
+            </p>
           </div>
         </div>
+      </section>
+
+      {/* Comparison CTA */}
+      <section
+        id="comparison"
+        className="mx-auto max-w-5xl px-4 py-14 md:py-20"
+      >
+        <div className="rounded-3xl bg-blue-600 p-8 text-center text-white md:p-12">
+          <h2 className="text-3xl font-black md:text-4xl">
+            محتار بين AT4 PLUS وجهاز تاني؟
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-blue-50">
+            قارن بين AT4 PLUS والأجهزة الأخرى واختار الجهاز المناسب حسب
+            طريقة استخدامك واحتياجات مركبتك.
+          </p>
+
+          <Link
+            href="/comparison"
+            className="mt-7 inline-flex rounded-xl bg-white px-7 py-3 font-black text-blue-700 transition hover:bg-gray-100"
+          >
+            قارن بين جهازين
+          </Link>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="border-t border-gray-100">
+        <div className="mx-auto max-w-5xl px-4 py-14 md:py-20">
+          <div className="mb-10 text-center">
+            <h2 className="text-3xl font-black md:text-4xl">
+              الأسئلة الشائعة عن AT4 PLUS
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq) => (
+              <details
+                key={faq.question}
+                className="group rounded-2xl border border-gray-200 bg-white p-5"
+              >
+                <summary className="cursor-pointer list-none font-black text-gray-900">
+                  {faq.question}
+                </summary>
+
+                <p className="mt-4 leading-8 text-gray-600">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="bg-gray-900 text-white">
+        <div className="mx-auto max-w-5xl px-4 py-14 text-center md:py-20">
+          <h2 className="text-3xl font-black md:text-4xl">
+            عايز تعرف AT4 PLUS مناسب لاستخدامك؟
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl leading-8 text-gray-300">
+            ابعتلنا نوع المركبة وطريقة الاستخدام، ونساعدك تعرف هل AT4 PLUS
+            هو الاختيار المناسب ليك.
+          </p>
+
+          <a
+            href="https://wa.me/201006687163?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AC%D9%87%D8%A7%D8%B2%20AT4%20PLUS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-7 inline-flex rounded-xl bg-green-600 px-8 py-4 font-black text-white transition hover:bg-green-700"
+          >
+            تواصل معنا على واتساب
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-gray-800 bg-black px-4 py-8 text-center text-sm text-gray-400">
+        <p>
+          GPS World Egypt — أجهزة تتبع GPS للسيارات وإدارة الأساطيل
+        </p>
+
+        <p className="mt-2">
+          جميع الحقوق محفوظة © {new Date().getFullYear()}
+        </p>
       </footer>
 
       {/* Floating WhatsApp */}
       <a
-        href={whatsappBaseUrl}
+        href="https://wa.me/201006687163"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="التواصل عبر واتساب"
-        className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-2xl transition hover:bg-green-600"
+        aria-label="تواصل معنا على واتساب"
+        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-2xl text-white shadow-lg transition hover:scale-105 hover:bg-green-700"
       >
-        💬
+        ☎
       </a>
     </main>
   );
