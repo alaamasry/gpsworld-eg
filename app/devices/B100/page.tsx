@@ -1,71 +1,7 @@
 import type { Metadata } from "next";
 import DeviceGallery from "../DeviceGallery";
 
-export const metadata: Metadata = {
-  title: "B100 | جهاز تتبع سيارات GPS في مصر",
-
-  description:
-    "جهاز B100 لتتبع السيارات والمركبات في مصر، مع متابعة الموقع والحركة بشكل لحظي، ودعم إدارة الأساطيل والتنبيهات وأنظمة GPS المتوافقة.",
-
-  keywords: [
-    "B100",
-    "جهاز B100",
-    "B100 GPS",
-    "جهاز تتبع B100",
-    "جهاز GPS B100",
-    "جهاز GPS",
-    "جهاز تتبع سيارات",
-    "أجهزة تتبع GPS",
-    "جهاز GPS للسيارات",
-    "جهاز تتبع للسيارة",
-    "GPS Tracker",
-    "GPS Tracker مصر",
-    "أجهزة GPS مصر",
-    "تتبع السيارات",
-    "تتبع المركبات",
-    "إدارة الأساطيل",
-    "جهاز تتبع سيارات مصر",
-  ],
-
-  alternates: {
-    canonical: "https://gpsworld-eg.com/devices/b100",
-  },
-
-  openGraph: {
-    title: "B100 | جهاز تتبع سيارات GPS في مصر",
-
-    description:
-      "جهاز B100 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل من خلال أنظمة GPS المتوافقة.",
-
-    url: "https://gpsworld-eg.com/devices/b100",
-
-    siteName: "GPS World Egypt",
-
-    locale: "ar_EG",
-
-    type: "website",
-
-    images: [
-      {
-        url: "/images/B100.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "B100 جهاز تتبع سيارات GPS في مصر",
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-
-    title: "B100 | جهاز تتبع سيارات GPS في مصر",
-
-    description:
-      "جهاز B100 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل.",
-
-    images: ["/images/B100.jpeg"],
-  },
-};
+const whatsappNumber = "201006687163";
 
 const product = {
   name: "B100",
@@ -73,917 +9,726 @@ const product = {
   url: "https://gpsworld-eg.com/devices/b100",
 };
 
-const whatsappNumber = "201006687163";
+export const metadata: Metadata = {
+  title: "B100 | جهاز تتبع GPS سلكي صغير 2G",
+  description:
+    "جهاز B100 لتتبع السيارات والمركبات، GPS سلكي صغير الحجم يعمل على شبكة 2G بجهد 9–90V DC، مع تتبع مباشر وتنبيهات الحركة والسرعة وGeo-Fence وإمكانية فصل المحرك.",
+  keywords: [
+    "B100",
+    "جهاز B100",
+    "GPS B100",
+    "جهاز تتبع B100",
+    "جهاز تتبع GPS",
+    "GPS Tracker",
+    "جهاز تتبع سيارات",
+    "جهاز GPS للموتوسيكل",
+    "جهاز تتبع 2G",
+    "GPS 2G مصر",
+  ],
+  alternates: {
+    canonical: product.url,
+  },
+  openGraph: {
+    title: "B100 | جهاز تتبع GPS سلكي صغير 2G",
+    description:
+      "جهاز GPS سلكي صغير الحجم للمركبات والموتوسيكلات، يعمل على شبكة 2G وبجهد 9–90V DC مع تتبع مباشر وتنبيهات متعددة.",
+    url: product.url,
+    type: "website",
+    images: [
+      {
+        url: product.image,
+        width: 1200,
+        height: 630,
+        alt: "جهاز B100 لتتبع السيارات والمركبات",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "B100 | جهاز تتبع GPS سلكي صغير 2G",
+    description:
+      "جهاز تتبع GPS سلكي صغير الحجم للمركبات والموتوسيكلات.",
+    images: [product.image],
+  },
+};
 
-const whatsappInquiry = encodeURIComponent(
-  "مرحبًا، أريد الاستفسار عن جهاز GPS موديل B100"
-);
+const features = [
+  {
+    number: "1",
+    title: "التتبع والمراقبة الحية 📍",
+    text: "متابعة موقع المركبة على الخريطة بشكل مباشر، مع معرفة مكانها وحركتها وبياناتها من خلال نظام التتبع المتوافق مع الجهاز.",
+  },
+  {
+    number: "2",
+    title: "متابعة خط السير والرحلات 🛣️",
+    text: "إمكانية مراجعة تحركات المركبة والرحلات السابقة حسب إمكانيات نظام التتبع المستخدم.",
+  },
+  {
+    number: "3",
+    title: "فصل المحرك عن بُعد 🛑",
+    text: "يمكن توصيل الجهاز بريلاي لتنفيذ فصل المحرك عن بُعد عند التوصيل بالطريقة الصحيحة، سواء من خلال النظام المستخدم أو برسالة SMS حسب إعدادات الجهاز.",
+  },
+  {
+    number: "4",
+    title: "تنبيهات فصل الكهرباء والعبث 🚨",
+    text: "يمكن للجهاز إرسال تنبيه عند فصل مصدر الكهرباء أو حدوث عبث بتوصيلات الجهاز.",
+  },
+  {
+    number: "5",
+    title: "تنبيه الحركة والاهتزاز 🔔",
+    text: "يمكن إعداد الجهاز لإرسال تنبيه عند اكتشاف اهتزاز أو حركة غير طبيعية أثناء توقف المركبة.",
+  },
+  {
+    number: "6",
+    title: "تنبيه تجاوز السرعة ⚠️",
+    text: "يمكن تحديد سرعة معينة واستقبال تنبيه عند تجاوز السرعة المحددة حسب إمكانيات النظام المستخدم.",
+  },
+  {
+    number: "7",
+    title: "السياج الجغرافي Geo-Fence 📍",
+    text: "يمكن تحديد منطقة جغرافية على الخريطة واستقبال تنبيه عند دخول المركبة إلى المنطقة أو خروجها منها.",
+  },
+  {
+    number: "8",
+    title: "متابعة تشغيل وإيقاف الكونتاكت",
+    text: "يدعم متابعة حالة ACC لمعرفة تشغيل وإيقاف الكونتاكت حسب طريقة التركيب والنظام المتوافق.",
+  },
+  {
+    number: "9",
+    title: "جهد تشغيل واسع ⚙️",
+    text: "يعمل B100 على جهد من 9 إلى 90 فولت DC، مما يجعله مناسبًا لمجموعة واسعة من المركبات التي تقع ضمن نطاق التشغيل.",
+  },
+  {
+    number: "10",
+    title: "بطارية داخلية احتياطية 🔋",
+    text: "يحتوي الجهاز على بطارية داخلية 55mAh تساعد على إرسال تنبيه عند فصل مصدر الكهرباء الرئيسي عن الجهاز.",
+  },
+  {
+    number: "11",
+    title: "حجم صغير جدًا 📦",
+    text: "من أهم مميزات B100 حجمه الصغير ووزنه الخفيف، مما يسهل تركيبه وإخفاءه في الأماكن الضيقة داخل المركبة.",
+  },
+  {
+    number: "12",
+    title: "يعمل على شبكة 2G 📶",
+    text: "الجهاز يعمل على شبكة 2G، لذلك يجب التأكد من توفر تغطية الشبكة المناسبة في مكان استخدام الجهاز.",
+  },
+];
 
-const whatsappOrder = encodeURIComponent(
-  "مرحبًا، أريد طلب جهاز GPS موديل B100"
-);
-
-const whatsappInquiryUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappInquiry;
-
-const whatsappOrderUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappOrder;
-
-const whatsappBaseUrl = "https://wa.me/201006687163";
+const applications = [
+  "الموتوسيكلات والسكوتر.",
+  "السيارات الملاكي والأجرة.",
+  "الشاحنات والمركبات المختلفة.",
+  "المركبات التي تحتاج إلى جهاز صغير وسهل الإخفاء.",
+  "الأماكن التي تكون فيها مساحة التركيب محدودة.",
+];
 
 const faqs = [
   {
     question: "ما هو جهاز B100؟",
     answer:
-      "جهاز B100 هو جهاز تتبع GPS للمركبات، مصمم لمتابعة الموقع والحركة ودعم استخدامات الأفراد والشركات وإدارة الأساطيل.",
+      "B100 هو جهاز تتبع GPS سلكي صغير الحجم يعمل على شبكة 2G، ومخصص لمتابعة المركبات مع التتبع المباشر والتنبيهات الأساسية وإمكانية فصل المحرك عن بُعد عند تركيبه بالطريقة الصحيحة.",
   },
   {
-    question: "هل يناسب B100 الشركات وإدارة الأساطيل؟",
+    question: "هل جهاز B100 يعمل على 4G؟",
     answer:
-      "نعم، الجهاز مناسب لمتابعة المركبات التجارية والخدمية وإدارة الأساطيل ومراقبة الرحلات وحركة المركبات.",
+      "لا، النسخة المعتمدة لدينا من B100 تعمل على شبكة 2G.",
   },
   {
-    question: "ما جهد تشغيل جهاز B100؟",
-    answer: "يعمل الجهاز على نطاق جهد من 9V إلى 90V DC.",
+    question: "ما هو جهد تشغيل B100؟",
+    answer: "يعمل B100 على جهد من 9 إلى 90 فولت DC.",
   },
   {
-    question: "هل يدعم B100 شبكة 4G؟",
+    question: "هل يحتوي B100 على ميكروفون أو خاصية الاستماع؟",
     answer:
-      "نعم، يدعم الجهاز شبكة 4G LTE Cat.1 مع دعم 2G Fallback حسب توافر الشبكة.",
+      "لا، B100 في النسخة المعتمدة لدينا لا يدعم الميكروفون أو خاصية الاستماع داخل السيارة.",
   },
   {
-    question: "هل يوجد ضمان للجهاز؟",
+    question: "هل يحتوي B100 على زر SOS؟",
     answer:
-      "يوجد ضمان لمدة سنة ضد عيوب الصناعة، ولا يشمل الضمان الحرق أو الكسر.",
+      "لا، B100 في النسخة المعتمدة لدينا لا يحتوي على زر SOS.",
   },
   {
-    question: "كيف أعرف تفاصيل الجهاز والتوفر؟",
+    question: "هل يمكن فصل محرك السيارة عن بُعد؟",
     answer:
-      "يمكنك التواصل معنا عبر واتساب لمعرفة التفاصيل والتوفر وطلب الجهاز.",
+      "نعم، يمكن تنفيذ فصل المحرك عن بُعد عند تركيب الريلاي وتوصيله بالطريقة الصحيحة، وحسب النظام المستخدم وإعدادات الجهاز.",
+  },
+  {
+    question: "هل B100 مناسب للموتوسيكلات؟",
+    answer:
+      "نعم، حجمه الصغير وجهد تشغيله من 9 إلى 90 فولت يجعلان الجهاز مناسبًا للموتوسيكلات والسكوتر، مع مراعاة طريقة التركيب وجهد المركبة.",
+  },
+  {
+    question: "ما مقاس ووزن جهاز B100؟",
+    answer:
+      "مقاس الجهاز حوالي 72 × 31 × 12 مم، ووزنه حوالي 30 جرام.",
+  },
+  {
+    question: "ما مدة ضمان جهاز B100؟",
+    answer: "الجهاز بضمان سنة ضد عيوب الصناعة.",
   },
 ];
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Product",
-      name: product.name,
-      image: ["https://gpsworld-eg.com/images/B100.jpeg"],
-      url: product.url,
-      description:
-        "جهاز B100 لتتبع السيارات والمركبات ومتابعة الموقع والحركة وإدارة الأساطيل من خلال أنظمة GPS المتوافقة.",
-      brand: {
-        "@type": "Brand",
-        name: "GPS World Egypt",
-      },
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "الرئيسية",
-          item: "https://gpsworld-eg.com/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "أجهزة GPS",
-          item: "https://gpsworld-eg.com/#products",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "B100",
-          item: "https://gpsworld-eg.com/devices/b100",
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
-        },
-      })),
-    },
-  ],
-};
+function WhatsAppLink({
+  children,
+  message,
+  className = "",
+}: {
+  children: React.ReactNode;
+  message: string;
+  className?: string;
+}) {
+  const href = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      {children}
+    </a>
+  );
+}
 
 export default function B100Page() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        name: product.name,
+        image: [product.image],
+        description:
+          "جهاز B100 لتتبع السيارات والمركبات، سلكي وصغير الحجم، يعمل على شبكة 2G بجهد 9–90V DC.",
+        url: product.url,
+        brand: {
+          "@type": "Brand",
+          name: "GPS World Egypt",
+        },
+        offers: {
+          "@type": "Offer",
+          url: product.url,
+          availability: "https://schema.org/InStock",
+          priceCurrency: "EGP",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "الرئيسية",
+            item: "https://gpsworld-eg.com",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "أجهزة GPS",
+            item: "https://gpsworld-eg.com/devices",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "B100",
+            item: product.url,
+          },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.answer,
+          },
+        })),
+      },
+    ],
+  };
+
   return (
-    <>
+    <main
+      dir="rtl"
+      className="min-h-screen bg-white text-slate-900"
+      style={{
+        backgroundColor: "#ffffff",
+        color: "#0f172a",
+      }}
+    >
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(jsonLd),
         }}
       />
 
-      <main className="min-h-screen bg-gray-50" dir="rtl">
-        {/* ================= HEADER ================= */}
+      {/* Header */}
+      <header
+        className="sticky top-0 z-50 border-b border-slate-200 bg-white"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+          <a
+            href="/devices"
+            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-700 shadow-sm"
+            style={{
+              backgroundColor: "#ffffff",
+              color: "#334155",
+            }}
+          >
+            ← أجهزة GPS
+          </a>
 
-        <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
-          <div className="mx-auto max-w-7xl px-5 py-4">
-            <div className="flex items-center justify-between gap-4">
-              <a
-                href="/"
-                className="flex flex-col leading-tight transition hover:text-yellow-300"
-              >
-                <span className="text-2xl font-extrabold md:text-3xl">
-                  GPS World Egypt
-                </span>
-
-                <span className="mt-1 text-xs text-blue-200 md:text-sm">
-                  حلول التتبع والمراقبة GPS
-                </span>
-              </a>
-
-              <a
-                href="/#products"
-                className="shrink-0 rounded-xl bg-blue-900 px-4 py-3 font-bold transition hover:bg-blue-800"
-              >
-                📡 الأجهزة
-              </a>
+          <div className="text-right">
+            <div className="text-sm font-black text-blue-900">
+              GPS World Egypt
+            </div>
+            <div className="text-xs text-slate-500">
+              أجهزة تتبع GPS
             </div>
           </div>
-        </header>
-
-        {/* ================= BACK ================= */}
-
-        <div className="mx-auto max-w-7xl px-5 pt-6">
-          <a
-            href="/#products"
-            className="inline-flex items-center gap-2 rounded-xl bg-blue-900 px-5 py-3 font-bold text-white shadow-md transition hover:bg-blue-800"
-          >
-            ← العودة إلى الأجهزة
-          </a>
         </div>
+      </header>
 
-        {/* ================= PRODUCT HERO ================= */}
+      {/* Hero */}
+      <section
+        className="bg-gradient-to-b from-blue-950 via-blue-900 to-white"
+        style={{ color: "#ffffff" }}
+      >
+        <div className="mx-auto max-w-6xl px-4 pb-12 pt-8">
+          <div className="mb-6">
+            <span className="inline-flex rounded-full border border-emerald-200 bg-emerald-50 px-4 py-2 text-sm font-bold text-emerald-700">
+              ✓ متوفر
+            </span>
+          </div>
 
-        <section className="mx-auto max-w-7xl px-5 py-10">
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            {/* IMAGE */}
-
-            <div className="relative">
-              <DeviceGallery
-                images={[
-                  "/images/B100.jpeg",
-                  "/images/B100-2.jpeg",
-                  "/images/B100-3.jpeg",
-                  "/images/B100-4.jpeg",
-                  "/images/B100-5.jpeg",
-                  "/images/B100-6.jpeg",
-                ]}
-                deviceName="B100"
-              />
-            </div>
-
-            {/* INFORMATION */}
-
-            <div className="flex flex-col justify-center">
-              <span className="mb-5 w-fit rounded-full bg-green-100 px-5 py-2 text-sm font-bold text-green-700">
-                ✓ متوفر
-              </span>
-
-              <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-                جهاز B100 لتتبع السيارات والمركبات في مصر
+          <div className="grid items-center gap-8 lg:grid-cols-2">
+            <div className="order-2 lg:order-1">
+              <h1 className="text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl">
+                جهاز B100 لتتبع السيارات والمركبات
               </h1>
 
-              <p className="mt-4 text-xl font-bold text-blue-700">
-                جهاز تتبع GPS احترافي
+              <p className="mt-4 text-lg font-bold text-blue-100">
+                جهاز تتبع GPS سلكي صغير جدًا يعمل على شبكة 2G
               </p>
 
-              <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز B100 لمتابعة المركبات ومراقبة الموقع والحركة، ومناسب
-                للأفراد والشركات التي تحتاج إلى متابعة المركبات وإدارة
-                الأساطيل وتحسين مستوى الأمان والتشغيل.
+              <p className="mt-5 max-w-2xl text-base leading-8 text-blue-50">
+                جهاز GPS سلكي صغير وخفيف، مناسب لمتابعة السيارات والموتوسيكلات
+                والسكوتر والمركبات المختلفة، مع التتبع المباشر والتنبيهات
+                الأساسية وإمكانية فصل المحرك عن بُعد عند التوصيل الصحيح.
               </p>
 
-              <div className="mt-7 grid gap-4 sm:grid-cols-2">
-                <a
-                  href={whatsappInquiryUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-xl bg-green-600 px-6 py-4 text-center text-lg font-bold text-white shadow-lg transition hover:bg-green-700"
+              <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {[
+                  ["2G", "شبكة التشغيل"],
+                  ["9–90V", "جهد التشغيل"],
+                  ["55mAh", "بطارية داخلية"],
+                  ["30g", "وزن خفيف"],
+                ].map(([value, label]) => (
+                  <div
+                    key={label}
+                    className="rounded-2xl border border-white/20 bg-white/10 p-4 text-center"
+                  >
+                    <div className="text-lg font-black text-white">
+                      {value}
+                    </div>
+                    <div className="mt-1 text-xs text-blue-100">
+                      {label}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <WhatsAppLink
+                  message="السلام عليكم، عايز أعرف تفاصيل جهاز B100 وسعره."
+                  className="rounded-2xl bg-emerald-500 px-6 py-4 text-center font-black text-white shadow-lg"
                 >
-                  💬 استفسر عبر واتساب
-                </a>
+                  اسأل عن B100 على واتساب
+                </WhatsAppLink>
 
                 <a
                   href="tel:01006687163"
-                  className="rounded-xl bg-blue-900 px-6 py-4 text-center text-lg font-bold text-white shadow-lg transition hover:bg-blue-800"
+                  className="rounded-2xl border border-white/30 bg-white/10 px-6 py-4 text-center font-black text-white"
                 >
-                  📞 اتصل بنا
+                  اتصل بنا
                 </a>
               </div>
             </div>
-          </div>
-        </section>
 
-        {/* ================= QUICK FEATURES ================= */}
-
-        <section className="mx-auto max-w-7xl px-5 pb-12">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">📍</div>
-
-              <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                تتبع لحظي
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                متابعة موقع المركبة وحركتها بشكل مباشر من خلال النظام
-                المتوافق.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🚨</div>
-
-              <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                حماية وأمان
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                تنبيهات عند بعض الحالات التي تؤثر على أمان المركبة حسب
-                إعدادات النظام.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🏢</div>
-
-              <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                إدارة الأساطيل
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                مناسب للشركات وإدارة المركبات والخدمات الميدانية.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-white p-6 text-center shadow-md">
-              <div className="text-4xl">🛠️</div>
-
-              <h3 className="mt-3 text-lg font-extrabold text-blue-950">
-                دعم فني
-              </h3>
-
-              <p className="mt-2 leading-7 text-gray-600">
-                دعم ومتابعة من GPS World Egypt.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= FEATURES + SPECS ================= */}
-
-        <section className="mx-auto max-w-7xl px-5 pb-16">
-          <div className="grid gap-8 lg:grid-cols-2">
-            {/* FEATURES */}
-
-            <div className="rounded-3xl bg-white p-7 shadow-md md:p-8">
-              <h2 className="mb-7 text-2xl font-extrabold text-blue-950">
-                ⭐ أهم مميزات جهاز B100
-              </h2>
-
-              <ul className="space-y-5 text-lg leading-8 text-gray-700">
-                <li className="flex gap-3">
-                  <span>📍</span>
-                  <span>
-                    تتبع مباشر ومتابعة موقع المركبة لحظة بلحظة من خلال
-                    النظام المتوافق.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🛰️</span>
-                  <span>
-                    تحديد المواقع باستخدام أنظمة GNSS مع دعم LBS.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>📡</span>
-                  <span>
-                    دعم شبكة 4G LTE Cat.1 مع 2G Fallback حسب توافر الشبكة.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🗺️</span>
-                  <span>
-                    عرض المسارات وسجل الرحلات والحركة السابقة من خلال
-                    النظام أو السيرفر المتوافق.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🚨</span>
-                  <span>
-                    تنبيهات عند فصل مصدر الطاقة أو العبث بالجهاز حسب
-                    إعدادات النظام.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>⚡</span>
-                  <span>
-                    إمكانية إيقاف المركبة عن بُعد من خلال النظام المتوافق
-                    وبعد التركيب والتوصيل بشكل صحيح.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🎙️</span>
-                  <span>
-                    دعم المراقبة الصوتية حسب تجهيز الجهاز والنظام المتوافق.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🏢</span>
-                  <span>
-                    دعم استخدامات إدارة الأساطيل والشركات والمؤسسات.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🚚</span>
-                  <span>
-                    مناسب للشاحنات والحافلات والمركبات التجارية والخدمية.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🧑‍✈️</span>
-                  <span>
-                    إمكانية متابعة سلوك السائق والمركبة من خلال الوظائف
-                    المتاحة بالنظام.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🆘</span>
-                  <span>
-                    دعم زر الاستغاثة SOS حسب التجهيزات المتوافقة.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🔋</span>
-                  <span>
-                    بطارية احتياطية مدمجة للمساعدة عند فصل مصدر الطاقة
-                    الرئيسي.
-                  </span>
-                </li>
-
-                <li className="flex gap-3">
-                  <span>🤝</span>
-                  <span>
-                    دعم فني ومتابعة من GPS World Egypt.
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            {/* SPECIFICATIONS */}
-
-            <div className="rounded-3xl bg-white p-7 shadow-md md:p-8">
-              <h2 className="mb-7 text-2xl font-extrabold text-blue-950">
-                ⚙️ المواصفات الفنية لجهاز B100
-              </h2>
-
-              <div className="overflow-hidden rounded-2xl border border-gray-200">
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">الموديل</span>
-                  <span className="text-gray-600">B100</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    نوع الجهاز
-                  </span>
-
-                  <span className="text-gray-600">GPS Tracker</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    تقنية الاتصال
-                  </span>
-
-                  <span className="text-gray-600">4G LTE Cat.1</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    دعم الشبكات
-                  </span>
-
-                  <span className="text-gray-600">
-                    4G + 2G Fallback
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    أنظمة التحديد
-                  </span>
-
-                  <span className="text-gray-600">GNSS + LBS</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    دقة تحديد الموقع
-                  </span>
-
-                  <span className="text-gray-600">
-                    تحديد مواقع عالي الدقة
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    جهد التشغيل
-                  </span>
-
-                  <span className="font-bold text-blue-700">
-                    9V – 90V DC
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    البطارية الاحتياطية
-                  </span>
-
-                  <span className="text-gray-600">250mAh / 3.7V</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    درجة حرارة التشغيل
-                  </span>
-
-                  <span className="text-gray-600">
-                    -20°C ~ +75°C
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    حساسية استقبال الإشارة
-                  </span>
-
-                  <span className="text-gray-600">-162dBm</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    مقاومة الماء والغبار
-                  </span>
-
-                  <span className="text-gray-600">IPX5</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] border-b border-gray-200 p-4">
-                  <span className="font-bold text-gray-800">
-                    استهلاك الطاقة
-                  </span>
-
-                  <span className="text-gray-600">أقل من 4mA</span>
-                </div>
-
-                <div className="grid grid-cols-[42%_58%] bg-gray-50 p-4">
-                  <span className="font-bold text-gray-800">
-                    التوسعات
-                  </span>
-
-                  <span className="text-gray-600">
-                    دعم الحساسات والملحقات
-                  </span>
-                </div>
+            <div className="order-1 lg:order-2">
+              <div
+                className="overflow-hidden rounded-3xl border border-slate-200 bg-white p-3 shadow-2xl"
+                style={{ backgroundColor: "#ffffff" }}
+              >
+                <DeviceGallery
+                  images={[
+                    "/images/B100.jpeg",
+                    "/images/B100-2.jpeg",
+                    "/images/B100-3.jpeg",
+                    "/images/B100-4.jpeg",
+                    "/images/B100-5.jpeg",
+                    "/images/B100-6.jpeg",
+                  ]}
+                  deviceName="B100"
+                />
               </div>
             </div>
           </div>
-        </section>
-
-        {/* ================= FLEET MANAGEMENT ================= */}
-
-        <section className="bg-blue-50 px-5 py-16">
-          <div className="mx-auto max-w-6xl">
-            <div className="text-center">
-              <span className="font-bold text-blue-700">B100</span>
-
-              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                مناسب لإدارة ومتابعة الأساطيل
-              </h2>
-
-              <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-                يوفر B100 مجموعة من الوظائف التي تساعد الشركات
-                والمؤسسات على متابعة المركبات وتحسين كفاءة التشغيل
-                ومراقبة أداء السائقين.
-              </p>
-            </div>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🚚</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  شركات النقل
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  متابعة الشاحنات والرحلات وتحسين كفاءة التشغيل.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🏢</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  الشركات والمؤسسات
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  إدارة أساطيل الشركات والمركبات الخدمية.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🚕</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  المركبات التجارية
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  مناسب لسيارات الأجرة والحافلات والفانات والتأجير.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 text-center shadow-sm">
-                <div className="text-4xl">🛡️</div>
-
-                <h3 className="mt-3 font-extrabold text-blue-950">
-                  الحماية
-                </h3>
-
-                <p className="mt-2 leading-7 text-gray-600">
-                  المساعدة في متابعة المركبات وتقليل مخاطر السرقة.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= SMART FUNCTIONS ================= */}
-
-        <section className="mx-auto max-w-7xl px-5 py-16">
-          <div className="text-center">
-            <span className="font-bold text-blue-700">وظائف ذكية</span>
-
-            <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-              متابعة وتحليل حركة المركبة
-            </h2>
-
-            <p className="mx-auto mt-5 max-w-3xl text-lg leading-9 text-gray-600">
-              يساعد B100 في جمع ومتابعة بيانات الحركة والرحلات
-              والتنبيهات، مما يدعم مراقبة المركبات وتحسين إدارة
-              الأسطول.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                📊 تحليل سلوك القيادة
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                متابعة بعض أنماط القيادة مثل السرعة الزائدة
-                والتسارع المفاجئ والتوقفات الطويلة حسب وظائف النظام
-                المتوافق.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🗺️ سجل الرحلات
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                عرض تاريخ الحركة واسترجاع المسارات السابقة ومراجعة
-                نقاط التوقف والانطلاق من خلال النظام المتوافق.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🚨 التنبيهات الذكية
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                دعم التنبيهات عند فصل الطاقة أو العبث بالجهاز أو
-                تجاوز السرعة أو الخروج من النطاق الجغرافي المحدد،
-                وفق إعدادات النظام.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🆘 SOS
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                دعم زر الاستغاثة للطوارئ حسب التجهيزات والنظام
-                المتوافق.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🎙️ مراقبة صوتية
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                إمكانية المراقبة الصوتية حسب تجهيز الجهاز والنظام
-                المستخدم.
-              </p>
-            </div>
-
-            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-extrabold text-blue-950">
-                🔐 استرجاع المركبات
-              </h3>
-
-              <p className="mt-3 leading-8 text-gray-600">
-                يساعد التتبع المستمر في تحديد موقع المركبة ومتابعتها
-                عند الحاجة.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= APPLICATIONS ================= */}
-
-        <section className="bg-gray-100 px-5 py-16">
-          <div className="mx-auto max-w-6xl">
-            <div className="text-center">
-              <span className="font-bold text-blue-700">
-                الاستخدامات المثالية
-              </span>
-
-              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أين يمكن استخدام B100؟
-              </h2>
-            </div>
-
-            <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚛 النقل والخدمات اللوجستية
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة الشاحنات والنقل الثقيل والتوزيع والرحلات.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚗 شركات التأجير
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  مراقبة المركبات وتقليل مخاطر الاستخدام غير المصرح
-                  به.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🏢 الشركات والمؤسسات
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  إدارة أساطيل الشركات وسيارات المبيعات والخدمة.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚌 الحافلات والفانات
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة المركبات التجارية والخدمية.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🚕 سيارات الأجرة
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  متابعة الحركة والرحلات وسجل المسارات.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-extrabold text-blue-950">
-                  🏛️ المؤسسات الكبرى
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  إدارة ومراقبة الأساطيل من خلال منصة موحدة.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= CERTIFICATES ================= */}
-
-        <section className="mx-auto max-w-5xl px-5 py-16">
-          <div className="rounded-3xl bg-white p-8 text-center shadow-md">
-            <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
-              🏆 الاعتمادات والشهادات
-            </h2>
-
-            <div className="mt-7 flex flex-wrap justify-center gap-4">
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                CE
-              </span>
-
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                FCC
-              </span>
-
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                RoHS
-              </span>
-
-              <span className="rounded-xl bg-blue-50 px-6 py-3 font-bold text-blue-900">
-                ANATEL
-              </span>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= WARRANTY ================= */}
-
-        <section className="mx-auto max-w-5xl px-5 pb-16">
-          <div className="rounded-3xl bg-blue-50 p-8">
-            <h2 className="text-2xl font-extrabold text-blue-950 md:text-3xl">
-              🛡️ الضمان والتشغيل
-            </h2>
-
-            <div className="mt-7 grid gap-5 md:grid-cols-2">
-              <div className="rounded-2xl bg-white p-6">
-                <h3 className="font-extrabold text-blue-950">
-                  تشغيل السيرفر
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  مدة تشغيل السيرفر سنة، ويتم التجديد حسب نوع
-                  السيرفر.
-                </p>
-              </div>
-
-              <div className="rounded-2xl bg-white p-6">
-                <h3 className="font-extrabold text-blue-950">
-                  الضمان
-                </h3>
-
-                <p className="mt-3 leading-8 text-gray-600">
-                  ضمان سنة ضد عيوب الصناعة، ولا يشمل الضمان الحرق
-                  أو الكسر.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ================= FAQ ================= */}
-
-        <section className="bg-gray-100 px-5 py-16">
-          <div className="mx-auto max-w-5xl">
-            <div className="text-center">
-              <span className="font-bold text-blue-700">
-                أسئلة شائعة
-              </span>
-
-              <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أسئلة عن جهاز B100
-              </h2>
-            </div>
-
-            <div className="mt-10 space-y-5">
-              {faqs.map((faq) => (
-                <details
-                  key={faq.question}
-                  className="rounded-2xl bg-white p-5 shadow-sm"
-                >
-                  <summary className="cursor-pointer text-lg font-extrabold text-blue-950">
-                    {faq.question}
-                  </summary>
-
-                  <p className="mt-4 leading-8 text-gray-600">
-                    {faq.answer}
+        </div>
+      </section>
+
+      {/* Intro */}
+      <section
+        className="mx-auto max-w-6xl px-4 py-10"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div
+          className="rounded-3xl border border-blue-100 bg-white p-6 shadow-sm sm:p-8"
+          style={{ backgroundColor: "#ffffff" }}
+        >
+          <h2 className="text-2xl font-black text-blue-950">
+            B100 — جهاز صغير لكن عملي
+          </h2>
+
+          <p className="mt-4 leading-8 text-slate-600">
+            أهم نقطة تميز B100 هي حجمه الصغير جدًا ووزنه الخفيف، مع جهد تشغيل
+            واسع من 9 إلى 90 فولت. وده يجعله اختيارًا عمليًا خصوصًا للموتوسيكلات
+            والسكوتر والمركبات التي تحتاج إلى جهاز يسهل تركيبه وإخفاؤه في مساحة
+            ضيقة.
+          </p>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section
+        className="mx-auto max-w-6xl bg-white px-4 py-6"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div className="mb-8 text-center">
+          <span className="text-sm font-black text-blue-700">
+            مميزات الجهاز
+          </span>
+
+          <h2 className="mt-2 text-3xl font-black text-slate-950">
+            مميزات جهاز B100 بالتفصيل
+          </h2>
+
+          <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-600">
+            كل المميزات المهمة في جهاز واحد، مع تصميم صغير مناسب للتركيب في
+            الأماكن الضيقة.
+          </p>
+        </div>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          {features.map((feature) => (
+            <article
+              key={feature.number}
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+              style={{ backgroundColor: "#ffffff" }}
+            >
+              <div className="flex items-start gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-blue-900 text-lg font-black text-white">
+                  {feature.number}
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-black text-slate-950">
+                    {feature.title}
+                  </h3>
+
+                  <p className="mt-3 leading-8 text-slate-600">
+                    {feature.text}
                   </p>
-                </details>
-              ))}
-            </div>
-          </div>
-        </section>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
 
-        {/* ================= CONTACT ================= */}
-
-        <section className="mx-auto max-w-5xl px-5 py-16">
-          <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
-            <h2 className="text-3xl font-extrabold md:text-4xl">
-              هل تريد معرفة المزيد عن جهاز B100؟
+      {/* Practical Difference */}
+      <section
+        className="mx-auto max-w-6xl bg-white px-4 py-12"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div className="overflow-hidden rounded-3xl bg-blue-950 text-white shadow-xl">
+          <div className="p-6 sm:p-8">
+            <h2 className="text-2xl font-black sm:text-3xl">
+              ليه تختار B100؟
             </h2>
 
-            <p className="mt-4 text-lg leading-8 text-blue-200">
-              تواصل معنا لمعرفة التفاصيل والتوفر وطلب الجهاز.
-            </p>
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              <div className="rounded-2xl bg-white/10 p-5">
+                <div className="text-xl font-black">
+                  📦 حجم صغير
+                </div>
+                <p className="mt-2 text-sm leading-7 text-blue-100">
+                  حجمه 72 × 31 × 12 مم فقط، وده بيساعد في تركيبه وإخفائه في
+                  الأماكن الضيقة.
+                </p>
+              </div>
 
-            <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-              <a
-                href={whatsappOrderUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl bg-green-600 px-8 py-4 text-lg font-bold text-white transition hover:bg-green-700"
-              >
-                💬 اطلب الجهاز عبر واتساب
-              </a>
+              <div className="rounded-2xl bg-white/10 p-5">
+                <div className="text-xl font-black">
+                  ⚙️ 9–90V
+                </div>
+                <p className="mt-2 text-sm leading-7 text-blue-100">
+                  جهد تشغيل واسع مناسب لمجموعة كبيرة من المركبات ضمن نطاق
+                  التشغيل.
+                </p>
+              </div>
 
-              <a
-                href="/#products"
-                className="rounded-xl bg-white px-8 py-4 text-lg font-bold text-blue-950 transition hover:bg-gray-100"
-              >
-                📡 مشاهدة باقي الأجهزة
-              </a>
+              <div className="rounded-2xl bg-white/10 p-5">
+                <div className="text-xl font-black">
+                  🏍️ مناسب للموتوسيكلات
+                </div>
+                <p className="mt-2 text-sm leading-7 text-blue-100">
+                  حجمه ووزنه الخفيف يجعلاه مناسبًا جدًا للموتوسيكلات والسكوتر
+                  والأماكن التي لا تسمح بتركيب جهاز كبير.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* ================= FOOTER ================= */}
+      {/* Applications */}
+      <section
+        className="mx-auto max-w-6xl bg-white px-4 py-6"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div
+          className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8"
+          style={{ backgroundColor: "#ffffff" }}
+        >
+          <h2 className="text-2xl font-black text-slate-950">
+            مناسب لمين؟
+          </h2>
 
-        <footer className="bg-blue-950 text-white">
-          <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-            <h3 className="text-2xl font-extrabold">
-              GPS World Egypt
-            </h3>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            {applications.map((item, index) => (
+              <div
+                key={item}
+                className="flex items-center gap-3 rounded-2xl bg-slate-50 p-4"
+                style={{ backgroundColor: "#f8fafc" }}
+              >
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-900 text-sm font-black text-white">
+                  {index + 1}
+                </span>
 
-            <p className="mt-3 text-blue-200">
-              أجهزة GPS للتتبع والمراقبة
+                <span className="font-bold leading-7 text-slate-700">
+                  {item}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Notes */}
+      <section
+        className="mx-auto max-w-6xl bg-white px-4 py-12"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div className="grid gap-5 md:grid-cols-2">
+          <div
+            className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"
+            style={{ backgroundColor: "#ffffff" }}
+          >
+            <h2 className="text-xl font-black text-slate-950">
+              معلومات مهمة عن B100
+            </h2>
+
+            <div className="mt-5 space-y-3">
+              <div
+                className="rounded-2xl bg-slate-50 p-4"
+                style={{ backgroundColor: "#f8fafc" }}
+              >
+                <span className="font-black">الشبكة:</span>{" "}
+                <span className="text-slate-600">2G</span>
+              </div>
+
+              <div
+                className="rounded-2xl bg-slate-50 p-4"
+                style={{ backgroundColor: "#f8fafc" }}
+              >
+                <span className="font-black">جهد التشغيل:</span>{" "}
+                <span className="text-slate-600">9–90V DC</span>
+              </div>
+
+              <div
+                className="rounded-2xl bg-slate-50 p-4"
+                style={{ backgroundColor: "#f8fafc" }}
+              >
+                <span className="font-black">البطارية:</span>{" "}
+                <span className="text-slate-600">55mAh</span>
+              </div>
+
+              <div
+                className="rounded-2xl bg-slate-50 p-4"
+                style={{ backgroundColor: "#f8fafc" }}
+              >
+                <span className="font-black">المقاس:</span>{" "}
+                <span className="text-slate-600">
+                  72 × 31 × 12 مم
+                </span>
+              </div>
+
+              <div
+                className="rounded-2xl bg-slate-50 p-4"
+                style={{ backgroundColor: "#f8fafc" }}
+              >
+                <span className="font-black">الوزن:</span>{" "}
+                <span className="text-slate-600">حوالي 30 جرام</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="rounded-3xl border border-emerald-100 bg-emerald-50 p-6 shadow-sm"
+            style={{ backgroundColor: "#ecfdf5" }}
+          >
+            <h2 className="text-xl font-black text-emerald-950">
+              الضمان 🛡️
+            </h2>
+
+            <p className="mt-5 text-lg font-bold leading-9 text-emerald-900">
+              جهاز B100 بضمان سنة ضد عيوب الصناعة.
             </p>
 
-            <p className="mt-5 text-blue-300">
-              📞 01006687163
+            <p className="mt-3 leading-8 text-emerald-800">
+              ويتم التركيب والتوصيل بالطريقة المناسبة لنوع المركبة ووظائف
+              الجهاز المطلوبة.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison */}
+      <section
+        id="comparison"
+        className="mx-auto max-w-6xl bg-white px-4 py-6"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div
+          className="rounded-3xl border border-blue-200 bg-blue-50 p-6 text-center sm:p-8"
+          style={{ backgroundColor: "#eff6ff" }}
+        >
+          <h2 className="text-2xl font-black text-blue-950">
+            محتار بين B100 وجهاز تاني؟
+          </h2>
+
+          <p className="mx-auto mt-3 max-w-2xl leading-7 text-slate-600">
+            قارن بين الأجهزة وشوف الفرق العملي بينهم قبل ما تختار الجهاز
+            المناسب لمركبتك.
+          </p>
+
+          <a
+            href="/comparison"
+            className="mt-6 inline-flex rounded-2xl bg-blue-900 px-7 py-4 font-black text-white shadow-lg"
+          >
+            قارن بين جهازين
+          </a>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section
+        className="mx-auto max-w-6xl bg-white px-4 py-12"
+        style={{ backgroundColor: "#ffffff" }}
+      >
+        <div className="mb-7">
+          <h2 className="text-2xl font-black text-slate-950">
+            الأسئلة الشائعة عن B100
+          </h2>
+        </div>
+
+        <div className="space-y-4">
+          {faqs.map((faq) => (
+            <details
+              key={faq.question}
+              className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+              style={{ backgroundColor: "#ffffff" }}
+            >
+              <summary className="cursor-pointer list-none font-black text-slate-900">
+                <span className="flex items-center justify-between gap-4">
+                  {faq.question}
+                  <span className="text-xl text-blue-700 transition group-open:rotate-45">
+                    +
+                  </span>
+                </span>
+              </summary>
+
+              <p className="mt-4 border-t border-slate-100 pt-4 leading-8 text-slate-600">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section className="bg-blue-950">
+        <div className="mx-auto max-w-6xl px-4 py-12 text-center">
+          <h2 className="text-3xl font-black text-white">
+            عايز تعرف هل B100 مناسب لمركبتك؟
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl leading-8 text-blue-100">
+            تواصل معنا قبل الشراء، ونحدد لك الجهاز المناسب حسب نوع المركبة
+            وطريقة التركيب المطلوبة.
+          </p>
+
+          <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
+            <WhatsAppLink
+              message="السلام عليكم، عايز أعرف تفاصيل جهاز B100 وهل مناسب لمركبتي."
+              className="rounded-2xl bg-emerald-500 px-7 py-4 font-black text-white shadow-lg"
+            >
+              تواصل معنا على واتساب
+            </WhatsAppLink>
 
             <a
-              href={whatsappBaseUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block text-green-400 transition hover:text-green-300"
+              href="tel:01006687163"
+              className="rounded-2xl border border-white/30 bg-white/10 px-7 py-4 font-black text-white"
             >
-              💬 تواصل معنا عبر واتساب
+              01006687163
             </a>
-
-            <div className="mt-8 border-t border-blue-800 pt-5 text-sm text-blue-300">
-              © 2026 GPS World Egypt - جميع الحقوق محفوظة
-            </div>
           </div>
-        </footer>
+        </div>
+      </section>
 
-        {/* ================= FLOATING WHATSAPP ================= */}
+      {/* Footer */}
+      <footer className="bg-slate-950 text-slate-400">
+        <div className="mx-auto max-w-6xl px-4 py-8 text-center">
+          <div className="font-black text-white">
+            GPS World Egypt
+          </div>
 
-        <a
-          href={whatsappBaseUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="التواصل عبر واتساب"
-          className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl text-white shadow-2xl transition hover:bg-green-600"
-        >
-          💬
-        </a>
-      </main>
-    </>
+          <p className="mt-2 text-sm">
+            أجهزة تتبع GPS للسيارات والمركبات
+          </p>
+
+          <p className="mt-4 text-xs">
+            © {new Date().getFullYear()} GPS World Egypt. جميع الحقوق محفوظة.
+          </p>
+        </div>
+      </footer>
+
+      {/* Floating WhatsApp */}
+      <WhatsAppLink
+        message="السلام عليكم، عايز أعرف تفاصيل جهاز B100 وسعره."
+        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500 text-2xl text-white shadow-2xl"
+      >
+        <span aria-hidden="true">◉</span>
+      </WhatsAppLink>
+    </main>
   );
 }
