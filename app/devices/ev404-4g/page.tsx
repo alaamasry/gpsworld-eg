@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import DeviceGallery from "../DeviceGallery";
 
 const siteUrl = "https://gpsworld-eg.com";
 const pageUrl = `${siteUrl}/devices/ev404-4g`;
@@ -241,14 +241,17 @@ export default function EV404Page() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* IMAGE */}
 
-            <div className="flex min-h-[420px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-              <Image
-                src={product.image}
-                alt="EV404 جهاز تتبع سيارات GPS في مصر"
-                width={650}
-                height={500}
-                priority
-                className="max-h-[480px] w-full object-contain"
+            <div className="relative">
+              <DeviceGallery
+                images={[
+                  "/images/ev404.jpeg",
+                  "/images/ev404-2.jpeg",
+                  "/images/ev404-3.jpeg",
+                  "/images/ev404-4.jpeg",
+                  "/images/ev404-5.jpeg",
+                  "/images/ev404-6.jpeg",
+                ]}
+                deviceName="EV404"
               />
             </div>
 
@@ -906,17 +909,13 @@ export default function EV404Page() {
 
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-            <h3 className="text-2xl font-extrabold">
-              GPS World Egypt
-            </h3>
+            <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
 
             <p className="mt-3 text-blue-200">
               أجهزة GPS للتتبع والمراقبة
             </p>
 
-            <p className="mt-5 text-blue-300">
-              📞 01006687163
-            </p>
+            <p className="mt-5 text-blue-300">📞 01006687163</p>
 
             <a
               href={whatsappBaseUrl}

@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "AT4 PLUS | جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر",
@@ -216,14 +216,17 @@ export default function AT4PlusPage() {
       {/* Product */}
       <section className="mx-auto max-w-7xl px-5 py-10">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-            <Image
-              src={product.image}
-              alt="AT4 PLUS جهاز تتبع GPS لاسلكي للأصول والسيارات في مصر"
-              width={650}
-              height={500}
-              priority
-              className="max-h-[500px] w-full object-contain"
+          <div className="relative">
+            <DeviceGallery
+              images={[
+                "/images/AT4 PLUS.jpeg",
+                "/images/AT4 PLUS-2.jpeg",
+                "/images/AT4 PLUS-3.jpeg",
+                "/images/AT4 PLUS-4.jpeg",
+                "/images/AT4 PLUS-5.jpeg",
+                "/images/AT4 PLUS-6.jpeg",
+              ]}
+              deviceName="AT4 PLUS"
             />
           </div>
 

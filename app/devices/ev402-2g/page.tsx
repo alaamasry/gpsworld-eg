@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "EV402 | جهاز تتبع سيارات GPS في مصر",
@@ -190,10 +190,7 @@ export default function EV402Page() {
         }}
       />
 
-      <main
-        className="min-h-screen bg-gray-50 text-gray-900"
-        dir="rtl"
-      >
+      <main className="min-h-screen bg-gray-50 text-gray-900" dir="rtl">
         {/* ================= HEADER ================= */}
 
         <header className="sticky top-0 z-50 bg-blue-950 text-white shadow-lg">
@@ -239,14 +236,17 @@ export default function EV402Page() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* IMAGE */}
 
-            <div className="flex min-h-[450px] items-center justify-center rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
-              <Image
-                src={product.image}
-                alt="EV402 جهاز تتبع سيارات GPS في مصر"
-                width={650}
-                height={500}
-                priority
-                className="max-h-[500px] w-full object-contain"
+            <div className="relative">
+              <DeviceGallery
+                images={[
+                  "/images/ev402.jpeg",
+                  "/images/ev402-2.jpeg",
+                  "/images/ev402-3.jpeg",
+                  "/images/ev402-4.jpeg",
+                  "/images/ev402-5.jpeg",
+                  "/images/ev402-6.jpeg",
+                ]}
+                deviceName="EV402"
               />
             </div>
 
@@ -364,15 +364,11 @@ export default function EV402Page() {
 
                 <li>✓ تصميم عملي ومناسب للتركيب داخل المركبة.</li>
 
-                <li>
-                  ✓ إمكانية المتابعة من خلال منصة GPS المناسبة.
-                </li>
+                <li>✓ إمكانية المتابعة من خلال منصة GPS المناسبة.</li>
 
                 <li>✓ يساعد على متابعة حركة المركبة.</li>
 
-                <li>
-                  ✓ مناسب للأفراد والشركات وأصحاب الأساطيل.
-                </li>
+                <li>✓ مناسب للأفراد والشركات وأصحاب الأساطيل.</li>
 
                 <li>✓ يساعد على تنظيم ومراقبة المركبات.</li>
 
@@ -403,9 +399,7 @@ export default function EV402Page() {
                     النوع
                   </div>
 
-                  <div className="p-4 text-gray-800">
-                    جهاز تتبع GPS
-                  </div>
+                  <div className="p-4 text-gray-800">جهاز تتبع GPS</div>
                 </div>
 
                 <div className="grid grid-cols-2 border-b border-gray-200">
@@ -443,9 +437,7 @@ export default function EV402Page() {
                     الحالة
                   </div>
 
-                  <div className="p-4 font-bold text-green-600">
-                    متوفر
-                  </div>
+                  <div className="p-4 font-bold text-green-600">متوفر</div>
                 </div>
               </div>
             </div>
@@ -553,9 +545,7 @@ export default function EV402Page() {
         <section className="mx-auto max-w-7xl px-5 py-16">
           <div className="rounded-3xl bg-blue-50 p-8 md:p-12">
             <div className="text-center">
-              <span className="font-bold text-blue-700">
-                الاستخدامات
-              </span>
+              <span className="font-bold text-blue-700">الاستخدامات</span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
                 أين يمكن استخدام EV402؟
@@ -618,9 +608,7 @@ export default function EV402Page() {
 
         <section className="bg-blue-950 px-5 py-16 text-white">
           <div className="mx-auto max-w-5xl text-center">
-            <span className="font-bold text-cyan-300">
-              GPS World Egypt
-            </span>
+            <span className="font-bold text-cyan-300">GPS World Egypt</span>
 
             <h2 className="mt-3 text-3xl font-extrabold md:text-4xl">
               لماذا تختار EV402؟
@@ -636,9 +624,7 @@ export default function EV402Page() {
               <div className="rounded-2xl bg-blue-900 p-6">
                 <div className="text-3xl">📍</div>
 
-                <h3 className="mt-3 font-extrabold">
-                  متابعة المركبة
-                </h3>
+                <h3 className="mt-3 font-extrabold">متابعة المركبة</h3>
 
                 <p className="mt-2 text-blue-100">
                   متابعة الموقع والحركة بصورة عملية.
@@ -648,9 +634,7 @@ export default function EV402Page() {
               <div className="rounded-2xl bg-blue-900 p-6">
                 <div className="text-3xl">🛡️</div>
 
-                <h3 className="mt-3 font-extrabold">
-                  حل عملي
-                </h3>
+                <h3 className="mt-3 font-extrabold">حل عملي</h3>
 
                 <p className="mt-2 text-blue-100">
                   مناسب للاستخدامات اليومية المختلفة.
@@ -660,9 +644,7 @@ export default function EV402Page() {
               <div className="rounded-2xl bg-blue-900 p-6">
                 <div className="text-3xl">🏢</div>
 
-                <h3 className="mt-3 font-extrabold">
-                  للأفراد والشركات
-                </h3>
+                <h3 className="mt-3 font-extrabold">للأفراد والشركات</h3>
 
                 <p className="mt-2 text-blue-100">
                   مناسب للسيارات الخاصة والأساطيل.
@@ -676,9 +658,7 @@ export default function EV402Page() {
 
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="text-center">
-            <span className="font-bold text-blue-700">
-              الأسئلة الشائعة
-            </span>
+            <span className="font-bold text-blue-700">الأسئلة الشائعة</span>
 
             <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
               أسئلة عن جهاز EV402
@@ -739,17 +719,13 @@ export default function EV402Page() {
 
         <footer className="bg-blue-950 text-white">
           <div className="mx-auto max-w-7xl px-5 py-10 text-center">
-            <h3 className="text-2xl font-extrabold">
-              GPS World Egypt
-            </h3>
+            <h3 className="text-2xl font-extrabold">GPS World Egypt</h3>
 
             <p className="mt-3 text-blue-200">
               أجهزة GPS للتتبع والمراقبة
             </p>
 
-            <p className="mt-5 text-blue-300">
-              📞 01006687163
-            </p>
+            <p className="mt-5 text-blue-300">📞 01006687163</p>
 
             <a
               href={whatsappBaseUrl}

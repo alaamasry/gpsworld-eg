@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "B100 | جهاز تتبع سيارات GPS في مصر",
@@ -231,14 +231,17 @@ export default function B100Page() {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* IMAGE */}
 
-            <div className="flex min-h-[420px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-              <Image
-                src={product.image}
-                alt="B100 جهاز تتبع سيارات GPS في مصر"
-                width={650}
-                height={500}
-                priority
-                className="max-h-[480px] w-full object-contain"
+            <div className="relative">
+              <DeviceGallery
+                images={[
+                  "/images/B100.jpeg",
+                  "/images/B100-2.jpeg",
+                  "/images/B100-3.jpeg",
+                  "/images/B100-4.jpeg",
+                  "/images/B100-5.jpeg",
+                  "/images/B100-6.jpeg",
+                ]}
+                deviceName="B100"
               />
             </div>
 

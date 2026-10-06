@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "AK300 | جهاز تتبع سيارات GPS 4G في مصر",
@@ -255,9 +255,7 @@ const structuredData = {
     {
       "@type": "Product",
       name: product.name,
-      image: [
-        "https://gpsworld-eg.com/images/AK300.jpeg",
-      ],
+      image: ["https://gpsworld-eg.com/images/AK300.jpeg"],
       url: product.url,
       description:
         "جهاز AK300 لتتبع السيارات والمركبات بتقنية GPS و4G، مع وظائف التتبع والتنبيهات وسجل الرحلات وإدارة الأساطيل.",
@@ -395,22 +393,26 @@ export default function AK300Page() {
             </div>
           </div>
 
+          {/* AK300 GALLERY */}
           <div className="order-1 lg:order-2">
             <div className="relative mx-auto max-w-xl">
               <div className="absolute inset-10 rounded-full bg-cyan-400/20 blur-3xl" />
 
-              <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-2xl shadow-cyan-950/40">
-                <div className="absolute right-5 top-5 rounded-full border border-cyan-400/30 bg-slate-950/80 px-4 py-2 text-xs font-bold text-cyan-300">
+              <div className="relative">
+                <div className="absolute right-5 top-5 z-10 rounded-full border border-cyan-400/30 bg-slate-950/80 px-4 py-2 text-xs font-bold text-cyan-300">
                   AK300 • 4G
                 </div>
 
-                <Image
-                  src={product.image}
-                  alt="جهاز AK300 لتتبع السيارات GPS 4G"
-                  width={900}
-                  height={900}
-                  priority
-                  className="relative h-auto w-full object-contain"
+                <DeviceGallery
+                  images={[
+                    "/images/AK300.jpeg",
+                    "/images/AK300-2.jpeg",
+                    "/images/AK300-3.jpeg",
+                    "/images/AK300-4.jpeg",
+                    "/images/AK300-5.jpeg",
+                    "/images/AK300-6.jpeg",
+                  ]}
+                  deviceName="AK300"
                 />
               </div>
             </div>
@@ -458,7 +460,6 @@ export default function AK300Page() {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
-          {/* FEATURES */}
           <div className="rounded-3xl border border-cyan-400/10 bg-gradient-to-br from-cyan-400/[0.08] to-transparent p-7">
             <h3 className="text-2xl font-black">
               أهم مميزات AK300
@@ -498,7 +499,6 @@ export default function AK300Page() {
             </div>
           </div>
 
-          {/* SPECS */}
           <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-7">
             <h3 className="text-2xl font-black">
               المواصفات الفنية

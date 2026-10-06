@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "J16PRO Max Intel | جهاز تتبع سيارات GPS 4G في مصر",
@@ -242,14 +242,17 @@ export default function J16ProMaxIntelPage() {
           <div className="grid gap-10 lg:grid-cols-2">
             {/* ================= IMAGE ================= */}
 
-            <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-              <Image
-                src={product.image}
-                alt="J16PRO Max Intel جهاز تتبع سيارات GPS 4G في مصر"
-                width={650}
-                height={500}
-                priority
-                className="max-h-[500px] w-full object-contain"
+            <div className="relative">
+              <DeviceGallery
+                images={[
+                  "/images/J16PRO max.jpeg",
+                  "/images/J16PRO max-2.jpeg",
+                  "/images/J16PRO max-3.jpeg",
+                  "/images/J16PRO max-4.jpeg",
+                  "/images/J16PRO max-5.jpeg",
+                  "/images/J16PRO max-6.jpeg",
+                ]}
+                deviceName="J16PRO Max Intel"
               />
             </div>
 

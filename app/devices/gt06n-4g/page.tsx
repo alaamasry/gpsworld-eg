@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "GT06N 4G | جهاز تتبع سيارات GPS 4G في مصر",
@@ -224,14 +224,17 @@ export default function GT06N4GPage() {
         <div className="grid gap-10 lg:grid-cols-2">
           {/* IMAGE */}
 
-          <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-            <Image
-              src={product.image}
-              alt="GT06N 4G جهاز تتبع سيارات GPS للسيارات والمركبات في مصر"
-              width={650}
-              height={500}
-              priority
-              className="max-h-[500px] w-full object-contain"
+          <div className="relative">
+            <DeviceGallery
+              images={[
+                "/images/GT06N 4G.jpeg",
+                "/images/GT06N 4G-2.jpeg",
+                "/images/GT06N 4G-3.jpeg",
+                "/images/GT06N 4G-4.jpeg",
+                "/images/GT06N 4G-5.jpeg",
+                "/images/GT06N 4G-6.jpeg",
+              ]}
+              deviceName="GT06N 4G"
             />
           </div>
 

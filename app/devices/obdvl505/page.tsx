@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "OBD VL505 | جهاز تتبع سيارات GPS OBD في مصر",
@@ -237,14 +237,17 @@ export default function OBDVL505Page() {
         {/* PRODUCT HERO */}
         <section className="mx-auto max-w-7xl px-5 py-10">
           <div className="grid gap-10 lg:grid-cols-2">
-            <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-              <Image
-                src={product.image}
-                alt="OBD VL505 جهاز تتبع سيارات GPS بمنفذ OBD في مصر"
-                width={650}
-                height={500}
-                priority
-                className="max-h-[500px] w-full object-contain"
+            <div className="relative">
+              <DeviceGallery
+                images={[
+                  "/images/OBDVL505.jpeg",
+                  "/images/OBDVL505-2.jpeg",
+                  "/images/OBDVL505-3.jpeg",
+                  "/images/OBDVL505-4.jpeg",
+                  "/images/OBDVL505-5.jpeg",
+                  "/images/OBDVL505-6.jpeg",
+                ]}
+                deviceName="OBD VL505"
               />
             </div>
 

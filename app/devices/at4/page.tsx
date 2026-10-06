@@ -1,5 +1,5 @@
-import Image from "next/image";
 import type { Metadata } from "next";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "AT4 | جهاز تتبع سيارات GPS مغناطيسي بدون أسلاك في مصر",
@@ -151,9 +151,7 @@ const structuredData = {
     {
       "@type": "Product",
       name: product.name,
-      image: [
-        "https://gpsworld-eg.com/images/AT4.jpeg",
-      ],
+      image: ["https://gpsworld-eg.com/images/AT4.jpeg"],
       url: product.url,
       description:
         "جهاز AT4 المغناطيسي لتتبع السيارات والمركبات بدون أسلاك، ببطارية 10000mAh ومغناطيس قوي ومتابعة عبر Tracksolid Pro.",
@@ -249,14 +247,17 @@ export default function AT4Page() {
       {/* Product Hero */}
       <section className="mx-auto max-w-7xl px-5 py-10">
         <div className="grid gap-10 lg:grid-cols-2">
-          <div className="flex min-h-[400px] items-center justify-center rounded-3xl bg-white p-8 shadow-md">
-            <Image
-              src={product.image}
-              alt="AT4 جهاز تتبع سيارات GPS مغناطيسي بدون أسلاك"
-              width={650}
-              height={500}
-              priority
-              className="max-h-[500px] w-full object-contain"
+          <div className="relative">
+            <DeviceGallery
+              images={[
+                "/images/AT4.jpeg",
+                "/images/AT4-2.jpeg",
+                "/images/AT4-3.jpeg",
+                "/images/AT4-4.jpeg",
+                "/images/AT4-5.jpeg",
+                "/images/AT4-6.jpeg",
+              ]}
+              deviceName="AT4"
             />
           </div>
 
@@ -685,6 +686,7 @@ export default function AT4Page() {
               <h3 className="font-bold text-blue-950">
                 بدون توصيلات كهربائية
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 مناسب لمن يريد جهاز تتبع يمكن تثبيته بسهولة دون تركيب أسلاك
                 داخل السيارة.
@@ -695,6 +697,7 @@ export default function AT4Page() {
               <h3 className="font-bold text-blue-950">
                 بطارية كبيرة
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 بطارية 10000mAh تساعد على تشغيل الجهاز لفترات طويلة حسب
                 الاستخدام.
@@ -705,6 +708,7 @@ export default function AT4Page() {
               <h3 className="font-bold text-blue-950">
                 تثبيت مغناطيسي
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 المغناطيس القوي يسمح بالتثبيت على الأسطح المعدنية المناسبة.
               </p>
@@ -714,6 +718,7 @@ export default function AT4Page() {
               <h3 className="font-bold text-blue-950">
                 متابعة من الموبايل
               </h3>
+
               <p className="mt-2 leading-7 text-gray-600">
                 متابعة المركبة من خلال منصة Tracksolid Pro حسب إعداد النظام.
               </p>
