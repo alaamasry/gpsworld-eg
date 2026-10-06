@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import DeviceGallery from "@/components/DeviceGallery";
+import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
   title: "EV404 4G | جهاز تتبع سيارات GPS في مصر",
