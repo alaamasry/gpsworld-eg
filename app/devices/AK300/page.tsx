@@ -1,824 +1,507 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import DeviceGallery from "../DeviceGallery";
 
 export const metadata: Metadata = {
-  title: "AK300 | جهاز تتبع سيارات GPS 4G في مصر",
+  title: "AK300 4G | جهاز تتبع سيارات GPS احترافي في مصر",
   description:
-    "جهاز AK300 لتتبع السيارات والمركبات بتقنية GPS و4G، مع تتبع لحظي، سجل الرحلات، تنبيهات ذكية، حماية من السرقة ووظائف مناسبة لإدارة الأساطيل في مصر.",
-  keywords: [
-    "AK300",
-    "AK300 GPS",
-    "جهاز AK300",
-    "جهاز تتبع AK300",
-    "GPS AK300",
-    "جهاز تتبع سيارات",
-    "جهاز GPS للسيارات",
-    "أجهزة GPS مصر",
-    "GPS مصر",
-    "GPS Tracker",
-    "GPS Tracker Egypt",
-    "GPS 4G",
-    "جهاز تتبع سيارات 4G",
-    "تتبع السيارات",
-    "تتبع المركبات",
-    "إدارة الأساطيل",
-    "جهاز تتبع مركبات",
-  ],
+    "جهاز GPS AK300 4G لتتبع السيارات وإدارة الأساطيل، مع 4G LTE Cat.1 وCAN Bus وBluetooth 5.1 وحساسات متعددة ودعم فصل المحرك.",
   alternates: {
     canonical: "https://gpsworld-eg.com/devices/ak300",
   },
   openGraph: {
-    title: "AK300 | جهاز تتبع سيارات GPS 4G في مصر",
+    title: "AK300 4G | جهاز تتبع سيارات GPS",
     description:
-      "تعرف على مواصفات ومميزات جهاز AK300 لتتبع السيارات والمركبات بتقنية 4G، ومتابعة الرحلات والتنبيهات وإدارة الأساطيل.",
+      "تتبع مباشر وإدارة أساطيل وقراءة بيانات المركبة عبر CAN Bus ودعم الحساسات والـ Bluetooth.",
     url: "https://gpsworld-eg.com/devices/ak300",
-    siteName: "GPS World Egypt",
+    type: "website",
     images: [
       {
-        url: "/images/AK300.jpeg",
-        width: 1200,
-        height: 1200,
-        alt: "جهاز AK300 لتتبع السيارات GPS 4G",
+        url: "https://gpsworld-eg.com/images/AK300.jpeg",
+        width: 2000,
+        height: 2000,
+        alt: "جهاز GPS AK300 4G",
       },
     ],
-    locale: "ar_EG",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "AK300 | جهاز تتبع سيارات GPS 4G",
-    description:
-      "جهاز AK300 لتتبع السيارات والمركبات بتقنية GPS و4G في مصر.",
-    images: ["/images/AK300.jpeg"],
   },
 };
 
-const whatsappNumber = "201006687163";
-
-const whatsappInquiry = encodeURIComponent(
-  "مرحبًا، أريد الاستفسار عن جهاز AK300 لتتبع السيارات."
-);
-
-const whatsappOrder = encodeURIComponent(
-  "مرحبًا، أريد طلب جهاز AK300 لتتبع السيارات."
-);
-
-const whatsappInquiryUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappInquiry;
-
-const whatsappOrderUrl =
-  "https://wa.me/" + whatsappNumber + "?text=" + whatsappOrder;
-
-const whatsappBaseUrl = "https://wa.me/201006687163";
-
-const product = {
-  name: "AK300",
-  image: "/images/AK300.jpeg",
-  url: "https://gpsworld-eg.com/devices/ak300",
-};
+const galleryImages = [
+  "/images/AK300.jpeg",
+  "/images/AK300-2.jpeg",
+  "/images/AK300-3.jpeg",
+  "/images/AK300-4.jpeg",
+  "/images/AK300-5.jpeg",
+  "/images/AK300-6.jpeg",
+];
 
 const quickFeatures = [
-  {
-    icon: "📍",
-    title: "تتبع لحظي",
-    text: "متابعة موقع السيارة أو المركبة بشكل مباشر من خلال نظام التتبع المتوافق.",
-  },
-  {
-    icon: "📡",
-    title: "4G + 2G",
-    text: "يدعم شبكة 4G LTE Cat.1 مع إمكانية الرجوع إلى 2G حسب الشبكة والتجهيز.",
-  },
-  {
-    icon: "🛡️",
-    title: "حماية وأمان",
-    text: "تنبيهات تساعد على متابعة الحركة وفصل الطاقة والعبث بالمركبة حسب إعدادات النظام.",
-  },
-  {
-    icon: "🚚",
-    title: "إدارة الأساطيل",
-    text: "مناسب للشركات والمركبات التجارية ومتابعة أكثر من مركبة.",
-  },
+  "تتبع مباشر على الخريطة",
+  "4G LTE Cat.1",
+  "CAN Bus",
+  "Bluetooth 5.1",
+  "دعم الحساسات والإضافات",
+  "9–90V DC",
 ];
 
-const specifications = [
-  ["الموديل", "AK300"],
-  ["نوع الجهاز", "GPS Tracker"],
-  ["الشبكة الرئيسية", "4G LTE Cat.1"],
-  ["الشبكات الاحتياطية", "2G Fallback"],
-  ["تحديد الموقع", "GNSS + LBS"],
-  ["دقة الموقع", "تحديد موقع عالي الدقة"],
-  ["جهد التشغيل", "9V – 90V DC"],
-  ["البطارية الاحتياطية", "250mAh / 3.7V"],
-  ["درجة حرارة التشغيل", "-20°C ~ +75°C"],
-  ["حساسية الاستقبال", "-162dBm"],
-  ["مقاومة الماء والغبار", "IPX5"],
-  ["استهلاك الطاقة", "أقل من 4mA"],
-  ["التوسعات", "دعم الحساسات والإكسسوارات"],
-];
-
-const fleetFeatures = [
+const features = [
   {
-    icon: "🚛",
-    title: "شركات النقل",
-    text: "متابعة مركبات النقل والشاحنات ومعرفة الحركة والمسارات السابقة حسب النظام.",
+    number: "1",
+    title: "تتبع مباشر ومعرفة مكان السيارة",
+    text: "يوفر AK300 تتبعًا مباشرًا لموقع السيارة على الخريطة، مع إمكانية متابعة السرعة والحركة والمسار السابق للسيارة، وهو مناسب للاستخدام الشخصي وإدارة المركبات والأساطيل.",
   },
   {
-    icon: "🏢",
-    title: "الشركات والمؤسسات",
-    text: "حل عملي لمتابعة سيارات ومركبات الشركات وتقليل صعوبة متابعة المركبات ميدانيًا.",
+    number: "2",
+    title: "شبكة 4G LTE مع دعم 2G",
+    text: "يعمل الجهاز على شبكة 4G LTE Cat.1 للحصول على اتصال سريع ومستقر، مع إمكانية الرجوع إلى 2G عند ضعف تغطية 4G حسب إصدار الجهاز والشبكة المتاحة.",
   },
   {
-    icon: "🚐",
-    title: "المركبات التجارية",
-    text: "مناسب للتاكسي والحافلات والفانات ومركبات التأجير والاستخدام التجاري.",
+    number: "3",
+    title: "قراءة بيانات السيارة عن طريق CAN Bus",
+    text: "من أهم مميزات AK300 إمكانية قراءة بعض بيانات السيارة من خلال CAN Bus، مثل عدد الكيلومترات واستهلاك الوقود وحالة المحرك وبعض الأعطال، وذلك حسب نوع السيارة ونظام CAN وطريقة التوصيل والتوافق.",
   },
   {
-    icon: "🔐",
-    title: "الحماية والمتابعة",
-    text: "يساعد على اكتشاف الحركة غير الطبيعية ومحاولات العبث أو فصل الطاقة حسب إعدادات النظام.",
+    number: "4",
+    title: "Bluetooth 5.1 والحساسات اللاسلكية",
+    text: "يدعم AK300 تقنية Bluetooth 5.1، ويمكن استخدامه مع بعض الحساسات والإضافات المتوافقة، مثل حساسات درجة الحرارة والرطوبة، وهو مفيد بشكل خاص في سيارات نقل الأغذية والأدوية.",
   },
-];
-
-const smartFeatures = [
   {
-    icon: "⚡",
+    number: "5",
+    title: "دعم بعض حساسات ضغط الإطارات TPMS",
+    text: "يمكن استخدام الجهاز مع بعض حلول وحساسات TPMS المتوافقة لمتابعة بيانات ضغط الإطارات، حسب نوع الحساس والنظام المستخدم والتوافق.",
+  },
+  {
+    number: "6",
+    title: "التعرف على السائق RFID",
+    text: "يمكن في بعض التجهيزات والأنظمة استخدام RFID للتعرف على السائق، وهو حل مفيد للشركات والأساطيل التي تحتاج إلى معرفة السائق المستخدم للمركبة.",
+  },
+  {
+    number: "7",
+    title: "فصل المحرك عن بُعد",
+    text: "يمكن توصيل الجهاز بريلاي للتحكم في دائرة الوقود أو الكهرباء واستخدام خاصية فصل المحرك عن بُعد من خلال النظام، مع ضرورة تنفيذ التوصيل والتركيب بطريقة صحيحة وآمنة.",
+  },
+  {
+    number: "8",
     title: "متابعة سلوك القيادة",
-    text: "إمكانية متابعة السرعة والتسارع والتوقفات وبعض مؤشرات القيادة حسب النظام المستخدم.",
+    text: "يستفيد الجهاز من حساس الحركة للمساعدة في اكتشاف بعض أنماط القيادة مثل التسارع المفاجئ والفرملة الشديدة والانعطاف الحاد، مما يساعد الشركات على متابعة أداء السائقين وتحسين أسلوب القيادة.",
   },
   {
-    icon: "🗺️",
-    title: "سجل الرحلات",
-    text: "الرجوع إلى مسارات وتحركات المركبة السابقة لمعرفة الأماكن التي تحركت إليها السيارة.",
+    number: "9",
+    title: "بطارية داخلية احتياطية",
+    text: "يحتوي AK300 على بطارية داخلية بسعة 250mAh تساعد الجهاز على الاستمرار في العمل عند انقطاع التغذية الرئيسية، كما تساعد في إرسال تنبيهات مرتبطة بفصل الكهرباء أو العبث حسب إعدادات النظام.",
   },
   {
-    icon: "🔔",
-    title: "التنبيهات",
-    text: "تنبيهات عند بعض الحالات مثل فصل الطاقة أو السرعة أو الخروج من النطاق الجغرافي حسب إعدادات النظام.",
+    number: "10",
+    title: "جهد تشغيل واسع من 9 إلى 90 فولت",
+    text: "يعمل AK300 على نطاق جهد واسع من 9 إلى 90V DC، لذلك يمكن استخدامه مع أنواع مختلفة من المركبات مثل السيارات والموتوسيكلات والشاحنات وبعض المعدات الثقيلة، بشرط توافق الجهد وطريقة التركيب.",
   },
   {
-    icon: "🆘",
-    title: "SOS",
-    text: "دعم وظيفة SOS حسب تجهيز الجهاز والنظام المتوافق وطريقة التركيب.",
+    number: "11",
+    title: "مداخل ومخارج لإضافات وحساسات مختلفة",
+    text: "يحتوي الجهاز على إمكانيات توصيل متعددة تسمح باستخدام بعض الإضافات والحساسات حسب احتياج المركبة ونوع النظام والتجهيز المطلوب.",
   },
   {
-    icon: "🎙️",
-    title: "المراقبة الصوتية",
-    text: "إمكانية المراقبة الصوتية حسب التجهيز والنظام المستخدم والملحقات المتوافقة.",
-  },
-  {
-    icon: "🚨",
-    title: "متابعة المركبة",
-    text: "يساعد في متابعة المركبة والوصول إلى بيانات موقعها عند الحاجة من خلال منصة التتبع.",
+    number: "12",
+    title: "حماية IPX5",
+    text: "إصدار AK300 المستخدم في هذه المواصفات مصنف بحماية IPX5، ما يجعله مناسبًا لبيئات العمل التي تتعرض للاهتزاز والحركة مع ضرورة تركيبه في المكان والطريقة المناسبة.",
   },
 ];
 
 const applications = [
-  "النقل والخدمات اللوجستية",
-  "شركات تأجير السيارات",
-  "الشركات والمؤسسات",
-  "الحافلات والفانات",
-  "سيارات الأجرة",
-  "المركبات التجارية",
+  "شركات إدارة الأساطيل",
+  "الشاحنات والسيارات التجارية",
+  "المركبات التي تحتاج إلى قراءة بيانات CAN Bus",
+  "سيارات نقل الأغذية والأدوية",
+  "المركبات التي تحتاج إلى حساسات حرارة ورطوبة",
+  "الشركات التي تحتاج إلى متابعة سلوك السائقين",
+  "المركبات التي تحتاج إلى فصل المحرك عن بُعد",
 ];
 
 const faqs = [
   {
-    question: "ما هو جهاز AK300؟",
+    question: "هل جهاز AK300 يعمل 4G؟",
     answer:
-      "AK300 هو جهاز تتبع GPS للمركبات يعمل بتقنية 4G LTE Cat.1 مع دعم 2G Fallback، ويستخدم لمتابعة موقع المركبة والرحلات والتنبيهات ووظائف إدارة المركبات من خلال نظام التتبع المتوافق.",
+      "نعم، AK300 يعمل على شبكة 4G LTE Cat.1، ويمكن أن يدعم الرجوع إلى 2G حسب إصدار الجهاز والشبكة المتاحة.",
   },
   {
-    question: "هل AK300 جهاز تتبع سيارات 4G؟",
+    question: "هل AK300 يقرأ بيانات السيارة؟",
     answer:
-      "نعم، AK300 يدعم شبكة 4G LTE Cat.1، مع دعم 2G Fallback، ولذلك يمكن استخدامه كجهاز GPS لتتبع السيارات والمركبات ضمن نظام متوافق مع الجهاز.",
+      "نعم، يدعم الجهاز قراءة بعض بيانات السيارة عن طريق CAN Bus، ولكن البيانات التي يمكن قراءتها تختلف حسب نوع السيارة ونظام CAN والتوافق وطريقة التوصيل.",
   },
   {
-    question: "ما جهد تشغيل جهاز AK300؟",
+    question: "هل يمكن تركيب حساسات حرارة ورطوبة؟",
     answer:
-      "جهد تشغيل AK300 هو 9V – 90V DC، وهو نطاق واسع يسمح باستخدام الجهاز مع أنواع مختلفة من المركبات بعد التركيب بالطريقة الصحيحة.",
+      "نعم، يمكن استخدام AK300 مع بعض حساسات الحرارة والرطوبة المتوافقة عن طريق Bluetooth، وهو مناسب بشكل خاص لبعض سيارات نقل الأغذية والأدوية.",
   },
   {
-    question: "هل يمكن متابعة السيارة من الموبايل؟",
+    question: "هل يمكن فصل محرك السيارة عن بُعد؟",
     answer:
-      "يمكن متابعة السيارة من الهاتف عند استخدام الجهاز مع منصة أو تطبيق تتبع متوافق، وتختلف طريقة عرض الموقع والتقارير والتنبيهات حسب النظام والسيرفر المستخدم.",
+      "نعم، يمكن استخدام ريلاي مناسب للتحكم في دائرة الوقود أو الكهرباء، وتفعيل فصل المحرك عن بُعد من خلال النظام، بشرط التركيب والتوصيل الصحيح.",
   },
   {
-    question: "هل AK300 مناسب للشركات وإدارة الأساطيل؟",
+    question: "ما جهد تشغيل AK300؟",
     answer:
-      "نعم، من الاستخدامات المناسبة لـ AK300 متابعة المركبات التجارية والسيارات التابعة للشركات والأساطيل، خصوصًا عندما تحتاج الشركة إلى معرفة مواقع المركبات ومساراتها وتنبيهاتها من خلال نظام مركزي.",
+      "جهد التشغيل من 9 إلى 90V DC، لذلك يناسب مجموعة كبيرة من المركبات مع مراعاة توافق الجهد وطريقة التركيب.",
   },
   {
-    question: "هل يدعم AK300 سجل الرحلات؟",
+    question: "هل AK300 مناسب للشركات والأساطيل؟",
     answer:
-      "يمكن عرض سجل ومسارات الرحلات السابقة عند تشغيل الجهاز على نظام تتبع يدعم حفظ وعرض التاريخ، وتختلف مدة وطريقة حفظ البيانات حسب السيرفر والمنصة المستخدمة.",
-  },
-  {
-    question: "هل يمكن إيقاف السيارة عن بعد؟",
-    answer:
-      "يمكن أن يدعم الجهاز وظيفة إيقاف المركبة عن بعد حسب التجهيز وطريقة التركيب والنظام المستخدم، ويجب تنفيذ هذه الوظيفة من خلال تركيب صحيح وإعدادات متوافقة مع الجهاز والمركبة.",
-  },
-  {
-    question: "هل يوجد بطارية احتياطية داخل AK300؟",
-    answer:
-      "نعم، المواصفات المذكورة للجهاز تتضمن بطارية احتياطية مدمجة بسعة 250mAh وبجهد 3.7V.",
-  },
-  {
-    question: "هل AK300 مقاوم للماء والغبار؟",
-    answer:
-      "المواصفات المذكورة للجهاز تتضمن درجة حماية IPX5، مع ضرورة مراعاة مكان التركيب وطريقة الحماية أثناء استخدام الجهاز داخل المركبة.",
-  },
-  {
-    question: "هل يدعم AK300 المراقبة الصوتية؟",
-    answer:
-      "يمكن أن تتوفر وظيفة المراقبة الصوتية حسب تجهيز الجهاز والنظام والملحقات المتوافقة، لذلك يتم التأكد من هذه الوظيفة قبل التركيب حسب النسخة المتاحة.",
-  },
-  {
-    question: "ما أنواع المركبات التي يمكن استخدام AK300 معها؟",
-    answer:
-      "يمكن استخدام AK300 مع السيارات والمركبات التجارية ومركبات الشركات والنقل وغيرها، مع مراعاة جهد تشغيل المركبة وطريقة التركيب المناسبة.",
-  },
-  {
-    question: "هل يوجد ضمان على جهاز AK300؟",
-    answer:
-      "يوجد ضمان لمدة سنة ضد عيوب التصنيع، ولا يشمل الحرق أو الكسر أو التلف الناتج عن سوء الاستخدام.",
-  },
-  {
-    question: "كيف أعرف سعر وتوفر AK300؟",
-    answer:
-      "يمكنك التواصل مع GPS World Egypt عبر واتساب لمعرفة السعر الحالي والتوفر وخيارات السيرفر والتركيب المناسبة لاستخدامك.",
+      "نعم، الجهاز مناسب بشكل خاص للشركات والأساطيل التي تحتاج إلى تتبع المركبات ومتابعة سلوك السائقين وقراءة بعض بيانات السيارة واستخدام الحساسات والإضافات.",
   },
 ];
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Product",
-      name: product.name,
-      image: ["https://gpsworld-eg.com/images/AK300.jpeg"],
-      url: product.url,
-      description:
-        "جهاز AK300 لتتبع السيارات والمركبات بتقنية GPS و4G، مع وظائف التتبع والتنبيهات وسجل الرحلات وإدارة الأساطيل.",
-      brand: {
-        "@type": "Brand",
-        name: "GPS World Egypt",
-      },
-    },
-    {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "الرئيسية",
-          item: "https://gpsworld-eg.com/",
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "أجهزة GPS",
-          item: "https://gpsworld-eg.com/#products",
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: "AK300",
-          item: product.url,
-        },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
-        },
-      })),
-    },
-  ],
-};
-
 export default function AK300Page() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "AK300 4G",
+    description:
+      "جهاز تتبع سيارات GPS AK300 4G لتتبع المركبات وإدارة الأساطيل مع دعم CAN Bus وBluetooth 5.1 والحساسات.",
+    image: "https://gpsworld-eg.com/images/AK300.jpeg",
+    brand: {
+      "@type": "Brand",
+      name: "GPS World Egypt",
+    },
+    category: "GPS Vehicle Tracker",
+    url: "https://gpsworld-eg.com/devices/ak300",
+  };
+
   return (
-    <main className="min-h-screen bg-slate-950 text-white" dir="rtl">
+    <main dir="rtl" className="min-h-screen bg-white text-gray-900">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* HEADER */}
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/95 backdrop-blur">
+      {/* Header */}
+      <header className="sticky top-0 z-50 border-b bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
-          <div>
-            <div className="text-xl font-black tracking-wide">
-              GPS WORLD
-            </div>
-
-            <div className="text-xs text-cyan-400">
-              EGYPT
-            </div>
-          </div>
+          <Link
+            href="/"
+            className="text-lg font-extrabold tracking-tight text-gray-900"
+          >
+            GPS World Egypt
+          </Link>
 
           <a
-            href={whatsappInquiryUrl}
+            href="https://wa.me/201006687163"
             target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-green-500 px-5 py-2 text-sm font-bold text-white transition hover:bg-green-400"
+            rel="noreferrer"
+            className="rounded-full bg-green-600 px-4 py-2 text-sm font-bold text-white transition hover:bg-green-700"
           >
             واتساب
           </a>
         </div>
       </header>
 
-      {/* BACK */}
+      {/* Back */}
       <div className="mx-auto max-w-7xl px-4 pt-6">
-        <a
-          href="/#products"
-          className="inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-300 transition hover:bg-white/10"
+        <Link
+          href="/devices"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 transition hover:text-gray-900"
         >
-          ← العودة للأجهزة
-        </a>
+          ← العودة إلى أجهزة GPS
+        </Link>
       </div>
 
-      {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(6,182,212,0.18),transparent_35%),radial-gradient(circle_at_20%_80%,rgba(59,130,246,0.15),transparent_35%)]" />
-
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-14 lg:grid-cols-2 lg:py-20">
-          <div className="order-2 lg:order-1">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-green-400/30 bg-green-400/10 px-4 py-2 text-sm font-bold text-green-300">
-              <span className="h-2 w-2 rounded-full bg-green-400" />
-              متوفر
+      {/* Hero */}
+      <section className="mx-auto max-w-7xl px-4 pb-12 pt-8">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <div className="mb-4 inline-flex rounded-full bg-gray-100 px-4 py-2 text-sm font-bold text-gray-700">
+              جهاز GPS احترافي 4G
             </div>
 
-            <div className="mb-4 text-sm font-bold uppercase tracking-[0.3em] text-cyan-400">
-              GPS TRACKING SYSTEM
-            </div>
-
-            <h1 className="text-5xl font-black leading-tight sm:text-6xl">
-              AK300
+            <h1 className="text-4xl font-black leading-tight tracking-tight sm:text-5xl">
+              جهاز GPS AK300 4G
             </h1>
 
-            <h2 className="mt-3 text-2xl font-bold text-slate-200">
-              جهاز تتبع سيارات GPS 4G
-            </h2>
-
-            <p className="mt-6 max-w-2xl text-lg leading-9 text-slate-400">
-              جهاز AK300 لتتبع السيارات والمركبات بتقنية 4G، مع دعم تحديد
-              الموقع عبر GNSS وLBS، وسجل الرحلات والتنبيهات ووظائف مناسبة
-              للشركات وإدارة الأساطيل.
+            <p className="mt-5 text-lg leading-8 text-gray-600">
+              إنت في الشغل ومحتاج تعرف العربية أو الشاحنة فين، سرعتها إيه،
+              ومسارها اتحرك إزاي؟ AK300 مش مجرد جهاز تتبع، لكنه حل احترافي
+              مناسب لإدارة الأساطيل والمركبات التجارية، مع دعم CAN Bus
+              والحساسات والـ Bluetooth حسب احتياج المركبة.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href={whatsappInquiryUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl bg-green-500 px-7 py-4 font-black text-white shadow-lg shadow-green-500/20 transition hover:-translate-y-1 hover:bg-green-400"
-              >
-                💬 اسأل عن AK300
-              </a>
-
-              <a
-                href="tel:01006687163"
-                className="rounded-2xl border border-cyan-400/40 bg-cyan-400/10 px-7 py-4 font-black text-cyan-300 transition hover:bg-cyan-400/20"
-              >
-                📞 اتصل بنا
-              </a>
-            </div>
-          </div>
-
-          {/* AK300 GALLERY */}
-          <div className="order-1 lg:order-2">
-            <div className="relative mx-auto max-w-xl">
-              <div className="absolute inset-10 rounded-full bg-cyan-400/20 blur-3xl" />
-
-              <div className="relative">
-                <div className="absolute right-5 top-5 z-10 rounded-full border border-cyan-400/30 bg-slate-950/80 px-4 py-2 text-xs font-bold text-cyan-300">
-                  AK300 • 4G
-                </div>
-
-                <DeviceGallery
-                  images={[
-                    "/images/AK300.jpeg",
-                    "/images/AK300-2.jpeg",
-                    "/images/AK300-3.jpeg",
-                    "/images/AK300-4.jpeg",
-                    "/images/AK300-5.jpeg",
-                    "/images/AK300-6.jpeg",
-                  ]}
-                  deviceName="AK300"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* QUICK FEATURES */}
-      <section className="border-y border-white/10 bg-white/[0.02]">
-        <div className="mx-auto grid max-w-7xl gap-4 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4">
-          {quickFeatures.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-2xl border border-white/10 bg-slate-900/70 p-6 transition hover:-translate-y-1 hover:border-cyan-400/30"
-            >
-              <div className="text-3xl">{item.icon}</div>
-
-              <h3 className="mt-4 font-black">
-                {item.title}
-              </h3>
-
-              <p className="mt-2 text-sm leading-7 text-slate-400">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* FEATURES + SPECS */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="mb-12 text-center">
-          <div className="text-sm font-bold tracking-[0.25em] text-cyan-400">
-            AK300 DETAILS
-          </div>
-
-          <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-            مواصفات ومميزات جهاز AK300
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-2xl leading-8 text-slate-400">
-            تعرف على أهم مواصفات جهاز AK300 ووظائفه واستخداماته في تتبع
-            السيارات والمركبات وإدارة الأساطيل.
-          </p>
-        </div>
-
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl border border-cyan-400/10 bg-gradient-to-br from-cyan-400/[0.08] to-transparent p-7">
-            <h3 className="text-2xl font-black">
-              أهم مميزات AK300
-            </h3>
-
-            <div className="mt-7 space-y-4">
-              {[
-                "تتبع لحظي لموقع المركبة.",
-                "دعم GNSS + LBS لتحديد الموقع.",
-                "شبكة 4G LTE Cat.1 مع 2G Fallback.",
-                "عرض سجل ومسار الرحلات من خلال النظام المتوافق.",
-                "تنبيهات عند فصل الطاقة أو بعض حالات العبث حسب النظام.",
-                "تنبيهات السرعة الزائدة حسب الإعدادات.",
-                "تنبيهات الخروج من النطاق الجغرافي حسب النظام.",
-                "إمكانية إيقاف المركبة عن بعد من خلال النظام المتوافق.",
-                "إمكانية المراقبة الصوتية حسب التجهيز والنظام.",
-                "وظائف مناسبة لإدارة الأساطيل.",
-                "متابعة بعض مؤشرات سلوك القيادة حسب النظام.",
-                "دعم SOS حسب التجهيز المتوافق.",
-                "بطارية احتياطية مدمجة.",
-                "دعم الحساسات والإكسسوارات.",
-                "دعم فني ومتابعة من GPS World Egypt.",
-              ].map((feature) => (
+            <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3">
+              {quickFeatures.map((feature) => (
                 <div
                   key={feature}
-                  className="flex gap-3 rounded-xl border border-white/5 bg-slate-950/40 p-4"
+                  className="rounded-2xl border bg-gray-50 p-4 text-center text-sm font-bold"
                 >
-                  <span className="text-cyan-400">
-                    ✓
-                  </span>
-
-                  <span className="text-sm leading-7 text-slate-300">
-                    {feature}
-                  </span>
+                  {feature}
                 </div>
               ))}
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href="https://wa.me/201006687163"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-xl bg-green-600 px-6 py-3 font-extrabold text-white transition hover:bg-green-700"
+              >
+                اسأل عن AK300
+              </a>
+
+              <a
+                href="#comparison"
+                className="rounded-xl border-2 border-gray-900 px-6 py-3 font-extrabold text-gray-900 transition hover:bg-gray-900 hover:text-white"
+              >
+                قارن بين الأجهزة
+              </a>
             </div>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-7">
-            <h3 className="text-2xl font-black">
-              المواصفات الفنية
-            </h3>
-
-            <div className="mt-7 overflow-hidden rounded-2xl border border-white/10">
-              {specifications.map(([label, value], index) => (
-                <div
-                  key={label}
-                  className={
-                    "grid grid-cols-2 gap-4 px-4 py-4 text-sm " +
-                    (index % 2 === 0
-                      ? "bg-white/[0.03]"
-                      : "bg-transparent")
-                  }
-                >
-                  <span className="font-bold text-slate-300">
-                    {label}
-                  </span>
-
-                  <span className="text-left text-cyan-300">
-                    {value}
-                  </span>
-                </div>
-              ))}
-            </div>
+          <div className="rounded-3xl border bg-gray-50 p-4 shadow-sm">
+            <DeviceGallery images={galleryImages} alt="جهاز GPS AK300 4G" />
           </div>
         </div>
       </section>
 
-      {/* FLEET */}
-      <section className="bg-cyan-950/20 py-20">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="mb-12">
-            <div className="text-sm font-bold tracking-[0.25em] text-cyan-400">
-              FLEET MANAGEMENT
-            </div>
-
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              AK300 لإدارة الأساطيل وتتبع المركبات
+      {/* Details */}
+      <section className="border-y bg-gray-50">
+        <div className="mx-auto max-w-5xl px-4 py-16">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-black sm:text-4xl">
+              مميزات جهاز GPS AK300 4G بالتفصيل
             </h2>
 
-            <p className="mt-4 max-w-3xl leading-8 text-slate-400">
-              جهاز AK300 مناسب للشركات التي تحتاج إلى متابعة السيارات
-              والمركبات التجارية ومعرفة مواقعها ومساراتها وتنبيهاتها من
-              خلال نظام تتبع متوافق.
+            <p className="mt-4 text-lg leading-8 text-gray-600">
+              AK300 جهاز تتبع سيارات احترافي سلكي يعمل بتقنية 4G، ومصمم
+              خصوصًا للاستخدامات التي تحتاج أكثر من مجرد معرفة مكان السيارة،
+              مثل إدارة الأساطيل وقراءة بيانات المركبة وربط الحساسات.
             </p>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {fleetFeatures.map((item) => (
-              <div
-                key={item.title}
-                className="group rounded-3xl border border-cyan-400/10 bg-slate-950/70 p-7 transition hover:-translate-y-2 hover:border-cyan-400/30"
+          <div className="mt-12 space-y-5">
+            {features.map((feature) => (
+              <article
+                key={feature.number}
+                className="rounded-3xl border bg-white p-6 shadow-sm sm:p-8"
               >
-                <div className="text-4xl transition group-hover:scale-110">
-                  {item.icon}
+                <div className="flex gap-5">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gray-900 text-lg font-black text-white">
+                    {feature.number}
+                  </div>
+
+                  <div>
+                    <h3 className="text-xl font-black">{feature.title}</h3>
+                    <p className="mt-3 text-base leading-8 text-gray-600">
+                      {feature.text}
+                    </p>
+                  </div>
                 </div>
-
-                <h3 className="mt-6 text-lg font-black">
-                  {item.title}
-                </h3>
-
-                <p className="mt-3 text-sm leading-7 text-slate-400">
-                  {item.text}
-                </p>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SMART FUNCTIONS */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="mb-12 text-center">
-          <div className="text-sm font-bold tracking-[0.25em] text-cyan-400">
-            SMART FUNCTIONS
-          </div>
+      {/* Why AK300 */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div>
+            <span className="text-sm font-black text-gray-500">
+              ليه AK300؟
+            </span>
 
-          <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-            وظائف ذكية تساعدك في التحكم والمتابعة
-          </h2>
-
-          <p className="mx-auto mt-4 max-w-3xl leading-8 text-slate-400">
-            تختلف بعض الوظائف حسب إصدار الجهاز والسيرفر ومنصة التتبع
-            والتجهيز المستخدم، لذلك يتم التأكد من الوظائف المطلوبة قبل
-            التركيب.
-          </p>
-        </div>
-
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {smartFeatures.map((item) => (
-            <div
-              key={item.title}
-              className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900 p-7"
-            >
-              <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-cyan-400/10 blur-2xl" />
-
-              <div className="relative">
-                <div className="text-4xl">
-                  {item.icon}
-                </div>
-
-                <h3 className="mt-5 text-xl font-black">
-                  {item.title}
-                </h3>
-
-                <p className="mt-3 leading-8 text-slate-400">
-                  {item.text}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* APPLICATIONS */}
-      <section className="border-y border-white/10 bg-white/[0.02] py-20">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="text-center">
-            <div className="text-sm font-bold tracking-[0.25em] text-cyan-400">
-              APPLICATIONS
-            </div>
-
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              استخدامات جهاز AK300
+            <h2 className="mt-2 text-3xl font-black sm:text-4xl">
+              لما تكون محتاج جهاز تتبع يتعامل مع المركبة نفسها
             </h2>
 
-            <p className="mx-auto mt-4 max-w-2xl leading-8 text-slate-400">
-              يمكن استخدام AK300 في مجموعة من تطبيقات تتبع السيارات
-              والمركبات وإدارة الأساطيل.
+            <p className="mt-5 text-lg leading-8 text-gray-600">
+              الفرق الأساسي في AK300 إنه مناسب للاستخدامات الاحترافية التي
+              تحتاج ربط الجهاز بالمركبة والحساسات، وليس مجرد متابعة الموقع.
+              لذلك يعتبر اختيارًا قويًا للشركات والأساطيل والمركبات التجارية.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {applications.map((item, index) => (
+          <div className="grid gap-4 sm:grid-cols-2">
+            {[
+              "تتبع مباشر",
+              "قراءة بيانات CAN Bus",
+              "Bluetooth 5.1",
+              "حساسات حرارة ورطوبة",
+              "دعم بعض حلول TPMS",
+              "متابعة سلوك القيادة",
+              "فصل المحرك بريلاي",
+              "جهد تشغيل 9–90V",
+            ].map((item) => (
               <div
                 key={item}
-                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-slate-900/70 p-6 transition hover:border-cyan-400/30"
+                className="rounded-2xl border bg-gray-50 p-5 font-bold"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-400/10 font-black text-cyan-300">
-                  {String(index + 1).padStart(2, "0")}
-                </div>
-
-                <span className="font-bold text-slate-200">
-                  {item}
-                </span>
+                ✓ {item}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CERTIFICATES */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-slate-900/70 p-8">
-            <h2 className="text-2xl font-black">
-              الشهادات والاعتمادات
+      {/* Applications */}
+      <section className="bg-gray-900 text-white">
+        <div className="mx-auto max-w-6xl px-4 py-16">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-black sm:text-4xl">
+              AK300 مناسب لمين؟
             </h2>
 
-            <p className="mt-4 leading-8 text-slate-400">
-              تشمل المواصفات المتوفرة للجهاز الاعتمادات التالية:
+            <p className="mt-4 text-lg leading-8 text-gray-300">
+              الجهاز مناسب بشكل خاص للاستخدامات التي تحتاج تتبع ومتابعة
+              المركبة مع إمكانية إضافة بيانات وحساسات حسب طبيعة العمل.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {applications.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-white/10 bg-white/5 p-5 font-bold"
+              >
+                ✓ {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technical notes */}
+      <section className="mx-auto max-w-5xl px-4 py-16">
+        <div className="rounded-3xl border bg-gray-50 p-7 sm:p-10">
+          <h2 className="text-2xl font-black sm:text-3xl">
+            ملاحظات مهمة قبل التركيب
+          </h2>
+
+          <div className="mt-6 space-y-4 text-base leading-8 text-gray-600">
+            <p>
+              <strong className="text-gray-900">جهد التشغيل:</strong> من
+              9 إلى 90V DC.
             </p>
 
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              {["CE", "FCC", "RoHS", "ANATEL"].map(
-                (certificate) => (
-                  <div
-                    key={certificate}
-                    className="rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-6 text-center"
-                  >
-                    <div className="text-2xl font-black text-cyan-300">
-                      {certificate}
-                    </div>
-                  </div>
-                )
-              )}
-            </div>
+            <p>
+              <strong className="text-gray-900">CAN Bus:</strong> البيانات
+              التي يمكن قراءتها تختلف حسب نوع السيارة ونظام CAN والتوافق
+              وطريقة التوصيل.
+            </p>
+
+            <p>
+              <strong className="text-gray-900">الحساسات والإضافات:</strong>{" "}
+              بعض الوظائف مثل الحرارة والرطوبة وTPMS وRFID تعتمد على نوع
+              الحساس أو الإضافة ومدى توافقها مع النظام.
+            </p>
+
+            <p>
+              <strong className="text-gray-900">فصل المحرك:</strong> يحتاج
+              إلى ريلاي وتركيب صحيح على دائرة مناسبة، ويتم تنفيذ التركيب
+              بطريقة آمنة حسب نوع المركبة.
+            </p>
+
+            <p>
+              <strong className="text-gray-900">الحماية:</strong> إصدار
+              المواصفات المستخدمة هنا مصنف IPX5.
+            </p>
+
+            <p>
+              <strong className="text-gray-900">الضمان:</strong> سنة ضد
+              عيوب الصناعة.
+            </p>
           </div>
+        </div>
+      </section>
 
-          <div className="rounded-3xl border border-green-400/10 bg-green-400/[0.04] p-8">
-            <h2 className="text-2xl font-black">
-              الضمان والسيرفر
-            </h2>
+      {/* Comparison */}
+      <section id="comparison" className="border-y bg-gray-50">
+        <div className="mx-auto max-w-5xl px-4 py-16 text-center">
+          <h2 className="text-3xl font-black sm:text-4xl">
+            محتار بين AK300 وجهاز تاني؟
+          </h2>
 
-            <div className="mt-7 space-y-5">
-              <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
-                <div className="font-black text-green-300">
-                  مدة تشغيل السيرفر
-                </div>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+            كل جهاز له استخدام مختلف. في المقارنة هنوضح لك الفرق العملي بين
+            الأجهزة ومين أنسب لاحتياجك.
+          </p>
 
-                <p className="mt-2 leading-7 text-slate-400">
-                  سنة واحدة، والتجديد يكون حسب السيرفر المستخدم.
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-5">
-                <div className="font-black text-green-300">
-                  الضمان
-                </div>
-
-                <p className="mt-2 leading-7 text-slate-400">
-                  ضمان لمدة سنة ضد عيوب التصنيع، ولا يشمل الحرق أو الكسر أو
-                  التلف الناتج عن سوء الاستخدام.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Link
+            href="/comparison"
+            className="mt-8 inline-flex rounded-xl bg-gray-900 px-7 py-4 font-black text-white transition hover:bg-gray-700"
+          >
+            مقارنة بين الأجهزة
+          </Link>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="bg-slate-900/60 py-20">
-        <div className="mx-auto max-w-5xl px-4">
-          <div className="mb-12 text-center">
-            <div className="text-sm font-bold tracking-[0.25em] text-cyan-400">
-              FAQ
-            </div>
+      <section className="mx-auto max-w-5xl px-4 py-16">
+        <h2 className="text-3xl font-black sm:text-4xl">
+          الأسئلة الشائعة عن AK300
+        </h2>
 
-            <h2 className="mt-3 text-3xl font-black sm:text-4xl">
-              الأسئلة الشائعة عن جهاز AK300
-            </h2>
-          </div>
+        <div className="mt-8 space-y-4">
+          {faqs.map((faq) => (
+            <details
+              key={faq.question}
+              className="group rounded-2xl border bg-white p-5"
+            >
+              <summary className="cursor-pointer list-none font-black">
+                {faq.question}
+              </summary>
 
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <details
-                key={faq.question}
-                className="group rounded-2xl border border-white/10 bg-slate-950 p-6"
-              >
-                <summary className="cursor-pointer list-none font-black text-slate-100">
-                  <div className="flex items-center justify-between gap-5">
-                    <span>
-                      {index + 1}. {faq.question}
-                    </span>
-
-                    <span className="text-xl text-cyan-400 transition group-open:rotate-45">
-                      +
-                    </span>
-                  </div>
-                </summary>
-
-                <p className="mt-5 border-t border-white/10 pt-5 leading-8 text-slate-400">
-                  {faq.answer}
-                </p>
-              </details>
-            ))}
-          </div>
+              <p className="mt-4 leading-8 text-gray-600">{faq.answer}</p>
+            </details>
+          ))}
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section className="mx-auto max-w-7xl px-4 py-20">
-        <div className="relative overflow-hidden rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 via-slate-900 to-green-500/10 p-8 text-center sm:p-12">
-          <div className="absolute left-1/2 top-0 h-40 w-80 -translate-x-1/2 rounded-full bg-cyan-400/10 blur-3xl" />
+      {/* Contact */}
+      <section className="bg-gray-50">
+        <div className="mx-auto max-w-5xl px-4 py-16 text-center">
+          <h2 className="text-3xl font-black">
+            محتاج تعرف هل AK300 مناسب لعربيتك؟
+          </h2>
 
-          <div className="relative">
-            <div className="text-sm font-bold tracking-[0.25em] text-cyan-400">
-              GPS WORLD EGYPT
-            </div>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-gray-600">
+            ابعت لنا نوع العربية واستخدامك، ونوضح لك هل AK300 هو الاختيار
+            المناسب ولا فيه جهاز تاني أنسب لحالتك.
+          </p>
 
-            <h2 className="mt-4 text-3xl font-black sm:text-4xl">
-              مهتم بجهاز AK300؟
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-2xl leading-8 text-slate-400">
-              تواصل معنا لمعرفة السعر والتوفر والتفاصيل المناسبة لاستخدامك
-              وتركيب الجهاز.
-            </p>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a
-                href={whatsappOrderUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-2xl bg-green-500 px-8 py-4 font-black text-white transition hover:bg-green-400"
-              >
-                💬 اطلب AK300 عبر واتساب
-              </a>
-
-              <a
-                href="tel:01006687163"
-                className="rounded-2xl border border-white/10 bg-white/5 px-8 py-4 font-black transition hover:bg-white/10"
-              >
-                📞 01006687163
-              </a>
-            </div>
-          </div>
+          <a
+            href="https://wa.me/201006687163"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-7 inline-flex rounded-xl bg-green-600 px-8 py-4 font-black text-white transition hover:bg-green-700"
+          >
+            تواصل على واتساب
+          </a>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-black">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-center sm:flex-row sm:items-center sm:justify-between sm:text-right">
-          <div>
-            <div className="font-black">
-              GPS World Egypt
-            </div>
-
-            <div className="mt-1 text-sm text-slate-500">
-              أجهزة تتبع GPS وحلول متابعة المركبات في مصر
-            </div>
-          </div>
-
-          <div className="text-sm text-slate-500">
-            © {new Date().getFullYear()} GPS World Egypt
-          </div>
+      {/* Footer */}
+      <footer className="border-t bg-white">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 text-center text-sm text-gray-500">
+          <p className="font-bold text-gray-800">GPS World Egypt</p>
+          <p>أجهزة تتبع GPS وتركيب وصيانة في مصر</p>
+          <p>القاهرة – الزاوية الحمراء</p>
+          <a
+            href="https://wa.me/201006687163"
+            target="_blank"
+            rel="noreferrer"
+            className="font-bold text-green-600"
+          >
+            01006687163
+          </a>
         </div>
       </footer>
 
-      {/* FLOATING WHATSAPP */}
+      {/* Floating WhatsApp */}
       <a
-        href={whatsappBaseUrl}
+        href="https://wa.me/201006687163"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noreferrer"
         aria-label="التواصل عبر واتساب"
-        className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-2xl shadow-2xl shadow-green-500/30 transition hover:scale-110 hover:bg-green-400"
+        className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-600 text-2xl text-white shadow-lg transition hover:scale-105 hover:bg-green-700"
       >
-        💬
+        وات
       </a>
     </main>
   );
