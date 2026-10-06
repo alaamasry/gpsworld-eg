@@ -254,7 +254,7 @@ export default function AK300Page() {
           </div>
 
           <div className="rounded-3xl border bg-gray-50 p-4 shadow-sm">
-            <DeviceGallery images={galleryImages} alt="جهاز GPS AK300 4G" />
+            <DeviceGallery images={galleryImages} />
           </div>
         </div>
       </section>
