@@ -191,8 +191,7 @@ const structuredData = {
         "@type": "ListItem",
         position: index + 1,
         name: device.name,
-        url:
-          "https://www.gpsworld-eg.com/devices/" + device.id,
+        url: "https://www.gpsworld-eg.com/devices/" + device.id,
       })),
     },
     {
@@ -244,6 +243,34 @@ export default function HomePage() {
         .animate-price-move {
           display: inline-block;
           animation: priceMove 1.1s ease-in-out infinite;
+          will-change: transform;
+        }
+
+        @keyframes comparisonMove {
+          0%, 100% {
+            transform: translateX(0) scale(1);
+          }
+
+          20% {
+            transform: translateX(5px) scale(1.03);
+          }
+
+          40% {
+            transform: translateX(-5px) scale(1);
+          }
+
+          60% {
+            transform: translateX(4px) scale(1.02);
+          }
+
+          80% {
+            transform: translateX(-3px) scale(1);
+          }
+        }
+
+        .animate-comparison {
+          display: inline-block;
+          animation: comparisonMove 1.8s ease-in-out infinite;
           will-change: transform;
         }
 
@@ -539,6 +566,19 @@ export default function HomePage() {
                 className="rounded-xl bg-green-600 px-7 py-4 text-white font-bold text-lg hover:bg-green-700"
               >
                 تواصل معنا على واتساب
+              </a>
+
+              <a
+                href="/comparison"
+                className="rounded-xl px-7 py-4 font-extrabold text-lg shadow-lg ring-2 ring-orange-300 transition hover:ring-orange-400"
+                style={{
+                  backgroundColor: "#f97316",
+                  color: "#ffffff",
+                }}
+              >
+                <span className="animate-comparison">
+                  ⚖️ قارن بين أجهزة GPS
+                </span>
               </a>
             </div>
           </div>
