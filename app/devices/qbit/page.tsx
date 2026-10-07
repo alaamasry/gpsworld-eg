@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import QbitGallery from "./QbitGallery";
 
 export const metadata: Metadata = {
-  title: "QBIT 4G | جهاز تتبع GPS صغير ومتنقل في مصر",
+  title: "QBIT  | جهاز تتبع GPS صغير ومتنقل في مصر",
   description:
-    "جهاز QBIT 4G صغير وخفيف لتتبع الأطفال وكبار السن والأشخاص والحقائب والحيوانات الأليفة، مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
+    "جهاز QBIT  صغير وخفيف لتتبع الأطفال وكبار السن والأشخاص والحقائب والحيوانات الأليفة، مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
   keywords: [
     "QBIT",
-    "QBIT 4G",
+    "QBIT ",
     "QBIT GPS",
     "جهاز QBIT",
     "جهاز تتبع QBIT",
     "جهاز تتبع GPS صغير",
     "جهاز GPS محمول",
-    "جهاز تتبع 4G",
+    "جهاز تتبع ",
     "جهاز تتبع للأطفال",
     "جهاز تتبع كبار السن",
     "جهاز تتبع الأشخاص",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     canonical: "https://gpsworld-eg.com/devices/qbit",
   },
   openGraph: {
-    title: "QBIT 4G | جهاز تتبع GPS صغير ومتنقل في مصر",
+    title: "QBIT  | جهاز تتبع GPS صغير ومتنقل في مصر",
     description:
-      "جهاز QBIT 4G صغير وخفيف مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
+      "جهاز QBIT  صغير وخفيف مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
     url: "https://gpsworld-eg.com/devices/qbit",
     siteName: "GPS World Egypt",
     locale: "ar_EG",
@@ -41,15 +41,15 @@ export const metadata: Metadata = {
         url: "/images/QBIT.jpeg",
         width: 1200,
         height: 630,
-        alt: "QBIT 4G جهاز تتبع GPS صغير ومتنقل",
+        alt: "QBIT  جهاز تتبع GPS صغير ومتنقل",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "QBIT 4G | جهاز تتبع GPS صغير ومتنقل",
+    title: "QBIT  | جهاز تتبع GPS صغير ومتنقل",
     description:
-      "جهاز QBIT 4G صغير وخفيف مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
+      "جهاز QBIT  صغير وخفيف مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
     images: ["/images/QBIT.jpeg"],
   },
 };
@@ -57,11 +57,11 @@ export const metadata: Metadata = {
 const whatsappNumber = "201006687163";
 
 const whatsappInquiry = encodeURIComponent(
-  "مرحبًا، أريد الاستفسار عن جهاز QBIT 4G"
+  "مرحبًا، أريد الاستفسار عن جهاز QBIT "
 );
 
 const whatsappOrder = encodeURIComponent(
-  "مرحبًا، أريد طلب جهاز QBIT 4G"
+  "مرحبًا، أريد طلب جهاز QBIT "
 );
 
 const whatsappInquiryUrl =
@@ -74,27 +74,27 @@ const whatsappBaseUrl = `https://wa.me/${whatsappNumber}`;
 
 const faqs = [
   {
-    question: "ما هو جهاز QBIT 4G؟",
+    question: "ما هو جهاز QBIT ؟",
     answer:
-      "QBIT 4G هو جهاز تتبع GPS صغير جدًا وخفيف ومتنقل، مصمم لمتابعة الأطفال وكبار السن والأشخاص أثناء التنقل، بالإضافة إلى الحقائب والممتلكات والحيوانات الأليفة، ويمكن استخدامه لتتبع السيارة بشكل مؤقت بدون تركيب أو توصيل أسلاك.",
+      "QBIT  هو جهاز تتبع GPS صغير جدًا وخفيف ومتنقل، مصمم لمتابعة الأطفال وكبار السن والأشخاص أثناء التنقل، بالإضافة إلى الحقائب والممتلكات والحيوانات الأليفة، ويمكن استخدامه لتتبع السيارة بشكل مؤقت بدون تركيب أو توصيل أسلاك.",
   },
   {
-    question: "هل يحتاج QBIT 4G إلى توصيل أسلاك؟",
+    question: "هل يحتاج QBIT  إلى توصيل أسلاك؟",
     answer:
       "لا، الجهاز محمول ويعمل ببطارية داخلية، ولا يحتاج إلى توصيله بكهرباء السيارة أو قطع وتعديل أي أسلاك.",
   },
   {
-    question: "هل جهاز QBIT 4G مغناطيسي؟",
+    question: "هل جهاز QBIT  مغناطيسي؟",
     answer:
-      "لا، جهاز QBIT 4G غير مزود بمغناطيس للتثبيت، وهو مصمم أساسًا ليكون جهازًا محمولًا يمكن وضعه داخل الجيب أو الحقيبة أو مع الشخص أو الحيوان الأليف.",
+      "لا، جهاز QBIT  غير مزود بمغناطيس للتثبيت، وهو مصمم أساسًا ليكون جهازًا محمولًا يمكن وضعه داخل الجيب أو الحقيبة أو مع الشخص أو الحيوان الأليف.",
   },
   {
-    question: "كم وزن جهاز QBIT 4G؟",
+    question: "كم وزن جهاز QBIT ؟",
     answer:
       "وزن الجهاز حوالي 30 جرامًا، مما يجعله خفيفًا ومناسبًا للاستخدام اليومي والحمل والتنقل.",
   },
   {
-    question: "كم تستمر بطارية QBIT 4G؟",
+    question: "كم تستمر بطارية QBIT ؟",
     answer:
       "مدة تشغيل البطارية حوالي يوم إلى يومين، وتختلف حسب معدل تحديث الموقع وطريقة الاستخدام وحركة الجهاز وجودة الشبكة وإعدادات توفير الطاقة.",
   },
@@ -140,11 +140,11 @@ const structuredData = {
   "@graph": [
     {
       "@type": "Product",
-      name: "QBIT 4G",
+      name: "QBIT ",
       image: ["https://gpsworld-eg.com/images/QBIT.jpeg"],
       url: "https://gpsworld-eg.com/devices/qbit",
       description:
-        "جهاز QBIT 4G صغير وخفيف ومتنقل لتتبع الأطفال وكبار السن والأشخاص والحقائب والحيوانات الأليفة، مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
+        "جهاز QBIT  صغير وخفيف ومتنقل لتتبع الأطفال وكبار السن والأشخاص والحقائب والحيوانات الأليفة، مع GPS وLBS وWi-Fi وSOS وتتبع مباشر.",
       brand: {
         "@type": "Brand",
         name: "GPS World Egypt",
@@ -169,7 +169,7 @@ const structuredData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "QBIT 4G",
+          name: "QBIT ",
           item: "https://gpsworld-eg.com/devices/qbit",
         },
       ],
@@ -248,7 +248,7 @@ export default function QBITPage() {
               </span>
 
               <h1 className="text-4xl font-extrabold leading-tight text-blue-950 md:text-5xl">
-                جهاز QBIT 4G لتتبع الأشخاص والممتلكات
+                جهاز QBIT  لتتبع الأشخاص والممتلكات
               </h1>
 
               <p className="mt-3 text-xl font-bold text-blue-700">
@@ -256,7 +256,7 @@ export default function QBITPage() {
               </p>
 
               <p className="mt-6 text-lg leading-9 text-gray-600">
-                جهاز QBIT 4G هو جهاز تتبع GPS صغير جدًا وخفيف، مصمم
+                جهاز QBIT  هو جهاز تتبع GPS صغير جدًا وخفيف، مصمم
                 للاستخدامات التي تحتاج إلى جهاز متنقل وسهل الحمل بدون أي
                 توصيلات كهربائية أو تركيب معقد.
               </p>
@@ -305,7 +305,7 @@ export default function QBITPage() {
             <div className="rounded-3xl bg-white p-6 text-center shadow-md">
               <div className="text-4xl">📡</div>
               <h2 className="mt-3 text-xl font-extrabold text-blue-950">
-                4G
+                
               </h2>
               <p className="mt-2 leading-7 text-gray-600">
                 اتصال مناسب لنقل بيانات التتبع
@@ -344,7 +344,7 @@ export default function QBITPage() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                مميزات جهاز QBIT 4G بالتفصيل
+                مميزات جهاز QBIT  بالتفصيل
               </h2>
 
               <p className="mx-auto mt-4 max-w-3xl text-lg leading-9 text-gray-600">
@@ -383,10 +383,10 @@ export default function QBITPage() {
                   ),
                 },
                 {
-                  title: "الاتصال بشبكة 4G 📡",
+                  title: "الاتصال بشبكة  📡",
                   text: (
                     <>
-                      يعمل الجهاز على شبكة <strong>4G</strong> لتوفير
+                      يعمل الجهاز على شبكة <strong></strong> لتوفير
                       اتصال مناسب لنقل بيانات الموقع والتواصل مع الجهاز
                       وإرسال التنبيهات حسب إعداداته.
                     </>
@@ -522,15 +522,15 @@ export default function QBITPage() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                مواصفات جهاز QBIT 4G
+                مواصفات جهاز QBIT 
               </h2>
             </div>
 
             <div className="mt-10 overflow-hidden rounded-2xl border border-gray-200">
               {[
-                ["الموديل", "QBIT 4G"],
+                ["الموديل", "QBIT "],
                 ["نوع الجهاز", "GPS Tracker محمول"],
-                ["الشبكة", "4G"],
+                ["الشبكة", ""],
                 ["تحديد الموقع", "GPS / Wi-Fi / LBS"],
                 ["البطارية", "بطارية داخلية قابلة لإعادة الشحن"],
                 ["مدة التشغيل", "حوالي يوم إلى يومين حسب الاستخدام"],
@@ -684,7 +684,7 @@ export default function QBITPage() {
               </span>
 
               <h2 className="mt-2 text-3xl font-extrabold text-blue-950 md:text-4xl">
-                أسئلة مهمة عن جهاز QBIT 4G
+                أسئلة مهمة عن جهاز QBIT 
               </h2>
             </div>
 
@@ -712,7 +712,7 @@ export default function QBITPage() {
         <section className="mx-auto max-w-5xl px-5 py-16">
           <div className="rounded-3xl bg-blue-950 p-8 text-center text-white shadow-xl md:p-12">
             <h2 className="text-3xl font-extrabold md:text-4xl">
-              هل تريد معرفة المزيد عن جهاز QBIT 4G؟
+              هل تريد معرفة المزيد عن جهاز QBIT ؟
             </h2>
 
             <p className="mt-4 text-lg leading-8 text-blue-200">
