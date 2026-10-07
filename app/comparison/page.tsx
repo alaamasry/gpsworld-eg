@@ -4,401 +4,319 @@ import Link from "next/link";
 import { useState } from "react";
 
 const devices = [
-  { name: "GT06N 2G", slug: "gt06n-2g" },
-  { name: "GT06N 4G", slug: "gt06n-4g" },
-  { name: "EV402", slug: "ev402" },
-  { name: "EV404", slug: "ev404" },
-  { name: "J16PRO Max", slug: "j16pro-max" },
-  { name: "AK300", slug: "ak300" },
-  { name: "B100", slug: "b100" },
-  { name: "EV505", slug: "ev505" },
-  { name: "TK303", slug: "tk303" },
-  { name: "OBD22", slug: "obd22" },
-  { name: "OBD VL505", slug: "obd-vl505" },
-  { name: "QBIT", slug: "qbit" },
-  { name: "W15L", slug: "w15l" },
-  { name: "AT4", slug: "at4" },
-  { name: "AT4 PLUS", slug: "at4-plus" },
+  { slug: "gt06n-2g", name: "GT06N 2G" },
+  { slug: "gt06n-4g", name: "GT06N 4G" },
+  { slug: "ev402", name: "EV402" },
+  { slug: "ev404", name: "EV404" },
+  { slug: "j16pro-max", name: "J16PRO Max" },
+  { slug: "ak300", name: "AK300" },
+  { slug: "b100", name: "B100" },
+  { slug: "ev505", name: "EV505" },
+  { slug: "tk303", name: "TK303" },
+  { slug: "obd22", name: "OBD22" },
+  { slug: "obd-vl505", name: "OBD VL505" },
+  { slug: "qbit", name: "QBIT" },
+  { slug: "w15l", name: "W15L" },
+  { slug: "at4", name: "AT4" },
+  { slug: "at4-plus", name: "AT4 PLUS" },
 ];
 
 export default function ComparisonPage() {
   const [firstDevice, setFirstDevice] = useState("");
   const [secondDevice, setSecondDevice] = useState("");
 
-  const first = devices.find((device) => device.slug === firstDevice);
-  const second = devices.find((device) => device.slug === secondDevice);
+  const canCompare =
+    firstDevice !== "" &&
+    secondDevice !== "" &&
+    firstDevice !== secondDevice;
 
   return (
     <main
       style={{
         minHeight: "100vh",
-        backgroundColor: "#f8fafc",
-        color: "#0f172a",
+        background: "#f5f7fb",
+        padding: "32px 16px 60px",
       }}
     >
-      <section
+      <div
         style={{
-          maxWidth: "1200px",
+          width: "100%",
+          maxWidth: "850px",
           margin: "0 auto",
-          padding: "50px 20px",
         }}
       >
+        {/* العنوان */}
         <div
           style={{
             textAlign: "center",
-            marginBottom: "40px",
+            marginBottom: "30px",
           }}
         >
-          <h1
+          <div
             style={{
-              color: "#0f172a",
-              fontSize: "clamp(30px, 5vw, 48px)",
-              fontWeight: 800,
-              margin: 0,
+              fontSize: "34px",
+              marginBottom: "10px",
             }}
           >
-            قارن بين أي جهازين
+            ⚖️
+          </div>
+
+          <h1
+            style={{
+              margin: 0,
+              color: "#172554",
+              fontSize: "clamp(28px, 6vw, 42px)",
+              fontWeight: 900,
+            }}
+          >
+            مقارنة أجهزة GPS
           </h1>
 
           <p
             style={{
+              marginTop: "12px",
+              marginBottom: 0,
               color: "#475569",
-              fontSize: "18px",
-              lineHeight: 1.9,
-              maxWidth: "750px",
-              margin: "16px auto 0",
-            }}
-          >
-            اختار جهازين من أجهزة GPS الموجودة عندنا، وهنوضح لك الفرق بينهم
-            بالتفصيل عشان تختار الجهاز الأنسب ليك.
-          </p>
-        </div>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "24px",
-          }}
-        >
-          {/* الجهاز الأول */}
-          <section
-            style={{
-              backgroundColor: "#ffffff",
-              borderRadius: "24px",
-              padding: "30px",
-              boxShadow: "0 8px 30px rgba(15, 23, 42, 0.08)",
-              border: "1px solid #e2e8f0",
-            }}
-          >
-            <p
-              style={{
-                color: "#2563eb",
-                fontWeight: 700,
-                margin: 0,
-              }}
-            >
-              الجهاز الأول
-            </p>
-
-            <h2
-              style={{
-                color: "#0f172a",
-                fontSize: "28px",
-                fontWeight: 800,
-                margin: "8px 0",
-              }}
-            >
-              {first ? first.name : "اختار الجهاز الأول"}
-            </h2>
-
-            <p
-              style={{
-                color: "#64748b",
-                lineHeight: 1.8,
-                marginBottom: "24px",
-              }}
-            >
-              اختار أول جهاز عايز تقارنه.
-            </p>
-
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-                gap: "10px",
-              }}
-            >
-              {devices.map((device) => {
-                const isSelected = firstDevice === device.slug;
-                const isDisabled = secondDevice === device.slug;
-
-                return (
-                  <button
-                    key={device.slug}
-                    type="button"
-                    disabled={isDisabled}
-                    onClick={() => setFirstDevice(device.slug)}
-                    style={{
-                      borderRadius: "12px",
-                      padding: "13px 8px",
-                      fontWeight: 700,
-                      fontSize: "14px",
-                      cursor: isDisabled ? "not-allowed" : "pointer",
-                      border: isSelected
-                        ? "2px solid #2563eb"
-                        : "1px solid #cbd5e1",
-                      backgroundColor: isSelected
-                        ? "#2563eb"
-                        : isDisabled
-                          ? "#e2e8f0"
-                          : "#ffffff",
-                      color: isSelected
-                        ? "#ffffff"
-                        : isDisabled
-                          ? "#94a3b8"
-                          : "#0f172a",
-                    }}
-                  >
-                    {device.name}
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* الجهاز الثاني */}
-          <section
-            style={{
-              backgroundColor: "#ffffff",
-              borderRadius: "24px",
-              padding: "30px",
-              boxShadow: "0 8px 30px rgba(15, 23, 42, 0.08)",
-              border: "1px solid #e2e8f0",
-            }}
-          >
-            <p
-              style={{
-                color: "#059669",
-                fontWeight: 700,
-                margin: 0,
-              }}
-            >
-              الجهاز الثاني
-            </p>
-
-            <h2
-              style={{
-                color: "#0f172a",
-                fontSize: "28px",
-                fontWeight: 800,
-                margin: "8px 0",
-              }}
-            >
-              {second ? second.name : "اختار الجهاز الثاني"}
-            </h2>
-
-            <p
-              style={{
-                color: "#64748b",
-                lineHeight: 1.8,
-                marginBottom: "24px",
-              }}
-            >
-              {first
-                ? `اختار الجهاز اللي عايز تقارنه مع ${first.name}.`
-                : "اختار الجهاز الثاني اللي عايز تقارنه بالجهاز الأول."}
-            </p>
-
-            <div
-              style={{
-                display: "grid",
-                gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
-                gap: "10px",
-              }}
-            >
-              {devices.map((device) => {
-                const isSelected = secondDevice === device.slug;
-                const isDisabled = firstDevice === device.slug;
-
-                return (
-                  <button
-                    key={device.slug}
-                    type="button"
-                    disabled={isDisabled}
-                    onClick={() => setSecondDevice(device.slug)}
-                    style={{
-                      borderRadius: "12px",
-                      padding: "13px 8px",
-                      fontWeight: 700,
-                      fontSize: "14px",
-                      cursor: isDisabled ? "not-allowed" : "pointer",
-                      border: isSelected
-                        ? "2px solid #059669"
-                        : "1px solid #cbd5e1",
-                      backgroundColor: isSelected
-                        ? "#059669"
-                        : isDisabled
-                          ? "#e2e8f0"
-                          : "#ffffff",
-                      color: isSelected
-                        ? "#ffffff"
-                        : isDisabled
-                          ? "#94a3b8"
-                          : "#0f172a",
-                    }}
-                  >
-                    {device.name}
-                  </button>
-                );
-              })}
-            </div>
-          </section>
-        </div>
-
-        {/* الأجهزة المختارة */}
-        <section
-          style={{
-            marginTop: "24px",
-            backgroundColor: "#0f172a",
-            borderRadius: "24px",
-            padding: "30px",
-            color: "#ffffff",
-          }}
-        >
-          <h2
-            style={{
-              color: "#ffffff",
-              textAlign: "center",
-              fontSize: "26px",
-              fontWeight: 800,
-              margin: 0,
-            }}
-          >
-            الأجهزة المختارة
-          </h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: "15px",
-              marginTop: "24px",
-            }}
-          >
-            <div
-              style={{
-                backgroundColor: "#1e293b",
-                borderRadius: "16px",
-                padding: "20px",
-                textAlign: "center",
-              }}
-            >
-              <p style={{ color: "#cbd5e1", margin: 0 }}>الجهاز الأول</p>
-
-              <p
-                style={{
-                  color: "#ffffff",
-                  fontSize: "20px",
-                  fontWeight: 800,
-                  margin: "8px 0 0",
-                }}
-              >
-                {first ? first.name : "لم تختار الجهاز الأول"}
-              </p>
-            </div>
-
-            <div
-              style={{
-                backgroundColor: "#1e293b",
-                borderRadius: "16px",
-                padding: "20px",
-                textAlign: "center",
-              }}
-            >
-              <p style={{ color: "#cbd5e1", margin: 0 }}>الجهاز الثاني</p>
-
-              <p
-                style={{
-                  color: "#ffffff",
-                  fontSize: "20px",
-                  fontWeight: 800,
-                  margin: "8px 0 0",
-                }}
-              >
-                {second ? second.name : "لم تختار الجهاز الثاني"}
-              </p>
-            </div>
-          </div>
-
-          <div
-            style={{
-              textAlign: "center",
-              marginTop: "28px",
-            }}
-          >
-            {first && second ? (
-              <Link
-                href={`/comparison/${firstDevice}/${secondDevice}`}
-                style={{
-                  display: "inline-block",
-                  backgroundColor: "#ffffff",
-                  color: "#0f172a",
-                  borderRadius: "12px",
-                  padding: "15px 30px",
-                  fontSize: "18px",
-                  fontWeight: 800,
-                  textDecoration: "none",
-                }}
-              >
-                ⚖️ ابدأ المقارنة
-              </Link>
-            ) : (
-              <span
-                style={{
-                  display: "inline-block",
-                  backgroundColor: "#334155",
-                  color: "#cbd5e1",
-                  borderRadius: "12px",
-                  padding: "15px 30px",
-                  fontSize: "18px",
-                  fontWeight: 800,
-                }}
-              >
-                ⚖️ اختار الجهازين أولاً
-              </span>
-            )}
-          </div>
-        </section>
-
-        <div
-          style={{
-            textAlign: "center",
-            marginTop: "30px",
-          }}
-        >
-          <p
-            style={{
-              color: "#64748b",
+              fontSize: "17px",
               lineHeight: 1.8,
             }}
           >
-            اختار أي جهازين من القائمة، وهنعرض لك الفرق بينهم بطريقة واضحة
-            وسهلة تساعدك تختار الأنسب لاستخدامك.
+            اختار أي جهازين وشوف الفرق بينهم بسهولة
           </p>
+        </div>
 
-          <Link
-            href="/#products"
+        {/* الجهاز الأول */}
+        <section
+          style={{
+            background: "#ffffff",
+            borderRadius: "20px",
+            padding: "22px",
+            marginBottom: "18px",
+            boxShadow: "0 8px 25px rgba(15, 23, 42, 0.08)",
+            border: "1px solid #e2e8f0",
+          }}
+        >
+          <label
+            htmlFor="first-device"
             style={{
-              color: "#2563eb",
-              fontWeight: 700,
-              textDecoration: "none",
+              display: "block",
+              color: "#172554",
+              fontSize: "20px",
+              fontWeight: 800,
+              marginBottom: "12px",
             }}
           >
-            ← العودة إلى الأجهزة
+            الجهاز الأول
+          </label>
+
+          <div style={{ position: "relative" }}>
+            <select
+              id="first-device"
+              value={firstDevice}
+              onChange={(e) => {
+                setFirstDevice(e.target.value);
+
+                if (e.target.value === secondDevice) {
+                  setSecondDevice("");
+                }
+              }}
+              style={{
+                width: "100%",
+                appearance: "none",
+                WebkitAppearance: "none",
+                background: "#f8fafc",
+                border: "2px solid #cbd5e1",
+                borderRadius: "14px",
+                padding: "17px 50px 17px 16px",
+                fontSize: "17px",
+                fontWeight: 700,
+                color: firstDevice ? "#172554" : "#64748b",
+                outline: "none",
+                cursor: "pointer",
+              }}
+            >
+              <option value="">اختار الجهاز الأول</option>
+
+              {devices.map((device) => (
+                <option key={device.slug} value={device.slug}>
+                  {device.name}
+                </option>
+              ))}
+            </select>
+
+            <span
+              style={{
+                position: "absolute",
+                left: "18px",
+                top: "50%",
+                transform: "translateY(-50%)",
+                pointerEvents: "none",
+                fontSize: "20px",
+                color: "#172554",
+                fontWeight: 900,
+              }}
+            >
+              ▼
+            </span>
+          </div>
+        </section>
+
+        {/* الجهاز الثاني */}
+        <section
+          style={{
+            background: "#ffffff",
+            borderRadius: "20px",
+            padding: "22px",
+            marginBottom: "24px",
+            boxShadow: "0 8px 25px rgba(15, 23, 42, 0.08)",
+            border: "1px solid #e2e8f0",
+          }}
+        >
+          <label
+            htmlFor="second-device"
+            style={{
+              display: "block",
+              color: "#172554",
+              fontSize: "20px",
+              fontWeight: 800,
+              marginBottom: "12px",
+            }}
+          >
+            الجهاز الثاني
+          </label>
+
+          <div style={{ position: "relative" }}>
+            <select
+              id="second-device"
+              value={secondDevice}
+              onChange={(e) => setSecondDevice(e.target.value)}
+              style={{
+                width: "100%",
+                appearance: "none",
+                WebkitAppearance: "none",
+                background: "#f8fafc",
+                border: "2px solid #cbd5e1",
+                borderRadius: "14px",
+                padding: "17px 50px 17px 16px",
+                fontSize: "17px",
+                fontWeight: 700,
+                color: secondDevice ? "#172554" : "#64748b",
+                outline: "none",
+                cursor: "pointer",
+              }}
+            >
+              <option value="">اختار الجهاز الثاني</option>
+
+              {devices.map((device) => (
+                <option
+                  key={device.slug}
+                  value={device.slug}
+                  disabled={device.slug === firstDevice}
+                >
+                  {device.name}
+                </option>
+              ))}
+            </select>
+
+            <span
+              style={{
+                position: "absolute",
+                left: "18px",
+                top: "50%",
+                transform: "translateY(-50%)",
+                pointerEvents: "none",
+                fontSize: "20px",
+                color: "#172554",
+                fontWeight: 900,
+              }}
+            >
+              ▼
+            </span>
+          </div>
+        </section>
+
+        {/* ملخص الاختيار */}
+        {(firstDevice || secondDevice) && (
+          <div
+            style={{
+              background: "#172554",
+              borderRadius: "20px",
+              padding: "22px",
+              marginBottom: "20px",
+              textAlign: "center",
+              boxShadow: "0 10px 30px rgba(15, 23, 42, 0.18)",
+            }}
+          >
+            <p
+              style={{
+                margin: "0 0 10px",
+                color: "#bfdbfe",
+                fontSize: "15px",
+                fontWeight: 700,
+              }}
+            >
+              الأجهزة المختارة
+            </p>
+
+            <div
+              style={{
+                color: "#ffffff",
+                fontSize: "20px",
+                fontWeight: 900,
+              }}
+            >
+              {firstDevice
+                ? devices.find((d) => d.slug === firstDevice)?.name
+                : "لم يتم اختيار الجهاز الأول"}
+
+              {"  ×  "}
+
+              {secondDevice
+                ? devices.find((d) => d.slug === secondDevice)?.name
+                : "لم يتم اختيار الجهاز الثاني"}
+            </div>
+          </div>
+        )}
+
+        {/* زر المقارنة */}
+        {canCompare ? (
+          <Link
+            href={`/comparison/${firstDevice}/${secondDevice}`}
+            style={{
+              display: "block",
+              width: "100%",
+              boxSizing: "border-box",
+              textAlign: "center",
+              textDecoration: "none",
+              background: "#172554",
+              color: "#ffffff",
+              borderRadius: "16px",
+              padding: "18px 20px",
+              fontSize: "19px",
+              fontWeight: 900,
+              boxShadow: "0 8px 20px rgba(15, 23, 42, 0.2)",
+            }}
+          >
+            ⚖️ ابدأ المقارنة
           </Link>
-        </div>
-      </section>
+        ) : (
+          <div
+            style={{
+              width: "100%",
+              boxSizing: "border-box",
+              textAlign: "center",
+              background: "#e2e8f0",
+              color: "#64748b",
+              borderRadius: "16px",
+              padding: "18px 20px",
+              fontSize: "18px",
+              fontWeight: 800,
+            }}
+          >
+            اختار جهازين مختلفين لبدء المقارنة
+          </div>
+        )}
+      </div>
     </main>
   );
 }
