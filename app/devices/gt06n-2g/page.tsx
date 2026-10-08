@@ -559,7 +559,7 @@ export default function GT06N2GPage() {
           </p>
 
           <a
-            href="#comparison"
+            href="/comparison"
             className="mt-7 inline-block rounded-xl bg-white px-8 py-4 text-lg font-extrabold text-blue-950 shadow-lg transition hover:bg-gray-100"
           >
             ⚖️ مقارنة بين الأجهزة
