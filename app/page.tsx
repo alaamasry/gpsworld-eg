@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -372,59 +373,35 @@ export default function HomePage() {
 
               {/* Desktop Menu */}
               <nav className="hidden lg:flex items-center gap-5 text-base font-bold">
-                <a
-                  href="/"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="/" className="hover:text-yellow-300 transition">
                   الرئيسية
                 </a>
 
-                <a
-                  href="#products"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#products" className="hover:text-yellow-300 transition">
                   الأجهزة
                 </a>
 
-                <a
-                  href="#software"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#software" className="hover:text-yellow-300 transition">
                   السوفت وير
                 </a>
 
-                <a
-                  href="#recharge"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#recharge" className="hover:text-yellow-300 transition">
                   شحن النقاط
                 </a>
 
-                <a
-                  href="#why-us"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#why-us" className="hover:text-yellow-300 transition">
                   لماذا GPS World
                 </a>
 
-                <a
-                  href="#how-to-choose"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#how-to-choose" className="hover:text-yellow-300 transition">
                   كيف تختار؟
                 </a>
 
-                <a
-                  href="#faq"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#faq" className="hover:text-yellow-300 transition">
                   الأسئلة الشائعة
                 </a>
 
-                <a
-                  href="#contact"
-                  className="hover:text-yellow-300 transition"
-                >
+                <a href="#contact" className="hover:text-yellow-300 transition">
                   تواصل معنا
                 </a>
               </nav>
@@ -458,68 +435,45 @@ export default function HomePage() {
                 dir="rtl"
               >
                 <div className="flex flex-col gap-2">
-                  <a
-                    href="/"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="/" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     🏠 الرئيسية
                   </a>
 
-                  <a
-                    href="#products"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#products" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     📦 الأجهزة
                   </a>
 
-                  <a
-                    href="#software"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#software" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     💻 السوفت وير
                   </a>
 
-                  <a
-                    href="#recharge"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#recharge" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     💳 شحن النقاط
                   </a>
 
-                  <a
-                    href="#why-us"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#why-us" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     ⭐ لماذا GPS World
                   </a>
 
-                  <a
-                    href="#how-to-choose"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#how-to-choose" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     🔎 كيف تختار؟
                   </a>
 
-                  <a
-                    href="#faq"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#faq" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     ❓ الأسئلة الشائعة
                   </a>
 
-                  <a
-                    href="#contact"
-                    onClick={closeMobileMenu}
-                    className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition"
-                  >
+                  <a href="#contact" onClick={closeMobileMenu} className="rounded-xl px-4 py-3 font-bold hover:bg-blue-800 transition">
                     📞 تواصل معنا
+                  </a>
+
+                  <a
+                    href="/solutions-gps"
+                    onClick={closeMobileMenu}
+                    className="rounded-xl px-4 py-3 text-center font-bold transition hover:brightness-110"
+                    style={{ backgroundColor: "#0f766e", color: "#ffffff" }}
+                  >
+                    📚 شرح وحلول GPS
                   </a>
 
                   <a
@@ -538,10 +492,7 @@ export default function HomePage() {
         </header>
 
         {/* Hero */}
-        <section
-          className="text-center py-24 px-5 bg-gray-50"
-          dir="rtl"
-        >
+        <section className="text-center py-24 px-5 bg-gray-50" dir="rtl">
           <div className="max-w-5xl mx-auto">
             <p className="text-blue-700 font-bold text-lg mb-4">
               GPS World Egypt
@@ -580,16 +531,23 @@ export default function HomePage() {
                   ⚖️ قارن بين أجهزة GPS
                 </span>
               </a>
+
+              <a
+                href="/solutions-gps"
+                className="rounded-xl px-7 py-4 font-extrabold text-lg shadow-lg transition hover:brightness-110"
+                style={{
+                  backgroundColor: "#0f766e",
+                  color: "#ffffff",
+                }}
+              >
+                📚 شرح وحلول GPS
+              </a>
             </div>
           </div>
         </section>
 
         {/* Products */}
-        <section
-          id="products"
-          className="max-w-7xl mx-auto py-16 px-5"
-          dir="rtl"
-        >
+        <section id="products" className="max-w-7xl mx-auto py-16 px-5" dir="rtl">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold">
               أجهزة GPS وأجهزة جي بي اس المتوفرة
@@ -726,10 +684,7 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
               <div className="rounded-2xl border p-6 bg-white shadow-sm">
-                <h3 className="text-xl font-extrabold">
-                  أجهزة متعددة
-                </h3>
-
+                <h3 className="text-xl font-extrabold">أجهزة متعددة</h3>
                 <p className="mt-3 text-lg leading-8">
                   مجموعة متنوعة من أجهزة GPS لتناسب السيارات والمركبات
                   والاستخدامات المختلفة.
@@ -737,10 +692,7 @@ export default function HomePage() {
               </div>
 
               <div className="rounded-2xl border p-6 bg-white shadow-sm">
-                <h3 className="text-xl font-extrabold">
-                  شرح ومساعدة
-                </h3>
-
+                <h3 className="text-xl font-extrabold">شرح ومساعدة</h3>
                 <p className="mt-3 text-lg leading-8">
                   نساعدك على فهم الجهاز وطريقة استخدامه وتشغيله ومتابعته
                   من الهاتف.
@@ -748,10 +700,7 @@ export default function HomePage() {
               </div>
 
               <div className="rounded-2xl border p-6 bg-white shadow-sm">
-                <h3 className="text-xl font-extrabold">
-                  تركيب
-                </h3>
-
+                <h3 className="text-xl font-extrabold">تركيب</h3>
                 <p className="mt-3 text-lg leading-8">
                   إمكانية تركيب أجهزة GPS في مكاننا أو تركيب الجهاز في
                   موقع العميل حسب الاتفاق.
@@ -759,10 +708,7 @@ export default function HomePage() {
               </div>
 
               <div className="rounded-2xl border p-6 bg-white shadow-sm">
-                <h3 className="text-xl font-extrabold">
-                  متابعة بعد التركيب
-                </h3>
-
+                <h3 className="text-xl font-extrabold">متابعة بعد التركيب</h3>
                 <p className="mt-3 text-lg leading-8">
                   لا يتوقف دورنا عند بيع الجهاز، بل نساعد العميل في فهم
                   الجهاز وطريقة التعامل معه.
@@ -773,11 +719,7 @@ export default function HomePage() {
         </section>
 
         {/* How To Choose */}
-        <section
-          id="how-to-choose"
-          className="bg-gray-50 py-16 px-5"
-          dir="rtl"
-        >
+        <section id="how-to-choose" className="bg-gray-50 py-16 px-5" dir="rtl">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center">
               كيف تختار جهاز GPS المناسب؟
@@ -795,22 +737,18 @@ export default function HomePage() {
                   إذا كنت تريد متابعة موقع السيارة وحركتها فقط، يمكن اختيار
                   جهاز GPS عملي مناسب للاستخدام الأساسي.
                 </li>
-
                 <li>
                   إذا كنت تحتاج إلى شبكة أحدث، يمكن اختيار جهاز يعمل على
                   شبكة 4G حسب التغطية ونظام الجهاز.
                 </li>
-
                 <li>
                   بعض الأجهزة توفر وظائف تحكم أو إنذار إضافية حسب الموديل
                   وطريقة التركيب.
                 </li>
-
                 <li>
                   أجهزة OBD مناسبة لمن يريد تركيبًا سريعًا في السيارات التي
                   تحتوي على منفذ OBD مناسب.
                 </li>
-
                 <li>
                   للمركبات ذات أنظمة الكهرباء المختلفة يجب التأكد من مدى
                   جهد التشغيل المناسب للجهاز قبل التركيب.
@@ -841,7 +779,6 @@ export default function HomePage() {
                   <summary className="cursor-pointer text-xl font-extrabold">
                     {faq.question}
                   </summary>
-
                   <p className="mt-4 text-lg leading-8 text-gray-800">
                     {faq.answer}
                   </p>
@@ -852,11 +789,7 @@ export default function HomePage() {
         </section>
 
         {/* Software */}
-        <section
-          id="software"
-          className="bg-gray-50 py-16 px-5"
-          dir="rtl"
-        >
+        <section id="software" className="bg-gray-50 py-16 px-5" dir="rtl">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center">
               متابعة جهاز GPS من الهاتف
@@ -877,11 +810,7 @@ export default function HomePage() {
         </section>
 
         {/* Recharge */}
-        <section
-          id="recharge"
-          className="py-14 px-5"
-          dir="rtl"
-        >
+        <section id="recharge" className="py-14 px-5" dir="rtl">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold">
               شحن نقاط السيرفرات
@@ -944,17 +873,11 @@ export default function HomePage() {
         </section>
 
         {/* Footer */}
-        <footer
-          className="bg-gray-900 text-white py-10 px-5"
-          dir="rtl"
-        >
+        <footer className="bg-gray-900 text-white py-10 px-5" dir="rtl">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <h3 className="text-xl font-extrabold">
-                  GPS World Egypt
-                </h3>
-
+                <h3 className="text-xl font-extrabold">GPS World Egypt</h3>
                 <p className="mt-4 text-lg leading-8 text-gray-200">
                   متخصصون في أجهزة GPS وأجهزة جي بي اس وتتبع السيارات
                   والمركبات في مصر، مع توفير المساعدة في اختيار الجهاز
@@ -963,70 +886,45 @@ export default function HomePage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-extrabold">
-                  روابط مهمة
-                </h3>
-
+                <h3 className="text-xl font-extrabold">روابط مهمة</h3>
                 <ul className="mt-4 space-y-3 text-lg">
                   <li>
-                    <a
-                      href="/"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="/" className="hover:text-blue-300">
                       الرئيسية
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      href="#products"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="#products" className="hover:text-blue-300">
                       أجهزة GPS وأجهزة جي بي اس
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      href="#software"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="#software" className="hover:text-blue-300">
                       السوفت وير
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      href="#recharge"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="#recharge" className="hover:text-blue-300">
                       شحن النقاط
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      href="#why-us"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="#why-us" className="hover:text-blue-300">
                       لماذا GPS World؟
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      href="#faq"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="#faq" className="hover:text-blue-300">
                       الأسئلة الشائعة
                     </a>
                   </li>
-
                   <li>
-                    <a
-                      href="#contact"
-                      className="hover:text-blue-300"
-                    >
+                    <a href="/solutions-gps" className="hover:text-blue-300">
+                      📚 شرح وحلول GPS
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#contact" className="hover:text-blue-300">
                       تواصل معنا
                     </a>
                   </li>
@@ -1034,9 +932,7 @@ export default function HomePage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-extrabold">
-                  تواصل معنا
-                </h3>
+                <h3 className="text-xl font-extrabold">تواصل معنا</h3>
 
                 <p className="mt-4 text-lg leading-8">
                   الهاتف:{" "}
@@ -1060,9 +956,7 @@ export default function HomePage() {
                   </a>
                 </p>
 
-                <p className="mt-2 text-lg leading-8">
-                  القاهرة - مصر
-                </p>
+                <p className="mt-2 text-lg leading-8">القاهرة - مصر</p>
               </div>
             </div>
 
