@@ -566,13 +566,6 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-extrabold">
               أجهزة GPS وأجهزة جي بي اس المتوفرة
             </h2>
-
-            <p className="mt-5 text-lg leading-9 text-gray-800">
-              مجموعة من أجهزة GPS وأجهزة جي بي اس لتتبع السيارات والمركبات،
-              تشمل أجهزة 2G و4G وأجهزة OBD وأجهزة مناسبة لاستخدامات متعددة.
-              اختر الموديل المناسب لك وتعرف على تفاصيله أو تواصل معنا لمعرفة
-              السعر.
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12">
